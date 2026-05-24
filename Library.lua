@@ -1,1 +1,3031 @@
-local FB,Jx,Yl,Ia=type,pairs,bit32.bxor,getmetatable local yB,Kl,nv,da,dx,Qu,hv,cq,dF,Pn,Zz,mk,Ba,xt,af,jy;dx=(getfenv());dF,Pn,da=(string.char),(string.byte),(bit32 .bxor);jy=function(Se,bd)local WF,qz,mc,Kc,pb,_E,Sj,GB;Kc,qz=function(El,ut,jh)qz[El]=Yl(ut,59520)-Yl(jh,39409)return qz[El]end,{};mc=qz[-22984]or Kc(-22984,116041,28146)while mc~=16144 do if mc<47922 then if mc<20603 then Sj='';mc,GB,WF,_E=qz[12275]or Kc(12275,100780,2142),(#Se-1)+12,1,12 elseif mc>20603 then Sj,mc=Sj..dF(da(Pn(Se,(pb-12)+1),Pn(bd,(pb-12)%#bd+1))),qz[-5737]or Kc(-5737,119880,30140)else _E=_E+WF;pb=_E if _E~=_E then mc=qz[14405]or Kc(14405,94099,21008)else mc=50259 end end elseif mc<50259 then return Sj elseif mc<=50259 then if(WF>=0 and _E>GB)or((WF<0 or WF~=WF)and _E<GB)then mc=47922 else mc=24584 end else pb=_E if GB~=GB then mc=47922 else mc=qz[26597]or Kc(26597,106937,7447)end end end end;yB,mk=(string.gsub),(string.char);nv=(function(Hj)Hj=yB(Hj,'[^ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=]','')return(Hj:gsub('.',function(so)if(so=='=')then return''end local uA,OG='',(('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'):find(so)-1)for hh=6,1,-1 do uA=uA..(OG%2^hh-OG%2^(hh-1)>0 and'1'or'0')end return uA end):gsub('%d%d%d?%d?%d?%d?%d?%d?',function(Mm)if(#Mm~=8)then return''end local Lh=0 for YB=1,8 do Lh=Lh+(Mm:sub(YB,YB)=='1'and 2^(8-YB)or 0)end return mk(Lh)end))end)local Ve,Ea,fj,_n,oD=dx[jy('M\1G\5','*\96')][jy('\167\244\193\158\202\146\231\220\174\202','\224\145\181\205\175')](dx[jy('M\1G\5','*\96')],jy('\201\153\159\224\144\140\234','\153\245\254')),dx[jy('\29\174\23\170','z\207')][jy('\246\6\240\245@\195\21\237\197@','\177c\132\166%')](dx[jy('\29\174\23\170','z\207')],jy('cm\228\26\223\0 \188BM\228\26\224\a\51\172','6\30\129h\150nP\201')),dx[jy('\4\176\14\180','c\209')][jy('\193E\246\49\180\244V\235\1\180','\134 \130b\209')](dx[jy('\4\176\14\180','c\209')],jy('\18\151\207\141\a\50\148\200\189\a','@\226\161\222b')),dx[jy('O\199E\195','(\166')][jy('g\223\196\255\131R\204\217\207\131',' \186\176\172\230')](dx[jy('O\199E\195','(\166')],jy('\150\145\133X\176\187\151\135A\128\187','\222\229\241(\227')),dx[jy('x\241r\245','\31\144')][jy('\136D&\228 \189W;\212 ','\207!R\183E')](dx[jy('x\241r\245','\31\144')],jy('qa\aWI\0[','2\14u'))local Rw,Vt,Bi,th_,Ec,Th,_p,yd,Zv,AE,aF,vD,WA,Zi,Az,EG,Km,Ho,DB,fA,VB,Hq,Wg,VD,nx,At,XE,tk,qh,hw,sv,Wj,lB=Ve[jy('i}8r\128u~:j\137W','%\18[\19\236')],dx[jy('Z \143O$\140','(A\248')],dx[jy('\204\6\200\26','\184\127')],dx[jy('\146\203\170\131\221\188','\230\178\218')],dx[jy('0\158!\145,','@\253')],dx[jy('\195\27R\130\197\29O\145','\183t!\246')],dx[jy('\216\146\192\224%\143\202\131\213\239,\158','\171\247\180\141@\251')],dx[jy('B5#n(|','\1ZO')][jy('\180\191\173','\218')],dx[jy('\176U\182\156H\233','\243:\218')][jy(':!\244\49\1\220\30','\\S\155')],dx[jy('\221_H\241B\23','\158\48$')][jy('\197\199\54\206\253\n\245','\163\181Y')],dx[jy('@i\172lt\243','\3\6\192')][jy('\161\14\157\50\131','\213a')],dx[jy('\181\19\137:','\224W')][jy('~ug','\16')],dx[jy('\128\51\188\26\231','\213w')][jy('\25\18\0','w')],dx[jy(':J\6c]','o\14')][jy('\r\56:\209\226\r,&\217\217','kJU\188\173')],dx[jy('\161\150\157\191\198','\244\210')][jy('\185\6\130)\140\23\140(\186','\223t\237D')],dx[jy('\\\200\153~\194\136\56','\n\173\250')][jy('\201\194\208','\167')],dx[jy('\234&\243/','\135G')][jy('O\255M\254\\',',\147')],dx[jy('\\SEZ','12')][jy('\210\128\219\131\198','\180\236')],dx[jy('MiT\96',' \b')][jy('\r\1\24','\96')],dx[jy('}id\96','\16\b')][jy('\164\160\167','\201')],dx[jy('\254}\231t','\147\28')][jy('\183#\184\51','\223V')],dx[jy('S)E$B',"\'H")][jy('\140\169F\128\181A','\229\199\53')],dx[jy('g\237q\224v','\19\140')][jy('\140\240q\145\227y','\254\149\28')],dx[jy('\n\253\28\240\27','~\156')][jy('\254\255\246\242','\152\150')],dx[jy('\244\152\226\149\229','\128\249')][jy('Y\197\156Y\203\134',':\170\242')],dx[jy('\225\160\247\173\240','\149\193')][jy('\248%\v\250#\v','\155Wn')],(dx[jy('\170\151\188\154\187','\222\246')])[jy('\21\223\25\221\19','v\179')],(dx[jy('C\16U\29R','7q')])[jy(':\215\19\57\223\19','\\\165v')],dx[jy('\249w\147\227m\134','\138\3\225')][jy('\199\221\197\199','\164\181')],dx[jy('\193\96P\219zE','\178\20\"')][jy('F\171\56M\165>',' \196J')],dx[jy('A\142F\132','5\239')][jy('\156\198\148\194\129','\248\163')],dx[jy('\130\138\133\128','\246\235')][jy('\235\204\233\204\253','\143\169')],dx[jy('4\29\162\196\28\29\178\213','}s\209\176')][jy('\164\175\189','\202')]local function ms(...)local pg,zl,Wp;Wp,zl={},function(fB,zw,or_)Wp[fB]=Yl(or_,3037)-Yl(zw,61547)return Wp[fB]end;pg=Wp[781]or zl(781,22783,74863)while pg~=60147 do if pg>34590 then dx[jy('\181S\176\\','\194\50')](...);pg=Wp[-27689]or zl(-27689,35896,93339)continue else return end end end local Ld local fc local ul local _G local _z local cz local bH local yv local mu do local tt,Cx=dx[jy('\198\18\134\199\18\156\215','\161w\242')],dx[jy('JR','\21')];Ec(function()Cx=tt(0)end)if not(Cx==dx[jy('\a\31','X')])then else Ec(function()Cx=tt(1)end)end local function Dc(Bd)local lr;Ec(function()lr=Vt(Cx,Bd)end)if not(Bi(lr)==jy('\211h\248j\193t\249g','\181\29\150\t'))then else return lr end lr=nil;Ec(function()lr=Vt(dx[jy('X@','\a')],Bd)end)if Bi(lr)==jy('Ze\252\192Hy\253\205','<\16\146\163')then return lr end local fi,Bq,gj;fi,Bq=function(Ku,Ky,Us)Bq[Ku]=Yl(Ky,12557)-Yl(Us,24632)return Bq[Ku]end,{};gj=Bq[13682]or fi(13682,48265,17642)repeat if gj<=26802 then if gj>=12614 then if gj<=12614 then lr=nil;Ec(function()lr=(dx[jy('tl','+')])[Bd]end)if Bi(lr)==jy('\214\14\252\237\196\18\253\224','\176{\146\142')then gj=Bq[-30770]or fi(-30770,94785,45162)continue end gj=53320 else lr=nil;Ec(function()lr=(Cx)[Bd]end)if not(Bi(lr)==jy('\164\161\230\234\182\189\231\231','\194\212\136\137'))then gj=Bq[2889]or fi(2889,59004,50707)continue else gj=Bq[-29697]or fi(-29697,21123,14283)continue end gj=Bq[27569]or fi(27569,49043,15712)end else return lr end elseif gj<=29434 then return lr else return nil end until gj==57433 end local function CB(ru)local Jj;Ec(function()Jj=Vt(Cx,ru)end)if not(Bi(Jj)==jy('\179\181\165\184\162','\199\212'))then else return Jj end Jj=nil;Ec(function()Jj=Vt(dx[jy('\183\175','\232')],ru)end)if Bi(Jj)==jy('\249\49\239<\232','\141P')then return Jj end local fk,_e,Fl;_e,fk=function(po,Iq,dh)fk[po]=Yl(Iq,15433)-Yl(dh,13973)return fk[po]end,{};Fl=fk[-18572]or _e(-18572,42161,23390)while Fl~=6899 do if Fl<24175 then if Fl>11053 then Jj=nil;Ec(function()Jj=(dx[jy('\190\166','\225')])[ru]end)if not(Bi(Jj)==jy('\213Y\195T\196','\161\56'))then Fl=fk[23139]or _e(23139,59540,16635)continue else Fl=fk[28166]or _e(28166,32939,29310)continue end Fl=24175 else Jj=nil;Ec(function()Jj=(Cx)[ru]end)if Bi(Jj)==jy('\129\132\151\137\144','\245\229')then Fl=fk[13937]or _e(13937,71394,18496)continue end Fl=13140 end elseif Fl<=30711 then if Fl<=24175 then return nil else return Jj end else return Jj end end end local function HD(Tu,sm)if not(Bi(Tu)~=jy('\3g\21j\18','w\6'))then else return nil end local Dh;Ec(function()Dh=Vt(Tu,sm)end)if not(Bi(Dh)==jy('k\248w\223y\228v\210','\r\141\25\188'))then else return Dh end local aC,Co,g;Co,aC={},function(Oj,If,lf)Co[lf]=Yl(If,24754)-Yl(Oj,40641)return Co[lf]end;g=Co[2791]or aC(24368,44962,2791)repeat if g>=20935 then if g<=20935 then return Dh else return nil end else Dh=nil;Ec(function()Dh=(Tu)[sm]end)if Bi(Dh)==jy('\147\50\178X\129.\179U','\245G\220;')then g=Co[-20303]or aC(23418,96048,-20303)continue end g=39348 end until g==55581 end local tj,En,ba,dy,Hu,Yg,wn,Dp,Oe,cp,HF,Cv,bq=qh(119,114,105,116,101,102,105,108,101),qh(114,101,97,100,102,105,108,101),qh(105,115,102,105,108,101),qh(105,115,102,111,108,100,101,114),qh(109,97,107,101,102,111,108,100,101,114),qh(108,105,115,116,102,105,108,101,115),qh(100,101,108,102,105,108,101),qh(103,101,116,104,117,105),qh(112,114,111,116,101,99,116,95,103,117,105),qh(112,114,111,116,101,99,116,103,117,105),qh(115,121,110),qh(102,108,117,120,117,115),qh(102,105,108,101,115,121,115,116,101,109);Ld=Dc(tj);fc=Dc(En);ul=Dc(ba);_G=Dc(dy);_z=Dc(Hu);cz=Dc(Yg);bH=Dc(wn);yv=Dc(Dp)local nn=CB(bq)if nn then local jA,Iy,rE;Iy,rE=function(oB,Vu,Sq)rE[Vu]=Yl(oB,18460)-Yl(Sq,36796)return rE[Vu]end,{};jA=rE[25724]or Iy(66289,25724,27152)while jA~=12164 do if jA>18800 then if jA<=34494 then if jA>31436 then Ld,jA=HD(nn,tj),rE[26621]or Iy(32918,26621,15226)elseif jA>=25921 then if jA>25921 then fc,jA=HD(nn,En),rE[1854]or Iy(65153,1854,65441)else if not Ld then jA=rE[-10736]or Iy(41569,-10736,60419)continue end jA=5060 end else bH,jA=HD(nn,wn),rE[-13499]or Iy(39400,-13499,20211)end elseif jA>51181 then jA,ul=rE[14995]or Iy(84818,14995,13666),HD(nn,ba)elseif jA>38042 then cz,jA=HD(nn,Yg),rE[13994]or Iy(86599,13994,22335)else _G,jA=HD(nn,dy),rE[14146]or Iy(50261,14146,52581)end elseif jA<17823 then if jA<=6611 then if jA<5060 then jA=rE[-15383]or Iy(47867,-15383,19679)continue elseif jA<=5060 then if not(not fc)then jA=rE[-19979]or Iy(61563,-19979,65115)continue else jA=rE[31894]or Iy(37423,31894,53467)continue end jA=rE[9221]or Iy(94004,9221,28436)else _z,jA=HD(nn,Hu),rE[2828]or Iy(33002,2828,3307)end else if not(not bH)then jA=rE[-24471]or Iy(16078,-24471,59793)continue else jA=rE[17766]or Iy(64587,17766,57202)continue end jA=4261 end elseif jA<18544 then if jA>17823 then if not ul then jA=rE[13824]or Iy(126888,13824,17501)continue end jA=rE[18117]or Iy(87577,18117,23081)else if not cz then jA=rE[19005]or Iy(33477,19005,36176)continue end jA=rE[28445]or Iy(85273,28445,19601)end elseif jA>18544 then if not(not _z)then jA=rE[18029]or Iy(33545,18029,2762)continue else jA=rE[-8788]or Iy(42672,-8788,23397)continue end jA=17823 else if not _G then jA=rE[-28005]or Iy(86585,-28005,2615)continue end jA=rE[21427]or Iy(57030,21427,49878)end end end local hr,_j={},Dc(Oe)or Dc(cp)local GD,_F,Vo,Jn,QC,Ab;Ab,Vo={},function(rd,rw,Am)Ab[rd]=Yl(Am,59170)-Yl(rw,51108)return Ab[rd]end;QC=Ab[-28036]or Vo(-28036,49630,23566)while QC~=12150 do if QC>32961 then if QC>=46258 then if QC>=58781 then if QC>58781 then Jn=CB(HF)if not(Jn)then QC=Ab[26530]or Vo(26530,58854,55778)continue else QC=Ab[-12994]or Vo(-12994,9962,99629)continue end QC=7294 else mu,QC=function(Pb)for en_=199,(#hr)+198 do local YG=Ec(hr[(en_-198)],Pb)if not(YG)then else if not(not Pb[jy('\253\223\4\200\208\2','\173\190v')])then else return false end local De,ih=false,false local QA,iz,hz;QA,hz=function(zu,ME,Yt)hz[Yt]=Yl(zu,23525)-Yl(ME,8156)return hz[Yt]end,{};iz=hz[12245]or QA(63816,37261,12245)repeat if iz<=30142 then if iz>5212 then return true else Ec(function()local i_,Ix,ri,LD,Tt,Dr,Lt,qp,nl;Lt,i_={},function(TA,Qg,Hd)Lt[TA]=Yl(Qg,47885)-Yl(Hd,62459)return Lt[TA]end;LD=Lt[18701]or i_(18701,31338,39163)repeat if LD<22119 then if LD>15406 then LD=Lt[-14124]or i_(-14124,10895,31013)continue elseif LD<8994 then ri,nl,Ix=qp[jy('G\r@l7[','\24R)')](ri);LD=Lt[9840]or i_(9840,23748,55236)elseif LD<=8994 then De,LD=true,17566 continue else if not(Dr==Pb)then LD=Lt[-20665]or i_(-20665,26176,59960)continue else LD=Lt[26272]or i_(26272,111744,8080)continue end LD=Lt[-16465]or i_(-16465,128812,31596)end elseif LD<=41204 then if LD>=34905 then if LD>34905 then qp=Ia(ri)if not(qp~=nil and qp[jy("\188\'\197\151\29\222",'\227x\172')]~=nil)then LD=Lt[-13129]or i_(-13129,110872,47236)continue else LD=Lt[3334]or i_(3334,49920,37371)continue end LD=Lt[29434]or i_(29434,80099,13215)else ri,nl,Ix=Jx(ri);LD=Lt[-19386]or i_(-19386,24268,53708)end else ih=true;ri,nl,Ix=oD[jy('\16\147f\184.>\154v\137#9','W\246\18\251F')](oD)if FB(ri)~=jy('>/%\",3$/','XZKA')then LD=Lt[-17286]or i_(-17286,123131,18681)continue end LD=Lt[-8513]or i_(-8513,119013,23461)end elseif LD<=48790 then if not(FB(ri)==jy('\223t\201y\206','\171\21'))then LD=Lt[-6264]or i_(-6264,103188,38772)continue else LD=Lt[12427]or i_(12427,101409,23848)continue end LD=Lt[-14758]or i_(-14758,125183,25491)else Tt,Dr=ri(nl,Ix);Ix=Tt if Ix==nil then LD=Lt[-2816]or i_(-2816,101818,482)else LD=Lt[7099]or i_(7099,50501,45537)end end until LD==1700 end)if not(ih and not De)then iz=hz[11881]or QA(77195,37967,11881)continue else iz=hz[-10283]or QA(57415,23096,-10283)continue end iz=hz[11947]or QA(93459,21447,11947)end else iz=hz[-15641]or QA(2771,14065,-15641)continue end until iz==10249 end end return false end,Ab[-28510]or Vo(-28510,30151,114302)end else if _j then QC=Ab[11989]or Vo(11989,20607,9315)continue end QC=Ab[-26687]or Vo(-26687,12706,66159)end elseif QC>42745 then if not(#hr>0)then QC=Ab[19609]or Vo(19609,63399,12766)continue else QC=Ab[29400]or Vo(29400,5166,89605)continue end QC=42745 else QC=Ab[18250]or Vo(18250,27934,15634)continue end elseif QC>25719 then if QC>29040 then _F=HD(Jn,Oe)if _F then QC=Ab[20510]or Vo(20510,31715,129563)continue end QC=Ab[2462]or Vo(2462,29060,13756)else Hq(hr,GD);QC=Ab[-21628]or Vo(-21628,14969,85607)end elseif QC>24818 then GD=HD(_F,Oe)if GD then QC=Ab[-8638]or Vo(-8638,64920,19598)continue end QC=Ab[16889]or Vo(16889,44023,127129)elseif QC>=11110 then if QC<=11110 then Hq(hr,_j);QC=Ab[30911]or Vo(30911,48876,102317)else Hq(hr,_F);QC=Ab[26620]or Vo(26620,3116,3876)end else _F=CB(Cv)if not(_F)then QC=Ab[-969]or Vo(-969,4360,91446)continue else QC=Ab[-9439]or Vo(-9439,36436,18757)continue end QC=Ab[-7017]or Vo(-7017,40113,123231)end end end local qv=Ld~=nil and fc~=nil local function ez()local vv,RB,pt,_w,wf;wf,_w={},function(Ua,cv,Ax)wf[cv]=Yl(Ax,2614)-Yl(Ua,55379)return wf[cv]end;RB=wf[-28094]or _w(10134,-28094,121704)repeat if RB<=50220 then if RB<23264 then if RB<=9954 then pt,vv=Ec(yv)if not(pt and th_(vv)==jy('|(\96\219T(p\202','5F\19\175'))then RB=wf[-23200]or _w(39064,-23200,73758)continue else RB=wf[8719]or _w(39823,8719,33264)continue end RB=wf[-13824]or _w(29163,-13824,104739)else return vv,true end elseif RB>23264 then return oD,false else pt=Rw and Rw[jy('\190\31A\178\188?N\127\203&\144\31C\178\181\48\127\96\222\22\139','\248v/\214\250V<\f\191e')](Rw,jy('\0\3\205;5\29\235\55\57','Po\172B'))if pt then RB=wf[-13862]or _w(35819,-13862,79825)continue end RB=wf[-25103]or _w(62970,-25103,64483)end elseif RB<=59741 then if RB>53657 then if fj[jy('\201\245iz\238\232Ra\231','\128\134;\15')](fj)and not fj[jy('\254\51Ok\194$up','\183@\28\31')](fj)then RB=wf[-26995]or _w(34364,-26995,45945)continue end RB=50220 else if yv then RB=wf[8677]or _w(4473,8677,64058)continue end RB=wf[-26731]or _w(29481,-26731,106209)end else return pt,false end until RB==29394 end local function qi(hk)local gg,Ne,zv;gg,Ne=function(Ri,zc,wz)Ne[Ri]=Yl(zc,24602)-Yl(wz,23404)return Ne[Ri]end,{};zv=Ne[25745]or gg(25745,83522,50710)repeat if zv>15303 then if mu then zv=Ne[18017]or gg(18017,52786,10509)continue end zv=Ne[2460]or gg(2460,22963,22494)elseif zv<=11511 then return false else return mu(hk)end until zv==7080 end local xy,lm={'','','',jy("N\'i8m",'\bU'),jy('U\r\168\144w\v\168\129d','\22b\198\228'),jy('\213\207\57\249\201\50\234','\152\174W'),jy('eA[EY','5 '),jy('\216$\235:','\142M'),jy('{_\163ud\"HK\163Xn>','<*\202\54\vL'),jy('L73J\153j\252_*2H\149\96\237}','\15X]>\252\4\136'),jy('\5\17\235G\193\243\3\21\247D\193\245','Wt\133#\164\129'),jy('\209Al\174\48\243\240\246[}\178*\213\237','\152/\28\219D\176\159'),jy('+.\128\194\211\20\5\157\222\203','xM\242\173\191'),jy('\"\52\207&\231;\217%4\197$\251*\217','vQ\183R\146I\188'),jy('1>\218\234Q\160\211?0\218\255S\171\213','rQ\180\158\52\206\167'),jy('\2m\194\188\25k\195\174\56','T\4\167\203'),jy('*\227P\169\227\4\236}\180\252\17','e\149\53\219\143')},dx[jy('kI\208]G\211','9(\190')][jy('6=/','X')]()local function Zt()return xy[lm[jy('\226\181s\171\192\194\164n\184\236\222','\172\208\v\223\137')](lm,1,#xy)]end local qw={};qw[jy('Z\"rk\25~}','\5}\27')]=qw;qw[jy("\'\165\198\252\198\25\142\202\251\222\29",'x\250\171\153\178')]=jy('C\238\232D\228\239','/\129\139')local function HE(uC)local Pd,at,eD,Bp,dd;at,Bp=function(fm,Uq,NF)Bp[fm]=Yl(NF,25823)-Yl(Uq,50101)return Bp[fm]end,{};eD=Bp[-23762]or at(-23762,47317,34056)repeat if eD<26231 then if eD>20184 then if eD<=25643 then eD=Bp[-4898]or at(-4898,6936,81546)continue else ms(jy('\218\214\b\236\196\237\132\163\204\226(\196\141\233\183\185','\129\131A\160\173\143\217\131'),dd);eD=Bp[29956]or at(29956,44479,46826)end elseif eD<18720 then if eD>1804 then Pd,dd=Ec(uC[jy('\155\96DK\243\177gRK\232','\223\t\55(\156')],uC)if not(not Pd)then eD=Bp[-12179]or at(-12179,41097,41912)continue else eD=Bp[4641]or at(4641,63108,50918)continue end eD=Bp[-3574]or at(-3574,59704,60007)else Pd,dd=Ec(uC[jy('ww\215G\96\203J','3\18\164')],uC)if not(not Pd)then eD=Bp[18669]or at(18669,56107,6166)continue else eD=Bp[2169]or at(2169,32628,81537)continue end eD=Bp[9138]or at(9138,23862,91761)end elseif eD>18720 then if th_(uC)==jy('7*\30\245#\185I\3\24&\a(\200%\168T\26\3\v','ehF\166@\203 sl')then eD=Bp[-19550]or at(-19550,34360,84420)continue elseif th_(uC)==jy('/\139\224\204\a\139\240\221','f\229\147\184')then eD=Bp[21393]or at(21393,13525,70120)continue elseif Bi(uC)==jy('D\253R\240U','0\156')then eD=Bp[20770]or at(20770,20005,91335)continue end eD=Bp[26804]or at(26804,36798,54505)else if not(uC[jy('j\167\164\1\210@\160\178\1\201','.\206\215b\189')])then eD=Bp[14642]or at(14642,58623,61354)continue else eD=Bp[-15798]or at(-15798,20026,54438)continue end eD=Bp[5840]or at(5840,56954,58661)end elseif eD>32215 then if eD<=52800 then if eD>40349 then Pd,dd=Ec(uC)if not Pd then eD=Bp[-13292]or at(-13292,39055,42022)continue end eD=Bp[-25627]or at(-25627,49395,942)else ms(jy('\189\135\150\148\214E\202\159]\192\143\182\255\156\218T\227\205\127\216\220',"\230\210\223\216\191\'\151\191\16\161"),dd);eD=Bp[2548]or at(2548,42936,44263)end else(uC)[jy('4\143\52\164\53\30\136\"\164.','p\230G\199Z')]((uC));eD=Bp[-21352]or at(-21352,3203,87998)end elseif eD<=29320 then if eD>27912 then if not(uC[jy('yR\133IE\153D','=7\246')])then eD=Bp[12548]or at(12548,29060,40846)continue else eD=Bp[8386]or at(8386,52054,27440)continue end eD=Bp[-31437]or at(-31437,33512,49495)elseif eD>26231 then ms(jy('6M\208\3\208\228aP\175\228qzM\\\240<\218\233R\30\135\230l$','m\24\153O\185\134<p\226\133\24\30'),dd);eD=Bp[1758]or at(1758,19467,38710)else if not(Bi(uC)==jy('w\30\254xe\2\255u','\17k\144\27'))then eD=Bp[31990]or at(31990,33066,62888)continue else eD=Bp[8406]or at(8406,34219,94337)continue end eD=Bp[-9796]or at(-9796,30504,97303)end else(uC)[jy('uY\176EN\172H','1<\195')]((uC));eD=Bp[23134]or at(23134,26538,93333)end until eD==33192 end local function ga()return _p({[jy('\214\193t\250\222f','\137\181\21')]={},[jy('\168\220\234l\235\133\215\246z\251','\247\184\143\31\159')]=false},qw)end qw[jy('\v..','J')]=function(Xa,Ym)local wq,Vr,SF;SF,wq={},function(Hp,JF,Sn)SF[Hp]=Yl(JF,20036)-Yl(Sn,43540)return SF[Hp]end;Vr=SF[11243]or wq(11243,35932,56665)while Vr~=64821 do if Vr>=25480 then if Vr<=25480 then HE(Ym)return Ym else Hq(Xa[jy('\128\212\184\172\203\170','\223\160\217')],Ym)return Ym end else if not(Xa[jy('\197t\209\244J\232\127\205\226Z','\154\16\180\135>')])then Vr=SF[15544]or wq(15544,47105,34051)continue else Vr=SF[25633]or wq(25633,69524,29788)continue end Vr=SF[16667]or wq(16667,34175,44569)end end end;qw[jy('\201fw\244u\127','\155\3\26')]=function(tr_,UC)local nu,cr,Dx,aD;aD,nu=function(_k,mb,ld)nu[_k]=Yl(ld,37483)-Yl(mb,4692)return nu[_k]end,{};cr=nu[19181]or aD(19181,65277,129801)while cr~=64403 do if cr<=31929 then if cr>25805 then Dx=VD(tr_[jy('\200I\193\228V\211','\151=\160')],UC)if Dx then cr=nu[-23447]or aD(-23447,56387,128782)continue end cr=nu[-12354]or aD(-12354,36485,103413)else cr=nu[-23435]or aD(-23435,1847,98973)continue end else Wg(tr_[jy('}\149\223Q\138\205','\"\225\190')],Dx);cr=nu[-2907]or aD(-2907,28238,29324)end end end;qw[jy('\177\166\151\171\156','\242\202')]=function(yn)local KF,pq,Ns,mz,xc,UD,Sk,YC;mz,Sk={},function(Xg,Wo,bE)mz[Wo]=Yl(Xg,10308)-Yl(bE,65051)return mz[Wo]end;YC=mz[-32675]or Sk(38338,-32675,52557)while YC~=59039 do if YC>35376 then if YC>39597 then if(Ns>=0 and xc>UD)or((Ns<0 or Ns~=Ns)and xc<UD)then YC=32564 else YC=6343 end else xc=xc+Ns;KF=xc if xc~=xc then YC=32564 else YC=mz[-19997]or Sk(50238,-19997,65454)end end elseif YC<32564 then if YC>6343 then KF=xc if UD~=UD then YC=mz[25443]or Sk(76359,25443,31956)else YC=mz[26639]or Sk(112633,26639,19171)end else HE(pq[KF]);YC=mz[5746]or Sk(60580,5746,54312)end elseif YC>32564 then pq=yn[jy('\211\165]\255\186O','\140\209<')];yn[jy('\22\25q:\6c','Im\16')]={};xc,Ns,UD,YC=#pq,-1,1,mz[-3647]or Sk(96851,-3647,10748)else YC=mz[29515]or Sk(114502,29515,20088)continue end end end;qw[jy('\237\183~\221\160b\208','\169\210\r')]=function(JD)local tb,Hr,Cz;Cz,tb={},function(kb,wC,_d)Cz[kb]=Yl(_d,43356)-Yl(wC,17492)return Cz[kb]end;Hr=Cz[-14938]or tb(-14938,51808,112589)repeat if Hr<=36957 then if Hr<=28847 then return else if JD[jy('\2\129\235\3</\138\247\21,',']\229\142pH')]then Hr=Cz[4314]or tb(4314,50896,23151)continue end Hr=49628 end else JD[jy('\2X\n\250\149/S\22\236\133',']<o\137\225')]=true;JD[jy('?\18\25\31\18','|~')](JD);Hr=Cz[-27991]or tb(-27991,52455,122886)continue end until Hr==49319 end local function Iv(dj,Ds)local Wx,Bf,Zh,Rn,Io,ia,tE,a_,Ef,AA,oe;tE,Io=function(B,D,mF)Io[B]=Yl(D,39827)-Yl(mF,32949)return Io[B]end,{};Rn=Io[8401]or tE(8401,21518,18264)while Rn~=15290 do if Rn<23063 then if Rn>=14364 then if Rn<=16832 then if Rn<=14364 then if not(FB(Ef)==jy('\251\15\237\2\234','\143n'))then Rn=Io[-25504]or tE(-25504,22158,62387)continue else Rn=Io[-10530]or tE(-10530,75533,29999)continue end Rn=Io[-26621]or tE(-26621,11563,56340)else Bf=Ia(Ef)if not(Bf~=nil and Bf[jy('K\133\130\96\191\153','\20\218\235')]~=nil)then Rn=Io[19268]or tE(19268,60111,47605)continue else Rn=Io[-11064]or tE(-11064,77988,26112)continue end Rn=Io[-9645]or tE(-9645,106458,10887)end else ia[jy('\27\221\232.\210\238','K\188\154')],Rn=Wx,Io[212]or tE(212,76385,28713)end elseif Rn>697 then ia,Wx=lB(dj),Ds[jy('t6\247A9\241','$W\133')];Ds[jy('\133!\242\176.\244','\213@\128')]=nil;Ef,oe,AA=Ds if not(FB(Ef)~=jy('LO\187\217^S\186\212','*:\213\186'))then Rn=Io[22269]or tE(22269,5457,46110)continue else Rn=Io[1730]or tE(1730,52991,37657)continue end Rn=Io[29860]or tE(29860,113316,18325)else if Wx then Rn=Io[-28030]or tE(-28030,29856,7471)continue end Rn=Io[-331]or tE(-331,29818,44582)end elseif Rn>=49494 then if Rn>50306 then Ef,oe,AA=Jx(Ef);Rn=Io[4074]or tE(4074,5176,46369)elseif Rn<=49494 then return ia else Ef,oe,AA=Bf[jy('$\222\140\15\228\151','{\129\229')](Ef);Rn=Io[32370]or tE(32370,100275,17084)end elseif Rn<=23063 then a_,Zh=Ef(oe,AA);AA=a_ if AA==nil then Rn=697 else Rn=Io[24464]or tE(24464,99999,13662)end else Rn,ia[a_]=Io[20089]or tE(20089,58350,40659),Zh end end end local function ad(ra,Yx)local qE;qE=lB(jy('\140\154%\181\171\189\3\168','\217\211f\218'));qE[jy(')9V\255\228\31\56\55@\248\244\30','jV$\145\129m')]=vD(0,ra);qE[jy('\230\b\175\211\a\169','\182i\221')]=Yx return qE end local function bz(LF,rz,Jk)local _v;_v=lB(jy('\235t2?\204R\n.','\190=aK'));_v[jy('\186&\149&\139','\249I')]=LF;_v[jy('\186\31\178\157\133\25\190\141\157','\238w\219\254')]=rz or 1;_v[jy('\255\235(jT[\170\204\244\51c\96g\186\219','\190\155X\6-\b\222')]=dx[jy('\150v\166u','\211\24')][jy('\23\167\179\178\216\52\14$\184\168\187\236\b\30\51','V\215\195\222\161gz')][jy('\175[\176\137Q\176','\237\52\194')];_v[jy('K\22O~\25I','\27w=')]=Jk return _v end local function Gg(cf,_B,px,Sr,ix)local yw;yw=lB(jy('\f\251\211\159=\214\234\144>','Y\178\131\254'));yw[jy('_>\203I-a8\251B4','\15_\175-D')]=vD(0,cf);yw[jy('\217\136\25\173\152\252\238\171\18\189\133\253\228','\137\233}\201\241\146')]=vD(0,_B);yw[jy('\194\187\188\150@\252\189\148\151O\230','\146\218\216\242)')]=vD(0,px);yw[jy('\176\240\180\168\134\130\135\195\185\171\135\152','\224\145\208\204\239\236')]=vD(0,Sr);yw[jy('\193\186u\244\181s','\145\219\a')]=ix return yw end local function RG(Mg,...)local Ot,LE,ok,S,Cn;S,Ot={},function(Vl,_x,Za)S[Za]=Yl(_x,43144)-Yl(Vl,15549)return S[Za]end;ok=S[11687]or Ot(59512,75275,11687)repeat if ok>24605 then if ok>36301 then if Bi(Mg)~=jy('\131\236Q_\145\240PR','\229\153?<')then ok=S[30910]or Ot(3950,15224,30910)continue end ok=18724 else return dx[jy('[IMDJ','/(')][jy('\128\225\4\148\236\31','\245\143t')](Cn,2,Cn[jy('\129','\239')])end elseif ok>=18724 then if ok<=18724 then LE=dx[jy('\163\16\181\29\178','\215q')][jy('\29\28\14\22','m}')](...);Cn=dx[jy('\191\\\169Q\174','\203=')][jy('\143\23\156\29','\255v')](Ec(Mg,dx[jy(',\136:\133=','X\233')][jy('(\207\20<\194\15',']\161d')](LE,1,LE[jy('\222','\176')])))if not Cn[1]then ok=S[-7158]or Ot(8371,59894,-7158)continue end ok=36301 else return end else ms(jy('\28N.\241\6\132;o\16,\192\159\18\180&w\v\223\14\133\ro\0-\215\130@\237','G\27g\189o\230fOe_\165\237\50\215'),Cn[2])return end until ok==11622 end local function am(Ma)return Bi(Ma)==jy('L\182-@\166\50','\"\195@')and Ma==Ma and Ma~=VB and Ma~=-VB end local function Nf(RC)return jy(']\160i\194\246\194J\182x\199\191\158\0','/\194\17\163\133\177')..Th(RC)end local function np(Pw)return jy('\161\251\a*\152\54\166\253q\17\26\220B+\201\143\162\165\248\v?\130\v\174\254/m]\199O}\197\214\222','\211\153\127^\240C\203\159K>5\168;[\172\178\227')..Th(Pw)..jy('\173\196\223\231\153\173\219\223\231\153','\139\179\226\211\161')end local Je={[jy('\185s\165y(\137}\179|+','\251\18\198\18O')]=Zv(18,18,20),[jy('4\182G\1\162V\2','g\195\53')]=Zv(24,24,27),[jy('\253\153))i\205\137\26#|','\174\236[O\b')]=Zv(30,30,34),[jy("\'a\204\48\231$\17\\\209 \227\53",'t\20\190V\134G')]=Zv(38,38,42),[jy('\255r\183\217x\183','\189\29\197')]=Zv(45,45,50),[jy(',\195\0\210','x\166')]=Zv(230,230,232),[jy('\194\129\141\197\145\151\229','\145\244\239')]=Zv(150,150,155),[jy('\132\183\189\167\173','\201\194')]=Zv(95,95,100),[jy('\177&}\149+j','\240E\30')]=Zv(83,145,255),[jy('\230\1\129\231\201\22\166\235\202','\167b\226\130')]=Zv(58,102,179),[jy('\185rB\154v^','\253\19,')]=Zv(220,90,90),[jy("\'wN\23g^\a",'t\2-')]=Zv(120,200,130)}if tk then Ec(tk,Je)end local function WE(_u)return Bi(_u)==jy('\201\243g\211\233r','\186\135\21')and#_u>0 and#_u<=64 and not(_u)[jy('\209\156\200\158\212','\188\253')]((_u),jy('\163\f\240\128\167w\248\170','\248R\213\247'))end local jD do local function Nw()return{[jy('\18I\rT','~ ')]={},[jy('\18\1\22','d')]=0,[jy('\198\29@\213\15\193\193\28V\193\56\208\208','\162t3\165n\181')]=-1,[jy('\b\148\26\138','{\250')]=nil,[jy('\158\21\57\135\17/','\233tK')]=false}end local Ub,Ka,Xq=Nw(),Nw(),Nw()local function oq(Fo,sq,Nu,TG)local Iu,Qz,LA,Yp,ee,sr,oC,uc,PB,Sg,Mo,nf,py,fe;LA,sr=function(Pu,bx,Vj)sr[Vj]=Yl(Pu,46424)-Yl(bx,32479)return sr[Vj]end,{};uc=sr[6112]or LA(98922,7279,6112)repeat if uc>=40652 then if uc<=58435 then if uc<=52711 then if uc>49912 then Yp=Qz[(Mo-196)]if Yp then uc=sr[15476]or LA(114518,51429,15476)continue end uc=sr[-18733]or LA(120095,32830,-18733)elseif uc<=40652 then Iu=Iu+py;oC=Iu if Iu~=Iu then uc=sr[20740]or LA(128009,134,20740)else uc=2550 end else Fo[jy('.X<F',']6')]=Qz;uc,Fo[jy('\228E\238i\180\31\227D\248}\131\14\242','\128,\157\25\213k')]=sr[30160]or LA(56023,30649,30160),Fo[jy('\166\181\162','\208')]end elseif uc<=54402 then PB=Fo[jy('\171z\180g','\199\19')];Sg=#PB if not(Sg==0)then uc=sr[30647]or LA(69249,47631,30647)continue else uc=sr[21526]or LA(102928,21821,21526)continue end uc=63241 else oC=Iu if nf~=nf then uc=49912 else uc=sr[31596]or LA(1152,55613,31596)end end elseif uc<64301 then if uc<=63241 then Qz=Fo[jy('}\192o\222','\14\174')]if Qz==nil or Fo[jy('Gm\r\55i\128@l\27#^\145Q','#\4~G\b\244')]~=Fo[jy('\232\251\236','\158')]then uc=sr[-26026]or LA(58401,30096,-26026)continue end uc=sr[-15744]or LA(25145,4071,-15744)else Qz[(oC-250)],uc=PB[(oC-250)],sr[-24692]or LA(17679,12116,-24692)end elseif uc>64301 then Fo[jy('\253U\239K','\142;')]=nil;Fo[jy('\141\29S\253\189\128\138\28E\233\138\145\155','\233t \141\220\244')]=Fo[jy('\131\144\135','\245')]return else if(oC>=0 and nf>py)or((oC<0 or oC~=oC)and nf<py)then uc=18689 else uc=52711 end end elseif uc<18689 then if uc>17665 then Qz=At(Sg);py,uc,Iu,nf=1,58435,251,(Sg)+250 elseif uc<10663 then if(py>=0 and Iu>nf)or((py<0 or py~=py)and Iu<nf)then uc=sr[-6335]or LA(107060,10923,-6335)else uc=64003 end elseif uc<=10663 then Mo=nf if py~=py then uc=18689 else uc=sr[-4593]or LA(72589,52599,-4593)end else ms(jy('\239\177\v\215j0%f\128\183\96\193\144\16\244v&\29\52\233\186r\142','\180\228B\155\3RxF\201\217\16'),ee);uc=sr[-25259]or LA(12923,23394,-25259)end elseif uc<=24934 then if uc<21460 then uc=sr[-30039]or LA(3617,19698,-30039)continue elseif uc<=21460 then fe,ee=Ec(Yp[jy('\138\130','\236')],Nu,TG)if not fe then uc=sr[-13611]or LA(108280,45120,-13611)continue end uc=sr[-1315]or LA(32425,5204,-1315)else nf=nf+oC;Mo=nf if nf~=nf then uc=18689 else uc=64301 end end else Iu=#Qz;nf,oC,py,uc=197,1,(Iu)+196,sr[1132]or LA(1312,63502,1132)end until uc==35148 end local yk,vx,Wl=Ea[jy('%\22\153E\".\29\142Q8','lx\233\48V')][jy('m\162\254@\168\243Z','.\205\144')](Ea[jy('%\22\153E\".\29\142Q8','lx\233\48V')],function(bj,Mw)oq(Ub,jy('\2=\a\57\14','\96X'),bj,Mw)end),Ea[jy('\179\188\236\190\206\145\146\179\242\172\223\182','\250\210\156\203\186\210')][jy('\230\187&\203\177+\209','\165\212H')](Ea[jy('\179\188\236\190\206\145\146\179\242\172\223\182','\250\210\156\203\186\210')],function(_C,Ie)oq(Ka,jy('\152A\170\149N\174\159','\251)\203'),_C,Ie)end),Ea[jy('\226\\:\250\193\238\\.\234\209','\171\50J\143\181')][jy('\129zP\172p]\182','\194\21>')](Ea[jy('\226\\:\250\193\238\\.\234\209','\171\50J\143\181')],function(ov,Ni)oq(Xq,jy('G\26F\17F','\"t'),ov,Ni)end)local function cA(HG,cF,uf)if not(#HG[jy('\219\169\196\180','\183\192')]>=4096)then else ms(jy('\239\23@[O4V\160\127R\196\55}EI#\127\229D\28\147','\180B\t\23&V\v\128\54<')..cF..jy('\231\141\r\220;1\182\172\156B\174\133\161\221^\149=t\184\184\157O\224\129','\192\173e\181O\17\222\205\238&\142\230'))return function()end end local Ca={[jy('\183\191','\209')]=uf};Hq(HG[jy('B\150]\139','.\255')],Ca)local pC,Lj,Ep;Ep,pC={},function(sA,Dk,Hx)Ep[sA]=Yl(Dk,26682)-Yl(Hx,39257)return Ep[sA]end;Lj=Ep[32430]or pC(32430,35683,55057)while Lj~=64011 do if Lj<=6811 then if Lj<=3863 then HG[jy('?\177\183&\181\161','H\208\197')]=true;ms(hw(jy(nv'4oXRm/jNigFuRwGMTbMi3rrXdMNB8RF6CPTYo7jy9Y+kTUhdAsIZkSLfq9xyige4QjFN/dI=',nv'udCY15Gv1yEnKXH5OeFNq86yBuNm1GJdKJw='),cF,#HG[jy('9\197&\216','U\172')]));Lj=Ep[1264]or pC(1264,7230,49200)else return function()local uh,Mq,IA,Ln;uh,IA={},function(he,kD,Kn)uh[Kn]=Yl(he,55816)-Yl(kD,27704)return uh[Kn]end;Ln=uh[12585]or IA(112276,40805,12585)repeat if Ln<=36573 then if Ln<=31039 then Mq=VD(HG[jy('\206\161\209\188','\162\200')],Ca)if not(Mq)then Ln=uh[10001]or IA(18192,25091,10001)continue else Ln=uh[-15661]or IA(113662,1389,-15661)continue end Ln=uh[9029]or IA(30107,19598,9029)else Ln=uh[29017]or IA(124966,55682,29017)continue end else Wg(HG[jy('\248S\231N','\148:')],Mq);HG[jy('\133\150\129','\243')]+=1;Ln=uh[-22484]or IA(122109,5152,-22484)end until Ln==31860 end end else HG[jy('\6\21\2','p')]+=1 if not(#HG[jy('{\"d?','\23K')]>256 and not HG[jy('\188\18J\165\22\\','\203s8')])then Lj=Ep[-12874]or pC(-12874,48058,8636)continue else Lj=Ep[14665]or pC(14665,64908,8134)continue end Lj=Ep[3140]or pC(3140,15266,41380)end end end jD={[jy('\140P\26\166Y9\173','\195>X')]=function(oc)return cA(Ub,jy('WtRp[','5\17'),oc)end,[jy('\239\6cM\193\6G@\196','\160h %')]=function(_H)return cA(Ka,jy('9N\245\52A\241>','Z&\148'),_H)end,[jy('P3tq9T{','\31]1')]=function(hd)return cA(Xq,jy('\167>\166\53\166','\194P'),hd)end,[jy('\232\252\174\199\195\234\164\205','\183\152\203\180')]=function()yk[jy('l]\247\52FFZ\225\52]','(4\132W)')](yk);vx[jy('\242f\220\54K\216a\202\54P','\182\15\175U$')](vx);Wl[jy('>\228\19\"\230\20\227\5\"\253','z\141\96A\137')](Wl);Ub[jy('\6\222\25\195','j\183')]={};Ub[jy('U\159G\129','&\241')]=nil;Ka[jy('~san','\18\26')]={};Ka[jy('\149e\135{','\230\v')]=nil;Xq[jy(' Y?D','L0')]={};Xq[jy('\2\234\16\244','q\132')]=nil end}end local function fw(l_,Bb,zp)local xm,et,VE=nil,nil,nil local function fb()local ay,iy,MA;MA,ay={},function(Aa,rx,Eb)MA[Aa]=Yl(Eb,45330)-Yl(rx,41953)return MA[Aa]end;iy=MA[31598]or ay(31598,10729,26414)repeat if iy>26576 then iy=MA[-6578]or ay(-6578,30904,73230)continue elseif iy<=19508 then if not(xm)then iy=MA[19679]or ay(19679,35828,5883)continue else iy=MA[-16995]or ay(-16995,19159,122900)continue end iy=32724 else xm[jy(';\150r\v\129n\6','\127\243\1')](xm);xm,iy=nil,MA[912]or ay(912,48804,11275)end until iy==54211 end zp[jy('\253\216\216','\188')](zp,Bb[jy('6\208\"\20\189=\219\53\0\167','\127\190Ra\201')][jy('6\214,\27\220!\1','u\185B')](Bb[jy('6\208\"\20\189=\219\53\0\167','\127\190Ra\201')],function(dp)local wD,ir,ql,Ai;ql,Ai=function(Vy,yy,Qm)Ai[yy]=Yl(Vy,61809)-Yl(Qm,1712)return Ai[yy]end,{};ir=Ai[-11778]or ql(42338,-11778,278)while ir~=14285 do if ir<19565 then if ir>8682 then return else return end elseif ir<30172 then if dp[jy('\ae\222\143\153w\"c\207\169\169i7','R\22\187\253\208\25')]~=dx[jy('\133\4\181\a','\192j')][jy('\200l\3}\255g\237j\18[\207y\248','\157\31f\15\182\t')][jy('\vn\177\242\233X3u\176\238\226+','F\1\196\129\140\26')]and dp[jy('~w\f\50\245\248[q\29\20\197\230N','+\4i@\188\150')]~=dx[jy('\30\150.\149','[\248')][jy('^/4&\15\243{)%\0?\237n','\v\\QTF\157')][jy('\r\6,\n\49','Yi')]then ir=Ai[-6682]or ql(47987,-6682,11944)continue end ir=Ai[-13903]or ql(35223,-13903,1466)elseif ir>30172 then VE=dp[jy('XH\191Q|N\163V',"\b\'\204\56")];et=l_[jy('\18\54\188\240\54\48\160\247','BY\207\153')];wD=ga();xm=wD;wD[jy('Upp','\20')](wD,jD[jy('\143\210\218X\161\210\254U\164','\192\188\153\48')](function(Cj)local ml,BA,jc,Lf,dC,NA;dC,ml={},function(yD,ve,ta)dC[ta]=Yl(ve,22948)-Yl(yD,53803)return dC[ta]end;BA=dC[22042]or ml(24298,63046,22042)while BA~=35680 do if BA>17471 then return elseif BA<=8993 then if Cj[jy('?b\3Z\189\202\26d\18|\141\212\15','j\17f(\244\164')]~=dx[jy('\138T\186W','\207:')][jy('\nk\245\234\143q/m\228\204\191o:','_\24\144\152\198\31')][jy('\163\186\190\t&\180\129\163\174\23&\151\154','\238\213\203zC\249')]and Cj[jy('^a\158\138\223\22{g\143\172\239\bn','\v\18\251\248\150x')]~=dx[jy('\183\r\135\14','\242c')][jy('\31\148\27\254m\156:\146\n\216]\130/','J\231~\140$\242')][jy('\204K\237G\240','\152$')]then BA=dC[19178]or ml(7600,97025,19178)continue end BA=dC[21310]or ml(40274,51740,21310)else NA,jc=VE,et;Lf=Cj[jy('\169\225=\236\141\231!\235','\249\142N\133')]-NA;l_[jy('\255\176\171\231\219\182\183\224','\175\223\216\142')],BA=WA(jc[jy('\224','\184')][jy('\253\146\207\157\203','\174\241')],jc[jy('\236','\180')][jy('\135\240\0\187\243\18','\200\150f')]+Lf[jy('\202','\146')],jc[jy('t','-')][jy("\21#\',#",'F@')],jc[jy('\238','\183')][jy('\129]\187\189^\169','\206;\221')]+Lf[jy('X','\1')]),dC[7782]or ml(57299,49404,7782)continue end end end));wD[jy('~[[','?')](wD,jD[jy('|\239f]\229FW','3\129#')](function(Jr)local sy,cB,Ek;cB,sy=function(Nh,jH,Qf)sy[jH]=Yl(Qf,57758)-Yl(Nh,48507)return sy[jH]end,{};Ek=sy[7029]or cB(2657,7029,101925)while Ek~=10463 do if Ek<=17216 then if Ek<=9468 then fb();Ek=sy[32548]or cB(35103,32548,38458)else Ek=sy[-24426]or cB(57189,-24426,27491)continue end else if Jr[jy('\16$vl>$5\"gJ\14: ','EW\19\30wJ')]==dx[jy('I\3y\0','\fm')][jy('\179\20\208\aE>\150\18\193!u \131','\230g\181u\fP')][jy('\195\175\249\137?\16\251\180\248\149\52c','\142\192\140\250ZR')]or Jr[jy('sL\226@l\206VJ\243f\\\208C','&?\135\50%\160')]==dx[jy('\167\141\151\142','\226\227')][jy('\27\162\31PJ\184>\164\14vz\166+','N\209z\"\3\214')][jy('\236.\205\"\208','\184A')]then Ek=sy[10317]or cB(40510,10317,43487)continue end Ek=17216 end end end));ir=Ai[10635]or ql(115927,10635,64361)continue else if xm then ir=Ai[-11749]or ql(16696,-11749,34464)continue end ir=Ai[-30622]or ql(69676,-30622,60448)end end end));zp[jy('|YY','=')](zp,function()fb()end)end local function KB(w_)local UB=Iv(jy("\'v\0i\4",'a\4'),{[jy('e\26\212P\21\210','5{\166')]=w_,[jy('j\164\250\242.\167f\214F\161\218\246%\186{\144','(\197\153\153I\213\t\163')]=Je[jy('\173DU\152PD\155',"\254\49\'")],[jy('\242G\151yp\192\2\217R\128M|\202\52\220','\176(\229\29\21\178Q')]=0,[jy('i\159vV\148iZ','?\246\5')]=false,[jy('\214/\255#','\133F')]=Zi(0,0),[jy('\228[\181jMX\209G\162VIC\192','\165.\193\5 9')]=dx[jy('W/g,','\18A')][jy('\139~\253K\158!\190b\234w\154:\175','\202\v\137$\243@')][jy('\210\211','\138')],[jy('%\172\b\27\128\30','\127\229f')]=999});ad(4,UB);bz(Je[jy('\6\202\17 \192\17','D\165c')],1,UB);Gg(4,4,8,8,UB)local Kq,qt,bl=Iv(jy('\232\215\18l\240\211\b}\208','\188\178j\24'),{[jy('\23SY\"\\_','G2+')]=UB,[jy('z=ES\r#\168\189\55\193_J=HK\26\48\181\173\55\198r','8\\&8jQ\199\200Y\165\v')]=1,[jy('\243\196\218\200','\160\173')]=Zi(0,0),[jy('b(\201O\130\211W4\222s\134\200F','#]\189 \239\178')]=dx[jy('\241\242\193\241','\180\156')][jy("\3$\175\54\161n68\184\n\165u\'",'BQ\219Y\204\15')][jy('()','p')],[jy('a\174I\181',"\'\193")]=dx[jy('+G\27D','n)')][jy('\129\152\169\131','\199\247')][jy('8\t\30\23\a\a','\127fj')],[jy('1\228\221\48\54\232\223!','e\129\165D')]=11,[jy('\b\131^CM3\138IE=','\\\230&7\14')]=Je[jy('\208\1\252\16','\132d')],[jy('\17\49= ','ET')]='',[jy('\254\184\184\192\148\174','\164\241\214')]=1000}),nil,jD[jy('\231\n\165\227\201\n\129\238\204','\168d\230\139')](function(jx)local yb,hn,vE;hn,vE={},function(Iz,je,zC)hn[zC]=Yl(Iz,18633)-Yl(je,62932)return hn[zC]end;yb=hn[29697]or vE(70268,27525,29697)while yb~=36011 do if yb<48228 then if yb>24650 then if not(jx[jy('{\182I\30\51J^\176X8\3TK','.\197,lz$')]~=dx[jy('\14/>,','KA')][jy('\244\180w\212J\173\209\178f\242z\179\196','\161\199\18\166\3\195')][jy('L\25\207=U\206n\0\223#U\237u','\1v\186N0\131')])then yb=hn[12369]or vE(114947,28280,12369)continue else yb=hn[-328]or vE(120745,14571,-328)continue end yb=60958 else return end elseif yb<=53793 then if yb>48228 then return else if not UB[jy('\235\57\220\212\50\195\216','\189P\175')]then yb=hn[-22662]or vE(61196,45743,-22662)continue end yb=47469 end else yb,UB[jy('\138\219\247\5\174\221\235\2','\218\180\132l')]=hn[17137]or vE(118527,3167,17137),Zi(jx[jy('\170\227\220\211\142\229\192\212','\250\140\175\186')][jy('\167','\255')]+14,jx[jy('E\137a]a\143}Z','\21\230\18\52')][jy('@','\25')]+18)continue end end end)local function Pv(Cp,ts,J)local OD,ep,lc;OD,lc=function(VC,AC,wy)lc[AC]=Yl(wy,40741)-Yl(VC,55178)return lc[AC]end,{};ep=lc[6528]or OD(47622,6528,25685)repeat if ep<=36324 then if ep<=34543 then J[jy('kNN','*')](J,Cp[jy('\219\171C\183\51\211\170B\161$','\150\196\54\196V')][jy('\188\211A\145\217L\139','\255\188/')](Cp[jy('\219\171C\183\51\211\170B\161$','\150\196\54\196V')],function()qt=Cp;Kq[jy(',9\0(','x\\')]=ts;UB[jy("\24\140\251\'\135\228+",'N\229\136')]=true end));J[jy('Knn','\n')](J,Cp[jy('\186\206\150Pt\187\196\130Ut','\247\161\227#\17')][jy('\193\148\198\236\158\203\246','\130\251\168')](Cp[jy('\186\206\150Pt\187\196\130Ut','\247\161\227#\17')],function()local dr,rf,al;rf,dr={},function(Vn,cc,el_)rf[cc]=Yl(Vn,41252)-Yl(el_,36108)return rf[cc]end;al=rf[-28168]or dr(103888,-28168,55035)repeat if al<55549 then al=rf[-9420]or dr(60516,-9420,33280)continue elseif al>55549 then qt=nil;UB[jy('\15=\0\48\54\31<','YTs')],al=false,rf[10028]or dr(32633,10028,56888)else if not(qt==Cp)then al=rf[24865]or dr(100621,24865,4108)continue else al=rf[1991]or dr(122394,1991,1271)continue end al=35625 end until al==15924 end));ep=lc[-17957]or OD(3626,-17957,16673)continue else if not ts or ts==''then ep=lc[-26353]or OD(26538,-26353,119719)continue end ep=lc[24728]or OD(5965,24728,120979)end else return end until ep==1124 end local hy=false local Ly;Ly=function()local tv,zf,vy;tv,zf=function(PG,It,du)zf[It]=Yl(du,37492)-Yl(PG,29154)return zf[It]end,{};vy=zf[7679]or tv(48698,7679,87868)repeat if vy>=15338 then if vy>62832 then vy=zf[-31156]or tv(43374,-31156,112538)continue elseif vy>15338 then if not(hy)then vy=zf[-21426]or tv(61743,-21426,2563)continue else vy=zf[32226]or tv(58297,32226,23601)continue end vy=6058 else return end elseif vy<=6058 then hy=true;bl()if not(UB[jy('\206\1h\251\14n','\158\96\26')])then vy=zf[18316]or tv(49919,18316,80023)continue else vy=zf[-2335]or tv(43560,-2335,25674)continue end vy=63430 else UB[jy('\1j\202\49}\214<','E\15\185')](UB);vy=zf[14048]or tv(57324,14048,79776)end until vy==19810 end return{[jy('\209\228\56\241\243$','\144\144L')]=Pv,[jy(')\171\26\25\188\6\20','m\206i')]=Ly}end local function Bo(Rh)local Gl=Iv(jy('\169\148\142\139\138','\239\230'),{[jy('Q\247\248d\248\254','\1\150\138')]=Rh,[jy('\29\128\25u\235.\190\21t\234(','\\\238z\29\132')]=EG(1,1),[jy('K\221\234\173o\219\246\170','\27\178\153\196')]=WA(1,-16,1,-16),[jy('tC]O',"\'*")]=Zi(280,0),[jy('.\154\247\224\138B\248\190\143\246n\30\154\250\248\157Q\229\174\143\241C','l\251\148\139\237\48\151\203\225\146:')]=1,[jy('Hz\\]$\201}fKa \210l','\t\15(2I\168')]=dx[jy('\130O\178L','\199!')][jy('\159L\164\23\130D\170P\179+\134_\187','\222\57\208x\239%')][jy('\136','\209')],[jy('\6f\234\56J\252','\\/\132')]=800});Iv(jy('\247[\193\22\57.\238s\244\16?.','\162\18\141\127JZ'),{[jy('\129@C\180OE','\209!1')]=Gl,[jy('\156#\252\163\196\\\168/\243\187\233Z\180','\218J\144\207\128\53')]=dx[jy('f\202V\201','#\164')][jy('\148\22\165\232$\253\160\26\170\240\t\251\188','\210\127\201\132\96\148')][jy('\232[\165\248\215]\182\224','\190>\215\140')],[jy('\21\48\v\217t\207\212\183\234\49\30\21\217i\206\215\166\229)',']_y\176\14\160\186\195\139')]=dx[jy('\17\226!\225','T\140')][jy('\230\190\240\182\236\241\157\245K\194\144\238\182\241\240\158\228D\218','\174\209\130\223\150\158\243\129*')][jy('\137\236\188\237\175','\219\133')],[jy('\96\241\239\24\196\131\234iw\248\244\v\195\141\238kB','6\148\157l\173\224\139\5')]=dx[jy('\\\176l\179','\25\222')][jy('P\0A\206\139\159\n\28G\tZ\221\140\145\14\30r','\6e3\186\226\252kp')][jy('\254n\181\200n\172','\188\1\193')],[jy('T\190\222\96\182\212c','\4\223\186')]=vD(0,8),[jy('\201\246\19\129\213\235\5\144\232','\154\153a\245')]=dx[jy('\162\135\146\132','\231\233')][jy('A\187\169\239]\166\191\254\96','\18\212\219\155')][jy('B\31d\141bz1o\134r|','\14~\29\226\23')]})local Hv,zh,Tk={},0,false local function TB(iG)local Ji,C,Vc;C,Ji=function(Go,mh,Ta)Ji[Ta]=Yl(mh,43839)-Yl(Go,65127)return Ji[Ta]end,{};Vc=Ji[27538]or C(6584,123308,27538)repeat if Vc<32620 then if Vc>21960 then if iG==jy('Wa\146gq\130w','\4\20\241')then Vc=Ji[-30567]or C(22355,68494,-30567)continue elseif not(iG==jy('\176\31Q\147\27M','\244~?'))then Vc=Ji[-32404]or C(63694,58826,-32404)continue else Vc=Ji[-28099]or C(60595,50083,-28099)continue end Vc=60782 elseif Vc>18508 then return Je[jy('\129\16>\162\20\"','\197qP')]else if iG==jy('\230\226\205\223\234\209\214','\177\131\191')then Vc=Ji[-27534]or C(49526,5442,-27534)continue end Vc=Ji[-5938]or C(7610,96884,-5938)end elseif Vc<60782 then return Je[jy('>\b\220\29\f\192','zi\178')]elseif Vc<=60782 then return Je[jy('~]ZZQJ}VR','?>9?')]else return Je[jy('l\18\213\\\2\197L','?g\182')]end until Vc==32065 end local function JC(Me)if not(Tk)then else return end while#Hv>=6 do local Mv,bw,Si,Mh;Mv,bw=function(ph,aG,tG)bw[aG]=Yl(tG,57719)-Yl(ph,44168)return bw[aG]end,{};Si=bw[12447]or Mv(44385,12447,26090)while Si~=43996 do if Si>4295 then Mh=Hv[1];Wg(Hv,1)if Mh and Mh[jy('\220\170\218\233\165\220','\140\203\168')]then Si=bw[-22090]or Mv(27231,-22090,10539)continue end Si=4295 elseif Si>389 then Si=bw[15359]or Mv(50456,15359,128027)continue else Mh[jy('\27\163\48+\180,&','_\198C')](Mh);Si=bw[28968]or Mv(32736,28968,1368)end end end local kj=Me[jy('\228\212I9\212\200T6','\160\161;X')]or 3 if not(not am(kj)or kj<=0)then else kj=3 end local JA,kx,lo_=Me[jy('\139\207\171\202\186','\223\166')]or jy('\205\177\28\185\19\149\224\191\28\185\26\146','\131\222h\208u\252'),Me[jy('(\n\16\31\0\16\31','ke~')]or'',Iv(jy('\232\215\207\200\203','\174\165'),{[jy('/~A\26qG','\127\31\51')]=Gl,[jy('\185\168\242\202\178\20\196T\149\173\210\206\185\t\217\18','\251\201\145\161\213f\171!')]=Je[jy('\161\\v\148Hg\151','\242)\4')],[jy('n\208G\220','=\185')]=WA(1,0,0,0),[jy('\14\135\234\227g(;\155\253\223c3*','O\242\158\140\nI')]=dx[jy('\20\4$\a','Qj')][jy('\208\1\138\221\254p\229\29\157\225\250k\244','\145t\254\178\147\17')][jy('\205','\148')],[jy('_\134\134}z\191Zt\147\145Iv\181lq','\29\233\244\25\31\205\t')]=0,[jy('t\251\196J\215\210','.\178\170')]=800});ad(6,lo_)local c=bz(TB(Me[jy('s0\96L0|Q','%Q\18')]),1,lo_);c[jy('ne\249Q\154\224[e\253Q\138\233',':\23\152?\233\144')]=0.55000000000000004;Iv(jy('\21_\174\207\r[\180\222-','A:\214\187'),{[jy('Y\247\198l\248\192','\t\150\180')]=lo_,[jy('X\237\174\133h\131\195\170\248\204Lh\237\163\157\127\144\222\186\248\203a','\26\140\205\238\15\241\172\223\150\168\24')]=1,[jy('\200=r\143\236;n\136','\152R\1\230')]=WA(0,12,0,8),[jy('\255\188\214\176','\172\213')]=WA(1,-24,0,16),[jy('\1\21)\14','Gz')]=dx[jy('\\ulv','\25\27')][jy('\1A)Z','G.')][jy('\158 ?-\229\137\148*/,\241\137','\217OKE\132\228')],[jy('<\142d\28;\130f\r','h\235\28h')]=13,[jy('h\t\144$6S\0\135\"F','<l\232Pu')]=Je[jy('X\253t\236','\f\152')],[jy('n\154\30B\207\23\212S\152\b[\242\56\204',':\255f6\151V\184')]=dx[jy('\229=\213>','\160S')][jy('\142J\15\224\56\187\204\179H\25\249\5\148\212','\218/w\148\96\250\160')][jy('\27\56\49)','W]')],[jy('J/f>','\30J')]=JA,[jy('oL\170Q\96\188','5\5\196')]=801});Iv(jy('\217\150\164\55\193\146\190&\225','\141\243\220C'),{[jy('\139\223\2\190\208\4','\219\190p')]=lo_,[jy('\203\139\57N\160\193\140\165\231\134\229\251\139\52V\183\210\145\181\231\129\200','\137\234Z%\199\179\227\208\137\226\177')]=1,[jy('5\254\148\241\17\248\136\246','e\145\231\152')]=WA(0,12,0,28),[jy('\131K\170G','\208\"')]=WA(1,-24,0,0),[jy('S\250\169\250Ptf\230\190\198Tow','\18\143\221\149=\21')]=dx[jy('\26#* ','_M')][jy('!e\162Y\142\254\20y\181e\138\229\5','\96\16\214\54\227\159')][jy('\223','\134')],[jy('\218\31\242\4','\156p')]=dx[jy('\19/#,','VA')][jy('.\30\6\5','hq')][jy('\139a\249\164o\224','\204\14\141')],[jy('\177c\156\215\182o\158\198','\229\6\228\163')]=12,[jy('\180\224\28\251j\143\233\v\253\26','\224\133d\143)')]=Je[jy('\173*\244\170:\238\138','\254_\150')],[jy('bfN\175+\29x_dX\182\22\50\96','6\3\54\219s\\\20')]=dx[jy('#\30\19\29','fp')][jy('h\29U\133\57\183cU\31C\156\4\152{','<x-\241a\246\15')][jy('\146\187\184\170','\222\222')],[jy('\138\190\166\175','\222\219')]=kx,[jy('[\205L\216\237}\201D\220\223k','\15\168\52\172\186')]=true,[jy('\213=\4\235\17\18','\143tj')]=801});Iv(jy('\2\96\195\171\51M\250\164\48','W)\147\202'),{[jy('\193Wq\244Xw','\145\54\3')]=lo_,[jy('\21Ft!U\27\"e\127\49H\26(',"E\'\16E<u")]=vD(0,10)});Hq(Hv,lo_)local Il=zh;sv(kj,function()local DC,As,Rr,Bh;Bh,DC={},function(go,Kz,eE)Bh[eE]=Yl(go,3830)-Yl(Kz,177)return Bh[eE]end;As=Bh[19127]or DC(32779,34600,19127)while As~=60040 do if As>=27825 then if As>38650 then if As>42054 then lo_[jy('bx\241Ro\237_','&\29\130')](lo_);As=Bh[-8771]or DC(116428,56579,-8771)continue else Wg(Hv,Rr);As=Bh[-16637]or DC(102967,43922,-16637)end elseif As<=36866 then if As<=27825 then if not lo_[jy('\30\244o+\251i','N\149\29')]then As=Bh[16002]or DC(71372,33265,16002)continue end As=Bh[27095]or DC(67481,31196,27095)else Rr=VD(Hv,lo_)if not(Rr)then As=Bh[-23285]or DC(81180,17149,-23285)continue else As=Bh[-16865]or DC(85783,40234,-16865)continue end As=Bh[-20986]or DC(63493,1508,-20986)end else Rr=VD(Hv,lo_)if Rr then As=Bh[-31297]or DC(62607,41578,-31297)continue end As=Bh[25614]or DC(60076,36977,25614)end elseif As>=21402 then if As<=21402 then return else Wg(Hv,Rr);As=Bh[-25504]or DC(49737,31124,-25504)end elseif As<=1892 then if Tk or Il~=zh then As=Bh[-17992]or DC(67726,50925,-17992)continue end As=Bh[30808]or DC(48363,17885,30808)else return end end end)end local vB;vB=function()local AF,xa,rB,Ov,Vb,rq,b_,Uv,Jh;Uv,rB=function(ck,lG,BG)rB[BG]=Yl(ck,53282)-Yl(lG,33510)return rB[BG]end,{};b_=rB[30622]or Uv(108267,5247,30622)while b_~=29540 do if b_>=42446 then if b_>54206 then if b_>63359 then Hv={}if Gl[jy('\220\53\130\233:\132','\140T\240')]then b_=rB[8566]or Uv(79386,27743,8566)continue end b_=24323 elseif b_<=57392 then if Tk then b_=rB[-3604]or Uv(122107,22444,-3604)continue end b_=31900 else Gl[jy('\255\174]\207\185A\194','\187\203.')](Gl);b_=rB[24965]or Uv(15691,3200,24965)end elseif b_>44785 then xa=Ia(Jh)if not(xa~=nil and xa[jy('\157?\155\182\5\128','\194\96\242')]~=nil)then b_=rB[-27915]or Uv(83367,27985,-27915)continue else b_=rB[12143]or Uv(101096,13213,12143)continue end b_=rB[-25445]or Uv(115032,19353,-25445)elseif b_>=43343 then if b_<=43343 then Jh,Vb,Ov=xa[jy('\143\210(\164\232\51','\208\141A')](Jh);b_=rB[23295]or Uv(19067,53432,23295)else rq[jy('\249\134t\201\145h\196','\189\227\a')](rq);b_=rB[17199]or Uv(8515,11136,17199)end else if FB(Jh)==jy('\24\198\14\203\t','l\167')then b_=rB[28114]or Uv(30150,50986,28114)continue end b_=rB[-14391]or Uv(121231,17236,-14391)end elseif b_<=24600 then if b_>=24323 then if b_<=24323 then b_=rB[11332]or Uv(9572,772,11332)continue else Jh,Vb,Ov=Jx(Jh);b_=rB[-10033]or Uv(102508,31413,-10033)end elseif b_>14223 then AF,rq=Jh(Vb,Ov);Ov=AF if Ov==nil then b_=65490 else b_=rB[-28543]or Uv(32336,39473,-28543)end else return end elseif b_>31900 then if not(rq[jy('/\31\170\26\16\172','\127~\216')])then b_=rB[25121]or Uv(127685,22538,25121)continue else b_=rB[-29442]or Uv(4663,37314,-29442)continue end b_=rB[-27475]or Uv(42600,44201,-27475)else Tk=true;zh+=1;Jh,Vb,Ov=Hv if not(FB(Jh)~=jy('Hd\18\29Zx\19\16','.\17|~'))then b_=rB[23730]or Uv(129707,24680,23730)continue else b_=rB[30896]or Uv(11907,43013,30896)continue end b_=rB[8616]or Uv(34450,35923,8616)end end end return{[jy('\197k\230v','\149\30')]=JC,[jy('Wy*gn6j','\19\28Y')]=vB}end local ie,nE={},{};nE[jy('\141om\188Ta\170','\210\48\4')]=nE;nE[jy('\150\134\3\213\236\168\173\15\210\244\172','\201\217n\176\152')]=jy('\a\197m\0\207j','k\170\14')local Xi={};Xi[jy('V]\199gf\203q','\t\2\174')]=Xi;Xi[jy('\228N)/\154\218e%(\130\222','\187\17DJ\238')]=jy('\211\206<\212\196;','\191\161_')local Oq={};Oq[jy('\244\14\177\197\53\189\211','\171Q\216')]=Oq;Oq[jy('\244\188T\134\139\202\151X\129\147\206','\171\227\57\227\255')]=jy('\185\142a\190\132f','\213\225\2')local mj={};mj[jy('F\168\25w\147\21a','\25\247p')]=mj;mj[jy('E\128\n\160\220{\171\6\167\196\127','\26\223g\197\168')]=jy('\248:\183\255\48\176','\148U\212')local bc={};bc[jy('\213\213\225\228\238\237\242','\138\138\136')]=bc;bc[jy('\192&J\128$\254\rF\135<\250',"\159y\'\229P")]=jy('\172\183\242\171\189\245','\192\216\145');bc[jy('\128G-\176P1\189','\196\"^')]=function(Uz)local Nd,AD,yo,fq;yo,fq={},function(jj,Ql,Pc)yo[Pc]=Yl(Ql,577)-Yl(jj,44834)return yo[Pc]end;AD=yo[-31074]or fq(4643,84347,-31074)while AD~=38053 do if AD<29173 then if AD>18853 then return elseif AD<=6396 then if AD>3188 then Uz[jy(']\181c\177f','\2\216')][jy('f\205\150V\218\138[','\"\168\229')](Uz[jy(']\181c\177f','\2\216')]);AD=yo[24803]or fq(62952,42542,24803)else Nd[jy('\196\253\232','\155')][jy('\159J\242\134A\131W\244\134T','\234$\128\227&')](Uz[jy('\151\226\164\229\175','\200\132')]);AD=yo[-30687]or fq(60917,46733,-30687)end else AD=yo[-32016]or fq(6073,85761,-32016)continue end elseif AD>=44403 then if AD>44403 then Nd=Uz[jy('g\221\199\230L\199\205\235','8\174\162\133')]and Uz[jy('a\184\242\20J\162\248\25','>\203\151w')][jy('X\20{i\a}p','\ac\18')]if not(Nd and Nd[jy('kRG','4')])then AD=yo[-4678]or fq(25902,81472,-4678)continue else AD=yo[-5908]or fq(47384,8431,-5908)continue end AD=yo[-27102]or fq(54718,61136,-27102)else Uz[jy('\221\167\143hN\240\172\147~^','\130\195\234\27:')]=true if not(Uz[jy('\189\27\142\28\133','\226}')])then AD=yo[-9666]or fq(23742,92112,-9666)continue else AD=yo[30704]or fq(23063,118803,30704)continue end AD=29173 end elseif AD<=29173 then if not(Uz[jy('\158i\160m\165','\193\4')])then AD=yo[27942]or fq(27055,70259,27942)continue else AD=yo[5547]or fq(50013,34618,5547)continue end AD=18853 else if Uz[jy('\15\189c\214w\"\182\127\192g','P\217\6\165\3')]then AD=yo[23963]or fq(43395,20803,23963)continue end AD=44403 end end end;bc[jy('\181~[N\175\149rMt\163','\230\27/\24\198')]=function(tm,Ew)local yf,_g,d_;_g,d_={},function(Tm,Da,Os)_g[Os]=Yl(Tm,18719)-Yl(Da,3713)return _g[Os]end;yf=_g[-11621]or d_(73756,58125,-11621)repeat if yf<31607 then yf=_g[23188]or d_(130720,56617,23188)continue elseif yf<=31607 then if tm[jy('\129P\127\158\137Po\143','\232>\f\234')]then yf=_g[-16061]or d_(75911,35584,-16061)continue end yf=_g[16287]or d_(83135,40374,16287)else yf,tm[jy('\218\153,^\210\153<O','\179\247_*')][jy('\140v5\179}*\191','\218\31F')]=_g[28717]or d_(41054,24665,28717),Ew end until yf==58391 end;nE[jy('4?-','Z')]=function(uw,Br)local gu=_p({},nE);gu[jy('\128\169\190\191','\223\221')]=uw;gu[jy('?p4\14c2\23','\96\a]')]=uw[jy('\191\153\96\142\138f\151','\224\238\t')];gu[jy('\4d:\96?','[\t')]=ga();gu[jy('\28u\155\230*a\158\240','C\3\242\149')]=true;gu[jy('\194\234\207\159:\239\225\211\137*','\157\142\170\236N')]=false local lu,Sc=Br[jy('\230=\176\161\57\213!\181\175\52\192','\165R\220\205X')]~=false,Br[jy('g,P*\187O=y;\171M','#I6K\206')]~=false;gu[jy('\187\162\26\233>\30\148\178\28\231>\26','\228\193u\133R\127')]=lu;gu[jy('\27\175\52\165*','D\192')]=Sc local Rt=Iv(jy('\170@\141_\137','\236\50'),{[jy('\165!<\247V\228\174Z\137$\28\243]\249\179\28','\231@_\156\49\150\193/')]=Je[jy('}kyH\127hK','.\30\v')],[jy('\161L\136@','\242%')]=WA(1,0,0,0),[jy('\15I\29\168Js:U\n\148Nh+',"N<i\199\'\18")]=dx[jy('\vM;N','N#')][jy('^\157\149c9\159k\129\130_=\132z','\31\232\225\fT\254')][jy('\141','\212')],[jy('\163\197K\6O\182]\136\208\\\50C\188k\141','\225\170\57b*\196\14')]=0});gu[jy('Y\29\243g\22\228','\6{\129')]=Rt;Rt[jy('0j\164\5e\162','\96\v\214')]=uw[jy('H~gV\223\6\31\136\221]tkmH\196?\f\159\235Vc',"\23\31\4\'\170om\237\142\56")](uw,gu);ad(6,Rt)local Ih=bz(Je[jy('V\135\208 y\144\247,z','\23\228\179E')],1,Rt)local Px,em,gv,Gc,pv,Sm,rv,rk;gv,Gc=function(Tq,Ez,jp)Gc[jp]=Yl(Ez,56974)-Yl(Tq,11182)return Gc[jp]end,{};Px=Gc[7206]or gv(30209,99092,7206)while Px~=8747 do if Px<46007 then if Px<=11547 then if Px>6571 then gu[jy('3\208\r\212\b','l\189')][jy(']xx','\28')](gu[jy('3\208\r\212\b','l\189')],Sm[jy('\231*\215u\220\171\242\128\222*\204\55\250\133\238\151\193','\170E\162\6\185\233\135\244')][jy('\235\230-\198\236 \220','\168\137C')](Sm[jy('\231*\215u\220\171\242\128\222*\204\55\250\133\238\151\193','\170E\162\6\185\233\135\244')],function()gu[jy('1E2-P#\f','b F')](gu,not gu[jy('\243\210\220\216\194','\172\189')])end));Px=Gc[-27138]or gv(21237,127900,-27138)else Sm,em=Iv(rv,pv),nil if not(lu)then Px=Gc[11561]or gv(21070,124378,11561)continue else Px=Gc[14820]or gv(54899,70192,14820)continue end Px=Gc[16693]or gv(49524,94912,16693)end else Px,pv[jy('\243\206\149[\170N\199\198\212\143w\135W\220\192','\178\187\225\52\232;\179')]=Gc[1727]or gv(37716,3115,1727),false end elseif Px>52961 then Ih[jy('r)d:\211\165G)\96:\195\172','&[\5T\160\213')]=0.55000000000000004;gu[jy('8\r\6\t\3','g\96')][jy(',\t\t','m')](gu[jy('8\r\6\t\3','g\96')],Rt);rv,pv=lu and jy('\242\200\247\128c\211\217\251\155O','\166\173\143\244!')or jy('\131L\14<\155H\20-\187','\215)vH'),{[jy("\145=!\164\50\'",'\193\\S')]=Rt,[jy('\26E~\236m\188h\136\204\15\49*Es\244z\175u\152\204\b\28','X$\29\135\n\206\a\253\162ke')]=1,[jy("\'I\129#\3O\157$",'w&\242J')]=WA(0,12,0,10),[jy('\211N\250B',"\128\'")]=WA(1,-24,0,16),[jy('\31\167\55\188','Y\200')]=dx[jy('iFYE',',(')][jy('\200\56\224#','\142W')][jy('\96 \179Q\247pj*\163P\227p',"\'O\199\57\150\29")],[jy('\200\224\245\131\207\236\247\146','\156\133\141\247')]=13,[jy('\190\165\\\56\184\133\172K>\200','\234\192$L\251')]=Je[jy('S\146\127\131','\a\247')],[jy('l\165\19\233\96Y\127Q\167\5\240]vg','8\192k\157\56\24\19')]=dx[jy('\229\200\213\203','\160\166')][jy("\235\172F\25\6\48\'\214\174P\0;\31?",'\191\201>m^qK')][jy('\153\23\179\6','\213r')],[jy('\175w\131f','\251\18')]=Br[jy('n\152M\156',' \249')]or jy('D\138Qc\134]y','\23\239\50')}if lu then Px=Gc[-5031]or gv(50533,98183,-5031)continue end Px=Gc[593]or gv(33185,7476,593)elseif Px<=49524 then if Px>46007 then rk=Iv(jy('[\19|\fx','\29a'),{[jy('\189\14\245\136\1\243','\237o\135')]=Rt,[jy('\188\202P\26\130dl\220\129q.\140\202]\2\149wq\204\129v\3','\254\171\51q\229\22\3\169\239\21z')]=1,[jy('\163a\140-\135g\144*','\243\14\255D')]=WA(0,8,0,32),[jy('\17\163\56\175','B\202')]=WA(1,-16,0,0),[jy('\248\138\23\52\48p\205\150\0\b\52k\220','\185\255c[]\17')]=dx[jy('b\231R\228',"\'\137")][jy('&\3i:\183\210\19\31~\6\179\201\2','gv\29U\218\179')][jy('\205','\148')],[jy('\185\250\n\134\241\21\138','\239\147y')]=Sc});Iv(jy('\203\22n1\250;W>\249','\158_>P'),{[jy('\191\142[\138\129]','\239\239)')]=Rt,[jy('s\160\203va\234D\131\192f|\235N','#\193\175\18\b\132')]=vD(0,10)});Iv(jy('\201K[Q\153\251\208cnW\159\251','\156\2\23\56\234\143'),{[jy('\227\50\169\214=\175','\179S\219')]=rk,[jy('\22\171q\220\96G\"\167~\196MA>','P\194\29\176$.')]=dx[jy(' \184\16\187','e\214')][jy('6\142T\225\245\132\2\130[\249\216\130\30','p\231\56\141\177\237')][jy('t~b\240Kxq\232','\"\27\16\132')],[jy('\164\175G\r\184\178Q\28\133','\247\192\53y')]=dx[jy(' \6\16\5','eh')][jy('\222\1\244\5\194\28\226\20\255','\141n\134q')][jy('\136i\24\236\v\176G\19\231\27\182','\196\ba\131~')],[jy('\154\49%\174\57/\173','\202PA')]=vD(0,6)});gu[jy('\192\184\128\50\235\190\129(','\159\219\239\\')]=rk;gu[jy('\174\241Q}\135\224Vv','\241\146\57\24')]=em;gu[jy('\204\209(\228\137\252\220\"\231\141\224','\147\178G\137\249')]={}if not(lu)then Px=Gc[14967]or gv(7265,13576,14967)continue else Px=Gc[-30717]or gv(39911,1002,-30717)continue end Px=Gc[-22516]or gv(22446,127289,-22516)else return gu end else em,Px=Iv(jy('\137?\200\246\145;\210\231\177','\221Z\176\130'),{[jy('D\147\142q\156\136','\20\242\252')]=Rt,[jy('\221\152\140\238\50\250\191\226\52C\209\237\152\129\246%\233\162\242\52D\252',"\159\249\239\133U\136\208\151Z\'\133")]=1,[jy('H&\231\244\r{\24\235\245\f}','\tH\132\156b')]=EG(1,0.5),[jy('\198\49\194\226\226\55\222\229','\150^\177\139')]=WA(1,-12,0,18),[jy('s\217Z\213',' \176')]=WA(0,16,0,16),[jy('\26c2x','\\\f')]=dx[jy('\205q\253r','\136\31')][jy('/\131\a\152','i\236')][jy('J\r\167\164\96\96 \188\160e','\rb\211\204\1')],[jy('\179\0\221\145\180\f\223\128','\231e\165\229')]=16,[jy('5\f\166\219\148\14\5\177\221\228','ai\222\175\215')]=Je[jy('\31\17\133\24\1\159\56','Ld\231')],[jy('\135\169sp|u\240\186\171eiAZ\232','\211\204\v\4$4\156')]=dx[jy('k\236[\239','.\130')][jy('\142>\183#\201\166\154\179<\161:\244\137\130','\218[\207W\145\231\246')][jy('\190\243\129\137\243\157','\253\150\239')],[jy('K\158\156\178e\212nv\156\138\171Y\251v','\31\251\228\198<\149\2')]=dx[jy('U\156e\159','\16\242')][jy("n(\b\224\223\'\206S*\30\249\227\b\214",':Mp\148\134f\162')][jy('/l\154\24l\134','l\t\244')],[jy('\235\147\199\130','\191\246')]=Sc and jy('e','H')or jy('v',']')}),Gc[5079]or gv(47281,100893,5079)end end end;nE[jy(')9\228\53,\245\20','z\\\144')]=function(On,lb)local vl,vf,H,rF,Fv,hG;vl,Fv={},function(Mu,Lm,JG)vl[JG]=Yl(Mu,41352)-Yl(Lm,57049)return vl[JG]end;H=vl[-10237]or Fv(7500,36954,-10237)repeat if H>=28225 then if H>51541 then if H<=59955 then return else H=vl[-8044]or Fv(112966,32358,-8044)continue end elseif H<42721 then if H>28225 then hG,H=vf[jy('\4\144\175 \248A\171\177\181*\156\168*\250@\140\189\140 ','E\242\220O\148\52\223\212\246')],vl[-3102]or Fv(126101,37279,-3102)else if not(not On[jy('\153\14@J\tJ\182\30FD\tN','\198m/&e+')])then H=vl[-29452]or Fv(10062,49506,-29452)continue else H=vl[14631]or Fv(24075,8226,14631)continue end H=26379 end elseif H<=42721 then On[jy('~\216Q\210O','!\183')]=lb;On[jy('\222N^\6\245H_\28','\129-1h')][jy('\212\192(\235\203\55\231','\130\169[')]=lb if On[jy('f\149\192\149O\132\199\158','9\246\168\240')]then H=vl[-23775]or Fv(60122,57003,-23775)continue end H=vl[9836]or Fv(46445,53663,9836)else rF[jy('st\161i\243TFh\182U\247OW','2\1\213\6\158\53')]=dx[jy('\156W\172T','\217\57')][jy('\217\18\248\247I\216\236\14\239\203M\195\253','\152g\140\152$\185')][jy('\5\187%\177','K\212')];H,rF[jy('\210<$\212\161\184\231 3\232\165\163\246','\147IP\187\204\217')]=vl[15099]or Fv(7908,46318,15099),dx[jy('\237\236\221\239','\168\130')][jy('\147=G\v\234w\166!P7\238l\183','\210H3d\135\22')][jy('^','\a')]end elseif H>19168 then if H<=21813 then vf=On[jy('^\211\48\232u\213\49\242','\1\176_\134')]and On[jy('\170\191\150\207\129\185\151\213','\245\220\249\161')][jy(':H\182;\238\175\54\164ol\20H\180;\231\160\a\187z\\\15','|!\216_\168\198D\215\27/')](On[jy('\170\191\150\207\129\185\151\213','\245\220\249\161')],jy('\205\132\137\49\144M\212\172\188\55\150M','\152\205\197X\227\57'))if vf then H=vl[15452]or Fv(22108,45116,15452)continue end H=vl[25670]or Fv(66256,31576,25670)else if On[jy('\165\215\138\221\148','\250\184')]==lb then H=vl[26959]or Fv(116992,41100,26959)continue end H=vl[-9382]or Fv(102106,22184,-9382)end elseif H<1439 then return elseif H>1439 then On[jy('\3\201j\155*\216m\144','\\\170\2\254')][jy('D7h&','\16R')],H=lb and jy(',','\1')or jy('\v',' '),vl[27853]or Fv(47352,52488,27853)else rF=On[jy('w\168UI\163B',"(\206\'")]if not(rF)then H=vl[-24756]or Fv(53339,49735,-24756)continue else H=vl[10002]or Fv(107373,59209,10002)continue end H=21813 end until H==30735 end;nE[jy('\149\254n\172\232O','\220\141!')]=function(sf)return sf[jy('\n\\%V;','U3')]==true end;nE[jy('R\193\22\188\148\203\96\208\29\182\178\202y','\r\160r\216\215\164')]=function(ye,Zg)Hq(ye[jy('\165\188\165\194;\149\177\175\193?\137','\250\223\202\175K')],Zg)end;nE[jy('\24r)\231\246\56~?\221\250','K\23]\177\159')]=function(Vs,yi)local Nz,SE,gh;Nz,gh=function(EC,kh,F)gh[EC]=Yl(kh,36770)-Yl(F,44140)return gh[EC]end,{};SE=gh[16745]or Nz(16745,127914,30688)while SE~=46670 do if SE<=56617 then if SE<=41084 then Vs[jy(' \137\134,\22\157\131:','\127\255\239_')]=yi if not(Vs[jy('\140.\217\178%\206','\211H\171')])then SE=gh[-3791]or Nz(-3791,88850,28789)continue else SE=gh[18554]or Nz(18554,121099,54764)continue end SE=gh[14454]or Nz(14454,130430,54825)else SE,Vs[jy('uA\206KJ\217',"*\'\188")][jy('\227\224R\220\235M\208','\181\137!')]=gh[10882]or Nz(10882,79601,27856),yi end else SE=gh[-17920]or Nz(-17920,26464,40472)continue end end end;nE[jy('9\153t\t\142h\4','}\252\a')]=function(Jc)local r_,ke,wB,Pj,TE,Nx,Nn,PD,KE,oh,In;KE,PD=function(Tf,yx,oo)PD[oo]=Yl(yx,46079)-Yl(Tf,25139)return PD[oo]end,{};wB=PD[24386]or KE(37608,66233,24386)repeat if wB<=39204 then if wB<31616 then if wB<=12505 then if wB<1581 then Jc[jy('A\211\127\197','\30\167')][jy('\237\232\228\130\0C\141\0\175\215\239\217\149\6P\141\28\181','\178\157\138\240e$\228s\219')](Jc[jy('A\211\127\197','\30\167')],Jc);wB=PD[24366]or KE(6737,108730,24366)elseif wB>1581 then ms(jy('6fBeV\195\239^G{8\24\186\3Ve]\31\197\215\rPf:\17\239','m3\v)?\161\178~$\20Uh\213'),Pj);wB=PD[-17392]or KE(5091,121338,-17392)else Jc[jy('\183\196I\144\205\154\207U\134\221','\232\160,\227\185')]=true;Nn,ke,r_=Jc[jy('\218\191\195\192|\234\178\201\195x\246','\133\220\172\173\f')]if not(FB(Nn)~=jy('ui\226\169gu\227\164','\19\28\140\202'))then wB=PD[-3389]or KE(31964,107739,-3389)continue else wB=PD[-20972]or KE(4982,18393,-20972)continue end wB=PD[-14176]or KE(58301,117308,-14176)end else In,Pj=Ec((Nx)[jy('L\210\212|\197\200q','\b\183\167')],Nx)if not In then wB=PD[23486]or KE(24688,32995,23486)continue end wB=PD[3223]or KE(56403,66922,3223)end elseif wB>38392 then Nn,ke,r_=Jx(Nn);wB=PD[-11256]or KE(60866,80857,-11256)elseif wB<=33505 then if wB<=31616 then return else TE=Ia(Nn)if not(TE~=nil and TE[jy('\25x\145\50B\138',"F\'\248")]~=nil)then wB=PD[26380]or KE(40871,70181,26380)continue else wB=PD[-29887]or KE(38086,69402,-29887)continue end wB=PD[16122]or KE(19863,103462,16122)end else if Bi(Nx)==jy('\218\192\204\205\203','\174\161')and(Nx)[jy('[+\147k<\143f','\31N\224')]then wB=PD[7465]or KE(48743,128448,7465)continue end wB=PD[23840]or KE(38869,89572,23840)end elseif wB>50672 then if wB>56650 then oh,Nx=Nn(ke,r_);r_=oh if r_==nil then wB=PD[-5869]or KE(23927,110449,-5869)else wB=PD[5587]or KE(40924,73752,5587)end else Jc[jy('3p\206\f\233\3}\196\15\237\31','l\19\161a\153')]={}if Jc[jy('f\249X\239','9\141')]and not Jc[jy('\194\182\252\160','\157\194')][jy('\26\31I\230\198\55\20U\240\214','E{,\149\178')]and Jc[jy('\147\230\173\240','\204\146')][jy('kZ\176\166\201_\242\229\249Q]\141\177\207L\242\249\227','4/\222\212\172\56\155\150\141')]then wB=PD[-6295]or KE(54084,389,-6295)continue end wB=PD[-29054]or KE(55856,125209,-29054)end elseif wB<49259 then if wB<=41699 then Jc[jy('\131*\189.\184','\220G')][jy('\237L<\221[ \208','\169)O')](Jc[jy('\131*\189.\184','\220G')]);wB=PD[18224]or KE(56323,70259,18224)continue else if not(FB(Nn)==jy('>\232(\229/','J\137'))then wB=PD[25879]or KE(63787,73906,25879)continue else wB=PD[-2548]or KE(49212,100556,-2548)continue end wB=PD[-3573]or KE(63312,81511,-3573)end elseif wB>49259 then Nn,ke,r_=TE[jy('o\199\248D\253\227','0\152\145')](Nn);wB=PD[-18780]or KE(41516,68523,-18780)else if not(Jc[jy('bz\174\tAOq\178\31Q','=\30\203z5')])then wB=PD[-22507]or KE(37919,20390,-22507)continue else wB=PD[11960]or KE(12003,31663,11960)continue end wB=1581 end until wB==58204 end local eB,Hb=Je[jy('\169\132_\201y\153\148l\195l','\250\241-\175\24')],Je[jy('vI\252\96s\202@t\225pw\219','%<\142\6\18\169')]local function zr(pf,Fq)local _m,ID;ID=Iv(jy('=\199\26\216\30','{\181'),{[jy("=((\b\'.",'mIZ')]=pf,[jy("J=\131\196,\182L\22f8\163\192\'\171QP",'\b\\\224\175K\196#c')]=eB,[jy('qhXd','\"\1')]=WA(1,0,0,Fq or 32),[jy('_S\183~\224\194jtF\160J\236\200\\q','\29<\197\26\133\176\57')]=0,[jy('\221\24\132A\27#T\204\253\17\131U\t\tE\204','\158t\237\49hg1\191')]=true});ad(6,ID);_m=bz(Je[jy('\137-\19\173 \4','\200Np')],1,ID);_m[jy('\191\184R7\233\206\138\184V7\249\199','\235\202\51Y\154\190')]=1 return ID,_m end local function Xw(OC,Nc,WC)WC[jy('2\23\23','s')](WC,Nc[jy('DXb\235\177LYc\253\166','\t\55\23\152\212')][jy('\1\199\53,\205\56\54','B\168[')](Nc[jy('DXb\235\177LYc\253\166','\t\55\23\152\212')],function()OC[jy('s\139\158\189h\182\249\220_\142\190\185c\171\228\154','1\234\253\214\15\196\150\169')]=Hb end));WC[jy('\252\217\217','\189')](WC,Nc[jy('\17\200x\5m\16\194l\0m','\\\167\rv\b')][jy('L\140\166a\134\171{','\15\227\200')](Nc[jy('\17\200x\5m\16\194l\0m','\\\167\rv\b')],function()OC[jy('\29;\129\177\216F\229\127\49>\161\181\211[\248\57','_Z\226\218\191\52\138\n')]=eB end))end local function Gm(wE,bi)return Iv(jy('\23=\131\194\15\57\153\211/','CX\251\182'),{[jy('\29\184\149(\183\147','M\217\231')]=wE,[jy('\187\31\57\b\165\177\165\163\255\232\239\139\31\52\16\178\162\184\179\255\239\194','\249~Zc\194\195\202\214\145\140\187')]=1,[jy('.\af\204\n\1z\203','~h\21\165')]=WA(0,10,0,0),[jy('\191\165\150\169','\236\204')]=WA(1,-20,1,0),[jy('b\171J\176','$\196')]=dx[jy('\176\2\128\1','\245l')][jy('+\192\3\219','m\175')][jy('q:\170\175B\a{0\186\174V\a','6U\222\199#j')],[jy('\208\143$\166\215\131&\183','\132\234\\\210')]=12,[jy('_\206~\136\179d\199i\142\195','\v\171\6\252\240')]=Je[jy('\199@\235Q','\147%')],[jy('\173\232\212\253\216\137E\144\234\194\228\229\166]','\249\141\172\137\128\200)')]=dx[jy('<\175\f\172','y\193')][jy('\202\50e9\160C\158\247\48s \157l\134','\158W\29M\248\2\242')][jy('\1\220+\205','M\185')],[jy('\204\49\224 ','\152T')]=bi})end ie[jy('\175E\129A\143','\227$')]=function(tg,no_)local ak,ek=ga(),Iv(jy('[\191]\223C\187G\206c','\15\218%\171'),{[jy('\16\146p%\157v','@\243\2')]=tg[jy('\189\231\240\219\150\225\241\193','\226\132\159\181')],[jy("K\175B\209\22\a\145\252\27\96\n{\175O\201\1\20\140\236\27g\'",'\t\206!\186qu\254\137u\4^')]=1,[jy('G\20n\24','\20}')]=WA(1,0,0,0),[jy('\211\227\222u\198J\230\255\201I\194Q\247','\146\150\170\26\171+')]=dx[jy('\226\168\210\171','\167\198')][jy('\228*\19rK\132\209\54\4NO\159\192','\165_g\29&\229')][jy('\254','\167')],[jy('PWxL','\22\56')]=dx[jy(',\243\28\240','i\157')][jy('\191g\151|','\249\b')][jy('\167l\192\136b\217','\224\3\180')],[jy('>\18a\217\57\30c\200','jw\25\173')]=12,[jy('e\22_\149e^\31H\147\21',"1s\'\225&")]=Je[jy('Nc\211Is\201i','\29\22\177')],[jy(' u\129\154\220\241\3\29w\151\131\225\222\27','t\16\249\238\132\176o')]=dx[jy('uKEH','0%')][jy('\96f\207\fre\146]d\217\21OJ\138','4\3\183x*$\254')][jy('\188\5\150\20','\240\96')],[jy('\154\27c\f\a\188\31k\b\53\170','\206~\27xP')]=true,[jy('\202\244\230\229','\158\145')]=Th(no_[jy('\204_\224N','\152:')]or'')});ak[jy('Puu','\17')](ak,ek)local kC;kC=_p({[jy('I\240\26\165A\240\n\180',' \158i\209')]=ek,[jy('v\164H\160M',')\201')]=ak,[jy('a\152F\231J\130L\234','>\235#\132')]=tg,[jy('d\b\168\1\233I\3\180\23\249',';l\205r\157')]=false,[jy('\249\207\222','\170')]=function(hc,Gv)ek[jy('\160\226\140\243','\244\135')]=Th(Gv or'')end,[jy('\25;*','^')]=function()return ek[jy('\238\241\194\224','\186\148')]end},bc);tg[jy('F\au\164l\2t\22~\174J\3m','\25f\17\192/m')](tg,kC)return kC end;ie[jy('\176\212v\134\206l','\242\161\2')]=function(SG,Fs)local zG,oa,ll,Nj,Dv,Ls,Wy;oa,ll={},function(Ya,MG,Gk)oa[Gk]=Yl(MG,61118)-Yl(Ya,14765)return oa[Gk]end;zG=oa[23108]or ll(50839,120212,23108)while zG~=28260 do if zG<=15344 then if zG<=12632 then SG[jy('\158fL\175uJ\182','\193\17%')][jy('1<\246\168\2<\240\183\29','nH\153\199')][jy('\231P\147\199G\143','\166$\231')](Wy,Fs[jy('a\127\230Yd\224E','5\16\137')],Dv);zG=oa[-2274]or ll(55222,86515,-2274)else Dv,Wy=ga(),zr(SG[jy('f\176\244eM\182\245\127','9\211\155\v')],32);Wy[jy('C\21vv\26p','\19t\4')]=SG[jy('Y\128\57\233r\134\56\243','\6\227V\135')];Dv[jy('\214\243\243','\151')](Dv,Wy);Ls=Iv(jy('\205\196\53\"x\236\213\57\57T','\153\161MV:'),{[jy('O\130\214z\141\208','\31\227\164')]=Wy,[jy('\201_%\b*\200\170&\159\214\152\249_(\16=\219\183\54\159\209\181','\139>FcM\186\197S\241\178\204')]=1,[jy('<\177\21\189','o\216')]=WA(1,0,1,0),[jy('&\212\197\137}\204\132\19\206\223\165P\213\159\21','g\161\177\230?\185\240')]=false,[jy('\222\234\246\241','\152\133')]=dx[jy('^\166n\165','\27\200')][jy('\128\186\168\161','\198\213')][jy('\145\181\252\56\f\28\155\191\236\57\24\28','\214\218\136Pmq')],[jy('\161\135Lf\166\139Nw','\245\226\52\18')]=12,[jy('\a\182\rw\216<\191\26q\168','S\211u\3\155')]=Je[jy('S\26\127\v','\a\127')],[jy('\25\31\53\14','Mz')]=Fs[jy('\29\205>\201','S\172')]or jy('\236\142\23\218\148\r','\174\251c')});Xw(Wy,Ls,Dv);Dv[jy('\26??','[')](Dv,Ls[jy('\129\18b\151\197\252[+\184\18y\213\227\210G<\167','\204}\23\228\160\190._')][jy(';\f\28\22\6\17\f','xcr')](Ls[jy('\129\18b\151\197\252[+\184\18y\213\227\210G<\167','\204}\23\228\160\190._')],function()RG(Fs[jy('\145\222\210\164\176\222\221\163','\210\191\190\200')])end))if not(SG[jy('\165^\n\148M\f\141','\250)c')][jy('\226\t\175\51\209\t\169,\206','\189}\192\\')])then zG=oa[15228]or ll(14400,15777,15228)continue else zG=oa[-27636]or ll(41275,10064,-27636)continue end zG=53554 end else Nj=_p({[jy('\226 \"g\234 2v','\139NQ\19')]=Wy,[jy('\18\31,\27)','Mr')]=Dv,[jy('\205;\132~\230!\142s','\146H\225\29')]=SG,[jy('0)\195&\184\29\"\223\48\168','oM\166U\204')]=false,[jy('{M\\','(')]=function()end,[jy('\220\254\239','\155')]=function()return nil end},bc);SG[jy('\17\175\161?\203N#\190\170\53\237O:','N\206\197[\136!')](SG,Nj)return Nj end end end;ie[jy('\246\174%\b\215\170!\6\215','\165\203Ui')]=function(Cq,Oy)local sp,gF,Vg,Yf,Qn,PC,rn,Wh,Dd;Qn,Dd={},function(UE,mw,qq)Qn[mw]=Yl(UE,41133)-Yl(qq,56945)return Qn[mw]end;sp=Qn[14729]or Dd(19328,14729,56283)while sp~=4799 do if sp<35434 then rn[jy('l\198\219S\205\196_',':\175\168')]=false;Iv(jy('\14\138\169\222\22\142\179\207\54','Z\239\209\170'),{[jy('h\174L]\161J','8\207>')]=Yf,[jy('\210\142O\196\144\183\135\175\255\27H\226\142B\220\135\164\154\191\255\28e','\144\239,\175\247\197\232\218\145\127\28')]=1,[jy('\234\135\195\139','\185\238')]=WA(1,0,1,0),[jy('<\239\20\244','z\128')]=dx[jy('fxV{','#\22')][jy('\136\173\160\182','\206\194')][jy('\n&2%(+','MIF')],[jy('\228\14\213\232\227\2\215\249','\176k\173\156')]=11,[jy('\v\52\24[\203\48=\15]\187','_Q\96/\136')]=Je[jy('\194\208\251\192\235','\143\165')],[jy('\148\161\1\183\1\156[\169\163\23\174<\179C','\192\196y\195Y\221\55')]=dx[jy('\"G\18D','g)')][jy('=\243A%\210\199X\0\241W<\239\232@','i\150\57Q\138\134\52')][jy('\181G\159V','\249\"')],[jy('\162=\142,','\246X')]=jy('q','Q')..Th(Oy[jy('\169\b\135\f\137','\229i')])});sp=Qn[-18365]or Dd(26383,-18365,58185)elseif sp>35434 then Oy=Oy or{};gF,Wh=(Oy and Oy[jy('d\228*\170[\226&\186C','0\140C\201')])or 1,ga();Vg=gF+8;Yf=Iv(jy('\148\165\179\186\183','\210\215'),{[jy('}\173\150H\162\144','-\204\228')]=Cq[jy('\135*\15\217\172,\14\195','\216I\96\183')],[jy('\183\158\228y\31\48k?\161\191\170\135\158\233a\b#v/\161\184\135','\245\255\135\18xB\4J\207\219\254')]=1,[jy('\180,\157 ','\231E')]=WA(1,0,0,Vg),[jy('\242\129\145\197L\188\203\217\148\134\241@\182\253\220','\176\238\227\161)\206\152')]=0});Wh[jy('\130\167\167','\195')](Wh,Yf);rn=Iv(jy('\131l\164s\160','\197\30'),{[jy('\155\204\30\174\195\24','\203\173l')]=Yf,[jy('\198p-\212\140\245N!\213\141\243','\135\30N\188\227')]=EG(0.5,0.5),[jy('\157\168\29\253\185\174\1\250','\205\199n\148')]=WA(0.5,0,0.5,0),[jy('\151a\190m','\196\b')]=WA(1,-8,0,gF),[jy('Z\201\208\129_\245r\216v\204\240\133T\232o\158','\24\168\179\234\56\135\29\173')]=Je[jy('\244bW\210hW','\182\r%')],[jy('@\219\22Q?\234ok\206\1e3\224Yn','\2\180d5Z\152<')]=0})if Oy and Oy[jy('\253\56\211<\221','\177Y')]then sp=Qn[-15896]or Dd(26341,-15896,45845)continue end sp=35434 else PC=_p({[jy('M\250\236\165E\250\252\180','$\148\159\209')]=Yf,[jy('\165\201\155\205\158','\250\164')]=Wh,[jy('\17R\203\208:H\193\221','N!\174\179')]=Cq,[jy('\217\236>af\244\231\"wv','\134\136[\18\18')]=false,[jy('Wap','\4')]=function()end,[jy('\224\194\211','\167')]=function()return nil end},bc);Cq[jy('\193f\242\23\50\190\243w\249\29\20\191\234','\158\a\150sq\209')](Cq,PC)return PC end end end local function Ty(ni_)local Od,bC,es;bC,Od=function(uE,Rv,Np)Od[Rv]=Yl(uE,55328)-Yl(Np,44609)return Od[Rv]end,{};es=Od[19044]or bC(22623,19044,35569)repeat if es>=23503 then if es>23503 then return ni_[jy('\219\240\14\206\202\231\v\198','\158\158{\163')]==dx[jy('B\29r\30','\as')][jy('\198\198\209\251i\139\227\192\192\221Y\149\246','\147\181\180\137 \229')]and(ni_==dx[jy('\211\215\227\212','\150\185')][jy('\128\218\241\195\208\178\165\220\224\229\224\172\176','\213\169\148\177\153\220')][jy('\137\178/\210Q\241\177\169.\206Z\130','\196\221Z\161\52\179')]or ni_==dx[jy('\179\165\131\166','\246\203')][jy('\223^j?\209L\250X{\25\225R\239','\138-\15M\152\"')][jy('\30cMy\178\24&xLe\185h','S\f\56\n\215Z')]or ni_==dx[jy('\15\203?\200','J\165')][jy('\209\22\239m\14J\244\16\254K>T\225','\132e\138\31G$')][jy('\27\199\20X\172\a#\220\21D\167v','V\168a+\201E')])else if not(th_(ni_)~=jy('\\%\164\55P?\180\55','\25K\209Z'))then es=Od[7207]or bC(7394,7207,45554)continue else es=Od[-20577]or bC(115409,-20577,4389)continue end es=42255 end else return false end until es==31024 end local function ub(Qp)local xD,Rc,We;xD,We=function(tB,qf,_o)We[tB]=Yl(qf,41139)-Yl(_o,6399)return We[tB]end,{};Rc=We[3064]or xD(3064,39790,10249)repeat if Rc>10078 then return false elseif Rc<=2791 then if th_(Qp)~=jy('\161\27\170\24\173\1\186\24','\228u\223u')then Rc=We[5303]or xD(5303,49698,2551)continue end Rc=10078 else return(Qp)[jy('<\180\141L-\163\136D','y\218\248!')]==dx[jy('\152L\168O','\221\"')][jy(')\203\230!\193\251\a','b\174\159')]or Ty(Qp)end until Rc==58131 end local function JB(ws)return th_(ws)==jy('\195\21{\234\207\15k\234','\134{\14\135')and(ws)[jy('\20(\178\209\5?\183\217','QF\199\188')]==dx[jy('\200\26\248\25','\141t')][jy('\31\155\181\23\145\168\49','T\254\204')]and(ws)==dx[jy('#\196\19\199','f\170')][jy('\203\209\149\195\219\136\229','\128\180\236')][jy('\174NX\149OD\149','\251 3')]end local function NC(ED)return JB(ED)and jy('///','\1')or(ED)[jy('\196\154\231\158','\138\251')]end local function Xh(kl,Oo)local zx,Ke,Hl;Ke,zx=function(Qj,Hz,jE)zx[Hz]=Yl(jE,3471)-Yl(Qj,56407)return zx[Hz]end,{};Hl=zx[-4615]or Ke(28726,-4615,78032)while Hl~=61172 do if Hl<41254 then if Hl<=11710 then return kl[jy('\22\172\0\b\166\213\51\170\17.\150\203&','C\223ez\239\187')]==(Oo)else if not(not ub(Oo)or JB(Oo))then Hl=zx[31476]or Ke(12818,31476,114407)continue else Hl=zx[-28111]or Ke(7220,-28111,93190)continue end Hl=50467 end elseif Hl>=48030 then if Hl>48030 then if Ty(Oo)then Hl=zx[4097]or Ke(16358,4097,72928)continue end Hl=zx[-1425]or Ke(3896,-1425,98946)else return kl[jy('\151T\164\225\26H\178R\181\199*V\167',"\194\'\193\147S&")]==dx[jy('\5\136\53\139','@\230')][jy('_b2v\b\144zd#P8\142o','\n\17W\4A\254')][jy('\127}\209g[y\218a','4\24\168\5')]and kl[jy('L\148\249D\158\228b','\a\241\128')]==(Oo)end else return false end end end ie[jy('\18\183K!\180I','F\216,')]=function(sE,up)local Vp,wj,Vm,Dj,Ow=ga(),sE[jy('\138\249\135\187\234\129\162','\213\142\238')][jy('\230\223\202','\185')],up[jy('\158\3]\187\19W\174','\218f;')]==true,up[jy('&\26\200\15\22\223\t','m\127\177')]==true,zr(sE[jy("\19\'~\15\56!\127\21",'LD\17a')],32);Ow[jy('\215\134\251\226\137\253','\135\231\137')]=sE[jy("\134hA\'\173n@=",'\217\v.I')];Vp[jy('\200\237\237','\137')](Vp,Ow)local Dq,wl=Iv(jy('()\234\188\242\t\56\230\167\222','|L\146\200\176'),{[jy('XF\165mI\163',"\b\'\215")]=Ow,[jy('\127\22\146\225\221\"\220\222\208c\172O\22\159\249\202\49\193\206\208d\129','=w\241\138\186P\179\171\190\a\248')]=1,[jy('\232\226\193\238','\187\139')]=WA(1,0,1,0),[jy('\222\196\242\213','\138\161')]='',[jy('\214F\230\203>\187^\227\\\252\231\19\162E\229','\151\51\146\164|\206*')]=false}),Gm(Ow,up[jy('\232\2\203\6','\166c')]or jy('4w\182\at\180','\96\24\209'))if not(Dj)then else wl[jy('\155\18\178\30','\200{')]=WA(1,-108,1,0)end local dn,jt,hi,lp=nil,ub(up[jy('\233\252Bp\3\193\237ot\15','\173\153$\17v')])and up[jy('\194QJ\0L\234@g\4@','\134\52,a9')]or dx[jy('\143L\191O','\202\"')][jy('s\145\24{\155\5]','8\244a')][jy('R\137\245i\136\233i','\a\231\158')],false,0 if Dj then dn=Iv(jy('\22\160\fNy7\177\0UU','B\197t:;'),{[jy('\n\222\198?\209\192','Z\191\180')]=Ow,[jy('\148%\196s\22\167\27\200r\23\161','\213K\167\27y')]=EG(1,0.5),[jy('\214\204\234g\242\202\246\96','\134\163\153\14')]=WA(1,-54,0.5,0),[jy('\207\24\230\20','\156q')]=Zi(36,20),[jy('\174\223d\144\193$4\217\130\218D\148\202\57)\159','\236\190\a\251\166V[\172')]=Je[jy('r\243JG\231[D','!\134\56')],[jy("\txZ\248\132\154\239\"mM\204\136\144\217\'",'K\23(\156\225\232\188')]=0,[jy('G\195 d\18\201\227r\217:H?\208\248t','\6\182T\vP\188\151')]=false,[jy('\212&\252=','\146I')]=dx[jy('2U\2V','w;')][jy('\188\170\148\177','\250\197')][jy('\194E\152\237K\129','\133*\236')],[jy('\250;\219\209\253\55\217\192','\174^\163\165')]=10,[jy('9O\ts<\2F\30uL','m*q\a\127')]=Je[jy('\23C;R','C&')],[jy('\166\249\168\148\162\4\135\242\179\129\130\19','\242\156\208\224\246v')]=dx[jy('\217P\233S','\156>')][jy('\241;6|\157\53\208\48-i\189\"','\165^N\b\201G')][jy('\244\130\240\152\209','\181\246')],[jy('t\rX\28',' h')]=jy('\131\131\131','\173')});ad(4,dn)end local Fi=Iv(jy('\164\159\131\128\135','\226\237'),{[jy('\n\23d?\24b','Zv\22')]=Ow,[jy('\a\195f\18\186\52\253j\19\187\50','F\173\5z\213')]=EG(1,0.5),[jy('0$\17R\20\"\rU','\96Kb;')]=WA(1,-10,0.5,0),[jy('9\154\16\150','j\243')]=Zi(34,18),[jy('\195\211\201\153\194\241$\220\239\214\233\157\201\236\57\154','\129\178\170\242\165\131K\169')]=Je[jy('\151X\29\177R\29','\213\55o')],[jy('\239\148\181\18\198\166>\196\129\162&\202\172\b\193','\173\251\199v\163\212m')]=0});ad(9,Fi)local xg=Iv(jy('\185\166\158\185\154','\255\212'),{[jy('\172\53>\153:8','\252TL')]=Fi,[jy('\217\156\21*\197\234\162\25+\196\236','\152\242vB\170')]=EG(0,0.5),[jy('\250S\224\147\222U\252\148','\170<\147\250')]=WA(0,2,0.5,0),[jy('\218\30\243\18','\137w')]=Zi(14,14),[jy('\6\52\248\183\240%q\30*1\216\179\251\56lX','DU\155\220\151W\30k')]=Je[jy('u\196Y\213','!\161')],[jy('\239Y\28\155UU\254\196L\v\175Y_\200\193',"\173\54n\255\48\'\173")]=0});ad(7,xg)local hq=_p({[jy('\18&k\n\26&{\27','{H\24~')]=Ow,[jy('\152\57\166=\163','\199T')]=Vp,[jy('&\176\188@\r\170\182M','y\195\217#')]=sE,[jy('\134\217\181\222\190','\217\191')]=up[jy('\252\194\219\201','\186\174')],[jy('J\234%\25\232g\225\57\15\248','\21\142@j\156')]=false},bc)local function M(Fk)local Ij,PE,td;td,PE=function(mt,Md,fu_)PE[fu_]=Yl(mt,27733)-Yl(Md,41731)return PE[fu_]end,{};Ij=PE[11664]or td(7187,33344,11664)repeat if Ij<61147 then if Ij>20227 then Ij=PE[18229]or td(43586,2357,18229)continue elseif Ij>18614 then if not(Vm)then Ij=PE[13564]or td(120966,25168,13564)continue else Ij=PE[-9050]or td(63948,54630,-9050)continue end Ij=PE[-7048]or td(91636,44289,-7048)elseif Ij<=7988 then Fi[jy('\\\203\185 \180\217\235\187p\206\153$\191\196\246\253','\30\170\218K\211\171\132\206')]=Je[jy(':\236J\30\225]','{\143)')];xg[jy('\224\55\136\195\196\49\148\196','\176X\251\170')],Ij=WA(1,-16,0.5,0),PE[23715]or td(125461,10658,23715)else if Fk~=false then Ij=PE[2920]or td(123900,16265,2920)continue end Ij=PE[-5195]or td(4611,34907,-5195)end elseif Ij>62336 then if up[jy('\135\162\160\169','\193\206')]and wj then Ij=PE[29374]or td(80176,50569,29374)continue end Ij=PE[29674]or td(77302,23534,29674)elseif Ij<62239 then wj[jy('\134\151\152\145\148','\241\229')](up[jy('C\189d\182','\5\209')],Vm);Ij=PE[-9442]or td(52207,64519,-9442)elseif Ij>62239 then Fi[jy('o\28\254-\239\147\4\227C\25\222)\228\142\25\165','-}\157F\136\225k\150')]=Je[jy('\192\56~\230\50~','\130W\f')];Ij,xg[jy('\1\16|&%\22\96!','Q\127\15O')]=PE[32635]or td(117653,3874,32635),WA(0,2,0.5,0)else RG(up[jy('\239\207\128\167\206\207\143\160','\172\174\236\203')],Vm);Ij=PE[3852]or td(60158,37038,3852)end until Ij==7137 end hq[jy('\n<-','Y')]=function(ti,yq)Vm=yq==true;M()end;hq[jy('nL]',')')]=function(Qe)return Vm end;Vp[jy('Cff','\2')](Vp,Dq[jy('\202k\n\253\161\189\227\243\243k\17\191\135\147\255\228\236','\135\4\127\142\196\255\150\135')][jy('\255\169~\210\163s\200','\188\198\16')](Dq[jy('\202k\n\253\161\189\227\243\243k\17\191\135\147\255\228\236','\135\4\127\142\196\255\150\135')],function()Vm=not Vm;M()end));Xw(Ow,Ow,Vp)local function cE()local xC,Cm,ya;ya,Cm=function(m,Id,Tn)Cm[Id]=Yl(m,2705)-Yl(Tn,25100)return Cm[Id]end,{};xC=Cm[-16135]or ya(51873,-16135,6585)while xC~=645 do if xC>26208 then xC=Cm[-21348]or ya(14903,-21348,19501)continue elseif xC<=17531 then if dn then xC=Cm[-27633]or ya(58837,-27633,60136)continue end xC=38073 else xC,dn[jy('aSMB','56')]=Cm[-32274]or ya(38766,-32274,27466),NC(jt)end end end local _c=(Dj and up[jy('\157\96\186k','\219\f')])and(up[jy('QOvD','\23#')]..jy('0\30\2','{'))or nil if Dj and dn then Vp[jy('\191\154\154','\254')](Vp,dn[jy('\17\215G\18\2\224\149\150(\215\\P$\206\137\129\55','\\\184\50ag\162\224\226')][jy('4\20\226\25\30\239\3','w{\140')](dn[jy('\17\215G\18\2\224\149\150(\215\\P$\206\137\129\55','\\\184\50ag\162\224\226')],function()local ro,iD,li;iD,ro={},function(xo,bp,SC)iD[SC]=Yl(bp,10234)-Yl(xo,53160)return iD[SC]end;li=iD[-32063]or ro(31058,71793,-32063)repeat if li>=34394 then if li>34394 then if(dx[jy('\189\161','\210')][jy('\a\n\v\5\15','df')]()-lp)<0.14999999999999999 then li=iD[30137]or ro(41871,63347,30137)continue end li=34394 else hi=true;dn[jy('aUMD','50')],li=jy('KKK','e'),iD[18665]or ro(20858,63522,18665)continue end else return end until li==16646 end));Vp[jy('\240\213\213','\177')](Vp,jD[jy('x\6IR\15jY','7h\v')](function(Xx,pu)local jv,nz,KD,rp;jv,rp={},function(wk,ap,Ny)jv[wk]=Yl(Ny,19538)-Yl(ap,40614)return jv[wk]end;KD=jv[-31917]or rp(-31917,8653,79389)while KD~=31474 do if KD<32832 then if KD>=13861 then if KD<21221 then if KD>13861 then if not(Xx[jy('\180\140\192\242N\17\145\138\209\212~\15\132','\225\255\165\128\a\127')]==dx[jy('\215=\231>','\146S')][jy('<Z\240\170\247\131\25\\\225\140\199\157\f','i)\149\216\190\237')][jy('z9\239c^=\228e','1\\\150\1')])then KD=jv[2939]or rp(2939,3016,71543)continue else KD=jv[1897]or rp(1897,20668,73086)continue end KD=jv[-24896]or rp(-24896,23438,39792)else Vm=not Vm;M();nz=sE and sE[jy('\14\253x?\238~&','Q\138\17')]if not(nz and nz[jy('r\17\205U\24\192','<~\185')])then KD=jv[15452]or rp(15452,47317,85737)continue else KD=jv[-1517]or rp(-1517,46960,58924)continue end KD=jv[-13585]or rp(-13585,50808,96628)end elseif KD>21221 then jt=nz;hi=false;lp=dx[jy('\243\239','\156')][jy('_>S1W','<R')]();cE()if not(_c and wj)then KD=jv[21286]or rp(21286,40541,8114)continue else KD=jv[-20858]or rp(-20858,35588,27385)continue end KD=jv[14061]or rp(14061,64991,64012)else return end elseif KD>=4602 then if KD>4602 then if not(Xh(Xx,jt))then KD=jv[25425]or rp(25425,40406,37866)continue else KD=jv[-27468]or rp(-27468,33712,8041)continue end KD=jv[-17064]or rp(-17064,37457,42349)else if nz then KD=jv[-24995]or rp(-24995,31392,65800)continue end KD=21221 end else wj[jy('\t\2\23\4\27','~p')](_c,jt);KD=jv[-13698]or rp(-13698,1905,41198)end elseif KD<=47844 then if KD>=33554 then if KD>=40488 then if KD<=40488 then KD,nz=jv[-3401]or rp(-3401,42528,1746),Xx[jy('s\216\242\163\174\5V\222\227\133\158\27C','&\171\151\209\231k')]else if not(pu)then KD=jv[3606]or rp(3606,64295,90781)continue else KD=jv[-8476]or rp(-8476,52378,40494)continue end KD=jv[-6010]or rp(-6010,27289,127455)end else KD,nz=jv[22076]or rp(22076,47731,31389),Xx[jy('\212\96N\220jS\250','\159\5\55')]end elseif KD<=32832 then return else Ec(nz[jy('\210\222\51\245\215>','\156\177G')],nz,{[jy('c\248C\253R','7\145')]=up[jy('\206\234\237\238','\128\139')]or jy('\17F\145\"E\147','E)\246'),[jy('\t\211l>\217l>','J\188\2')]=(Vm and jy('LM','\3')or jy('\236\229\229','\163'))..jy('q\n','Q')..jt[jy('\164\189\135\185','\234\220')]..jy('z',"\'"),[jy("\'\248B1\23\228_>",'c\141\48P')]=1.5});KD=jv[-27011]or rp(-27011,11914,114726)end elseif KD<51534 then if Ty(Xx[jy('l\172\143\19\139\223I\170\158\53\187\193\\','9\223\234a\194\177')])then KD=jv[31618]or rp(31618,61688,82132)continue end KD=jv[26819]or rp(26819,21039,37585)elseif KD>51534 then KD=jv[-5924]or rp(-5924,848,87226)continue else if not(hi)then KD=jv[21006]or rp(21006,32219,82524)continue else KD=jv[-27396]or rp(-27396,48723,4514)continue end KD=10897 end end end))end hq[jy('\178\255\150\190\255\155','\245\154\226')]=function(fs)return jt end local Rk,Ce,ab;Rk,Ce=function(Bu,Tv,Lw)Ce[Lw]=Yl(Tv,5845)-Yl(Bu,58475)return Ce[Lw]end,{};ab=Ce[9497]or Rk(41074,50624,9497)repeat if ab<36940 then if ab>28455 then hq[jy('\150S\153\142S\148','\197\54\237')]=function(Gt,Eo)local Eg,xv,tC;Eg,tC=function(Po,KA,Es)tC[Es]=Yl(Po,11806)-Yl(KA,35718)return tC[Es]end,{};xv=tC[-7833]or Eg(34087,59826,-7833)repeat if xv<=20831 then if xv>18693 then xv=tC[22865]or Eg(118071,26823,22865)continue elseif xv>3818 then if ub(Eo)then xv=tC[27048]or Eg(27170,48852,27048)continue end xv=20831 else jt=Eo;cE()if not(_c and wj)then xv=tC[23720]or Eg(17166,36919,23720)continue else xv=tC[-16529]or Eg(57628,54213,-16529)continue end xv=tC[11172]or Eg(37796,59357,11172)end else wj[jy('U\161K\167G','\"\211')](_c,jt);xv=tC[-13823]or Eg(62653,706,-13823)end until xv==65512 end if not(up[jy('_\211x\216','\25\191')]and wj)then ab=Ce[403]or Rk(58497,43573,403)continue else ab=Ce[6342]or Rk(46226,74545,6342)continue end ab=48118 elseif ab>19462 then sE[jy('m3)\\ /E','2D@')][jy('QW\246\134bW\240\153}','\14#\153\233')][jy('\237\137\248\205\158\228','\172\253\140')](Ow,up[jy('\211\202y\235\209\127\247','\135\165\22')],Vp);ab=Ce[21337]or Rk(29295,87545,21337)else wj[jy('\158\224\248\\\159\241\250G','\236\133\159\53')](_c,jt,function(zd)hq[jy('|V\188dV\177','/3\200')](hq,zd)end);ab=Ce[-10287]or Rk(20869,86255,-10287)end elseif ab>48118 then wj[jy('\28De=\29Ug&','n!\2T')](up[jy('\202=\237\54','\140Q')],Vm,function(Xy)hq[jy('^hy','\r')](hq,Xy)end);ab=Ce[16837]or Rk(64597,49889,16837)elseif ab>44328 then if not(_c and wj)then ab=Ce[805]or Rk(52195,43265,805)continue else ab=Ce[8181]or Rk(20999,70823,8181)continue end ab=36940 elseif ab<=36940 then M(false);cE()if not(sE[jy('\150\144\1\167\131\a\190','\201\231h')][jy('\254\244\214E\205\244\208Z\210','\161\128\185*')])then ab=Ce[29234]or Rk(8432,91926,29234)continue else ab=Ce[27575]or Rk(12895,86926,27575)continue end ab=Ce[8460]or Rk(8211,92021,8460)else sE[jy('P/\17/\181\137b>\26%\147\136{','\15NuK\246\230')](sE,hq)return hq end until ab==47974 end;ie[jy('\243\249\238\196\240\245','\160\149\135')]=function(Oh,Yn)local Qk,jg,gD,Cu=ga(),Oh[jy('\132@u\181Ss\172','\219\55\28')][jy('\231\222\203','\184')],(am(Yn[jy('\174\138\141','\227')])and(Yn[jy('aEB',',')]))or 0,(am(Yn[jy('\136\164\189','\197')])and(Yn[jy('\b$=','E')]))or 100 if Cu<=gD then Cu=gD+1 end local gz,vt=Cu-gD,(am(Yn[jy('\b\152\143\145$\155\137\141\53','A\246\236\227')])and(Yn[jy('\30EdD2FbX#','W+\a\54')]))or 1 if not(vt<0)then else vt=0 end local yG,Ig,Pm=(am(Yn[jy('\187\255\5\158\239\15\139','\255\154c')])and(Yn[jy('\176\142s\149\158y\128','\244\235\21')]))or gD,Yn[jy('b\134\200W\154\214','1\243\174')]or'',zr(Oh[jy('~x\248\142U~\249\148','!\27\151\224')],44);Pm[jy('\242P%\199_#','\162\49W')]=Oh[jy('\177g\228\151\154a\229\141','\238\4\139\249')];Qk[jy('\201\236\236','\136')](Qk,Pm);Xw(Pm,Pm,Qk);Iv(jy('\201\183\16i\209\179\nx\241','\157\210h\29'),{[jy('\249\244\198\204\251\192','\169\149\180')]=Pm,[jy('\230m\155\252|\225U\156A?#\214m\150\228k\242H\140A8\14','\164\f\248\151\27\147:\233/[w')]=1,[jy('\207\229h\241\235\227t\246','\159\138\27\152')]=WA(0,10,0,6),[jy('\152\14\177\2','\203g')]=WA(1,-20,0,16),[jy('c\143K\148','%\224')]=dx[jy('\140\145\188\146','\201\255')][jy('0\226\24\249','v\141')][jy('t\178\173zG\5~\184\189{S\5','3\221\217\18&h')],[jy('\139\187\237\228\140\183\239\245','\223\222\149\144')]=12,[jy('sG_\f\26HNH\nj',"\'\"\'xY")]=Je[jy('X\177t\160','\f\212')],[jy('\158$\173\96\57\57v\163&\187y\4\22n','\202A\213\20ax\26')]=dx[jy('rpBs','7\30')][jy('\241\174Vs\214V}\204\172@j\235ye','\165\203.\a\142\23\17')][jy('\206\189\228\172','\130\216')],[jy('\139B\167S',"\223\'")]=Yn[jy(')\14\n\n','go')]or jy('}\0\151J\t\140','.l\254')})local cx,BB=Iv(jy('(\228! 0\224;1\16','|\129YT'),{[jy('\96\231\157U\232\155','0\134\239')]=Pm,[jy('g\221)\187BJ6\153\243\0\157W\221$\163UY+\137\243\a\176','%\188J\208%8Y\236\157d\201')]=1,[jy('\255\246\25\14\219\240\5\t','\175\153jg')]=WA(0,10,0,6),[jy('*\190\3\178','y\215')]=WA(1,-20,0,16),[jy('\16\249\56\226','V\150')]=dx[jy('\177\n\129\t','\244d')][jy('~\rV\22','8b')][jy('1\144\247\30\158\238','v\255\131')],[jy('\179\54\15\1\180:\r\16','\231Swu')]=12,[jy("\225.\247\175z\218\'\224\169\n",'\181K\143\219\57')]=Je[jy('\213^\197\210N\223\242','\134+\167')],[jy('to\210+\222\150\214Im\196\50\227\185\206',' \n\170_\134\215\186')]=dx[jy('\254\19\206\16','\187}')][jy('\21\252\57\155 \147\19(\254/\130\29\188\v','A\153A\239x\210\127')][jy('\253]\200\\\219','\175\52')],[jy('|cPr','(\6')]=''}),Iv(jy('\154\r\189\18\185','\220\127'),{[jy('\225\128f\212\143\96','\177\225\20')]=Pm,[jy('nz\153gJ|\133\96','>\21\234\14')]=WA(0,10,1,-14),[jy('\n^#R','Y7')]=WA(1,-20,0,6),[jy('a\165\22\219\165\6k\165M\160\54\223\174\27v\227','#\196u\176\194t\4\208')]=Je[jy('\167M=\129G=','\229\"O')],[jy('\239\178\237\133\214\215\246\196\167\250\177\218\221\192\193','\173\221\159\225\179\165\165')]=0});ad(3,BB)local Sv=Iv(jy('\161\242\134\237\130','\231\128'),{[jy('\131\50\251\182=\253','\211S\137')]=BB,[jy('\237\155E\140\26\161H\232\193\158e\136\17\188U\174',"\175\250&\231}\211\'\157")]=Je[jy('\236\132\241\200\137\230','\173\231\146')],[jy('\15\171&\167','\\\194')]=WA(0,0,1,0),[jy('^S\189\169\170@\4uF\170\157\166J2p','\28<\207\205\207\50W')]=0});ad(3,Sv)local function Qb(Ip)local SD,my,ww,Ft;my,SD=function(Ms,Tg,s_)SD[s_]=Yl(Tg,59816)-Yl(Ms,14060)return SD[s_]end,{};ww=SD[3668]or my(8844,124370,3668)while ww~=42382 do if ww<32354 then if ww>4882 then ww,Ft=SD[-10628]or my(50451,126649,-10628),Ho((Ft-gD)/vt+0.5)*vt+gD else return Km(Ft,gD,Cu)end elseif ww<47675 then return gD elseif ww>47675 then if not am(Ip)then ww=SD[7472]or my(65443,110105,7472)continue end ww=47675 else Ft=Ip if vt>0 then ww=SD[29071]or my(62129,128833,29071)continue end ww=4882 end end end local Nm=_p({[jy('\216e\216E\208e\200T','\177\v\171\49')]=Pm,[jy('8\250\6\254\3','g\151')]=Qk,[jy('}w07Vm::','\"\4UT')]=Oh,[jy('\237\208\222\215\213','\178\182')]=Yn[jy('C\179d\184','\5\223')],[jy('\146\14\213|\145\191\5\201j\129','\205j\176\15\229')]=false},bc)local function za(Fm)local zk,_a,Bw,Ws,jb;_a,Bw=function(Xt,yg,MC)Bw[yg]=Yl(Xt,20113)-Yl(MC,59798)return Bw[yg]end,{};zk=Bw[-13341]or _a(93375,-13341,13653)repeat if zk<16622 then if zk>3708 then zk=Bw[-1548]or _a(36277,-1548,50838)continue else RG(Yn[jy('VE\133\128wE\138\135','\21$\233\236')],yG);zk=Bw[-23401]or _a(59432,-23401,37842)end elseif zk>=17771 then if zk<=17771 then yG=Qb(yG);Ws=(yG-gD)/gz;Sv[jy('\131[\170W','\208\50')]=WA(Ws,0,1,0);jb=(vt<1)and hw(jy('?z(2','\26T'),yG)or Th(Ho(yG+0.5));cx[jy('ymU|','-\b')]=jb..Ig if not(Yn[jy('\234\218\205\209','\172\182')]and jg)then zk=Bw[-11002]or _a(42134,-11002,16527)continue else zk=Bw[19446]or _a(77251,19446,3401)continue end zk=Bw[30912]or _a(2430,30912,61079)else jg[jy('\219-\197+\201','\172_')](Yn[jy('\142\129\169\138','\200\237')],yG);zk=Bw[23160]or _a(8595,23160,51074)end else if not(Fm~=false)then zk=Bw[-8114]or _a(1879,-8114,62663)continue else zk=Bw[-18624]or _a(59758,-18624,28693)continue end zk=11381 end until zk==37924 end Nm[jy('Tbs','\a')]=function(Uw,ho)local mq,Vv,iA;Vv,mq={},function(is,My,uy)Vv[My]=Yl(is,1450)-Yl(uy,39848)return Vv[My]end;iA=Vv[10157]or mq(63737,10157,400)while iA~=19895 do if iA<=60284 then if iA<=25371 then if am(ho)then iA=Vv[11900]or mq(74258,11900,42900)continue end iA=Vv[17024]or mq(128921,17024,26544)else yG=ho;za();iA=Vv[21609]or mq(119399,21609,31258)end else iA=Vv[-28098]or mq(65779,-28098,11274)continue end end end;Nm[jy('Cap','\4')]=function(Fr)return yG end local rg,ju,Bj=nil,0,1 local function Ok(Jt)local KG=Km((Jt-ju)/Bj,0,1);yG=gD+KG*gz;za()end local function IG()local QG,Gi,pn;pn,QG={},function(bt,e_,Pa)pn[e_]=Yl(Pa,8019)-Yl(bt,28371)return pn[e_]end;Gi=pn[-12983]or QG(41901,-12983,80845)repeat if Gi>=55320 then if Gi>55320 then rg[jy('\a\180[7\163G:','C\209(')](rg);rg,Gi=nil,pn[13784]or QG(41843,13784,113387)else Gi=pn[10393]or QG(54660,10393,65001)continue end else if not(rg)then Gi=pn[-7778]or QG(38952,-7778,118848)continue else Gi=pn[-27927]or QG(17320,-27927,69184)continue end Gi=pn[21344]or QG(26204,21344,65524)end until Gi==10083 end local ym,Dl,ZB;Dl,ym={},function(rD,Db,mr)Dl[mr]=Yl(rD,51531)-Yl(Db,36150)return Dl[mr]end;ZB=Dl[-26686]or ym(29167,59966,-26686)repeat if ZB>20892 then if ZB<=40204 then Oh[jy('\194\129S\160\57\209\240\144X\170\31\208\233','\157\224\55\196z\190')](Oh,Nm)return Nm else Oh[jy('m\22G\\\5AE','2a.')][jy('@\181\127\16s\181y\15l','\31\193\16\127')][jy('\247\53%\215\"\57','\182AQ')](Pm,Yn[jy("\31\140A\'\151G;",'K\227.')],Qk);ZB=Dl[24961]or ym(100274,15579,24961)end elseif ZB>8707 then Qk[jy('\223\250\250','\158')](Qk,BB[jy('\206m\138\186\179\197f\157\174\169','\135\3\250\207\199')][jy('\6\241t+\251y1','E\158\26')](BB[jy('\206m\138\186\179\197f\157\174\169','\135\3\250\207\199')],function(Xb,ax)local Ii,vz,Qo,Sa;Qo,Sa={},function(Qi,FD,EF)Qo[Qi]=Yl(EF,4235)-Yl(FD,44450)return Qo[Qi]end;vz=Qo[17832]or Sa(17832,22065,113955)while vz~=26441 do if vz<=25499 then if vz<25256 then if vz<=4427 then if rg then vz=Qo[27221]or Sa(27221,1585,50351)continue end vz=53818 else return end elseif vz>25256 then return else return end elseif vz>53818 then if not(Xb[jy('gG:\160W\nBA+\134g\20W','24_\210\30d')]~=dx[jy('\144\231\160\228','\213\137')][jy('\176\31i\n\29\207\149\25x,-\209\128','\229l\fxT\161')][jy('B_\186:@xzD\187&K\v','\15\48\207I%:')]and Xb[jy('G\25\153T\219lb\31\136r\235rw','\18j\252&\146\2')]~=dx[jy('\181m\133n','\240\3')][jy('\140\186\247\191\18P\169\188\230\153\"N\188','\217\201\146\205[>')][jy('\141\150\172\154\177','\217\249')])then vz=Qo[-14003]or Sa(-14003,22623,71619)continue else vz=Qo[-8640]or Sa(-8640,57081,50813)continue end vz=4427 elseif vz>45589 then ju=BB[jy('\226\155\191\141\142\226$\218\243\150\191\139\150\254?\209','\163\249\204\226\226\151P\191')][jy('G','\31')];Bj=DB(1,BB[jy("Y\181\'\151\157El\178\a\145\139U",'\24\215T\248\241\48')][jy('\233','\177')]);Ok(Xb[jy('\239\57\52|\203?({','\191VG\21')][jy('\245','\173')]);Ii=ga();rg=Ii;Ii[jy('@ee','\1')](Ii,jD[jy('\217c\160\176\247c\132\189\242','\150\r\227\216')](function(CF)local Fa,Oc,bg;Oc,Fa={},function(xx,vA,Zb)Oc[Zb]=Yl(vA,13895)-Yl(xx,17973)return Oc[Zb]end;bg=Oc[-5305]or Fa(664,72569,-5305)while bg~=27619 do if bg<46822 then bg=Oc[-28098]or Fa(9150,59177,-28098)continue elseif bg>46822 then if CF[jy('\252B}o_o\217DlIoq\204','\169\49\24\29\22\1')]==dx[jy('\155\154\171\153','\222\244')][jy('N\205\140\135\170\214k\203\157\161\154\200~','\27\190\233\245\227\184')][jy('\17\160\185\\\222R3\185\169B\222q(','\\\207\204/\187\31')]or CF[jy('\135\51\205S\222\190\162\53\220u\238\160\183','\210@\168!\151\208')]==dx[jy('\165\209\149\210','\224\191')][jy('\181\163>\148\191\183\144\165/\178\143\169\133','\224\208[\230\246\217')][jy('\165?\132\51\153','\241P')]then bg=Oc[17446]or Fa(40294,107646,17446)continue end bg=28107 else Ok(CF[jy('\222-\184\168\250+\164\175','\142B\203\193')][jy('\227','\187')]);bg=Oc[-17330]or Fa(3576,36831,-17330)end end end));Ii[jy('\188\153\153','\253')](Ii,jD[jy('\136}P\169wp\163','\199\19\21')](function(Tr)local db,zo,xz;xz,db={},function(Di,un_,Pe)xz[Pe]=Yl(Di,21050)-Yl(un_,43799)return xz[Pe]end;zo=xz[16503]or db(31303,47160,16503)repeat if zo<=49764 then if zo>5454 then zo=xz[21436]or db(638,46644,21436)continue else if Tr[jy('\164#EDb}\129%TbRc\148','\241P 6+\19')]==dx[jy('\140\137\188\138','\201\231')][jy('\211\248\21\153\"\177\246\254\4\191\18\175\227','\134\139p\235k\223')][jy("\133\17a\218\191\'\189\n\96\198\180T",'\200~\20\169\218e')]or Tr[jy('t\208\96X\155DQ\214q~\171ZD','!\163\5*\210*')]==dx[jy('\130\r\178\14','\199c')][jy('\158\6\252\250bB\187\0\237\220R\\\174','\203u\153\136+,')][jy("{\'Z+G",'/H')]then zo=xz[4941]or db(118899,13352,4941)continue end zo=49764 end else IG();zo=xz[-31307]or db(86115,38114,-31307)end until zo==13089 end));vz=Qo[-13694]or Sa(-13694,30257,86615)continue else if not(ax)then vz=Qo[17463]or Sa(17463,48886,57977)continue else vz=Qo[-21208]or Sa(-21208,39000,34857)continue end vz=Qo[19839]or Sa(19839,34983,70696)end end end));Qk[jy('\28\57\57',']')](Qk,function()IG()end)if Yn[jy('\200o\239d','\142\3')]and jg then ZB=Dl[-388]or ym(3547,12219,-388)continue end ZB=Dl[-11326]or ym(34107,51733,-11326)elseif ZB<=1357 then za(false)if not(Oh[jy('N\136(\127\155.f','\17\255A')][jy('#\211\178\222\16\211\180\193\15','|\167\221\177')])then ZB=Dl[-7908]or ym(125440,2825,-7908)continue else ZB=Dl[9321]or ym(130671,51049,9321)continue end ZB=Dl[-20412]or ym(122647,62566,-20412)else jg[jy('M\179j\228L\162h\255','?\214\r\141')](Yn[jy('*\6\r\r','lj')],yG,function(Gj)Nm[jy('xN_','+')](Nm,Gj)end);ZB=Dl[-12665]or ym(47096,62544,-12665)end until ZB==30547 end;ie[jy("\214\253\'\255\241\48\249",'\157\152^')]=function(Vw,ib)local o_,Sb,Mz,ai,sx,sD=ga(),Vw[jy('b\n\213S\25\211J','=}\188')][jy('Rk~','\r')],ub(ib[jy('\129\213\201\164\197\195\177','\197\176\175')])and ib[jy("LM-i]\'|",'\b(K')]or dx[jy('\234\198\218\197','\175\168')][jy('n\18\195f\24\222@','%w\186')][jy('\189\2\174\134\3\178\134','\232l\197')],false,0,zr(Vw[jy('f\183\225\160M\177\224\186','9\212\142\206')],32);sD[jy('\163\142\185\150\129\191','\243\239\203')]=Vw[jy('\144i\135\158\187o\134\132','\207\n\232\240')];o_[jy('\b--','I')](o_,sD);Xw(sD,sD,o_);Gm(sD,ib[jy('\167\151\132\147','\233\246')]or jy('FN\239oB\248i','\r+\150'))local nD=Iv(jy('\179\207\n\168\242\146\222\6\179\222','\231\170r\220\176'),{[jy('\183\167\236\130\168\234','\231\198\158')]=sD,[jy('#Y\27\129\136\16g\23\128\137\22','b7x\233\231')]=EG(1,0.5),[jy('\177\18o\202\149\20s\205','\225}\28\163')]=WA(1,-10,0.5,0),[jy('h&A*',';O')]=Zi(54,22),[jy('\167\242L\208\20\224\160\162\139\247l\212\31\253\189\228','\229\147/\187s\146\207\215')]=Je[jy('\30\127\247+k\230(','M\n\133')],[jy('\152c\188\243~\183D\179v\171\199r\189r\182','\218\f\206\151\27\197\23')]=0,[jy('e\218\140A\170\149\238P\192\150m\135\140\245V','$\175\248.\232\224\154')]=false,[jy('\171\152\131\131','\237\247')]=dx[jy('\255\164\207\167','\186\202')][jy('a\28I\a',"\'s")][jy('\127\24\135P\22\158','8w\243')],[jy('6\221\154\56\49\209\152)','b\184\226L')]=11,[jy('\128a\163\bq\187h\180\14\1','\212\4\219|2')]=Je[jy('\199-\235<','\147H')],[jy('\166pl\185sz\135{w\172Sm',"\242\21\20\205\'\b")]=dx[jy('\164\223\148\220','\225\177')][jy('/y\215\230\127-\14r\204\243_:','{\28\175\146+_')][jy('\6\168\2\178#','G\220')],[jy('Y\201u\216','\r\172')]=''});ad(4,nD)local EB=_p({[jy('0-\220\196\56-\204\213','YC\175\176')]=sD,[jy(':\133\4\129\1','e\232')]=o_,[jy('y\240S_R\234YR','&\131\54<')]=Vw,[jy('C\239p\232{','\28\137')]=ib[jy('\26\203=\192','\\\167')],[jy('\165o\168\205?\136d\180\219/','\250\v\205\190K')]=false},bc)local function Bc()local xE,oA,Ck;oA,Ck=function(te,ea,Dw)Ck[Dw]=Yl(te,53535)-Yl(ea,37776)return Ck[Dw]end,{};xE=Ck[-12889]or oA(30233,41992,-12889)repeat if xE<=28526 then if xE<=3110 then xE=Ck[-20903]or oA(100852,60497,-20903)continue else nD[jy('1\131\29\146','e\230')]=NC(Mz)if not(ib[jy('\\\207{\196','\26\163')]and Sb)then xE=Ck[-11310]or oA(119803,25902,-11310)continue else xE=Ck[-14804]or oA(127476,45920,-14804)continue end xE=Ck[29535]or oA(25364,13941,29535)end else Sb[jy(' m>k2','W\31')](ib[jy('j\178M\185',',\222')],Mz);xE=Ck[516]or oA(33089,55208,516)end until xE==55594 end local Ru,_h,Yo;Ru,_h={},function(gx,vw,Wm)Ru[vw]=Yl(Wm,14892)-Yl(gx,64915)return Ru[vw]end;Yo=Ru[-20947]or _h(22331,-20947,56767)while Yo~=11031 do if Yo>13101 then if Yo<=14362 then Vw[jy('\189\55g\6A\134\143&l\fg\135\150','\226V\3b\2\233')](Vw,EB)return EB else EB[jy('\247\193\208','\164')]=function(Va,Pq)local mm,gr,ff;mm,ff={},function(iF,Kf,tn)mm[Kf]=Yl(iF,33310)-Yl(tn,10017)return mm[Kf]end;gr=mm[-5627]or ff(78643,-5627,61570)while gr~=610 do if gr>39277 then if not(ub(Pq))then gr=mm[14713]or ff(109760,14713,52200)continue else gr=mm[-10648]or ff(125147,-10648,63097)continue end gr=16917 elseif gr<=16917 then gr=mm[26716]or ff(6800,26716,45325)continue else Mz=Pq;Bc();gr=mm[-27805]or ff(22131,-27805,46457)end end end;EB[jy('-\15\30','j')]=function(bb)return Mz end;o_[jy('/\n\n','n')](o_,nD[jy('\b\180\185\143!}5\248\49\180\162\205\aS)\239.','E\219\204\252D?@\140')][jy('\177\229\145\156\239\156\134','\242\138\255')](nD[jy('\b\180\185\143!}5\248\49\180\162\205\aS)\239.','E\219\204\252D?@\140')],function()local Xp,pr,Re;pr,Xp=function(qn,Mx,Uy)Xp[Uy]=Yl(Mx,55576)-Yl(qn,34565)return Xp[Uy]end,{};Re=Xp[5593]or pr(38865,33352,5593)while Re~=39109 do if Re>26561 then return elseif Re<=19068 then if not((dx[jy('\254\226','\145')][jy('\223[\211T\215','\188\55')]()-sx)<0.14999999999999999)then Re=Xp[2342]or pr(16571,128615,2342)continue else Re=Xp[9604]or pr(56652,3173,9604)continue end Re=26561 else ai=true;nD[jy('\196\155\232\138','\144\254')],Re=jy('\168\168\168','\134'),Xp[7772]or pr(12083,104931,7772)continue end end end));o_[jy('\255\218\218','\190')](o_,jD[jy('cQ\135IX\164B',',?\197')](function(Qd,nk)local iB,Kv,Ol,we;we,Ol={},function(VF,Cy,ns)we[Cy]=Yl(ns,57042)-Yl(VF,55679)return we[Cy]end;Kv=we[8426]or Ol(3658,8426,113276)while Kv~=43722 do if Kv>=36217 then if Kv<53180 then if Kv<49384 then if not(nk)then Kv=we[-31454]or Ol(36693,-31454,44628)continue else Kv=we[-9296]or Ol(609,-9296,95240)continue end Kv=6748 elseif Kv>49384 then Kv,iB=we[-11515]or Ol(53600,-11515,13055),Qd[jy('\199\151\139\207\157\150\233','\140\242\242')]else return end elseif Kv<56165 then if Kv<=53180 then return else if not(Xh(Qd,Mz))then Kv=we[14405]or Ol(26943,14405,87415)continue else Kv=we[-15544]or Ol(3631,-15544,102079)continue end Kv=56165 end elseif Kv<=56165 then Kv=we[6307]or Ol(31010,6307,103925)continue else if iB then Kv=we[-25944]or Ol(30740,-25944,15388)continue end Kv=49384 end elseif Kv>16739 then if Kv<=20999 then if not(Qd[jy("o\a\'>\b\131J\1\54\24\56\157_",':tBLA\237')]==dx[jy("A\'q$",'\4I')][jy('!$\161\183\192\16\4\"\176\145\240\14\17','tW\196\197\137~')][jy('\v\201\148e/\205\159c','@\172\237\a')])then Kv=we[-2579]or Ol(5563,-2579,12206)continue else Kv=we[-9837]or Ol(8887,-9837,70792)continue end Kv=58382 else RG(ib[jy('lB\211\244MB\220\243','/#\191\152')],Mz,jy('\16}3\19|3\4','\96\15V'));Kv=we[-7627]or Ol(61936,-7627,122150)end elseif Kv>16713 then Mz=iB;ai=false;sx=dx[jy('\139\151','\228')][jy('\192\213\204\218\200','\163\185')]();Bc();RG(ib[jy('1\31\27\155\16\31\20\156','r~w\247')],Mz,jy('\149\131\146','\230'));Kv=we[15461]or Ol(57572,15461,9297)elseif Kv<=9400 then if Kv<=6748 then if not(ai)then Kv=we[6350]or Ol(20859,6350,114590)continue else Kv=we[-23417]or Ol(22469,-23417,15891)continue end Kv=55624 else if Ty(Qd[jy('\5?\212\175x\189 9\197\137H\163\53','PL\177\221\49\211')])then Kv=we[27332]or Ol(58976,27332,24250)continue end Kv=we[15022]or Ol(30716,15022,85059)end else Kv,iB=we[-5915]or Ol(12685,-5915,70610),Qd[jy('\aw\151G\224\159\"q\134a\208\129\55','R\4\242\53\169\241')]end end end))if ib[jy('a\153F\146',"\'\245")]and Sb then Yo=Ru[-25122]or _h(33782,-25122,43615)continue end Yo=Ru[-14787]or _h(49703,-14787,18637)end elseif Yo>=6362 then if Yo>6362 then Bc()if not(Vw[jy('\224 \148\209\51\146\200','\191W\253')][jy('\28&sr/&um0','CR\28\29')])then Yo=Ru[28837]or _h(39298,28837,42503)continue else Yo=Ru[30401]or _h(39930,30401,17775)continue end Yo=Ru[26529]or _h(32745,26529,32952)else Vw[jy('ja*[r,B','5\22C')][jy('\31\55UE,7SZ3','@C:*')][jy('\143\4\218\175\19\198','\206p\174')](sD,ib[jy(';n\181\3u\179\31','o\1\218')],o_);Yo=Ru[26716]or _h(57026,26716,24903)end else Sb[jy('\157af\215\156pd\204','\239\4\1\190')](ib[jy('\18\163\53\168','T\207')],Mz,function(Cs)EB[jy('\223\233\248','\140')](EB,Cs)end);Yo=Ru[27824]or _h(28626,27824,65346)end end end;ie[jy('B\169Hb\174_n','\22\204\48')]=function(df,Rd)local eH,YD,gp=ga(),df[jy('\20\148\176%\135\182<','K\227\217')][jy('\160\153\140','\255')],zr(df[jy('z\29\157\127Q\27\156e','%~\242\17')],56);gp[jy('\162\198\176\151\201\182','\242\167\194')]=df[jy('\232\221\223B\195\219\222X','\183\190\176,')];eH[jy('Qtt','\16')](eH,gp);Xw(gp,gp,eH);Iv(jy('~\161+\174f\165\49\191F','*\196S\218'),{[jy('\19\227o&\236i','C\130\29')]=gp,[jy("\248]\222\t\'\174,\164\211\220\26\200]\211\17\48\189\49\180\211\219\55",'\186<\189b@\220C\209\189\184N')]=1,[jy('\238\227K&\202\229W!','\190\140\56O')]=WA(0,10,0,6),[jy('\150\222\191\210','\197\183')]=WA(1,-20,0,16),[jy(',-\4\54','jB')]=dx[jy('\238%\222&','\171K')][jy('e\168M\179','#\199')][jy('\252\213w\213\241\26\246\223g\212\229\26','\187\186\3\189\144w')],[jy('\96l>!g\96<0','4\tFU')]=12,[jy('\250\252\t\24\208\193\245\30\30\160','\174\153ql\147')]=Je[jy('\151\242\187\227','\195\151')],[jy('A\199\v\134\143\186&|\197\29\159\178\149>','\21\162s\242\215\251J')]=dx[jy('5\31\5\28','pq')][jy('\219\229\207\216\17\219\197\230\231\217\193,\244\221','\143\128\183\172I\154\169')][jy('\30\208\52\193','R\181')],[jy('*\178\6\163','~\215')]=Rd[jy('X\224{\228','\22\129')]or jy('\2+\f\",\27.','VNt')})local Nq=Iv(jy('gF\182Ga\161K','3#\206'),{[jy('\137c\240\188l\246','\217\2\130')]=gp,[jy('=\128\127\15\25\134c\b','m\239\ff')]=WA(0,10,0,26),[jy('\29\180\52\184','N\221')]=WA(1,-20,0,22),[jy('\248\252\30K\239\175\160\r\212\249>O\228\178\189K','\186\157} \136\221\207x')]=Je[jy('\15\157\190:\137\175\57','\\\232\204')],[jy('\162\181\192\96\230gy\137\160\215T\234mO\140','\224\218\178\4\131\21*')]=0,[jy('l\174D\181','*\193')]=dx[jy('\135\19\183\16','\194}')][jy('\3\252+\231','E\147')][jy('W\v\176x\5\169','\16d\196')],[jy('\212\2o2\211\14m#','\128g\23F')]=12,[jy('ES\248\139\239~Z\239\141\159','\17\54\128\255\172')]=Je[jy('\fj {','X\15')],[jy('\169$\208^T\202p\149,\212Oe\199g\141','\249H\177=1\162\31')]=Rd[jy('\229m~-\15\221ns*\15\199','\181\1\31Nj')]or'',[jy('\148\23\137p\150\159;\234\160\30\154P\156\155;\244\247','\196{\232\19\243\247T\134')]=Je[jy('\186;\131+\147','\247N')],[jy('\139\228!\232I\156\48\182\230\55\241t\179(','\223\129Y\156\17\221\\')]=dx[jy('\4\155\52\152','A\245')][jy('\210\218\173\178#\243\23\239\216\187\171\30\220\15','\134\191\213\198{\178{')][jy('/\131\5\146','c\230')],[jy("\'=\253\193^\4\138\212\16\30\246\230C3\154\223",'dQ\152\160,P\239\172')]=false,[jy('c\29O\f','7x')]=Rd[jy('\188\155\210\153\139\216\140','\248\254\180')]or''});ad(4,Nq);Gg(0,0,8,8,Nq)local dA=_p({[jy('_\184I\14W\184Y\31','6\214:z')]=gp,[jy('\234l\212h\209','\181\1')]=eH,[jy('s.<\146X46\159',',]Y\241')]=df,[jy('\236\189\223\186\212','\179\219')]=Rd[jy('\199\185\224\178','\129\213')],[jy('\194\189qU\247\239\182mC\231','\157\217\20&\131')]=false},bc);dA[jy('#\21\4','p')]=function(to,Sp)Nq[jy('\179c\159r','\231\6')]=Th(Sp or'')end;dA[jy('\225\195\210','\166')]=function(h)return Nq[jy('vxZi','\"\29')]end if Rd[jy('\252\228z\215\227~\209','\178\145\23')]then eH[jy('\137\172\172','\200')](eH,Nq[jy('\212H@\136\186\218\167\49\248\178\245W\251LZ\191\173\209\132=\237\168\237x','\147-4\216\200\181\215T\138\198\140\20')](Nq,jy('\205Z\225K','\153?'))[jy('\209\28y\252\22t\230','\146s\23')](Nq[jy('\212H@\136\186\218\167\49\248\178\245W\251LZ\191\173\209\132=\237\168\237x','\147-4\216\200\181\215T\138\198\140\20')](Nq,jy('\205Z\225K','\153?')),function()local Cf,gw,Kp,xA,Nr;Kp,gw=function(Qv,p,Ob)gw[Qv]=Yl(p,11613)-Yl(Ob,1414)return gw[Qv]end,{};xA=gw[-7923]or Kp(-7923,69528,13071)repeat if xA<60476 then xA,Nq[jy('\4\250(\235','P\159')]=gw[-2408]or Kp(-2408,71717,15348),Cf elseif xA<=60476 then Nr=Nq[jy('\179N\159_','\231+')];Cf=(Nr)[jy('\201_\219N','\174,')]((Nr),jy('\189\28J\166\96\203{J\165\r','\230Bo\139P'),'')if not(Cf~=Nr)then xA=gw[24373]or Kp(24373,123156,53445)continue else xA=gw[-26908]or Kp(-26908,65474,29658)continue end xA=gw[25099]or Kp(25099,96402,23375)else xA=gw[18884]or Kp(18884,32709,19742)continue end until xA==2560 end))end local Uj,SB,fH;Uj,fH={},function(BC,hb,be)Uj[BC]=Yl(hb,16696)-Yl(be,55177)return Uj[BC]end;SB=Uj[-1965]or fH(-1965,108933,15322)repeat if SB<27860 then if SB<=1038 then if df[jy('\28\134\231-\149\225\52','C\241\142')][jy('\t\199F\214:\199@\201%','V\179)\185')]then SB=Uj[6169]or fH(6169,95130,26094)continue end SB=27860 else YD[jy(')\254\19\251(\239\17\224','[\155t\146')](Rd[jy('Wspx','\17\31')],Nq[jy('i\165E\180','=\192')],function(Cg)dA[jy('\216\238\255','\139')](dA,Cg)end);SB=Uj[-1390]or fH(-1390,53937,22770)end elseif SB>32827 then eH[jy('Hmm','\t')](eH,Nq[jy('~\211\205\6K\240\193\0L','8\188\174s')][jy('V\30\243{\20\254a','\21q\157')](Nq[jy('~\211\205\6K\240\193\0L','8\188\174s')],function(V)local Ch,AG,la,NB;Ch,NB={},function(WG,os,Tl)Ch[Tl]=Yl(WG,35383)-Yl(os,54019)return Ch[Tl]end;AG=Ch[23729]or NB(103845,49051,23729)while AG~=25865 do if AG<38866 then YD[jy('\165\201\187\207\183','\210\187')](Rd[jy('\6\182!\189','@\218')],la);AG=Ch[26633]or NB(66558,8948,26633)elseif AG>38866 then la=Nq[jy('\211\161\255\176','\135\196')]if not(Rd[jy('D\181c\190','\2\217')]and YD)then AG=Ch[8374]or NB(20889,37087,8374)continue else AG=Ch[-19525]or NB(4532,56477,-19525)continue end AG=Ch[9750]or NB(126754,7744,9750)else RG(Rd[jy("\24\'\127j9\'pm",'[F\19\6')],la,V);AG=Ch[-23050]or NB(20955,42464,-23050)continue end end end))if not(Rd[jy(')v\14}','o\26')]and YD)then SB=Uj[14388]or fH(14388,15103,41008)continue else SB=Uj[-15014]or fH(-15014,12032,60192)continue end SB=1038 elseif SB<=27860 then df[jy('I\232\183\157\183\a{\249\188\151\145\6b','\22\137\211\249\244h')](df,dA)return dA else df[jy("\221\'\164\236\52\162\245",'\130P\205')][jy('\156p\96^\175pfA\176','\195\4\15\49')][jy('\148U\16\180B\f','\213!d')](gp,Rd[jy('*\3\53\18\24\51\14','~lZ')],eH);SB=Uj[-22131]or fH(-22131,49896,49525)end until SB==1502 end local function Xd(Tp,Ye,ej)local Dz,xG,Dy=ga(),Tp[jy('H\149\189y\134\187\96','\23\226\212')][jy(',\21\0','s')],{}if not(Bi(Ye[jy('B\231Yd\248C~','\r\151-')])==jy('\23\235\1\230\6','c\138'))then else local Ju,Rq,Ff,jl,wg,pp,Sz,Gd,Cr;Ff,Gd={},function(OA,aj,I)Ff[OA]=Yl(I,51288)-Yl(aj,32980)return Ff[OA]end;wg=Ff[9644]or Gd(9644,44085,26833)repeat if wg>29608 then if wg>44608 then Hq(Dy,Cr);wg=Ff[-29632]or Gd(-29632,12205,130980)elseif wg>43873 then Ju,Rq,pp=Sz[jy('\218I\160\241s\187','\133\22\201')](Ju);wg=Ff[-20319]or Gd(-20319,10967,129758)elseif wg<=34947 then jl,Cr=Ju(Rq,pp);pp=jl if pp==nil then wg=Ff[-19673]or Gd(-19673,37572,64990)else wg=Ff[-29031]or Gd(-29031,37546,30087)end else if Bi(Cr)==jy('\149z\6\143\96\19','\230\14t')then wg=Ff[21255]or Gd(21255,21758,93442)continue end wg=Ff[-834]or Gd(-834,59811,14754)end elseif wg<17955 then if wg>3538 then wg=Ff[14894]or Gd(14894,14250,93985)continue else Ju,Rq,pp=Jx(Ju);wg=Ff[26440]or Gd(26440,13866,128985)end elseif wg<=25109 then if wg<=17955 then if FB(Ju)==jy('\20\143\2\130\5','\96\238')then wg=Ff[-11934]or Gd(-11934,14880,158)continue end wg=Ff[292]or Gd(292,29469,111636)else Sz=Ia(Ju)if not(Sz~=nil and Sz[jy('\246Ux\221oc','\169\n\17')]~=nil)then wg=Ff[29001]or Gd(29001,23092,125275)continue else wg=Ff[-10664]or Gd(-10664,24636,83824)continue end wg=Ff[-8698]or Gd(-8698,26781,112788)end else Ju,Rq,pp=Ye[jy('\202\208\163\236\207\185\246','\133\160\215')]if FB(Ju)~=jy('\254q\207\150\236m\206\155','\152\4\161\245')then wg=Ff[-13624]or Gd(-13624,5733,12446)continue end wg=Ff[-7727]or Gd(-7727,15401,101848)end until wg==61435 end local lA if not(ej)then local ja,Mn,xi;ja,xi=function(Kw,jq,EE)xi[Kw]=Yl(jq,63802)-Yl(EE,2632)return xi[Kw]end,{};Mn=xi[16301]or ja(16301,119880,59839)while Mn~=31034 do if Mn<57760 then lA=(Bi(Ye[jy('\fg\252)w\246<','H\2\154')])==jy('\199l\232\221v\253','\180\24\154'))and Ye[jy('B~YgnSr','\6\27?')]or nil if lA~=nil and not VD(Dy,lA)then Mn=xi[-2333]or ja(-2333,70513,62994)continue end Mn=57760 elseif Mn<=57760 then Mn=xi[-20535]or ja(-20535,2784,28904)continue else Mn,lA=xi[30248]or ja(30248,115708,21358),nil end end else local GA,ox,Zu,Yw,LB,Xm,NE,aB,bD;Xm,GA={},function(Q,AB,ka)Xm[Q]=Yl(ka,38131)-Yl(AB,23958)return Xm[Q]end;Zu=Xm[10139]or GA(10139,26697,3888)while Zu~=18996 do if Zu<=23040 then if Zu<18025 then if Zu<=7299 then bD,aB,LB=Ye[jy('\216\214L\253\198F\232','\156\179*')]if not(FB(bD)~=jy('\211\201J\n\193\213K\a','\181\188$i'))then Zu=Xm[-18185]or GA(-18185,29569,25209)continue else Zu=Xm[18891]or GA(18891,34103,107816)continue end Zu=Xm[-28952]or GA(-28952,1491,111691)else Zu=Xm[-10028]or GA(-10028,13597,9804)continue end elseif Zu>22842 then lA[Yw],Zu=true,Xm[-27035]or GA(-27035,29783,26311)elseif Zu>18025 then ox=Ia(bD)if ox~=nil and ox[jy('\153,M\178\22V','\198s$')]~=nil then Zu=Xm[13376]or GA(13376,13967,111494)continue elseif FB(bD)==jy('W\133A\136F','#\228')then Zu=Xm[-28026]or GA(-28026,21772,56304)continue end Zu=Xm[22512]or GA(22512,32544,32730)else bD,aB,LB=Jx(bD);Zu=Xm[15102]or GA(15102,21757,17709)end elseif Zu<51315 then if Zu<=26084 then lA={}if not(Bi(Ye[jy('\161\217\150\132\201\156\145','\229\188\240')])==jy('\178\195\164\206\163','\198\162'))then Zu=Xm[-6487]or GA(-6487,37841,103743)continue else Zu=Xm[31394]or GA(31394,64382,22424)continue end Zu=13189 else bD,aB,LB=ox[jy('\151\21\158\188/\133','\200J\247')](bD);Zu=Xm[15781]or GA(15781,6256,105130)end elseif Zu>51315 then if not(Bi(Yw)==jy('\250\178\187\224\168\174','\137\198\201'))then Zu=Xm[13320]or GA(13320,53322,115388)continue else Zu=Xm[-4190]or GA(-4190,23404,62473)continue end Zu=Xm[-18808]or GA(-18808,4309,98629)else NE,Yw=bD(aB,LB);LB=NE if LB==nil then Zu=Xm[14578]or GA(14578,37593,103975)else Zu=64901 end end end end local rh=zr(Tp[jy("\f\167\156\220\'\161\157\198",'S\196\243\178')],32);rh[jy('\192\216M\245\215K','\144\185?')]=Tp[jy('\29e\227\130\54c\226\152','B\6\140\236')];Dz[jy('Qtt','\16')](Dz,rh)local Zr,OF,jd,Xl=Iv(jy('V\224g\197N\228}\212n','\2\133\31\177'),{[jy('\135V\177\178Y\183','\215\55\195')]=rh,[jy("\230\193,\160\48\54\223\145\148\182:\214\193!\184\'%\194\129\148\177\23",'\164\160O\203WD\176\228\250\210n')]=1,[jy('ZQ\163\161~W\191\166','\n>\208\200')]=WA(0,10,0,0),[jy('\165\147\140\159','\246\250')]=WA(0.5,-10,0,32),[jy('\16\166\56\189','V\201')]=dx[jy('\183\232\135\235','\242\134')][jy('\228-\204\54','\162B')][jy('/\129p\177\218\226%\139\96\176\206\226','h\238\4\217\187\143')],[jy('b\131\168\139e\143\170\154','6\230\208\255')]=12,[jy('\247\155\203\136\155\204\146\220\142\235','\163\254\179\252\216')]=Je[jy('\151p\187a','\195\21')],[jy('\a\145\238\176\243\129\57:\147\248\169\206\174!','S\244\150\196\171\192U')]=dx[jy('\189c\141\96','\248\r')][jy('N\27\185e\31M\18s\25\175|\"b\n','\26~\193\17G\f~')][jy('2\18\24\3','~w')],[jy('\243\6\223\23','\167c')]=Ye[jy('\212\134\247\130','\154\231')]or jy('\v\r^\31+\16F\1','O\127\49o')}),Iv(jy('\154\31b\223\130\27x\206\162','\206z\26\171'),{[jy(';\253\138\14\242\140','k\156\248')]=rh,[jy("^\159\236\'/\195N\197f\155\143n\159\225?8\208S\213f\156\162",'\28\254\143LH\177!\176\b\255\219')]=1,[jy('\181SN\19\143\134mB\18\142\128','\244=-{\224')]=EG(1,0),[jy('\31\204w\177;\202k\182','O\163\4\216')]=WA(1,-28,0,0),[jy('\145;\184\55','\194R')]=WA(0.5,-20,0,32),[jy('\238\18\198\t','\168}')]=dx[jy('\192o\240l','\133\1')][jy('$\1\f\26','bn')][jy('\203:1\228\52(','\140UE')],[jy('\27Q\187\195\28]\185\210','O4\195\183')]=12,[jy('\21\194i:<.\203~<L','A\167\17N\127')]=Je[jy('P\199\220W\215\198w','\3\178\190')],[jy('?\250Z\147[\231\219\2\248L\138f\200\195','k\159\"\231\3\166\183')]=dx[jy('\127|O\127',':\18')][jy('\238A:\193O\150\129\211C,\216r\185\153','\186$B\181\23\215\237')][jy('6q\3p\16','d\24')],[jy('\199\195z\234\222\236\230\200a\255\254\251','\147\166\2\158\138\158')]=dx[jy('b/R,',"\'A")][jy('\240\182\5\3U\154\209\189\30\22u\141','\164\211}w\1\232')][jy('\179\225\183\251\150','\242\149')],[jy('\253\142\209\159','\169\235')]=''}),Iv(jy('\236;\140\246\244?\150\231\212','\184^\244\130'),{[jy('\207\23\203\250\24\205','\159v\185')]=rh,[jy('\233\136\210\236\139\195\140\189~k=\217\136\223\244\156\208\145\173~l\16','\171\233\177\135\236\177\227\200\16\15i')]=1,[jy('F\221\152?\235u\227\148>\234s','\a\179\251W\132')]=EG(1,0.5),[jy('5\226\142c\17\228\146d','e\141\253\n')]=WA(1,-10,0,16),[jy('\237\195\196\207','\190\170')]=Zi(14,14),[jy('\t\49!*','O^')]=dx[jy('\232\187\216\184','\173\213')][jy('\170\5\130\30','\236j')][jy('\244\152\240a\153\222\181\235e\156','\179\247\132\t\248')],[jy('\150\179+\6\145\191)\23','\194\214Sr')]=14,[jy('\5x\")\29>q5/m','Q\29Z]^')]=Je[jy('\154\236t\157\252n\189','\201\153\22')],[jy('\145\232\189\249','\197\141')]=jy('<','\23')}),Iv(jy('\23\178\48\173\52','Q\192'),{[jy('$\a\227\17\b\229','tf\145')]=rh,[jy('qZ\161p\147~j\4]_\129t\152cwB','3;\194\27\244\f\5q')]=Je[jy('H\249\139\\}x\247\157Y~','\n\152\232\55\26')],[jy('\187\147\136\149\159\149\148\146','\235\252\251\252')]=WA(0,6,0,32),[jy('Q\234x\230','\2\131')]=WA(1,-12,0,0),[jy('\241\164\187\212\213\239\52\218\177\172\224\217\229\2\223','\179\203\201\176\176\157g')]=0,[jy('\192\149\167\147\240\241\183\220\224\156\160\135\226\219\166\220','\131\249\206\227\131\181\210\175')]=true});ad(6,Xl);bz(Je[jy('\16|#6v#','R\19Q')],1,Xl)local Xr=Iv(jy('\197O\192y]\243\162\248K\244dP\242\174','\150,\178\22\49\159\203'),{[jy("\'\6\206\18\t\200",'wg\188')]=Xl,[jy('e\20Q \139\142\182{\184\248,U\20\\\56\156\157\171k\184\255\1',"\'u2K\236\252\217\14\214\156x")]=1,[jy('\209r\157\4\245t\129\3','\129\29\238m')]=Zi(0,0),[jy('\217P\240\\','\138\57')]=WA(1,0,1,0),[jy('\198\247{\239\203\230\236\155\191\193\252\96\227\204\228\203\137\190','\149\148\t\128\167\138\174\250\205')]=2,[jy('\150\56[\213\28\231\232\201\1U\168:N\223\51\228\198\199\1/','\197[)\186p\139\170\168s\28')]=Je[jy('\162\129N\132\139N','\224\238<')],[jy('n@\229\192Ht\28EU\242\244D~*@',',/\151\164-\6O')]=0,[jy('\177\131\127\209\253\129\177x\221\249','\242\226\17\167\156')]=WA(0,0,0,0),[jy('Ra\232\133\203,\127\203\131Pu\242\156\199>X\203\154v','\19\20\156\234\166M\v\162\224')]=dx[jy('\170G\154D','\239)')][jy('\178\227\221\49}\26\135\255\202\ry\1\150','\243\150\169^\16{')][jy("\'",'~')]});Iv(jy('\23J\21\161}\129\14b \167{\129','B\3Y\200\14\245'),{[jy('L\174\218y\161\220','\28\207\168')]=Xr,[jy('\200$\196\147\212\57\210\130\233','\155K\182\231')]=dx[jy('\156\209\172\210','\217\191')][jy("\190:\142\159\162\'\152\142\159",'\237U\252\235')][jy('S\135\20\184(k\169\31\179\56m','\31\230m\215]')],[jy('3\170v\a\162|\4','c\203\18')]=vD(0,2)})local ZC=Iv(jy('q H\220\178P1D\199\158','%E0\168\240'),{[jy('\137<\235\188\51\237','\217]\153')]=rh,[jy('/\v\144\245?m\221\130y\133\177\31\v\157\237(~\192\146y\130\156','mj\243\158X\31\178\247\23\225\229')]=1,[jy('\133\129\172\141','\214\232')]=WA(1,0,0,32),[jy('\152g\180v','\204\2')]='',[jy('\133\179\20\0\208\209\211\176\169\14,\253\200\200\182','\196\198\96o\146\164\167')]=false})if Tp[jy('\24\199\240)\212\246\48','G\176\153')][jy('\24\3\141\96+\3\139\127\52','Gw\226\15')]then Tp[jy('\252P*\205C,\212',"\163\'C")][jy('\31\29\244|,\29\242c3','@i\155\19')][jy('H\238xh\249d','\t\154\f')](rh,Ye[jy('\137k\234\177p\236\173','\221\4\133')],Dz)end local Jb,Ph=false,{}local function sw()local pB,W,mx,Av,_r,sd,dE,Sx,iq,ch;mx,W={},function(Nk,ow,ss)mx[ss]=Yl(ow,14136)-Yl(Nk,43293)return mx[ss]end;_r=mx[21033]or W(54623,65715,21033)repeat if _r<40801 then if _r<=14881 then if _r>10385 then if(lA)[Av]then _r=mx[17916]or W(43488,17784,17916)continue end _r=mx[11477]or W(26970,57383,11477)elseif _r>5848 then return Sx else ch,Av=iq(pB,sd);sd=ch if sd==nil then _r=mx[6768]or W(40469,26785,6768)else _r=mx[-12465]or W(37882,16944,-12465)end end else Hq(Sx,Av);_r=mx[-28803]or W(58603,21494,-28803)end elseif _r<47945 then if _r>40801 then dE=Ia(iq)if dE~=nil and dE[jy('A\231Wj\221L','\30\184>')]~=nil then _r=mx[13706]or W(51330,70861,13706)continue elseif not(FB(iq)==jy('\195\147\213\158\210','\183\242'))then _r=mx[-31268]or W(39101,32576,-31268)continue else _r=mx[-1282]or W(60154,54384,-1282)continue end _r=mx[-8721]or W(5262,58195,-8721)else iq,pB,sd=Jx(iq);_r=mx[-23532]or W(32636,55809,-23532)end elseif _r>47945 then iq,pB,sd=dE[jy('\224q\253\203K\230','\191.\148')](iq);_r=mx[-19979]or W(56815,48370,-19979)else Sx={};iq,pB,sd=Dy if not(FB(iq)~=jy('\139\253\212\174\153\225\213\163','\237\136\186\205'))then _r=mx[-21658]or W(46864,989,-21658)continue else _r=mx[-19835]or W(6328,89226,-19835)continue end _r=mx[25861]or W(61284,27241,25861)end until _r==47398 end local function lE()local Xv,sB,wr,Ex;wr,sB={},function(wp,DG,xp)wr[xp]=Yl(wp,33057)-Yl(DG,19432)return wr[xp]end;Ex=wr[-10521]or sB(47538,21389,-10521)repeat if Ex<=45146 then if Ex<25202 then if Ex<=1745 then if#Xv<=2 then Ex=wr[-25667]or sB(2526,28005,-25667)continue else Ex=wr[6434]or sB(124348,54106,6434)continue end Ex=wr[20881]or sB(69682,56656,20881)else if ej then Ex=wr[-13099]or sB(110618,51977,-13099)continue else Ex=wr[-28796]or sB(123253,34236,-28796)continue end Ex=wr[-31640]or sB(105370,27528,-31640)end elseif Ex<=37376 then if Ex<=25202 then OF[jy('N\227b\242','\26\134')],Ex=nx(Xv,jy('\29\17','1')),wr[3150]or sB(108109,26361,3150)else OF[jy('RI~X','\6,')],Ex=lA and Th(lA)or jy('\185\0\153\n','\247o'),wr[-25809]or sB(114113,2413,-25809)end else Xv=sw()if not(#Xv==0)then Ex=wr[21407]or sB(9698,54810,21407)continue else Ex=wr[3474]or sB(112622,9320,3474)continue end Ex=wr[-28272]or sB(31442,19056,-28272)end elseif Ex>52203 then Ex=wr[-27720]or sB(2715,7367,-27720)continue elseif Ex<=51023 then OF[jy('\175\213\131\196','\251\176')],Ex=jy('yZYP','75'),wr[-15612]or sB(70147,54063,-15612)else Ex,OF[jy('lo@~','8\n')]=wr[-28897]or sB(73166,59772,-28897),Xv[1]..jy('\14\2\t','\"')..(#Xv-1)end until Ex==13451 end local function Om(Pl)local Yq,Fx,Lx;Yq,Fx={},function(Yc,iE,ng)Yq[iE]=Yl(Yc,54954)-Yl(ng,7760)return Yq[iE]end;Lx=Yq[26084]or Fx(102804,26084,60163)while Lx~=11243 do if Lx<=32651 then if Lx>20971 then return lA==Pl else if not(ej)then Lx=Yq[-29838]or Fx(14218,-29838,32709)continue else Lx=Yq[3510]or Fx(67903,3510,63434)continue end Lx=Yq[5483]or Fx(23262,5483,4793)end else return(lA)[Pl]==true end end end local function cl(us)local wx,mf,oG,Mb;mf,Mb={},function(mB,fD,bs)mf[bs]=Yl(mB,30276)-Yl(fD,18790)return mf[bs]end;wx=mf[614]or Mb(97456,59177,614)repeat if wx>=23717 then if wx>23717 then wx,oG[jy('.%>','J')][jy('\221\244\255\197\153<=#\241\241\223\193\146! e','\159\149\156\174\254NRV')]=mf[24773]or Mb(31303,16795,24773),Om(us)and Je[jy('\220\"\194\248/\213','\157A\161')]or Je[jy('\205Sf\235Yf','\143<\20')]continue else oG=Ph[us]if not oG then wx=mf[11950]or Mb(88958,47492,11950)continue end wx=mf[13442]or Mb(125339,47977,13442)end else return end until wx==774 end local function Ss()local XD,xf,FC;FC,xf={},function(n_,Gy,zz)FC[Gy]=Yl(n_,44986)-Yl(zz,43956)return FC[Gy]end;XD=FC[-4841]or xf(125871,-4841,14569)repeat if XD<45240 then return 0 elseif XD>45240 then return fA(#Dy*26-2,160)else if not(#Dy==0)then XD=FC[-22845]or xf(128939,-22845,3888)continue else XD=FC[-4303]or xf(15940,-4303,62077)continue end XD=45965 end until XD==2733 end local function cs()Jb=false;rh[jy('\2\229+\233','Q\140')]=WA(1,0,0,32);jd[jy('E\204i\221','\17\169')]=jy('\200','\227');Xl[jy('\188\161\149\173','\239\200')]=WA(1,-12,0,0)end local function hH(Lp,yr)local YA,fa_=ga(),Iv(jy('\176;\0&\206\145*\f=\226','\228^xR\140'),{[jy('\31\194\245*\205\243','O\163\135')]=Xr,[jy('\178F\140\218\136\138h\135\209\152\140',"\254\'\245\181\253")]=yr,[jy(']\28t\16','\14u')]=WA(1,0,0,24),[jy('\139L\243\252W\169\159\244\167I\211\248\\\180\130\178','\201-\144\151\48\219\240\129')]=Hb,[jy('\246s\246\151$\b\211\200\148\26\195\198s\251\143\51\27\206\216\148\29\238','\180\18\149\252Cz\188\189\250~\151')]=1,[jy("\21\28\'\192\182\204\51>\t\48\244\186\198\5;",'WsU\164\211\190\96')]=0,[jy('\20\5<\30','Rj')]=dx[jy('1\227\1\224','t\141')][jy('\176\152\152\131','\246\247')][jy('\17\214o>\216v','V\185\27')],[jy('8\253\196\179?\241\198\162','l\152\188\199')]=12,[jy('\29\4\186]\223&\r\173[\175','Ia\194)\156')]=Je[jy('\228\179\200\162','\176\214')],[jy('\187\180fv\24\212\5\134\182po%\251\29','\239\209\30\2@\149i')]=dx[jy('\t?9<','LQ')][jy('\193I4\250\25H\16\252K\"\227$g\b','\149,L\142A\t|')][jy('0A\26P','|$')],[jy('\154x\182i','\206\29')]=jy('4','\20')..Th(Lp),[jy('\"\208}\25\241I\216\23\202g5\220P\195\17','c\165\tv\179<\172')]=false});YA[jy('\\yy','\29')](YA,fa_)local Oa=Iv(jy('IBn]j','\15\48'),{[jy('\151.\244\162!\242','\199O\134')]=fa_,[jy('\187\153\212\158\26\136\167\216\159\27\142','\250\247\183\246u')]=EG(1,0.5),[jy('\250\130\253\170\222\132\225\173','\170\237\142\195')]=WA(1,-8,0.5,0),[jy('U\235|\231','\6\130')]=Zi(6,6),[jy('X\213\244\15\185\213\29\200t\208\212\v\178\200\0\142','\26\180\151d\222\167r\189')]=Je[jy('$\182\149\2\188\149','f\217\231')],[jy('\146b\f\130K\204]\185w\27\182G\198k\188','\208\r~\230.\190\14')]=0});ad(3,Oa);YA[jy('~[[','?')](YA,fa_[jy('=\219\243\151\\\53\218\242\129K','p\180\134\228\57')][jy('\210\192\5\255\202\b\229','\145\175k')](fa_[jy('=\219\243\151\\\53\218\242\129K','p\180\134\228\57')],function()fa_[jy('\246\142\153\135\\\215\15\184\185\145\199\198\142\148\159K\196\18\168\185\150\234','\180\239\250\236;\165\96\205\215\245\147')]=0 end));YA[jy('mHH',',')](YA,fa_[jy('\169|\184\\\212\168v\172Y\212','\228\19\205/\177')][jy('k\250\29F\240\16\\','(\149s')](fa_[jy('\169|\184\\\212\168v\172Y\212','\228\19\205/\177')],function()fa_[jy('\242\4Z\151\242\4\133\212q\221m\194\4W\143\229\23\152\196q\218@','\176e9\252\149v\234\161\31\185\57')]=1 end));YA[jy('Cff','\2')](YA,fa_[jy('\137#\17j\216\133D\191\176#\n(\254\171X\168\175','\196Ld\25\189\199\49\203')][jy('\224+j\205!g\215','\163D\4')](fa_[jy('\137#\17j\216\133D\191\176#\n(\254\171X\168\175','\196Ld\25\189\199\49\203')],function()local Tx,Rp,kz,kq,kF,dH,BE,Kk;BE,Rp={},function(zs,lt,Gz)BE[Gz]=Yl(zs,46573)-Yl(lt,10808)return BE[Gz]end;kq=BE[9227]or Rp(18633,22238,9227)repeat if kq>=39689 then if kq<45629 then if kq<40610 then if kq>39689 then lE();cl(Lp);RG(Ye[jy('\169\6BW\136\6MP','\234g.;')],sw());kq=BE[10098]or Rp(99466,60111,10098)else kF,dH,Kk=Jx(kF);kq=BE[22199]or Rp(111918,15394,22199)end elseif kq<=40610 then if FB(kF)==jy('/\25\57\20>','[x')then kq=BE[-26612]or Rp(123185,37867,-26612)continue end kq=BE[-30242]or Rp(99936,25308,-30242)else RG(Ye[jy('\205Z\142\n\236Z\129\r','\142;\226f')],lA);cs();kq=BE[18812]or Rp(125678,50347,18812)end elseif kq>54523 then Tx=kF(dH,Kk);Kk=Tx if Kk==nil then kq=BE[-1383]or Rp(25591,1570,-1383)else kq=54523 end elseif kq>48828 then cl(Tx);kq=BE[-20782]or Rp(81617,35499,-20782)elseif kq<=45629 then lA=Lp if not(Ye[jy('\159\165\184\174','\217\201')]and xG)then kq=BE[18846]or Rp(6706,23241,18846)continue else kq=BE[1337]or Rp(105790,16431,1337)continue end kq=BE[-28635]or Rp(63277,10730,-28635)else xG[jy('\186\t\164\15\168','\205{')](Ye[jy('f\aA\f',' k')],lA);kq=BE[14982]or Rp(6804,23219,14982)end elseif kq<=26522 then if kq<20009 then if kq>16110 then kz=lA;kz[Lp]=(not kz[Lp])or nil if Ye[jy('N\194i\201','\b\174')]and xG then kq=BE[13217]or Rp(130190,51884,13217)continue end kq=BE[26350]or Rp(110275,21573,26350)else lE();kF,dH,Kk=Ph if FB(kF)~=jy('\164j\248\252\182v\249\241','\194\31\150\159')then kq=BE[31707]or Rp(20268,34464,31707)continue end kq=BE[-21927]or Rp(17281,8699,-21927)end elseif kq>20009 then kF,dH,Kk=kz[jy('\216\96\225\243Z\250','\135?\136')](kF);kq=BE[-25484]or Rp(130031,18785,-25484)else kz=Ia(kF)if not(kz~=nil and kz[jy('\175VA\132lZ','\240\t(')]~=nil)then kq=BE[8982]or Rp(80339,51108,8982)continue else kq=BE[-16562]or Rp(15165,3342,-16562)continue end kq=BE[-31117]or Rp(77018,33974,-31117)end elseif kq<28784 then xG[jy('JFT@X','=4')](Ye[jy('\130\179\165\184','\196\223')],sw());kq=BE[-4683]or Rp(1496,14780,-4683)elseif kq>28784 then if not(ej)then kq=BE[-29561]or Rp(106396,21004,-29561)continue else kq=BE[-29664]or Rp(864,16412,-29664)continue end kq=28784 else kq=BE[-6146]or Rp(104376,44623,-6146)continue end until kq==40414 end));Ph[Lp]={[jy('2Z>C','[.')]=fa_,[jy('\27\16\v','\127')]=Oa,[jy('\134\165\130\160','\235\196')]=YA}end local function ig()local Bk,bu,LG,ZF,fg,Ll,io,nd,fx,kA,Zw,Yv,Kb,UF;UF,Kb={},function(Hs,Wf,Kg)UF[Wf]=Yl(Kg,51495)-Yl(Hs,33644)return UF[Wf]end;bu=UF[-14887]or Kb(56966,-14887,20872)while bu~=9933 do if bu<36277 then if bu>15045 then if bu<=33850 then if bu>=29481 then if bu<=29481 then ZF,Zw=Ec(hH,LG,fx)if not ZF then bu=UF[20659]or Kb(20443,20659,96153)continue end bu=UF[8366]or Kb(65175,8366,100397)else io[LG],bu=fx,UF[-14988]or Kb(29430,-14988,123360)end elseif bu<=20793 then Yv[jy('\180K\176N','\217*')][jy('\233t\6\217c\26\212','\173\17u')](Yv[jy('\180K\176N','\217*')]);bu,Ph[LG]=UF[6739]or Kb(46195,6739,13065),nil else if not(kA[jy('\242:\254#','\155N')][jy(',\250%\127\240\20\212.t\224\18','\96\155\\\16\133')]~=fx)then bu=UF[22456]or Kb(61912,22456,130276)continue else bu=UF[-22564]or Kb(50862,-22564,129617)continue end bu=UF[20603]or Kb(52766,20603,121254)end elseif bu<=35370 then if bu<=34969 then fg,Bk,Ll=Jx(fg);bu=UF[30774]or Kb(43779,30774,125065)else fg,Bk,Ll=Jx(fg);bu=UF[-30869]or Kb(34808,-30869,62182)end else fg,Bk,Ll=nd[jy('=\185\140\22\131\151','b\230\229')](fg);bu=UF[13743]or Kb(64929,13743,19770)end elseif bu>11502 then if bu>=14125 then if bu>14125 then io={};fg,Bk,Ll=Dy if FB(fg)~=jy('At\222KSh\223F',"\'\1\176(")then bu=UF[-534]or Kb(51691,-534,124324)continue end bu=UF[32723]or Kb(57918,32723,20824)else fx,LG=fg(Bk,Ll);Ll=fx if Ll==nil then bu=UF[-7939]or Kb(16318,-7939,94225)else bu=UF[28604]or Kb(5238,28604,119411)end end else fg,Bk,Ll=nd[jy('\18\"\17\57\24\n','M}x')](fg);bu=UF[-19073]or Kb(8482,-19073,109690)end elseif bu<3513 then if bu>1360 then fg,Bk,Ll=nd[jy('\188A\6\151{\29','\227\30o')](fg);bu=UF[-19237]or Kb(2557,-19237,84727)else fx=fg(Bk,Ll);Ll=fx if Ll==nil then bu=UF[2078]or Kb(2705,2078,111766)else bu=36827 end end elseif bu<=8673 then if bu>3513 then fg,Bk,Ll=Dy if not(FB(fg)~=jy('\238A\243\0\252]\242\r','\136\52\157c'))then bu=UF[31097]or Kb(42098,31097,8970)continue else bu=UF[-475]or Kb(42676,-475,3541)continue end bu=UF[-26147]or Kb(53398,-26147,122414)else nd=Ia(fg)if nd~=nil and nd[jy('\139\196\56\160\254#','\212\155Q')]~=nil then bu=UF[-18053]or Kb(35892,-18053,21832)continue elseif not(FB(fg)==jy('\182o\160b\167','\194\14'))then bu=UF[13995]or Kb(24813,13995,8694)continue else bu=UF[4154]or Kb(11316,4154,99531)continue end bu=UF[-11827]or Kb(49151,-11827,35012)end else fg,Bk,Ll=nd[jy('3\217n\24\227u','l\134\a')](fg);bu=UF[30205]or Kb(21913,30205,116485)end elseif bu<=51630 then if bu<=40730 then if bu<=40393 then if bu<=36827 then if bu>36277 then cl(fx);bu=UF[15991]or Kb(58908,15991,41959)else kA=Ph[LG]if kA then bu=UF[5030]or Kb(13136,5030,121457)continue else bu=UF[22704]or Kb(48104,22704,25226)continue end bu=UF[-2202]or Kb(48894,-2202,117126)end else nd=Ia(fg)if nd~=nil and nd[jy('\22\15\226=5\249','IP\139')]~=nil then bu=UF[9904]or Kb(26133,9904,14373)continue elseif not(FB(fg)==jy('\230\226\240\239\247','\146\131'))then bu=UF[15815]or Kb(10498,15815,92810)continue else bu=UF[-26232]or Kb(33226,-26232,16920)continue end bu=UF[-8013]or Kb(15464,-8013,94564)end elseif bu<=40596 then fg,Bk,Ll=Jx(fg);bu=UF[-27382]or Kb(19072,-27382,1563)else nd=Ia(fg)if nd~=nil and nd[jy('-\155\51\6\161(','r\196Z')]~=nil then bu=UF[-19388]or Kb(23785,-19388,121986)continue elseif FB(fg)==jy('\210\23\196\26\195','\166v')then bu=UF[20121]or Kb(64063,20121,105722)continue end bu=UF[-10226]or Kb(43759,-10226,9653)end elseif bu>49935 then LG[jy('&\23\"\18','Kv')][jy('\4\167\52\52\176(9','@\194G')](LG[jy('&\23\"\18','Kv')]);Ph[fx],bu=nil,UF[26311]or Kb(31164,26311,81192)elseif bu<46040 then fg,Bk,Ll=Ph if not(FB(fg)~=jy("G\'+XU;*U",'!RE;'))then bu=UF[14610]or Kb(52981,14610,39886)continue else bu=UF[3340]or Kb(29285,3340,14309)continue end bu=UF[6141]or Kb(7396,6141,28159)elseif bu>46040 then fx,LG=fg(Bk,Ll);Ll=fx if Ll==nil then bu=45946 else bu=UF[-18282]or Kb(412,-18282,121218)end else if not io[fx]then bu=UF[-30184]or Kb(62103,-30184,127630)continue end bu=UF[19541]or Kb(22351,19541,66629)end elseif bu<61959 then if bu<=57852 then if bu<=56458 then fg,Bk,Ll=Jx(fg);bu=UF[22713]or Kb(955,22713,101057)else nd=Ia(fg)if nd~=nil and nd[jy('\227\19~\200)e','\188L\23')]~=nil then bu=UF[-5564]or Kb(62921,-5564,27316)continue elseif FB(fg)==jy('3\209%\220\"','G\176')then bu=UF[12894]or Kb(5397,12894,125316)continue end bu=UF[32105]or Kb(58250,32105,20788)end else bu,kA[jy('C@OY','*4')][jy('\24\56\216%\4 \22\211.\20&','TY\161Jq')]=UF[16640]or Kb(7599,16640,108789),fx end elseif bu<63807 then if bu<=61959 then ms(jy('r^\217\231\214\30>\164rW\3\253\30J\178v\187\227]n\253\139\220\14\6\229b@L\235\27L\169}\255\176',')\v\144\171\191|c\132\22%l\141z%\197\24\155\138'),Zw);Yv=Ph[LG]if not(Yv)then bu=UF[-24210]or Kb(20886,-24210,89902)continue else bu=UF[-13573]or Kb(54091,-13573,26695)continue end bu=UF[7239]or Kb(7214,7239,109430)else bu=UF[25312]or Kb(4782,25312,29096)continue end elseif bu<=63807 then fx,LG=fg(Bk,Ll);Ll=fx if Ll==nil then bu=8673 else bu=UF[-2594]or Kb(28522,-2594,87801)end else fg,Bk,Ll=Ph if not(FB(fg)~=jy('<\31\167\172.\3\166\161','Zj\201\207'))then bu=UF[21007]or Kb(11217,21007,92379)continue else bu=UF[7411]or Kb(60917,7411,116037)continue end bu=UF[19586]or Kb(20402,19586,69434)end end end local function ny(Rs)local G,qk,wb,vs,qb,VG,Bz,dG,Ao;qb,VG={},function(fG,if_,To)qb[fG]=Yl(if_,59188)-Yl(To,15540)return qb[fG]end;qk=qb[-25133]or VG(-25133,22758,10265)repeat if qk>=22108 then if qk<51503 then if qk<=35267 then if qk<33312 then if qk<=22108 then qk,(lA)[G]=qb[-27638]or VG(-27638,112197,53160),nil else G=Ao(wb,dG);dG=G if dG==nil then qk=qb[-20135]or VG(-20135,11511,29975)else qk=16118 end end elseif qk>33312 then vs=Ia(Ao)if not(vs~=nil and vs[jy('\154\179\v\177\137\16','\197\236b')]~=nil)then qk=qb[-14002]or VG(-14002,123066,56624)continue else qk=qb[24075]or VG(24075,95356,64594)continue end qk=qb[12766]or VG(12766,103528,39281)else ig();lE()if not(Jb)then qk=qb[14557]or VG(14557,4512,34852)continue else qk=qb[-10215]or VG(-10215,121628,24013)continue end qk=16900 end elseif qk>43813 then lA,qk=nil,qb[8334]or VG(8334,12998,28518)else Dy={}if Bi(Rs)==jy('K\25]\20Z','?x')then qk=qb[9789]or VG(9789,29700,46451)continue end qk=qb[32148]or VG(32148,49070,6796)end elseif qk<55210 then if qk>=52631 then if qk<=52631 then G,Bz=Ao(wb,dG);dG=G if dG==nil then qk=qb[32543]or VG(32543,125044,57450)else qk=6097 end else Ao,wb,dG=vs[jy('\219\140\182\240\182\173','\132\211\223')](Ao);qk=qb[-5378]or VG(-5378,124321,2122)end else vs=Ia(Ao)if not(vs~=nil and vs[jy('LH\172gr\183','\19\23\197')]~=nil)then qk=qb[-3854]or VG(-3854,14549,58648)continue else qk=qb[-24580]or VG(-24580,107705,22359)continue end qk=qb[-32484]or VG(-32484,31042,31893)end elseif qk<=55983 then if qk>55210 then vs=Ss();rh[jy('\20B=N','G+')]=WA(1,0,0,32+vs+6);Xl[jy('p\\YP','#5')],qk=WA(1,-12,0,vs),qb[-22271]or VG(-22271,44574,15250)else Ao,wb,dG=vs[jy('4G\5\31}\30','k\24l')](Ao);qk=qb[11024]or VG(11024,120749,61168)end else Ao,wb,dG=lA if FB(Ao)~=jy('\149\158$\168\135\130%\165','\243\235J\203')then qk=qb[-29050]or VG(-29050,124967,31056)continue end qk=qb[-4788]or VG(-4788,107145,56284)end elseif qk<9808 then if qk<=6097 then if qk<2409 then if not(FB(Ao)==jy('W\251A\246F','#\154'))then qk=qb[-8282]or VG(-8282,130638,34705)continue else qk=qb[31488]or VG(31488,7826,57706)continue end qk=qb[-17548]or VG(-17548,130660,34383)elseif qk<=2409 then Ao,wb,dG=Rs if not(FB(Ao)~=jy('\141Ub\254\159Ic\243','\235 \f\157'))then qk=qb[-16884]or VG(-16884,103908,39309)continue else qk=qb[20104]or VG(20104,17008,10037)continue end qk=qb[-12251]or VG(-12251,122118,20527)else if Bi(Bz)==jy('L\240JV\234_','?\132\56')then qk=qb[1132]or VG(1132,17898,16442)continue end qk=qb[-14631]or VG(-14631,2993,8794)end elseif qk<=7112 then Ao,wb,dG=Jx(Ao);qk=qb[125]or VG(125,26738,3141)else if not(FB(Ao)==jy('k\208}\221z','\31\177'))then qk=qb[-24814]or VG(-24814,119439,21648)continue else qk=qb[-18430]or VG(-18430,10521,47660)continue end qk=qb[-9846]or VG(-9846,117890,25259)end elseif qk>16118 then if qk<=16900 then qk=qb[11660]or VG(11660,20786,44413)continue else Ao,wb,dG=Jx(Ao);qk=qb[28670]or VG(28670,16377,14210)end elseif qk>=12898 then if qk<=12898 then if ej then qk=qb[-988]or VG(-988,84322,60623)continue else qk=qb[-7626]or VG(-7626,16471,18206)continue end qk=qb[25901]or VG(25901,14933,26613)else if not VD(Dy,G)then qk=qb[-29438]or VG(-29438,39793,6493)continue end qk=qb[12524]or VG(12524,118874,58797)end elseif qk>9808 then if not(lA and not VD(Dy,lA))then qk=qb[-11199]or VG(-11199,25569,15873)continue else qk=qb[-9994]or VG(-9994,106442,63450)continue end qk=qb[-30297]or VG(-30297,6791,18215)else Hq(Dy,Bz);qk=qb[21555]or VG(21555,96837,62318)end until qk==9277 end ny(Dy);Xw(rh,ZC,Dz);Dz[jy('\3&&','B')](Dz,ZC[jy('\156\139\249\141\19!R,\165\139\226\207\53\15N;\186',"\209\228\140\254vc\'X")][jy('i\233\193D\227\204^','*\134\175')](ZC[jy('\156\139\249\141\19!R,\165\139\226\207\53\15N;\186',"\209\228\140\254vc\'X")],function()local Cd,xB,Qh,gB;xB,Qh={},function(Fp,Ed,_l)xB[Fp]=Yl(_l,47444)-Yl(Ed,22702)return xB[Fp]end;Cd=xB[-26151]or Qh(-26151,33369,81650)repeat if Cd>47896 then cs();Cd=xB[1122]or Qh(1122,21645,32367)elseif Cd<=44207 then if Cd<=18435 then gB=Ss();rh[jy('\134H\175D','\213!')]=WA(1,0,0,32+gB+6);Xl[jy('\185\153\144\149','\234\240')]=WA(1,-12,0,gB);jd[jy('\139\141\167\156','\223\232')],Cd=jy('\220','\241'),xB[23356]or Qh(23356,55354,99064)else Jb=not Jb if Jb then Cd=xB[32370]or Qh(32370,46615,102376)continue else Cd=xB[-2709]or Qh(-2709,50342,74169)continue end Cd=47896 end else Cd=xB[2031]or Qh(2031,23712,3035)continue end until Cd==44673 end))local TF=_p({[jy('\26h*\248\18h:\233','s\6Y\140')]=rh,[jy('\168K\150O\147','\247&')]=Dz,[jy('A\140\54\196j\150<\201','\30\255S\167')]=Tp,[jy('\183o\132h\143','\232\t')]=Ye[jy('%\194\2\201','c\174')],[jy('\135\6I\181\152\170\rU\163\136','\216b,\198\236')]=false},bc);TF[jy('\223\233\248','\140')]=function(zg,dt)local vd,wt,Og,Pz,Rb,qA,Gu,zi,sz;wt,Rb={},function(MB,Fw,Mc)wt[Mc]=Yl(Fw,24430)-Yl(MB,50577)return wt[Mc]end;Og=wt[20871]or Rb(64820,5678,20871)while Og~=15210 do if Og<24954 then if Og<=9314 then if Og>5259 then if Og>8576 then lA={}if not(Bi(dt)==jy('X0N=I',',Q'))then Og=wt[5789]or Rb(8439,42823,5789)continue else Og=wt[27942]or Rb(46853,40574,27942)continue end Og=wt[-16706]or Rb(53921,30365,-16706)else qA,Pz=zi(vd,Gu);Gu=qA if Gu==nil then Og=wt[-3571]or Rb(21962,64624,-3571)else Og=wt[24279]or Rb(13535,130764,24279)end end elseif Og>=4803 then if Og<=4803 then zi,vd,Gu=Ph if FB(zi)~=jy('\190Q-s\172M,~','\216$C\16')then Og=wt[-26003]or Rb(39424,36349,-26003)continue end Og=wt[19961]or Rb(11394,70127,19961)else lA=(Bi(dt)==jy('\151\237\164\141\247\177','\228\153\214'))and dt or nil if not(lA~=nil and not VD(Dy,lA))then Og=wt[26713]or Rb(4036,33398,26713)continue else Og=wt[-4866]or Rb(52970,46493,-4866)continue end Og=wt[-24966]or Rb(56529,29549,-24966)end elseif Og>1942 then if not(ej)then Og=wt[-15025]or Rb(54440,31402,-15025)continue else Og=wt[-8226]or Rb(49712,29549,-8226)continue end Og=4803 else zi,vd,Gu=Jx(zi);Og=wt[-31185]or Rb(33126,14617,-31185)end elseif Og<=16156 then if Og>10639 then(lA)[Pz],Og=true,wt[-2160]or Rb(22380,60179,-2160)elseif Og<=10628 then zi,vd,Gu=sz[jy('\166\157\205\141\167\214','\249\194\164')](zi);Og=wt[-23475]or Rb(61001,4662,-23475)else lE();Og=wt[-22421]or Rb(27574,46847,-22421)continue end else zi,vd,Gu=dt if not(FB(zi)~=jy('\207\193+\31\221\221*\18','\169\180E|'))then Og=wt[-13053]or Rb(24270,58289,-13053)continue else Og=wt[4257]or Rb(22714,94931,4257)continue end Og=wt[-15672]or Rb(827,46916,-15672)end elseif Og>37010 then if Og>50490 then Og,lA=wt[30810]or Rb(60328,8082,30810),nil elseif Og<=45142 then if Og<=45140 then if not(Bi(Pz)==jy('\227\57\249\249#\236','\144M\139'))then Og=wt[1464]or Rb(57111,25448,1464)continue else Og=wt[-28592]or Rb(57530,15145,-28592)continue end Og=wt[-2947]or Rb(62421,2218,-2947)else if FB(zi)==jy('\224\14\246\3\241','\148o')then Og=wt[31620]or Rb(52728,20625,31620)continue end Og=wt[13275]or Rb(61280,4895,13275)end else zi,vd,Gu=Jx(zi);Og=wt[28602]or Rb(13993,67528,28602)end elseif Og<29203 then if Og<=25680 then if Og>24954 then cl(qA);Og=wt[10396]or Rb(28760,83033,10396)else zi,vd,Gu=sz[jy(':\131\147\17\185\136','e\220\250')](zi);Og=wt[-2166]or Rb(23274,88967,-2166)end else qA=zi(vd,Gu);Gu=qA if Gu==nil then Og=10639 else Og=wt[8455]or Rb(32338,98173,8455)end end elseif Og>29442 then sz=Ia(zi)if not(sz~=nil and sz[jy('\155bD\176X_','\196=-')]~=nil)then Og=wt[10344]or Rb(7710,119947,10344)continue else Og=wt[-29536]or Rb(13541,83350,-29536)continue end Og=wt[6174]or Rb(21212,59299,6174)elseif Og<=29203 then if FB(zi)==jy('S\202E\199B',"\'\171")then Og=wt[24310]or Rb(39004,97385,24310)continue end Og=wt[-8164]or Rb(35889,61536,-8164)else sz=Ia(zi)if not(sz~=nil and sz[jy('\176\198\136\155\252\147','\239\153\225')]~=nil)then Og=wt[2784]or Rb(16352,78826,2784)continue else Og=wt[225]or Rb(47372,33145,225)continue end Og=wt[-14772]or Rb(8495,70978,-14772)end end end;TF[jy('\215\245\228','\144')]=function(Wt)local Ht,L,RE;RE,Ht=function(Oi,uk,pG)Ht[uk]=Yl(pG,27464)-Yl(Oi,36353)return Ht[uk]end,{};L=Ht[-13114]or RE(64585,-13114,46285)repeat if L<=35402 then if L<=27965 then if not(ej)then L=Ht[12991]or RE(10228,12991,76997)continue else L=Ht[18940]or RE(42067,18940,57300)continue end L=40344 else return sw()end else return lA end until L==58608 end local vj,Ja,Lz,TC;Ja,vj={},function(MD,IE,Dt)Ja[MD]=Yl(Dt,235)-Yl(IE,24421)return Ja[MD]end;TC=Ja[3994]or vj(3994,62533,88983)repeat if TC<=29814 then if TC>5235 then Lz=ej and sw()or lA;xG[jy('L\157\184\231M\140\186\252','>\248\223\142')](Ye[jy('\216\2\255\t','\158n')],Lz,function(nc)TF[jy('\a\49 ','T')](TF,nc)end);TC=Ja[-14301]or vj(-14301,496,29667)else Dz[jy('\t,,','H')](Dz,function()local Lc,Uf,Le,EA,xF,cy,Tb,dv,qG;cy,xF={},function(Ux,jr,FF)cy[Ux]=Yl(jr,44358)-Yl(FF,41966)return cy[Ux]end;Uf=cy[32610]or xF(32610,19640,26881)while Uf~=13578 do if Uf<=27043 then if Uf<8601 then if Uf<=5903 then Tb,Lc,dv=Ph if not(FB(Tb)~=jy('\21\198Z\1\a\218[\f','s\179\52b'))then Uf=cy[27402]or xF(27402,40372,44215)continue else Uf=cy[24719]or xF(24719,7076,61137)continue end Uf=cy[-19653]or xF(-19653,106744,20427)else Tb,Lc,dv=EA[jy('4\186\156\31\128\135','k\229\245')](Tb);Uf=cy[3602]or xF(3602,51782,59017)end elseif Uf>=13629 then if Uf<=13629 then Tb,Lc,dv=Jx(Tb);Uf=cy[4931]or xF(4931,62710,39929)else EA=Ia(Tb)if not(EA~=nil and EA[jy('\237W\241\198m\234','\178\b\152')]~=nil)then Uf=cy[14226]or xF(14226,22135,8814)continue else Uf=cy[8221]or xF(8221,49974,62677)continue end Uf=cy[21112]or xF(21112,51333,59332)end else Le,qG=Tb(Lc,dv);dv=Le if dv==nil then Uf=51781 else Uf=cy[17753]or xF(17753,31194,50028)end end elseif Uf>=31153 then if Uf<=31153 then if not(FB(Tb)==jy('_eIhN','+\4'))then Uf=cy[20948]or xF(20948,10148,51879)continue else Uf=cy[-21453]or xF(-21453,11680,59463)continue end Uf=cy[-15689]or xF(-15689,107537,17488)else Uf,Ph=cy[5612]or xF(5612,19085,4399),{}continue end else qG[jy('\184\193\188\196','\213\160')][jy('i\181\3Y\162\31T','-\208p')](qG[jy('\184\193\188\196','\213\160')]);Uf=cy[-20872]or xF(-20872,7904,12771)end end end);Tp[jy('\242\185M\251\204$\192\168F\241\234%\217','\173\216)\159\143K')](Tp,TF)return TF end else TF[jy('\209\192\223\183F\246\204\196\150E','\130\165\171\248\54')]=function(Qq,qe)ny(qe)end if not(Ye[jy('\195\4\228\15','\133h')]and xG)then TC=Ja[-31239]or vj(-31239,65237,46792)continue else TC=Ja[-29006]or vj(-29006,4542,50106)continue end TC=5235 end until TC==35122 end ie[jy('X\178\172{x\175\180e','\28\192\195\v')]=function(as,hl)return Xd(as,hl,false)end;ie[jy('T\14\150\199\167\198k\20\138\215\161\245w','\25{\250\179\206\130')]=function(Zf,wG)return Xd(Zf,wG,true)end;ie[jy('\14\143\187z\202\29\137\180~\221?','M\224\215\21\184')]=function(fE,vk)local Gf,md,RA=ga(),fE[jy('\188_W\141LQ\148','\227(>')][jy('+\18\a','t')],vk[jy('\148\217\177\192','\208\172')]==true local wF local fv if not(RA)then wF=(th_(vk[jy('o\136\185J\152\179_','+\237\223')])==jy('\1h#-u|','B\aO'))and(vk[jy('\155\140\174\190\156\164\171','\223\233\200')])or Zv(255,255,255);fv=wF else local tx,XA,Pt,xe;tx,Pt=function(hu,de,Uc)Pt[hu]=Yl(de,731)-Yl(Uc,63698)return Pt[hu]end,{};xe=Pt[-25133]or tx(-25133,36654,42335)while xe~=54941 do if xe>=22178 then if xe<=22178 then XA=(th_(vk[jy('M\194\160h\210\170}','\t\167\198')])==jy('A\144Im\141\22','\2\255%'))and(vk[jy('\208\a\180\245\23\190\224','\148b\210')])or Zv(255,255,255);wF=XA;fv,xe=XA,Pt[17543]or tx(17543,81730,11762)else xe=Pt[-17827]or tx(-17827,100542,19226)continue end elseif xe>12392 then XA=vk[jy('C\"(f2\"s','\aGN')];wF=(th_(XA[1])==jy("\165:\169\137\'\246",'\230U\197'))and XA[1]or Zv(255,255,255);xe,fv=Pt[-18844]or tx(-18844,86260,4452),(th_(XA[2])==jy('Z\138\249v\151\166','\25\229\149'))and XA[2]or Zv(255,255,255)else if not(Bi(vk[jy('c\245\195F\229\201S',"\'\144\165")])==jy('\146\210\132\223\131','\230\179'))then xe=Pt[20554]or tx(20554,64580,24367)continue else xe=Pt[-5865]or tx(-5865,67307,17640)continue end xe=Pt[-11767]or tx(-11767,82917,8215)end end end local QE=jy('\6','G')local Bv,ey,FA=aF(wF)local hp=zr(fE[jy('\130\167\51\6\169\161\50\28','\221\196\\h')],32);hp[jy('\253\206\25\200\193\31','\173\175k')]=fE[jy('1,p\182\26*q\172','nO\31\216')];Gf[jy('\"\a\a','c')](Gf,hp);Xw(hp,hp,Gf);Iv(jy('\184\v\245\228\160\15\239\245\128','\236n\141\144'),{[jy('\6R(3].','V3Z')]=hp,[jy('\168\19\201\133\176WP\150\219\193*\152\19\196\157\167DM\134\219\198\a','\234r\170\238\215%?\227\181\165~')]=1,[jy('\226\55\a\207\198\49\27\200','\178Xt\166')]=WA(0,10,0,0),[jy('\218V\243Z','\137?')]=RA and WA(1,-90,0,32)or WA(1,-50,0,32),[jy('~\31V\4','8p')]=dx[jy('\214\139\230\136','\147\229')][jy('p\253X\230','6\146')][jy('4v\243\160S\183>|\227\161G\183','s\25\135\200\50\218')],[jy('\t\178\r\v\14\190\15\26',']\215u\127')]=12,[jy('\168\130\49k\135\147\139&m\247','\252\231I\31\196')]=Je[jy('\20\161\56\176','@\196')],[jy('\254\26\224k\193r\245\195\24\246r\252]\237','\170\127\152\31\153\51\153')]=dx[jy('\186G\138D','\255)')][jy('S\237O\"\144v\193n\239Y;\173Y\217','\a\136\55V\200\55\173')][jy('\194$\232\53','\142A')],[jy('Ciox','\23\f')]=vk[jy('\245%\214!','\187D')]or jy('\168Z\135Z\153','\235\53')})local bA=Iv(jy('\147\190\162:[\178\175\174!w','\199\219\218N\25'),{[jy('\208\236\251\229\227\253','\128\141\137')]=hp,[jy('/\151\251\153h\28\169\247\152i\26','n\249\152\241\a')]=EG(1,0),[jy('\19MZN7KFI',"C\")\'")]=RA and WA(1,-42,0,7)or WA(1,-10,0,7),[jy('-J\4F','~#')]=Zi(28,18),[jy(":\213\a\164\49w\22\25\22\208\'\160:j\v_",'x\180d\207V\5yl')]=wF,[jy('Q\179}\162','\5\214')]='',[jy('*\3 \23\185i%\31\25:;\148p>\25','kvTx\251\28Q')]=false,[jy("X\'\53|\219(ds2\"H\215\"Rv",'\26HG\24\190Z7')]=0});ad(4,bA)local Fg=nil if not(RA)then else Fg=Iv(jy('\227\132\131M}\194\149\143VQ','\183\225\251\57?'),{[jy('N\148\160{\155\166','\30\245\210')]=hp,[jy('\214\153ZM_\229\167VL^\227','\151\247\57%0')]=EG(1,0),[jy('X>\141<|8\145;','\bQ\254U')]=WA(1,-10,0,7),[jy('5\130\28\142','f\235')]=Zi(28,18),[jy('%\194\"$\165\219\192\19\t\199\2 \174\198\221U','g\163AO\194\169\175f')]=fv,[jy('\253\130\209\147','\169\231')]='',[jy('\173\\b\a\144\246\49\152Fx+\189\239*\158','\236)\22h\210\131E')]=false,[jy("\254\229\b\203\146\'\147\213\240\31\255\158-\165\208",'\188\138z\175\247U\192')]=0});ad(4,Fg)end local function LC(Su)QE=Su local Xz=(Su==jy(' ','a'))and wF or fv;Bv,ey,FA=aF(Xz)end LC(jy(',','m'))if not(fE[jy('\172\238\165\157\253\163\132','\243\153\204')][jy('\241 \182U\194 \176J\221','\174T\217:')])then else fE[jy('M\229\233|\246\239e','\18\146\128')][jy('r;SXA;UG^','-O<7')][jy('\225\218\53\193\205)','\160\174A')](hp,vk[jy('G\136\31\127\147\25c','\19\231p')],Gf)end local OB=Iv(jy('\171\238\140\241\136','\237\156'),{[jy('\233S\248\220\\\254','\185\50\138')]=hp,[jy('\233\139\140\254\205\141\144\249','\185\228\255\151')]=WA(0,8,0,36),[jy('\23\204>\192','D\165')]=WA(1,-16,0,110),[jy('\141\198\183U\0\53\r\51\161\195\151Q\v(\16u','\207\167\212>gGbF')]=Je[jy(' roZ\15\16|y_\f','b\19\f\49h')],[jy('\226\237\3\31\203J\200\201\248\20+\199@\254\204','\160\130q{\174\56\155')]=0,[jy('\19mD,f[ ','E\4\55')]=false});ad(6,OB);bz(Je[jy('\174\b\158\136\2\158','\236g\236')],1,OB)local cb=Iv(jy('?\222\24\193\28','y\172'),{[jy('\183M\30\130B\24','\231,l')]=OB,[jy('\154p\148y\190v\136~','\202\31\231\16')]=WA(0,6,0,6),[jy('\19\224:\236','@\137')]=WA(1,-12,1,-28),[jy('\253f\174\203\189\"\202\217\209c\142\207\182?\215\159','\191\a\205\160\218P\165\172')]=Zv(255,0,0),[jy('\\M~)E~\228wXi\29It\210r','\30\"\fM \f\183')]=0});ad(4,cb)local bn=Iv(jy('\30\241\57\238=','X\131'),{[jy('\217\248\228\236\247\226','\137\153\150')]=cb,[jy('\132\29\254\206-\157\\C\168\24\222\202&\128A\5','\198|\157\165J\239\51\54')]=Zv(255,255,255),[jy('\182G\159K','\229.')]=WA(1,0,1,0),[jy('\166\162\231\165\177\163\193\141\183\240\145\189\169\247\136','\228\205\149\193\212\209\146')]=0});Iv(jy('\136.\173\27\a\185\14\143\a\18','\221g\234if'),{[jy('\128[\6\181T\0','\208:t')]=bn,[jy('\206\218\252\228\24\196\251\218\248\228\b\205','\154\168\157\138k\180')]=dx[jy('\r,\t\163\255\234\19&(\17\164\244\251%','CYd\193\154\152@')][jy('\221\214\196','\179')]{dx[jy('\151\246\218\179w\174W\212\230\203\6\183\224\210\154w\165t\222\254\208\23','\217\131\183\209\18\220\4\177\151\190c')][jy('\t\2\16','g')](0,0),dx[jy('|&R\200\96\173\128y\251\139\225\\\48Z\225\96\166\163s\227\144\240','2S?\170\5\223\211\28\138\254\132')][jy('\143\132\150','\225')](1,1)}})local Yd=Iv(jy('\163_\132@\128','\229-'),{[jy('t\197\174A\202\168','$\164\220')]=cb,[jy('v\4\51\238\246\225u\170Z\1\19\234\253\252h\236','4eP\133\145\147\26\223')]=Zv(0,0,0),[jy('K\230b\234','\24\143')]=WA(1,0,1,0),[jy("\230\217\140Z\26a\17\205\204\155n\22k\'\200",'\164\182\254>\127\19B')]=0});Iv(jy('\207\t|]\\\254)^AI','\154@;/='),{[jy("\248\'\254\205(\248",'\168F\140')]=Yd,[jy('Q\175|&w\169g)','\3\192\bG')]=90,[jy('\a\152\4\184_#2\152\0\184O*','S\234e\214,S')]=dx[jy(':\226\56\153\151\223]\17\230 \158\156\206k','t\151U\251\242\173\14')][jy('GL^',')')]{dx[jy('\189w\30s\192\23\v\201\53=\176\157a\22Z\192\28(\195-&\161','\243\2s\17\165eX\172DH\213')][jy('\171\160\178','\197')](0,1),dx[jy('\169\144lJ\168x\2\27>\158\57\137\134dc\168s!\17&\133(','\231\229\1(\205\nQ~O\235\\')][jy('CHZ','-')](1,0)}});ad(4,Yd)local sj=Iv(jy('b0E/A','$B'),{[jy('m\205\31X\194\25','=\172m')]=cb,[jy('\165\246\140\250','\246\159')]=Zi(8,8),[jy('\29\170\\\136j.\148P\137k(','\\\196?\224\5')]=EG(0.5,0.5),[jy('\244Z\167\248\208\\\187\255','\164\53\212\145')]=WA(1,0,0,0),[jy('\144\187\208P\223\229\57\247\188\190\240T\212\248$\177','\210\218\179;\184\151V\130')]=Zv(255,255,255),[jy('\183\212\205}\202#\29\156\193\218I\198)+\153','\245\187\191\25\175QN')]=0,[jy('\170\215a\148\251w','\240\158\15')]=5});ad(4,sj);bz(Zv(0,0,0),1,sj)local pk=Iv(jy('\251!\220>\216','\189S'),{[jy('4\243 \1\252&','d\146R')]=OB,[jy('C\240\147\174\137p\206\159\175\136v','\2\158\240\198\230')]=EG(0,1),[jy('.h\154\232\nn\134\239','~\a\233\129')]=WA(0,6,1,-6),[jy('\26\205\51\193','I\164')]=WA(1,-12,0,12),[jy('CXq\176SPehMf\132_ZSm','\1\55\3\212\54\"\54')]=0,[jy('FL=\161WU\241\223jI\29\165\\H\236\153',"\4-^\202\48\'\158\170")]=Zv(255,255,255)});ad(4,pk);Iv(jy('\238\166\255\b\6\223\134\221\20\19','\187\239\184zg'),{[jy('N\215,{\216*','\30\182^')]=pk,[jy('\25S6S(','Z<')]=dx[jy('k\217t\215\180\54M\199m\221\168\6M','(\182\24\184\198e')][jy('\146\153\139','\252')]{dx[jy('\180\199nt\f.\n/\200\130\153\203gP\27\4\31\49\212\137\131','\247\168\2\27~}o^\189\231')][jy('_TF','1')](0,Zv(255,0,0)),dx[jy('a~\17L\212\199\v\140@TLr\24h\195\237\30\146\\_V','\"\17}#\166\148n\253\53\49')][jy('*!3','D')](0.17000000000000001,Zv(255,255,0)),dx[jy('0\180\b\171?<\17z\133\235\29\184\1\143(\22\4d\153\224\a','s\219d\196Mot\v\240\142')][jy('\154\145\131','\244')](0.33000000000000002,Zv(0,255,0)),dx[jy('O\141\n\143\158\146\127\199\241&b\129\3\171\137\184j\217\237-x','\f\226f\224\236\193\26\182\132C')][jy('\251\240\226','\149')](0.5,Zv(0,255,255)),dx[jy('\133\223\18_D\206V\f\127^\168\211\27{S\228C\18cU\178','\198\176~06\157\51}\n;')][jy('K@R','%')](0.67000000000000004,Zv(0,0,255)),dx[jy('>G\185&\180\54J7k\210\19K\176\2\163\28_)w\217\t','}(\213I\198e/F\30\183')][jy('\14\5\23','\96')](0.82999999999999996,Zv(255,0,255)),dx[jy('I\222\223\186\206UB\146asd\210\214\158\217\127W\140}x~',"\n\177\179\213\188\6\'\227\20\22")][jy('-&4','C')](1,Zv(255,0,0))}})local fr=Iv(jy('\19~4a0','U\f'),{[jy('\192\252H\245\243N','\144\157:')]=pk,[jy('\26\170\51\166','I\195')]=WA(0,3,1,4),[jy('\236\136\248\163\182\223\182\244\162\183\217','\173\230\155\203\217')]=EG(0.5,0.5),[jy('\142}n4\170{r3','\222\18\29]')]=WA(0,0,0.5,0),[jy('\173\131|+I7\148\217\129\134\\/B*\137\159','\239\226\31@.E\251\172')]=Zv(255,255,255),[jy('\157Q\246&=J\229\182D\225\18\49@\211\179','\223>\132BX8\182')]=0,[jy('u\167GK\139Q','/\238)')]=5});ad(2,fr);bz(Zv(0,0,0),1,fr)local xs=_p({[jy('0\249\r\23\56\249\29\6','Y\151~c')]=hp,[jy('I\144w\148r','\22\253')]=Gf,[jy('d\161\160iO\187\170d',';\210\197\n')]=fE,[jy('\202\127\249x\242','\149\25')]=vk[jy('\185\200\158\195','\255\164')],[jy('3\240\167\225\154\30\251\187\247\138','l\148\194\146\238')]=false},bc)local function bo()local Ae,Jw,pz;Ae,Jw=function(wh_,Jv,vG)Jw[vG]=Yl(Jv,24402)-Yl(wh_,24564)return Jw[vG]end,{};pz=Jw[28617]or Ae(14229,61780,28617)while pz~=46069 do if pz<26712 then if pz<10142 then md[jy('\238\163\240\165\252','\153\209')](vk[jy(':1\29:','|]')],{wF,fv});pz=Jw[-9436]or Ae(17810,56812,-9436)elseif pz>10142 then if not(not(vk[jy('\184\182\159\189','\254\218')]and md))then pz=Jw[-28899]or Ae(21446,27778,-28899)continue else pz=Jw[-16472]or Ae(59463,65987,-16472)continue end pz=Jw[-9483]or Ae(54172,60244,-9483)else if RA then pz=Jw[20558]or Ae(28177,2066,20558)continue else pz=Jw[1789]or Ae(51259,65686,1789)continue end pz=Jw[16191]or Ae(64933,87547,16191)end elseif pz>42718 then md[jy('\230/\248)\244','\145]')](vk[jy('f\224A\235',' \140')],wF);pz=Jw[-17156]or Ae(24480,14334,-17156)elseif pz<=26712 then pz=Jw[9381]or Ae(54637,90588,9381)continue else return end end end local function wc(il)local Yk,gd,Eq,Wi;Eq,Yk=function(qr,Jz,ha)Yk[Jz]=Yl(qr,9470)-Yl(ha,11874)return Yk[Jz]end,{};Wi=Yk[-13852]or Eq(38536,-13852,33716)repeat if Wi>=31389 then if Wi>=47894 then if Wi>55659 then wF=gd;bA[jy("\190\21\235>\206\'\167/\146\16\203:\197:\186i",'\252t\136U\169U\200Z')],Wi=wF,Yk[-20580]or Eq(51322,-20580,24348)elseif Wi>47894 then RG(vk[jy('\209\168\t\127\240\168\6x','\146\201e\19')],wF);Wi=Yk[-28355]or Eq(37894,-28355,6201)else Wi,Fg[jy('\205V\163\129\18\212\196\3\225S\131\133\25\201\217E','\143\55\192\234u\166\171v')]=Yk[-14354]or Eq(96446,-14354,53080),fv end elseif Wi<=31389 then Wi=Yk[-20601]or Eq(77401,-20601,52420)continue else cb[jy('\198\n\255\167\49\210|/\234\15\223\163:\207ai','\132k\156\204V\160\19Z')]=AE(Bv,1,1);sj[jy('\158\231\147\151\186\225\143\144','\206\136\224\254')]=WA(ey,0,1-FA,0);fr[jy('\198\187\243\128\226\189\239\135','\150\212\128\233')]=WA(Bv,0,0.5,0);bo()if il~=false then Wi=Yk[22384]or Eq(28868,22384,6956)continue end Wi=Yk[26177]or Eq(96733,26177,52452)end elseif Wi<=7916 then if Wi<=6490 then if Wi>1184 then fv=gd if not(Fg)then Wi=Yk[-21933]or Eq(38962,-21933,28580)continue else Wi=Yk[14728]or Eq(94762,14728,46556)continue end Wi=Yk[-5484]or Eq(79515,-5484,47421)else gd=AE(Bv,ey,FA)if not(QE==jy('\191','\254'))then Wi=Yk[844]or Eq(36692,844,48178)continue else Wi=Yk[-27033]or Eq(102950,-27033,38287)continue end Wi=31494 end else if not(RA)then Wi=Yk[-25738]or Eq(123012,-25738,50541)continue else Wi=Yk[8827]or Eq(58602,8827,22293)continue end Wi=Yk[9323]or Eq(59317,9323,26316)end else RG(vk[jy('\171@\6~\138@\ty','\232!j\18')],wF,fv);Wi=Yk[23328]or Eq(42495,23328,10246)end until Wi==10241 end xs[jy('\224\214\199','\179')]=function(dD,zj)local ex,yh,Aq;ex,yh=function(tw,cD,gs)yh[cD]=Yl(gs,39521)-Yl(tw,12293)return yh[cD]end,{};Aq=yh[-3881]or ex(8194,-3881,106144)repeat if Aq>46969 then if Aq<=55076 then if Aq>52860 then if not(th_(zj[1])==jy('\195\175c\239\178<','\128\192\15'))then Aq=yh[-8203]or ex(33200,-8203,116138)continue else Aq=yh[-29158]or ex(56023,-29158,70815)continue end Aq=yh[-1980]or ex(57729,-1980,124411)else fv=zj[2];Aq,Fg[jy("JY\a\209\24E\252;f\\\'\213\19X\225}",'\b\56d\186\127\55\147N')]=yh[13908]or ex(36394,13908,20452),fv end else if RA and Bi(zj)==jy('\144\166\134\171\129','\228\199')then Aq=yh[-10595]or ex(53603,-10595,74475)continue elseif th_(zj)==jy('\5\214#)\203|','F\185O')then Aq=yh[-16293]or ex(5805,-16293,4176)continue end Aq=46969 end elseif Aq>=42028 then if Aq<=44566 then if Aq>42028 then if not(th_(zj[2])==jy('\249y\24\213dG','\186\22t')and Fg)then Aq=yh[21163]or ex(34940,21163,21934)continue else Aq=yh[-4180]or ex(63015,-4180,69375)continue end Aq=5974 else wF=zj[1];Aq,bA[jy('\219\27\213\245\242\15[\184\247\30\245\241\249\18F\254','\153z\182\158\149}4\205')]=yh[6424]or ex(4379,6424,21845),wF end else Aq=yh[16249]or ex(27706,16249,27700)continue end elseif Aq>5974 then Bv,ey,FA=aF(zj);wc();Aq=yh[-17630]or ex(34417,-17630,128908)else LC(QE);bo();Aq=yh[-19525]or ex(13237,-19525,8520)end until Aq==39446 end;xs[jy('\183\149\132','\240')]=function(pF)local Hf,Nv,nC;nC,Hf={},function(Um,Lg,uD)nC[Lg]=Yl(Um,27653)-Yl(uD,55055)return nC[Lg]end;Nv=nC[-3821]or Hf(88644,-3821,41390)while Nv~=31830 do if Nv>34144 then if RA then Nv=nC[11703]or Hf(22820,11703,54759)continue end Nv=nC[-15795]or Hf(36739,-15795,35113)elseif Nv<=12857 then return{wF,fv}else return wF end end end;wc(false);hp[jy('$\222\r\210','w\183')]=WA(1,0,0,32);OB[jy('X\202\227g\193\252k','\14\163\144')]=false local function iv()OB[jy('g\5\tX\14\22T','1lz')]=true;hp[jy('\205g\228k','\158\14')]=WA(1,0,0,152)end local function bB()OB[jy('&\\\28\25W\3\21','p5o')]=false;hp[jy('\200\51\225?','\155Z')]=WA(1,0,0,32)end Gf[jy('\211\246\246','\146')](Gf,bA[jy('\243v\218U\239c\228\222\202v\193\23\201M\248\201\213','\190\25\175&\138!\145\170')][jy('h\vLE\1A_','+d\"')](bA[jy('\243v\218U\239c\228\222\202v\193\23\201M\248\201\213','\190\25\175&\138!\145\170')],function()local jm,lj,U;jm,U={},function(Yy,Mk,nF)jm[nF]=Yl(Mk,58412)-Yl(Yy,16227)return jm[nF]end;lj=jm[-18784]or U(41791,15398,-18784)while lj~=50388 do if lj<=18027 then if lj>=15278 then if lj>15278 then bB();lj=jm[-32413]or U(50448,66397,-32413)else if QE==jy('\\','\29')then lj=jm[21632]or U(57281,127342,21632)continue else lj=jm[-22308]or U(21206,31276,-22308)continue end lj=60670 end elseif lj<=12363 then LC(jy('\146','\211'));iv();wc(false);lj=jm[23673]or U(36931,96306,23673)else if OB[jy(',\221&\19\214\57\31','z\180U')]then lj=jm[-25488]or U(19913,23865,-25488)continue else lj=jm[-581]or U(19468,126419,-581)continue end lj=jm[15766]or U(31523,120082,15766)end elseif lj<=38544 then iv();lj=jm[7915]or U(14097,4444,7915)else lj=jm[5064]or U(33581,91406,5064)continue end end end))if not(Fg)then else Gf[jy(')\f\f','h')](Gf,Fg[jy('\154G\211Sh\206\222N\163G\200\17N\224\194Y\188','\215(\166 \r\140\171:')][jy('\139\214r\166\220\127\188','\200\185\28')](Fg[jy('\154G\211Sh\206\222N\163G\200\17N\224\194Y\188','\215(\166 \r\140\171:')],function()local Xe,mi,gE;Xe,mi={},function(sG,Xn,yu)Xe[yu]=Yl(Xn,40556)-Yl(sG,50030)return Xe[yu]end;gE=Xe[-13426]or mi(36698,9050,-13426)repeat if gE<=31253 then if gE>=31059 then if gE>31059 then bB();gE=Xe[-16680]or mi(34415,10607,-16680)else LC(jy('\185','\251'));iv();wc(false);gE=Xe[15816]or mi(25710,100206,15816)end elseif gE>28930 then gE=Xe[18909]or mi(58565,4754,18909)continue else if not(QE==jy('d','&'))then gE=Xe[-29339]or mi(9509,115186,-29339)continue else gE=Xe[-26895]or mi(34063,102857,-26895)continue end gE=29186 end elseif gE>51524 then iv();gE=Xe[5019]or mi(53394,7058,5019)else if not(OB[jy('\184\206\209\135\197\206\139','\238\167\162')])then gE=Xe[-23084]or mi(40359,116038,-23084)continue else gE=Xe[27549]or mi(14738,125821,27549)continue end gE=Xe[-9623]or mi(17896,26340,-9623)end until gE==25939 end))end local iC,nb,ys,ii,Ci,RD,ui,uq=nil,nil,0,0,1,1,0,1 local function Lu(CE)ey=Km((CE[jy('\220','\132')]-ys)/Ci,0,1);FA=1-Km((CE[jy('\200','\145')]-ii)/RD,0,1);wc()end local function pE(cH)Bv=Km((cH-ui)/uq,0,1);wc()end local function tz()local Ar,sC,Gq;sC,Ar={},function(Zq,nq,hF)sC[Zq]=Yl(nq,27978)-Yl(hF,11493)return sC[Zq]end;Gq=sC[-30892]or Ar(-30892,48699,25665)repeat if Gq<=14591 then if Gq<=14541 then iC[jy('\182\16\17\134\a\r\139','\242ub')](iC);Gq,iC=sC[-27741]or Ar(-27741,40575,38611),nil else Gq=sC[12024]or Ar(12024,56105,45361)continue end else if not(iC)then Gq=sC[28638]or Ar(28638,98235,62743)continue else Gq=sC[21810]or Ar(21810,82738,55630)continue end Gq=14591 end until Gq==6287 end local function Gn()local Ac,ma,Wu;Ac,Wu=function(Bn,jn,Df)Wu[Df]=Yl(jn,34181)-Yl(Bn,57795)return Wu[Df]end,{};ma=Wu[-30517]or Ac(117,102693,-30517)repeat if ma<43103 then if not(nb)then ma=Wu[17916]or Ac(61714,15541,17916)continue else ma=Wu[-16013]or Ac(16599,117074,-16013)continue end ma=Wu[2751]or Ac(51962,22045,2751)elseif ma<=43103 then ma=Wu[-26894]or Ac(9797,72235,-26894)continue else nb[jy('\166\146\6\150\133\26\155','\226\247u')](nb);ma,nb=Wu[2246]or Ac(2370,71013,2246),nil end until ma==55336 end Gf[jy('\186\159\159','\251')](Gf,cb[jy('\152e\248\226X\147n\239\246B','\209\v\136\151,')][jy('\217\225l\244\235a\238','\154\142\2')](cb[jy('\152e\248\226X\147n\239\246B','\209\v\136\151,')],function(iH,vh)local wA,Td,HA,Ak;HA,wA=function(dg,uF,Ut)wA[Ut]=Yl(uF,50707)-Yl(dg,13695)return wA[Ut]end,{};Ak=wA[-10544]or HA(52257,70171,-10544)while Ak~=52582 do if Ak<=42734 then if Ak<=34971 then if Ak<27554 then if iC then Ak=wA[2134]or HA(48926,99298,2134)continue end Ak=wA[-1972]or HA(57351,104448,-1972)elseif Ak>27554 then ys,ii=cb[jy("1\190\207\189}\237\1, \179\207\187e\241\26\'",'p\220\188\210\17\152uI')][jy('\193','\153')],cb[jy('n\244)}8\25\225\233\127\249){ \5\250\226','/\150Z\18Tl\149\140')][jy('1','h')];Ci=DB(1,cb[jy('r/\188\251\186\248G(\156\253\172\232','3M\207\148\214\141')][jy('/','w')]);RD=DB(1,cb[jy('\214\211\52N\194\162\227\212\20H\212\178','\151\177G!\174\215')][jy('o','6')]);Lu(EG(iH[jy('<\252X\151\24\250D\144','l\147+\254')][jy('\249','\161')],iH[jy('>SL)\26UP.','n<?@')][jy('\228','\189')]));Td=ga();iC=Td;Td[jy('>\27\27','\127')](Td,jD[jy('3\178\f\182\29\178(\187\24','|\220O\222')](function(Lb)local dm,tu,hD;hD,tu=function(rb,jk,sn)tu[rb]=Yl(jk,56830)-Yl(sn,60282)return tu[rb]end,{};dm=tu[11504]or hD(11504,96039,11385)while dm~=58820 do if dm<52789 then dm=tu[24630]or hD(24630,101293,39925)continue elseif dm<=52789 then Lu(EG(Lb[jy('\234\246M\140\206\240Q\139','\186\153>\229')][jy('9','a')],Lb[jy('C\208\vKg\214\23L','\19\191x\"')][jy('\131','\218')]));dm=tu[-20474]or hD(-20474,1475,8706)else if Lb[jy('\224\168@\148uQ\197\174Q\178EO\208','\181\219%\230<?')]==dx[jy('\197\50\245\49','\128\\')][jy('m\v\152c\184\186H\r\137E\136\164]','8x\253\17\241\212')][jy('\164\203\212\177i\202\134\210\196\175i\233\157','\233\164\161\194\f\135')]or Lb[jy('<B\26*\245\141\25D\v\f\197\147\f','i1\127X\188\227')]==dx[jy('\184k\136h','\253\5')][jy('\241\143\164\249\\p\212\137\181\223ln\193','\164\252\193\139\21\30')][jy(')\201\b\197\21','}\166')]then dm=tu[-25553]or hD(-25553,14203,63274)continue end dm=3781 end end end));Td[jy('\201\236\236','\136')](Td,jD[jy('\b#s))S#','GM6')](function(zA)local ao,qj,ps;qj,ao=function(ic,Kt,kt)ao[ic]=Yl(kt,46393)-Yl(Kt,32322)return ao[ic]end,{};ps=ao[-29019]or qj(-29019,24497,107491)while ps~=11016 do if ps>=50841 then if ps>50841 then if zA[jy(':\220\234/K<\31\218\251\t{\"\n','o\175\143]\2R')]==dx[jy('\175\181\159\182','\234\219')][jy('R\166x%\173\24w\160i\3\157\6b','\a\213\29W\228v')][jy('d #\188\151\146\\;\"\160\156\225',')OV\207\242\208')]or zA[jy('H\23\133\187k\241m\17\148\157[\239x','\29d\224\201\"\159')]==dx[jy('\237\"\221!','\168L')][jy('\224Wsg~\145\197QbAN\143\208','\181$\22\21\55\255')][jy('\244\202\213\198\200','\160\165')]then ps=ao[-10732]or qj(-10732,33795,103739)continue end ps=50841 else ps=ao[4687]or qj(4687,62443,3464)continue end else tz();ps=ao[-18841]or qj(-18841,45298,73840)end end end));Ak=wA[22641]or HA(58398,88276,22641)continue else return end else if not(iH[jy('\253\55\148\248y\155\216\49\133\222I\133\205','\168D\241\138\48\245')]~=dx[jy('\253\200\205\203','\184\166')][jy('\159o\147p\203\131\186i\130V\251\157\175','\202\28\246\2\130\237')][jy('\181\48M\157\186r\141+L\129\177\1','\248_8\238\223\48')]and iH[jy('9X\133\252\135\151\28^\148\218\183\137\t','l+\224\142\206\249')]~=dx[jy('!^\17]','d0')][jy('\223\207j\143!B\250\201{\169\17\\\239','\138\188\15\253h,')][jy('\177\4\144\b\141','\229k')])then Ak=wA[-29615]or HA(31514,42393,-29615)continue else Ak=wA[29615]or HA(60832,98962,29615)continue end Ak=wA[32613]or HA(6783,33334,32613)end elseif Ak>55978 then return elseif Ak<=48016 then return else if vh then Ak=wA[31307]or HA(20092,108105,31307)continue end Ak=wA[-27303]or HA(11597,31027,-27303)end end end));Gf[jy('\136\173\173','\201')](Gf,function()tz()end);Gf[jy('<\25\25','}')](Gf,pk[jy('\177\209+\224\168\186\218<\244\178','\248\191[\149\220')][jy("\n\142\252\'\132\241=",'I\225\146')](pk[jy('\177\209+\224\168\186\218<\244\178','\248\191[\149\220')],function(gH,sa)local tf,Dn,mg,Fz;Dn,mg=function(_b,om,js)mg[js]=Yl(om,44812)-Yl(_b,37880)return mg[js]end,{};tf=mg[-17566]or Dn(54359,24428,-17566)repeat if tf<43185 then if tf<25425 then ui=pk[jy('\192<</\127yUY\209\49<)geNR','\129^O@\19\f!<')][jy(' ','x')];uq=DB(1,pk[jy('\174\162M?\169\203\155\165m9\191\219','\239\192>P\197\190')][jy('\178','\234')]);pE(gH[jy('\221\221C\194\249\219_\197','\141\178\48\171')][jy('\134','\222')]);Fz=ga();nb=Fz;Fz[jy('\200\237\237','\137')](Fz,jD[jy('poPU^otX[','?\1\19=')](function(eh)local oF,gq,RF;RF,oF=function(hB,aE,lh)oF[hB]=Yl(aE,25277)-Yl(lh,25671)return oF[hB]end,{};gq=oF[17354]or RF(17354,60,20366)while gq~=1949 do if gq>=22731 then if gq>22731 then pE(eh[jy('\177\135\173\160\149\129\177\167','\225\232\222\201')][jy('\f','T')]);gq=oF[26032]or RF(26032,35263,63088)else gq=oF[-4538]or RF(-4538,28287,24930)continue end else if eh[jy('\143\185-\173x\20\170\191<\139H\n\191','\218\202H\223\49z')]==dx[jy('\222\147\238\144','\155\253')][jy('%\20\0X\30#\0\18\17~.=\21','pge*WM')][jy('C\173\175[\238\209a\180\191E\238\242z','\14\194\218(\139\156')]or eh[jy(' \141Zp\224{\5\139KV\208e\16','u\254?\2\169\21')]==dx[jy('\163k\147h','\230\5')][jy('\140\137{\3\211\169\169\143j%\227\183\188','\217\250\30q\154\199')][jy('\243\17\210\29\207','\167~')]then gq=oF[24339]or RF(24339,43046,2370)continue end gq=oF[28384]or RF(28384,6968,17661)end end end));Fz[jy('6\19\19','w')](Fz,jD[jy('\201f\167\232l\135\226','\134\b\226')](function(cG)local Do,Ul,Rl;Ul,Do={},function(Au,PA,Kd)Ul[Au]=Yl(Kd,42374)-Yl(PA,43772)return Ul[Au]end;Rl=Ul[-32377]or Do(-32377,49885,126598)while Rl~=8272 do if Rl>58079 then Gn();Rl=Ul[-18656]or Do(-18656,45131,2952)elseif Rl<=37719 then Rl=Ul[-29550]or Do(-29550,14334,6356)continue else if not(cG[jy('.x\248Q\168\158\v~\233w\152\128\30','{\v\157#\225\240')]==dx[jy('\133\140\181\143','\192\226')][jy('\249\170\164\249\160\200\220\172\181\223\144\214\201','\172\217\193\139\233\166')][jy('\130\191\220\52\2\231\186\164\221(\t\148','\207\208\169Gg\165')]or cG[jy('YK\185\242\211\243|M\168\212\227\237i','\f\56\220\128\154\157')]==dx[jy('\167\194\151\193','\226\172')][jy('\163\2\15\\\188\133\134\4\30z\140\155\147','\246qj.\245\235')][jy('\240\248\209\244\204','\164\151')])then Rl=Ul[2059]or Do(2059,24124,77201)continue else Rl=Ul[1831]or Do(1831,43474,21646)continue end Rl=Ul[-28498]or Do(-28498,5396,128697)end end end));tf=mg[30123]or Dn(10461,17029,30123)continue elseif tf<=25425 then return else return end elseif tf>=56902 then if tf>56902 then return else if not(nb)then tf=mg[-4922]or Dn(47141,55781,-4922)continue else tf=mg[20682]or Dn(64403,19166,20682)continue end tf=mg[-32345]or Dn(55859,15323,-32345)end elseif tf<=43185 then if not(sa)then tf=mg[10988]or Dn(6947,117046,10988)continue else tf=mg[10578]or Dn(21107,101328,10578)continue end tf=56671 else if gH[jy('{\220(m\179\165^\218\57K\131\187K','.\175M\31\250\203')]~=dx[jy('\212\155\228\152','\145\245')][jy('n\167\238,\157dK\161\255\n\173z^',';\212\139^\212\n')][jy('4\140$\154[\18\f\151%\134Pa','y\227Q\233>P')]and gH[jy('\248\224\173\53\235C\221\230\188\19\219]\200','\173\147\200G\162-')]~=dx[jy('\16\136 \139','U\230')][jy('\222\223lg\222\196\251\217}A\238\218\238','\139\172\t\21\151\170')][jy('\209l\240\96\237','\133\3')]then tf=mg[-27636]or Dn(39275,18429,-27636)continue end tf=mg[1792]or Dn(56634,98820,1792)end until tf==12900 end))local So,dk,Ue,vm;So,vm=function(ob,Lk,ik)vm[ob]=Yl(ik,1176)-Yl(Lk,18961)return vm[ob]end,{};dk=vm[-21838]or So(-21838,38506,101925)while dk~=11098 do if dk>=58401 then if dk>58401 then Ue=RA and{wF,fv}or wF;md[jy('\146\140\129\152\147\157\131\131','\224\233\230\241')](vk[jy('cJDA','%&')],Ue,function(uG)xs[jy('\16&7','C')](xs,uG)end);dk=vm[-26622]or So(-26622,4915,80347)else fE[jy('W3\219y\5we\"\208s#v|','\bR\191\29F\24')](fE,xs)return xs end else Gf[jy('Vss','\23')](Gf,function()Gn()end)if not(vk[jy('\173f\138m','\235\n')]and md)then dk=vm[16860]or So(16860,64248,102802)continue else dk=vm[31470]or So(31470,10064,90112)continue end dk=58401 end end end;nE[jy(')\146\5\5\t\148\4%','h\246aI')]=function(ux,YF)return ie[jy('\201\166\231\162\233','\133\199')](ux,YF or{})end;nE[jy("K\25\14\'\127\t\30\nd",'\n}je')]=function(Ko,wd)return ie[jy('\151&D\161<^','\213S0')](Ko,wd or{})end;nE[jy('\180\22\179\56\154\21\176\0\144','\245r\215l')]=function(Bx,nA)return ie[jy('\179&A\128%C','\231I&')](Bx,nA or{})end;nE[jy('\192\189\31\171\237\176\31\157\243','\129\217{\248')]=function(co,Li)return ie[jy('D\"\252s+\231','\23N\149')](co,Li or{})end;nE[jy('3\164V\r\221\29\176V&\216\28','r\192\50I\175')]=function(hm,av)return ie[jy('\186o\127\228\154rg\250','\254\29\16\148')](hm,av or{})end;nE[jy('\4\153f8\130/K\171\1\143m\5\147,H\172','E\253\2u\247C?\194')]=function(jz,ca)return ie[jy('\26\209\244\193h\196%\203\232\209n\247\57','W\164\152\181\1\128')](jz,ca or{})end;nE[jy('Ltg\192mtrj\229l','\r\16\3\139\b')]=function(Qw,CC)return ie[jy('\220\51\241\245?\230\243','\151V\136')](Qw,CC or{})end;nE[jy('\249\18{v\f\192\2}M\17','\184v\31\"i')]=function(ah,od)return ie[jy('jv\237Jq\250F','>\19\149')](ah,od or{})end;nE[jy('\27\149\208\173\210cV(\161\221\141\214jK','Z\241\180\238\189\15\57')]=function(Cl,pd)return ie[jy('. \139q;=&\132u,\31','mO\231\30I')](Cl,pd or{})end;nE[jy('\211z)\151\173\n\243l,\176\167\b','\146\30M\196\200z')]=function(aa,Xs)return ie[jy("\221\157\'\241\252\153#\255\252",'\142\248W\144')](aa,Xs)end local function id(Yb)return Ho((Yb-1)*8/Yb)end Xi[jy('HCQ','&')]=function(Ey,Un)local gl=_p({},Xi);gl[jy('aN\233P]\239I','>9\128')]=Ey;gl[jy('\163\27\157\24\153','\252u')]=Un[jy('W\149t\145','\25\244')]or jy('\30+(','J');gl[jy('j\190V\184[','5\215')]=Un[jy('\154\22\188\27','\211u')];gl[jy('\143\3\16\180\15\28\190','\208ky')]=Un[jy('iJFEFL','!#\"')]==true;gl[jy('\20\154*\158/','K\247')]=ga()local Vh,Ng,Sw,Ay,Wb,hx;Sw,Ng=function(ze,lq,kd)Ng[lq]=Yl(kd,30683)-Yl(ze,51448)return Ng[lq]end,{};Wb=Ng[30667]or Sw(32776,30667,85721)while Wb~=15832 do if Wb>=45049 then if Wb<61458 then gl[jy('\tC7G2','V.')][jy('Qtt','\16')](gl[jy('\tC7G2','V.')],hx[jy('\29\234\189\19\192A\27\177$\234\166Q\230o\a\166;','P\133\200\96\165\3n\197')][jy('\212s\236\249y\225\227','\151\28\130')](hx[jy('\29\234\189\19\192A\27\177$\234\166Q\230o\a\166;','P\133\200\96\165\3n\197')],function()Ey[jy('\168|\133\127\152m\189{\153','\251\25\233\26')](Ey,gl)end));gl[jy('\221;\246\55','\130Y')]=hx;gl[jy('\143G\178G','\208+')]=Ay;gl[jy('G\201R\18\200{\193H\25\211','\24\160<v\161')],Wb=Vh,Ng[28074]or Sw(920,28074,39831)elseif Wb>61458 then hx=Iv(jy('\27\134\170\177\177:\151\166\170\157','O\227\210\197\243'),{[jy('\148\200\t\161\199\15','\196\169{')]=Ey[jy('\3!4\239\16<&\249','\\UU\141')],[jy('\214\179\250u\244}\b\23\250\182\218q\255\96\21Q','\148\210\153\30\147\15gb')]=Je[jy('\v\225\131>\245\146=','X\148\241')],[jy('\188-D*\228\26\148\25\49\20\139\140-I2\243\t\137\t\49\19\166',"\254L\'A\131h\251l_p\223")]=1,[jy('\\\190u\178','\15\215')]=WA(1,0,0,32),[jy('.\130\229\237\162\211]\27\152\255\193\143\202F\29','o\247\145\130\224\166)')]=false,[jy('y\173U\188','-\200')]=''});ad(6,hx);gl[jy('\222a\224e\229','\129\f')][jy('fCC',"\'")](gl[jy('\222a\224e\229','\129\f')],hx);Vh=Iv(jy('\254\238\217\241\221','\184\156'),{[jy('\144\234C\165\229E','\192\139\49')]=hx,[jy('l;\187\136F\224\244V@>\155\140M\253\233\16','.Z\216\227!\146\155#')]=Je[jy('\219!\196\255,\211','\154B\167')],[jy('61\31=','eX')]=Zi(3,16),[jy('\22%\136k2#\148l','FJ\251\2')]=WA(0,0,0.5,-8),[jy('\15{\188W6\188\222$n\171c:\182\232!','M\20\206\51S\206\141')]=0,[jy('\195\247>\216\149\159\127\166\229\142\16\243\247\51\192\130\140b\182\229\137=','\129\150]\179\242\237\16\211\139\234D')]=1});ad(2,Vh);Ay=Iv(jy('zN\132\255bJ\158\238B','.+\252\139'),{[jy('\v\249\163>\246\165','[\152\209')]=hx,[jy('\148x)\roL\255\147\217\206\132\164x$\21x_\226\131\217\201\169','\214\25Jf\b>\144\230\183\170\208')]=1,[jy('\188U\28\205\152S\0\202','\236:o\164')]=WA(0,gl[jy('Y\239e\233h','\6\134')]and 32 or 12,0,0),[jy('\177\144\152\156','\226\249')]=WA(1,gl[jy('K\211w\213z','\20\186')]and-36 or-16,1,0),[jy('\nW\"L','L8')]=dx[jy('\168\0\152\3','\237n')][jy('{\212S\207','=\187')][jy('\96;h\31r\174j1x\30f\174',"\'T\28w\19\195")],[jy('<4\171G;8\169V','hQ\211\51')]=12,[jy('\165\240\155@\139\158\249\140F\251','\241\149\227\52\200')]=Je[jy('gHM\96XW@','4=/')],[jy('\179\132\193r\v_P\142\134\215k6pH','\231\225\185\6S\30<')]=dx[jy('\226\244\210\247','\167\154')][jy('H\1\134\186\31_\200u\3\144\163\"p\208','\28d\254\206G\30\164')][jy('~3T\"','2V')],[jy('\220\211\240\194','\136\182')]=gl[jy('<0\2\51\6','c^')]})if gl[jy(']\149a\147l','\2\252')]then Wb=Ng[9117]or Sw(20268,9117,60102)continue end Wb=45049 else gl[jy('\31C\168@4Y\162M3','@0\205#')]={};gl[jy('p\238\164j\25Z\246\136|\18J','/\130\197\19v')]=jy('#\248\48\244','T\145');gl[jy('dvz?Op{%',';\21\21Q')]=nil;gl[jy('m\212gF\220rW','2\181\4')]=false;gl[jy('!\239Io\189\f\228Uy\173','~\139,\28\201')]=false if not(not gl[jy('\20\132\151/\136\155%','K\236\254')])then Wb=Ng[28117]or Sw(25962,28117,47525)continue else Wb=Ng[-19686]or Sw(8973,-19686,102457)continue end Wb=8428 end elseif Wb>5449 then return gl else Iv(jy('\161\249f/\22\164\245e-\31','\232\148\aHs'),{[jy('-\213;\24\218=','}\180I')]=hx,[jy('\222\223\55Z$u\171_<rV\238\223:B3f\182O<u{','\156\190T1C\a\196*R\22\2')]=1,[jy('\156\179RK\184\181NL','\204\220!\"')]=WA(0,10,0.5,-8),[jy("\'\50\14>",'t[')]=Zi(16,16),[jy('\222*\246 \242','\151G')]=gl[jy('\162\165\158\163\147','\253\204')],[jy('\227l=\157\251\233n0\149\236\153','\170\1\\\250\158')]=Je[jy('\136\216\239\143\200\245\175','\219\173\141')]});Wb=Ng[18026]or Sw(2996,18026,66718)end end end;Xi[jy('\17 9\146\133!)(\131\168:','NG\\\230\198')]=function(Qt)if Qt[jy('\\\170\56\233w\172\57\243','\3\201W\135')]then return Qt[jy('@\170X\142k\172Y\148','\31\201\55\224')]end local iu=Iv(jy('\"Q\180\180\159g\180\31U\128\169\146f\184','q2\198\219\243\v\221'),{[jy('R\212;g\219=','\2\181I')]=Qt[jy('\239\222\253\222\205\251\199','\176\169\148')][jy('\a\22\166\15G\16\t\171\fG*','Xf\199h\"')],[jy("G\219\'!f%\r\152\211F$w\219*9q6\16\136\211A\t",'\5\186DJ\1Wb\237\189\"p')]=1,[jy('\4\145\193\17[\26\168/\132\214%W\16\158*','F\254\179u>h\251')]=0,[jy('m|Dp','>\21')]=WA(1,0,1,0),[jy('\183\218\138\176\232Y\174(\158\176\209\145\188\239[\137:\159','\228\185\248\223\132\53\236I\236')]=3,[jy('\223\232\206w\200\245\"L&\228\225\234\219}\231\246\fB&\158','\140\139\188\24\164\153\96-T\173')]=Je[jy('\24V\208>\\\208','Z9\162')],[jy('\238N\148#\238\222|\147/\234','\173/\250U\143')]=WA(0,0,0,0),[jy('b\30D\218\23\202\27\20K\96\n^\195\27\216<\20RF','#k0\181z\171o}(')]=dx[jy('&\15\22\f','ca')][jy('\rAm\221\136\211\56]z\225\140\200)','L4\25\178\229\178')][jy('O','\22')],[jy('\243\"\229\204)\250\192','\165K\150')]=false})local uu=Iv(jy('\245u\210j\214','\179\a'),{[jy('R:\191g5\185','\2[\205')]=iu,[jy('W\133\136\162\229\16^\208\128\22\165g\133\133\186\242\3C\192\128\17\136','\21\228\235\201\130b1\165\238r\241')]=1,[jy('\199M\238A','\148$')]=WA(1,0,0,0),[jy('D8\239Uy?q$\248i}$\96','\5M\155:\20^')]=dx[jy('\157\131\173\128','\216\237')][jy('\185\130\1*\185\n\140\158\22\22\189\17\157','\248\247uE\212k')][jy('\r','T')]});Gg(8,8,8,11,uu);Iv(jy('_\240F|,\226F\216sz*\226','\n\185\n\21_\150'),{[jy('\228\220\147\209\211\149','\180\189\225')]=uu,[jy('\143\163\221\6\53\26\187\175\210\30\24\28\167','\201\202\177jqs')]=dx[jy('y\4I\a','<j')][jy('Y\209\145\235\206\228m\221\158\243\227\226q','\31\184\253\135\138\141')][jy('\219e\145\233f\252d\151\225p','\147\n\227\128\28')],[jy('|.p\153\96\51f\136]','/A\2\237')]=dx[jy('s\249C\250','6\151')][jy('[\208 \171G\205\54\186z','\b\191R\223')][jy('\131\51\164jt\187\29\175ad\189','\207R\221\5\1')],[jy('\167\158\31\147\150\21\144','\247\255{')]=vD(0,8),[jy('\187?\131\143\226\18(\205\a\159\17\157\143\255\19+\220\b\135','\243P\241\230\152}F\185f')]=dx[jy('}\158M\157','8\240')][jy('\160\28\14\249e\188\137\55\204\132\50\16\249x\189\138&\195\156','\232s|\144\31\211\231C\173')][jy('\178\166\152\183','\254\195')],[jy('\186\134\180s8\170g{\173\143\175\96?\164cy\152','\236\227\198\aQ\201\6\23')]=dx[jy('\128\251\176\248','\197\149')][jy('H7\202l\204\135!\31_>\209\127\203\137%\29j','\30R\184\24\165\228@s')][jy('\193\250\229','\149')]})local ki=id(2)local function _D(lF)local Pr=Iv(jy('x\3_\28[','>q'),{[jy('\235\170\167\222\165\161','\187\203\213')]=uu,[jy('\212\138D\245\a#\235\234\134\142\214\228\138I\237\16\48\246\250\134\137\251',"\150\235\'\158\96Q\132\159\232\234\130")]=1,[jy('\210a\251m','\129\b')]=WA(0.5,-ki,0,0),[jy('\25(\197D=k,4\210x9p=','X]\177+P\n')]=dx[jy('s\177C\178','6\223')][jy('F\167\207\54\210^s\187\216\n\214Eb','\a\210\187Y\191?')][jy('5','l')],[jy('\181\143\244L\157\141\161\255G\141\139','\249\238\141#\232')]=lF});Iv(jy('h*\248\233.\198q\2\205\239(\198','=c\180\128]\178'),{[jy('\209i \228f&','\129\bR')]=Pr,[jy('\158\160\196v{\246\170\172\203nV\240\182','\216\201\168\26?\159')]=dx[jy('\168-\152.','\237C')][jy('Xr\141w\166\172l~\130o\139\170p','\30\27\225\27\226\197')][jy('\217\190.\209\230\184=\201','\143\219\\\165')],[jy('m\30P\151q\3F\134L','>q\"\227')]=dx[jy('\198\197\246\198','\131\171')][jy('\178\150A\200\174\139W\217\147','\225\249\51\188')][jy('\b\184\233Wv0\150\226\\f6','D\217\144\56\3')],[jy('\255\141\135\203\133\141\200','\175\236\227')]=vD(0,8)})return Pr end local Bl,ud,sl=_D(1),_D(2),_D(3);Qt[jy('\136\31\201\t\163\25\200\19','\215|\166g')]=iu;Qt[jy('J\200\250#\96\198\251<','\21\171\149O')]=uu;Qt[jy('>\5\14\n ','af')]=Bl;Qt[jy('On\127aR','\16\r')]=ud;Qt[jy('\194\168\242\167\222','\157\203')]=sl;Qt[jy('\96n^j[','?\3')][jy('\250\223\223','\187')](Qt[jy('\96n^j[','?\3')],iu);Qt[jy('\229\1\219\5\222','\186l')][jy('\161\132\132','\224')](Qt[jy('\229\1\219\5\222','\186l')],uu[jy('\201J\246\211\219\24\245\248\t\171\179m\230N\236\228\204\19\214\244\28\177\171B','\142/\130\131\169w\133\157{\223\202.')](uu,jy(",\207\182\'^\149\25\200\150!H\133",'m\173\197H2\224'))[jy('b#\181O)\184U','!L\219')](uu[jy('\201J\246\211\219\24\245\248\t\171\179m\230N\236\228\204\19\214\244\28\177\171B','\142/\130\131\169w\133\157{\223\202.')](uu,jy(",\207\182\'^\149\25\200\150!H\133",'m\173\197H2\224')),function()Qt[jy('\140\198\191]\201t4\253Q\159\194\176S\208u\24\230P\182','\211\163\201<\165\1U\137\52')](Qt)end));Qt[jy('\179\237\213\237X\155\206.J\160\233\218\227A\154\226\53K\137','\236\136\163\140\52\238\175Z/')](Qt)return iu end local function qs(Hg)local lv,Rz,ij;lv,Rz={},function(Ga,Fc,Bg)lv[Fc]=Yl(Ga,56839)-Yl(Bg,55331)return lv[Fc]end;ij=lv[-6113]or Rz(7849,-6113,48437)while ij~=19285 do if ij>28964 then return 3 elseif ij>=27518 then if ij>27518 then return 2 else return 1 end else if Hg==jy('\f\48\31<','{Y')then ij=lv[12525]or Rz(25338,12525,50849)continue elseif not(Hg==jy('tp}','\25'))then ij=lv[-29582]or Rz(125106,-29582,4884)continue else ij=lv[32020]or Rz(125609,32020,7081)continue end ij=27518 end end end Xi[jy('m\130V-o\191;p\152p/~\183-','2\225\57A\26\210U')]=function(lz,nt)local rt,Ha,Iw;Ha,Iw=function(zB,jo,DE)Iw[zB]=Yl(DE,30032)-Yl(jo,16771)return Iw[zB]end,{};rt=Iw[-13001]or Ha(-13001,3399,81293)repeat if rt>=53530 then if rt<=58826 then if rt<=53530 then return lz[jy('\187m\139b\165','\228\14')]else if nt==3 then rt=Iw[-27738]or Ha(-27738,17759,9829)continue end rt=Iw[26467]or Ha(26467,44271,117718)end else if not(nt==2)then rt=Iw[11944]or Ha(11944,5111,85358)continue else rt=Iw[-22145]or Ha(-22145,53499,54755)continue end rt=Iw[22016]or Ha(22016,43801,107828)end elseif rt<=3899 then return lz[jy('\185W\137X\164','\230\52')]else return lz[jy('\240\209\192\222\236','\175\178')]end until rt==16473 end;Xi[jy('y\160\213\154>l\204pYR\161\239\140)j\204}BU','&\196\188\233J\30\165\18,')]=function(nh)local Rf,qB,HB,eG,yc,an_,Ei,va,nj,eb,Zx,br_;Zx,eb={},function(hE,fy,qC)Zx[qC]=Yl(hE,20077)-Yl(fy,23669)return Zx[qC]end;HB=Zx[22768]or eb(15159,32439,22768)while HB~=58318 do if HB<24130 then if HB<=19200 then if HB>15061 then Rf,an_,va=Jx(Rf);HB=Zx[2124]or eb(41519,60132,2124)elseif HB>13745 then Rf,an_,va=qB[jy('d\203\173O\241\182',';\148\196')](Rf);HB=Zx[28716]or eb(35317,52626,28716)else eG,Ei=Rf(an_,va);va=eG if va==nil then HB=Zx[18655]or eb(43773,18878,18655)else HB=Zx[-29479]or eb(85218,17339,-29479)end end else nj=qs(nh[jy('\130\217\16R\158\168\193<D\149\184','\221\181q+\241')]);Rf,an_,va=nh[jy('.\208\210\135\5\202\216\138\2','q\163\183\228')]if not(FB(Rf)~=jy('\250\219\229/\232\199\228\"','\156\174\139L'))then HB=Zx[30163]or eb(12423,5452,30163)continue else HB=Zx[-20166]or eb(11326,22628,-20166)continue end HB=Zx[-32464]or eb(44835,63464,-32464)end elseif HB<52933 then if HB<=24130 then qB=Ia(Rf)if qB~=nil and qB[jy('\170\231\162\129\221\185','\245\184\203')]~=nil then HB=Zx[15930]or eb(36808,55973,15930)continue elseif FB(Rf)==jy("\18*\4\'\3",'fK')then HB=Zx[-15119]or eb(39951,56087,-15119)continue end HB=Zx[27766]or eb(51134,2135,27766)else yc=((eG-1)%nj)+1;br_[jy('\249s\222\204|\216','\169\18\172')]=nh[jy('\209\"\248\129\233\23<\204\56\222\131\248\31*','\142A\151\237\156zR')](nh,yc);HB,br_[jy('\200\24jp\220\240\54a{\204\246','\132y\19\31\169')]=Zx[-28452]or eb(52428,4229,-28452),eG end elseif HB>52933 then br_=Ei and(Ei)[jy('\145\253\219\175\246\204','\206\155\169')]if not(br_ and br_[jy('0\211\222\5\220\216','\96\178\172')]~=nil)then HB=Zx[17124]or eb(9773,28410,17124)continue else HB=Zx[-12697]or eb(42429,12517,-12697)continue end HB=Zx[28495]or eb(88075,48320,28495)else HB=Zx[25605]or eb(115421,62615,25605)continue end end end;Xi[jy('\234\201m\198Eh\199:\204\199h\194d~\239>','\181\168\29\182)\17\139[')]=function(rs,Ki)local Fn,rm,z,vF,tA;Fn,vF={},function(ft,dz,jf)Fn[ft]=Yl(jf,21753)-Yl(dz,16634)return Fn[ft]end;rm=Fn[-2577]or vF(-2577,46349,86389)while rm~=34519 do if rm<5700 then if rm>3743 then rs[jy('\242\52\131\251\24\216,\175\237\19\200','\173X\226\130w')]=Ki;z=qs(Ki)if not(z==3)then rm=Fn[251]or vF(251,37603,68759)continue else rm=Fn[29824]or vF(29824,39462,42457)continue end rm=Fn[-3707]or vF(-3707,60517,93359)elseif rm>869 then rs[jy('\178K\130D\172','\237(')][jy('\28^5R','O7')]=WA(1,0,0,0);rs[jy('9\96\to$','f\3')][jy("\18,\153-\'\134!",'DE\234')]=false;rs[jy('\185{\137t\165','\230\24')][jy('\251&~\196-a\200','\173O\r')],rm=false,Fn[8824]or vF(8824,38422,79450)else tA=id(2);rs[jy('\232o\216\96\246','\183\f')][jy('\214\3\255\15','\133j')]=WA(0.5,-tA,0,0);rs[jy('%\138\21\133\56','z\233')][jy('\242\181\219\185','\161\220')]=WA(0.5,-tA,0,0);rs[jy('eUUZx',':6')][jy('\175\160&\144\171\57\156','\249\201U')]=true;rs[jy(',\250\28\245\48','s\153')][jy('p\t\207O\2\208C','&\96\188')],rm=false,Fn[2696]or vF(2696,26657,57451)end elseif rm<34389 then tA=id(3);rs[jy('\184F\136I\166','\231%')][jy('\189\148\148\152','\238\253')]=WA(0.33333333333333331,-tA,0,0);rs[jy('\229[\213T\248','\186\56')][jy('\225Q\200]','\178\56')]=WA(0.33333333333333331,-tA,0,0);rs[jy('\15\2?\r\19','Pa')][jy('^\137w\133','\r\224')]=WA(0.33333333333333331,-tA,0,0);rs[jy('v\173F\162k',')\206')][jy('\158m*\161f5\173','\200\4Y')]=true;rs[jy('\28\163,\172\0','C\192')][jy('\14\f\48\49\a/=','XeC')],rm=true,Fn[-8181]or vF(-8181,55901,94887)elseif rm>34389 then rs[jy(']\212e\r\137\222\216x\170v\213_\27\158\216\216u\177q','\2\176\f~\253\172\177\26\223')](rs);rm=Fn[20420]or vF(20420,14011,43489)continue else if z==2 then rm=Fn[-6022]or vF(-6022,3959,1547)continue else rm=Fn[-7569]or vF(-7569,868,1732)continue end rm=Fn[10894]or vF(10894,55028,95548)end end end;Xi[jy('\185YP\4\255\210\19\231\229\170]_\n\230\211?\252\228\131','\230<&e\147\167r\147\128')]=function(cj)local Fu,fC,IF,kf,Et;fC,Et=function(Em,rA,gt)Et[rA]=Yl(gt,27014)-Yl(Em,7259)return Et[rA]end,{};IF=Et[-29518]or fC(21626,-29518,92565)while IF~=34546 do if IF>44847 then if IF>57450 then if kf>=480 then IF=Et[16505]or fC(13979,16505,45161)continue else IF=Et[-17781]or fC(37600,-17781,63342)continue end IF=Et[-14706]or fC(6795,-14706,47342)elseif IF<=51864 then if IF>47090 then if not(Fu~=cj[jy('\6~\197\\\163,f\233J\168<','Y\18\164%\204')])then IF=Et[23204]or fC(44603,23204,86648)continue else IF=Et[-16955]or fC(17127,-16955,91075)continue end IF=35230 else if not cj[jy('\244\221L\22\222\211M\t','\171\190#z')]or not cj[jy('l@\\Or','3#')]or not cj[jy(')\227\25\236\52','v\128')]or not cj[jy('f\3V\fz','9\96')]then IF=Et[-12775]or fC(33008,-12775,40042)continue end IF=37642 end else Fu,IF=jy('J\182Y\186','=\223'),Et[570]or fC(7181,570,41832)end elseif IF>37642 then if IF>43913 then Fu,IF=jy('\171\175\162','\198'),Et[-9119]or fC(12955,-9119,37086)else cj[jy('\214\175]7z\29}\213\240\161X3[\vU\209','\137\206-G\22d1\180')](cj,Fu);IF=Et[-30527]or fC(24879,-30527,93844)end elseif IF<=35230 then if IF<22849 then Fu,IF=jy('w\173\179k\163\182','\25\204\193'),Et[14430]or fC(4866,14430,45175)elseif IF<=22849 then return else IF=Et[-11608]or fC(50557,-11608,67998)continue end else kf=cj[jy('\177J\173\210\155D\172\205','\238)\194\190')][jy('\194\20\196\130\248\245\247\19\228\132\238\229','\131v\183\237\148\128')][jy('\172','\244')]if not(kf>=720)then IF=Et[-4856]or fC(17503,-4856,75720)continue else IF=Et[26534]or fC(10360,26534,97547)continue end IF=51864 end end end;Xi[jy(' \26\192\198\n\223|\245\223B\28\15\202\216\17\230o\226\233I\v',"\127{\163\183\127\182\14\144\140\'")]=function(Gp,Zo)local pj,Zc,jG,vo,_A,qg;Zc,vo={},function(Py,No,tD)Zc[Py]=Yl(No,33756)-Yl(tD,38101)return Zc[Py]end;_A=Zc[-4908]or vo(-4908,100366,23287)repeat if _A<=36908 then if _A>15792 then(Zo)[jy('!k\t\31\96\30','~\r{')][jy('\20\202\158\a\133,\228\149\f\149*','X\171\231h\240')],_A=qg,Zc[-6603]or vo(-6603,126595,20843)else Gp[jy('>u\b\3i\14|\25\18D\21','a\18mw*')](Gp);qg=#Gp[jy('s\173 \204X\183*\193_',',\222E\175')]+1 if Zo and(Zo)[jy('\206]b\240Vu','\145;\16')]then _A=Zc[12950]or vo(12950,103869,4832)continue end _A=Zc[20203]or vo(20203,21840,47678)end else jG=qs(Gp[jy('\195\213\188\223\152\233\205\144\201\147\249','\156\185\221\166\247')]);pj=((qg-1)%jG)+1 return Gp[jy('\186?6s\210~=\167%\16q\195v+','\229\\Y\31\167\19S')](Gp,pj)end until _A==28567 end;Xi[jy('\249\223*\17o\f\242\6m\195\216\23\6i\31\242\26w','\166\170Dc\nk\155u\25')]=function(ag,Sh)local hA,Xu,Ps,cu;Xu,Ps={},function(oz,E,Mp)Xu[Mp]=Yl(E,6965)-Yl(oz,9787)return Xu[Mp]end;cu=Xu[5135]or Ps(27207,88255,5135)repeat if cu>21244 then hA=VD(ag[jy('x\216\204\165S\194\198\168T',"\'\171\169\198")],Sh)if not(hA)then cu=Xu[-6454]or Ps(1307,17725,-6454)continue else cu=Xu[-6150]or Ps(55069,89879,-6150)continue end cu=Xu[19103]or Ps(13569,21783,19103)elseif cu>15080 then Wg(ag[jy('\169S\30u\130I\20x\133','\246 {\22')],hA);ag[jy('\241B\222\b%j\145\227Z\218C\228\30\50l\145\238A\221','\174&\183{Q\24\248\129/')](ag);cu=Xu[-4614]or Ps(48497,52487,-4614)else cu=Xu[-1772]or Ps(2052,9529,-1772)continue end until cu==4045 end;Xi[jy('\127\170]\143H\168]\131','>\201)\230')]=function(Fh)local ky,Wd,eC;eC,ky=function(t_,Vi,A)ky[A]=Yl(t_,25951)-Yl(Vi,3953)return ky[A]end,{};Wd=ky[-22580]or eC(52217,20393,-22580)repeat if Wd>=28110 then if Wd<=28110 then Fh[jy('[j>\178\163kc/\163\142p','\4\r[\198\224')](Fh)[jy('X\249\149g\242\138k','\14\144\230')]=true;Fh[jy('\181\154\207\158\146\218\143','\234\251\172')]=true if not(Fh[jy('{\146F\146','$\254')])then Wd=ky[-32435]or eC(7273,4261,-32435)continue else Wd=ky[-3808]or eC(68403,36146,-3808)continue end Wd=22882 else Fh[jy('\19\234.\234','L\134')][jy('\1c\25Mz:j\14K\n','U\6a99')]=Je[jy('\237q\193\96','\185\20')];Fh[jy('\158{\181w','\193\25')][jy('\212\161J.\6\196K\142\248\164j*\r\217V\200','\150\192)Ea\182$\251')]=Je[jy('k4\134\223\207\57]\t\155\207\203(','8A\244\185\174Z')];Fh[jy('\175\240\132\252','\240\146')][jy('6k1\192\172\54\17\174\160!_\6k<\216\187%\f\190\160&r','t\nR\171\203D~\219\206E\v')]=0;Wd,Fh[jy('\214J\26\212\214\234B\0\223\205','\137#t\176\191')][jy('<\196\145@L\149\r\237\219;\21\f\196\156X[\134\16\253\219<8','~\165\242++\231b\152\181_A')]=ky[6690]or eC(91503,43455,6690),0 end else Wd=ky[-32263]or eC(82726,29532,-32263)continue end until Wd==43596 end;Xi[jy('$.|\177\31\t=|\166\14','\96K\29\210k')]=function(XB)local qa,Ad,Cb;qa,Cb=function(K,Ic,kk)Cb[kk]=Yl(K,59182)-Yl(Ic,59228)return Cb[kk]end,{};Ad=Cb[-3668]or qa(1738,8999,-3668)while Ad~=34629 do if Ad>29116 then if Ad<=43717 then XB[jy('\254\216\144\213\208\133\196','\161\185\243')]=false if XB[jy('\n\149\55\149','U\249')]then Ad=Cb[-3544]or qa(25998,63416,-3544)continue end Ad=Cb[3379]or qa(110200,49034,3379)else Ad=Cb[10722]or qa(24820,59337,10722)continue end elseif Ad<=7529 then if Ad<=5797 then XB[jy('\175\57G\128\132?F\154','\240Z(\238')][jy('\204\153\156\243\146\131\255','\154\240\239')],Ad=false,Cb[-23871]or qa(12317,52018,-23871)else if not(XB[jy("\140!\250\145\167\'\251\139",'\211B\149\255')])then Ad=Cb[-11369]or qa(92461,1122,-11369)continue else Ad=Cb[-30295]or qa(47910,41535,-30295)continue end Ad=Cb[-242]or qa(90477,15394,-242)end else XB[jy('l~Q~','3\18')][jy('\203d\169N\198\240m\190H\182','\159\1\209:\133')]=Je[jy('[\250\24\\\234\2|','\b\143z')];XB[jy('\6\234-\230','Y\136')][jy('\242\136\4\96\17\223|E\214\235\175\194\136\tx\6\204aU\214\236\130','\176\233g\vv\173\19\48\184\143\251')]=1;XB[jy('1H\23\3\193\r@\r\b\218','n!yg\168')][jy('6\227\5\fL.\19\231\\H\192\6\227\b\20[=\14\247\\O\237','t\130fg+\\|\146\50,\148')],Ad=1,Cb[32191]or qa(130650,53160,32191)end end end;Xi[jy('\b\240\31~\249?\24\231\25k\228\53%','K\130z\31\141Z')]=function(WB,Na)local IC,hs,oj,Ox;Ox,IC={},function(se_,nm,gm)Ox[gm]=Yl(se_,60063)-Yl(nm,28260)return Ox[gm]end;oj=Ox[-22701]or IC(28037,31126,-22701)while oj~=51109 do if oj>28012 then if Bi(Na)==jy('\255+\223\229\49\202','\140_\173')then oj=Ox[13176]or IC(24877,28706,13176)continue end oj=3845 elseif oj<=3845 then hs=nE[jy('\f\a\21','b')](WB,Na or{});Hq(WB[jy('\215\209~F\252\203tK\251','\136\162\27%')],hs)return hs else oj,Na=Ox[17656]or IC(47873,11517,17656),{[jy('\144s\179w','\222\18')]=Na}end end end;Xi[jy('\129B\208\190\227\161N\198\132\239',"\210\'\164\232\138")]=function(on,of)local cn,DA,Tc;DA,cn=function(Hc,Wz,ln)cn[Wz]=Yl(Hc,59826)-Yl(ln,22897)return cn[Wz]end,{};Tc=cn[19987]or DA(21874,19987,31753)repeat if Tc>38728 then Tc=cn[-3978]or DA(14959,-3978,32208)continue elseif Tc<=5861 then on[jy('BQi]','\29\51')][jy('\213)\252\234\"\227\230','\131@\143')],Tc=of,cn[20271]or DA(95141,20271,48126)else if not(on[jy('\174O\133C','\241-')])then Tc=cn[24873]or DA(1076,24873,27791)continue else Tc=cn[-26923]or DA(210,-26923,35594)continue end Tc=46984 end until Tc==44860 end;Xi[jy('m\29:]\n&P',')xI')]=function(aH)local qd,Cc,kg,kv,Js,cd,ko,wm,ly,Yj,it,Uh;qd,it={},function(mo,Sy,sk)qd[Sy]=Yl(mo,61096)-Yl(sk,40351)return qd[Sy]end;ly=qd[-9420]or it(123208,-9420,4149)repeat if ly<36374 then if ly>31797 then if ly<=32799 then Cc,Uh=ko(cd,kv);kv=Cc if kv==nil then ly=40393 else ly=31797 end else if aH[jy('\25>\r\167\209\52\53\17\177\193','FZh\212\165')]then ly=qd[-16194]or it(1655,-16194,48248)continue end ly=qd[-21175]or it(15496,-21175,46430)end elseif ly<25714 then if ly<=1382 then ms(jy("\"\158\57\222:\212\142\173\166\255\15i\16\164\30\178\55\211\160\249\167\245\21\'",'y\203p\146S\182\211\141\213\154l\29'),wm);ly=qd[1349]or it(129635,1349,2355)else ly,aH[jy('\169\226\155\152\241\157\129','\246\149\242')][jy('\5\152hd\237,\156_q\230','Z\249\v\16\132')]=qd[-8520]or it(84859,-8520,19323),nil end elseif ly<=25714 then ko,cd,kv=Jx(ko);ly=qd[21537]or it(7454,21537,60936)else kg,wm=Ec(Uh[jy('\14\181j>\162v3','J\208\25')],Uh)if not(not kg)then ly=qd[12827]or it(102468,12827,25426)continue else ly=qd[9942]or it(20836,9942,10233)continue end ly=qd[-31519]or it(122998,-31519,4896)end elseif ly<=50936 then if ly<43359 then if ly>36374 then aH[jy('\187\175\133\171\128','\228\194')][jy('\15\245\174?\226\178\50','K\144\221')](aH[jy('\187\175\133\171\128','\228\194')])if not(aH[jy('\236\194\148\221\209\146\196','\179\181\253')]and not aH[jy(':\26\224\v\t\230\18','em\137')][jy('\182\163Y|\148\155\168Ej\132','\233\199<\15\224')]and aH[jy('\29\96k,sm5','B\23\2')][jy('\96\246)\r\fI\242\30\24\a','?\151Jye')]==aH)then ly=qd[21166]or it(5075,21166,45843)continue else ly=qd[-14870]or it(15304,-14870,3830)continue end ly=qd[28016]or it(12949,28016,37073)else Yj=Ia(ko)if Yj~=nil and Yj[jy('\19\221\210\56\231\201','L\130\187')]~=nil then ly=qd[-29125]or it(77770,-29125,21865)continue elseif not(FB(ko)==jy(']\174K\163L',')\207'))then ly=qd[-19912]or it(118038,-19912,15872)continue else ly=qd[-5679]or it(3938,-5679,57543)continue end ly=qd[30294]or it(9010,30294,53476)end elseif ly>43359 then return else aH[jy('\16\234\19|\142=\225\15j\158','O\142v\15\250')]=true;Js=aH[jy('\243\149\224\23\216\143\234\26\223','\172\230\133t')];aH[jy('\214\222\189v\253\196\183{\250','\137\173\216\21')]={};ko,cd,kv=Js if FB(ko)~=jy('\146a$v\128}%{','\244\20J\21')then ly=qd[19783]or it(111081,19783,19636)continue end ly=qd[-14950]or it(2953,-14950,63645)end elseif ly<=52975 then ly=qd[7334]or it(25180,7334,7784)continue else ko,cd,kv=Yj[jy('\15\177\203$\139\208','P\238\162')](ko);ly=qd[-28820]or it(119675,-28820,8235)end until ly==2301 end local function ei(CG)local ry,Dg;ry,Dg=Th((dx[jy('.\130$\134','I\227')])[jy('T\250\234g\243\194\96','\4\150\139')]or 0),CG or jy('\211\226\179\214\242\185\195','\183\135\213')return jy('\27\201\2\233,','N\128')..jy('\133','\170')..ry..jy('\158','\177')..Dg end local function Kr()local Vk;Vk=Th((dx[jy('\255\195\245\199','\152\162')])[jy('\228\179A\215\186i\208','\180\223 ')]or 0)return jy('Y\17@1n','\fX')..jy('\219','\244')..Vk..jy('\187\159K:Ed\181\251\161NaEs\173','\148\192*O1\v\217')end local function Ti(mn)local Ou,vu,zF,Kj,wv,uz,Du,IB,ht,gb,pe;Kj,ht={},function(Op,Yi,tq)Kj[Op]=Yl(Yi,27576)-Yl(tq,53860)return Kj[Op]end;Ou=Kj[-4006]or ht(-4006,94407,37922)while Ou~=10772 do if Ou<34380 then if Ou>=21278 then if Ou>=26876 then if Ou<27415 then Ou=Kj[-23557]or ht(-23557,17941,53757)continue elseif Ou<=27415 then uz=Ia(wv)if uz~=nil and uz[jy('\228\189v\207\135m','\187\226\31')]~=nil then Ou=Kj[14532]or ht(14532,42716,19325)continue elseif FB(wv)==jy('i\173\127\160x','\29\204')then Ou=Kj[9051]or ht(9051,128430,5732)continue end Ou=Kj[-10888]or ht(-10888,83827,3017)else Hq(IB,pe);Ou=Kj[19170]or ht(19170,38069,31115)end elseif Ou>21278 then return else pe=wv(vu,gb);gb=pe if gb==nil then Ou=Kj[15737]or ht(15737,124229,32600)else Ou=28588 end end elseif Ou>16395 then IB={};wv,vu,gb=(mn)[jy('\189Z,\174T%','\218\55M')]((mn),jy('{\27\15\24\v',' E'))if FB(wv)~=jy('\f~qS\30bp^','j\v\31\48')then Ou=Kj[30077]or ht(30077,81987,4736)continue end Ou=Kj[32220]or ht(32220,5344,65118)elseif Ou>=13387 then if Ou>13387 then uz=(uz=='')and zF or(uz..jy('m','B')..zF)if _G and not(_G)(uz)then Ou=Kj[-2980]or ht(-2980,131006,9919)continue end Ou=Kj[-7949]or ht(-7949,80380,6556)else wv,vu,gb=uz[jy('\15\139#$\177\56','P\212J')](wv);Ou=Kj[32158]or ht(32158,88772,3130)end else vu,gb,pe=wv[jy('pk\255[Q\228','/4\150')](vu);Ou=Kj[-2405]or ht(-2405,85986,19562)end elseif Ou>=54585 then if Ou>=57793 then if Ou<58628 then uz='';vu,gb,pe=IB if not(FB(vu)~=jy('\175\235\152$\189\247\153)','\201\158\246G'))then Ou=Kj[19646]or ht(19646,34069,47621)continue else Ou=Kj[23776]or ht(23776,71389,44195)continue end Ou=Kj[24204]or ht(24204,36214,45798)elseif Ou>58628 then wv=Ia(vu)if not(wv~=nil and wv[jy('\237\162\50\198\152)','\178\253[')]~=nil)then Ou=Kj[-22636]or ht(-22636,124721,30177)continue else Ou=Kj[17089]or ht(17089,59560,40297)continue end Ou=Kj[-32610]or ht(-32610,73220,15636)else if FB(vu)==jy('\146\f\132\1\131','\230m')then Ou=Kj[-15414]or ht(-15414,39474,64009)continue end Ou=Kj[-1500]or ht(-1500,83074,31370)end elseif Ou<=54585 then if not(not qv)then Ou=Kj[-22215]or ht(-22215,89360,13639)continue else Ou=Kj[4444]or ht(4444,62291,37240)continue end Ou=Kj[7945]or ht(7945,75092,11523)else wv,vu,gb=Jx(wv);Ou=Kj[29923]or ht(29923,47109,21243)end elseif Ou<51485 then if Ou<=34380 then Du,zF=vu(gb,pe);pe=Du if pe==nil then Ou=Kj[24293]or ht(24293,8014,55710)else Ou=16395 end else if _z then Ou=Kj[14987]or ht(14987,76503,41328)continue end Ou=Kj[7978]or ht(7978,42216,39776)end elseif Ou>51485 then Ec(_z,uz);Ou=Kj[3502]or ht(3502,59144,54272)else vu,gb,pe=Jx(vu);Ou=Kj[2348]or ht(2348,66330,12338)end end end local qc,YE;qc=function(aq)local Ik,yl,rl,yE,ua,sF,vp,uv,og,Be,tp;Be,tp=function(ug,oi,Is)tp[Is]=Yl(oi,34279)-Yl(ug,6251)return tp[Is]end,{};yE=tp[-21372]or Be(48269,28990,-21372)while yE~=5680 do if yE<=32297 then if yE<=18303 then if yE>13014 then if yE<=15287 then if yE>=14641 then if yE<=14641 then yE,sF[(yl-111)]=tp[-1510]or Be(6917,30648,-1510),qc(aq[(yl-111)])else if(ua>=0 and og>vp)or((ua<0 or ua~=ua)and og<vp)then yE=4752 else yE=14641 end end else yl=Bi(aq[(ua-192)])if not(yl~=jy('\180]M\174GX','\199)?')and yl~=jy('\a\48Q\v N','iE<')and yl~=jy('\96\250\rn\240\3l','\2\149b'))then yE=tp[14747]or Be(20314,105291,14747)continue else yE=tp[12282]or Be(43348,75680,12282)continue end yE=tp[-25368]or Be(20215,105456,-25368)end else return{[jy('\\\169\175z\134\190','\3\246\219')]=jy('\252f\195{','\176\15'),[jy('\219\195\215\218\193','\178\183')]=sF}end elseif yE>=8183 then if yE>12034 then og=og+ua;yl=og if og~=og then yE=tp[-6962]or Be(29213,13330,-6962)else yE=tp[4160]or Be(4597,61924,4160)end elseif yE>8183 then if uv==jy('derhu','\16\4')then yE=tp[-32460]or Be(46005,114300,-32460)continue elseif not(uv==jy('\236A\164\224Q\187','\130\52\201'))then yE=tp[5293]or Be(39242,117919,5293)continue else yE=tp[4630]or Be(32914,111355,4630)continue end yE=tp[-29744]or Be(26,103842,-29744)else return nil end elseif yE>4752 then sF=At(Ik);ua,yE,og,vp=1,tp[11199]or Be(7019,29212,11199),112,(Ik)+111 else return{[jy('Uy\fsV\29','\n&x')]=jy('[\172h\191c','\26\222'),[jy('\132\0\136\25\158','\237t')]=sF,[jy('\137','\231')]=Ik}end elseif yE<=28044 then if yE<27237 then if yE<=20467 then uv=th_(aq)if not(uv==jy('\241\186\55\221\167h','\178\213['))then yE=tp[-30728]or Be(20423,30417,-30728)continue else yE=tp[-4078]or Be(57669,84909,-4078)continue end yE=63444 else sF[(yl-45)],yE=aq[(yl-45)],tp[14152]or Be(3429,49667,14152)end elseif yE<=27237 then if(ua>=0 and og>vp)or((ua<0 or ua~=ua)and og<vp)then yE=18303 else yE=tp[-19690]or Be(36977,26281,-19690)end else if(vp>=0 and sF>og)or((vp<0 or vp~=vp)and sF<og)then yE=tp[-17048]or Be(42362,78305,-17048)else yE=tp[-22363]or Be(27176,12072,-22363)end end elseif yE<30165 then return aq elseif yE>30165 then Ik=(Th(aq[jy('\216\3\139[\201\20\142S','\157m\254\54')]))[jy('\133\225\151\240','\226\146')]((Th(aq[jy('\216\3\139[\201\20\142S','\157m\254\54')])),jy('\232l\229\195D\174\152','\182)\139'),'')return{[jy('o\190\186I\145\171','0\225\206')]=jy('fB\196\142jX\212\142','#,\177\227'),[jy('f\141|\153u','\16\236')]=Ik..jy('w','Y')..aq[jy('c^@Z','-?')]}else sF=At(Ik);og,yE,ua,vp=46,tp[6753]or Be(46254,118328,6753),1,(Ik)+45 end elseif yE>=54556 then if yE>=61704 then if yE<63221 then if yE<=61704 then yE,rl=63221,false continue else yl=og if vp~=vp then yE=4752 else yE=tp[-12921]or Be(53261,98810,-12921)end end elseif yE>63221 then return nil else if not(rl)then yE=tp[-20021]or Be(19676,62997,-20021)continue else yE=tp[-29516]or Be(63986,119433,-29516)continue end yE=tp[30056]or Be(48890,72578,30056)end elseif yE<=60478 then if yE<=54556 then return{[jy('\251\52\200\221\27\217','\164k\188')]=jy('%\129\179\t\156\236','f\238\223'),[jy(',','^')]=(aq)[jy('\22','D')],[jy('\166','\193')]=(aq)[jy('\139','\204')],[jy('f','\4')]=(aq)[jy('\238','\172')]}else ua=sF if og~=og then yE=63221 else yE=tp[-689]or Be(55452,109412,-689)end end else og=og+ua;yl=og if og~=og then yE=4752 else yE=15287 end end elseif yE>40730 then if yE>51067 then if uv==jy("9-\146\55\'\156\53",'[B\253')or uv==jy('\215\205*\205\215?','\164\185X')then yE=tp[22240]or Be(17840,102828,22240)continue end yE=tp[-2519]or Be(11645,108813,-2519)elseif yE>46704 then sF=sF+vp;ua=sF if sF~=sF then yE=tp[-2934]or Be(50393,87616,-2934)else yE=tp[-25745]or Be(55555,109331,-25745)end else return aq end elseif yE<=40483 then if yE<39818 then Ik,rl=#aq,true;yE,sF,vp,og=60478,193,1,(Ik)+192 elseif yE<=39818 then if not(uv==jy('\194\4\21S\206\30\5S','\135j\96>'))then yE=tp[-14683]or Be(16426,676,-14683)continue else yE=tp[779]or Be(31028,23151,779)continue end yE=tp[-28142]or Be(51536,85224,-28142)else if not(not am(aq))then yE=tp[13591]or Be(49705,118171,13591)continue else yE=tp[-28772]or Be(60727,102580,-28772)continue end yE=28218 end else yl=og if vp~=vp then yE=18303 else yE=tp[12659]or Be(53899,110754,12659)end end end end local function _s(KC,Ro,Mt)local oE,pA,Ee;Ee,pA={},function(Xj,Uk,Wk)Ee[Xj]=Yl(Uk,52105)-Yl(Wk,16595)return Ee[Xj]end;oE=Ee[-19460]or pA(-19460,37097,18383)while oE~=53446 do if oE<33606 then if not(am(KC)and am(Ro)and am(Mt))then oE=Ee[-4320]or pA(-4320,93102,33889)continue end oE=33606 elseif oE>33606 then return nil else return yd(Km(KC,0,1),Km(Ro,0,1),Km(Mt,0,1))end end end YE=function(Qs)local yj=Bi(Qs)if yj==jy('\171\24U\167\bJ','\197m8')then local Zd,Lq,nr;Zd,nr={},function(zm,az,Vd)Zd[Vd]=Yl(zm,42340)-Yl(az,36409)return Zd[Vd]end;Lq=Zd[-15493]or nr(124864,3917,-15493)repeat if Lq<=24702 then if Lq>12913 then return nil else return Qs end else if not(not am(Qs))then Lq=Zd[7056]or nr(54437,45417,7056)continue else Lq=Zd[7930]or nr(129522,29217,7930)continue end Lq=12913 end until Lq==47693 end if yj==jy('\147+_\157!Q\159','\241D0')or yj==jy('g\231\153}\253\140','\20\147\235')then return Qs end if not(yj==jy('2\148$\153#','F\245'))then else local gC=(Qs)[jy('\24\15\0> \17','GPt')]if not(gC==jy('q\169:]\180e','2\198V'))then if not(gC==jy('\206\239\v\174\194\245\27\174','\139\129~\195')and Bi((Qs)[jy('\31B\5V\f','i#')])==jy('\180\158\177\174\132\164','\199\234\195'))then local QB,Sf,Rm,Hw,Gh,Ah,qm,fh,Lo,Qc,Pp,pw;Gh,Sf={},function(Nb,ct,Rj)Gh[ct]=Yl(Nb,55479)-Yl(Rj,39373)return Gh[ct]end;pw=Gh[30565]or Sf(15974,30565,47795)repeat if pw<=37017 then if pw<=23524 then if pw>13540 then if pw>17021 then Hw,Rm,Pp=Jx(Hw);pw=Gh[-27575]or Sf(31732,-27575,60161)else Hq(Qc,Lo);pw=Gh[-12895]or Sf(13440,-12895,8717)end elseif pw<=12407 then if pw<=3959 then Rm=Rm+qm;Lo=Rm if Rm~=Rm then pw=37017 else pw=Gh[-13952]or Sf(115315,-13952,41379)end else qm,Lo=Hw(Rm,Pp);Pp=qm if Pp==nil then pw=Gh[-6217]or Sf(126067,-6217,62310)else pw=28960 end end else Qc=(Qs)[jy('M\129A\152W','$\245')];Ah=(Qs)[jy('_','1')]or#Qc;Hw=At(Ah);Pp,pw,Rm,qm=(Ah)+75,Gh[-9242]or Sf(128355,-9242,63083),76,1 end elseif pw>=28960 then if pw<=28960 then QB=Bi(Lo);fh=QB==jy('Y\153\221C\131\200','*\237\175')or QB==jy('\v\165\24\5\175\22\a','i\202w')or(QB==jy('\195\135\184\207\151\167','\173\242\213')and am(Lo))if not(fh)then pw=Gh[-23293]or Sf(6607,-23293,2252)continue else pw=Gh[-19221]or Sf(11348,-19221,11179)continue end pw=Gh[-17683]or Sf(22776,-17683,54805)else return Hw end elseif pw>28542 then Qc={};Hw,Rm,Pp=(Qs)[jy(' &,?:','IR')]if not(FB(Hw)~=jy('\226\249\252\145\240\229\253\156','\132\140\146\242'))then pw=Gh[-26643]or Sf(48110,-26643,43823)continue else pw=Gh[22662]or Sf(112635,22662,26115)continue end pw=Gh[-27777]or Sf(11670,-27777,23911)else Ah=Ia(Hw)if Ah~=nil and Ah[jy('yyjRCq','&&\3')]~=nil then pw=Gh[-1515]or Sf(103956,-1515,51455)continue elseif FB(Hw)==jy('\213\174\195\163\196','\161\207')then pw=Gh[-9919]or Sf(5078,-9919,63152)continue end pw=Gh[-9054]or Sf(8927,-9054,20540)end elseif pw<51737 then if pw<=48686 then if pw<=37839 then Hw[(Lo-75)],pw=YE(Qc[(Lo-75)]),Gh[25082]or Sf(34137,25082,55226)else Lo=Rm if Pp~=Pp then pw=37017 else pw=57942 end end else if gC==jy('{ODR','7&')and Bi((Qs)[jy('\\\138P\147F','5\254')])==jy('\227\252\245\241\242','\151\157')then pw=Gh[26]or Sf(117150,26,14441)continue elseif gC==jy("\20\6\'\21,",'Ut')and Bi((Qs)[jy('\252\231\240\254\230','\149\147')])==jy('M.[#\\','9O')then pw=Gh[-17767]or Sf(10127,-17767,21401)continue end pw=Gh[-26860]or Sf(85227,-26860,13548)end elseif pw>59195 then Hw,Rm,Pp=Ah[jy('\247Z\30\220\96\5','\168\5w')](Hw);pw=Gh[6415]or Sf(39852,6415,35689)elseif pw<=57942 then if pw>51737 then if(qm>=0 and Rm>Pp)or((qm<0 or qm~=qm)and Rm<Pp)then pw=Gh[4093]or Sf(112861,4093,22044)else pw=Gh[4450]or Sf(106082,4450,10955)end else return Qc end else pw=Gh[-16408]or Sf(23582,-16408,50954)continue end until pw==9698 else local Aj={}for XC in((Qs)[jy('\220\139\198\159\207','\170\234')])[jy('\221\4>\206\n\55','\186i_')](((Qs)[jy('\220\139\198\159\207','\170\234')]),jy('Z\170\196/\169\202','\1\244\225'))do Hq(Aj,XC)end local Xf,Nt,lk,Jg,Tz;Nt,Tz=function(lC,Jy,tc)Tz[Jy]=Yl(tc,19120)-Yl(lC,7869)return Tz[Jy]end,{};Xf=Tz[29943]or Nt(4036,29943,47067)while Xf~=45926 do if Xf>41347 then if#Aj==2 then Xf=Tz[-7695]or Nt(42109,-7695,92199)continue end Xf=Tz[10829]or Nt(19028,10829,48348)elseif Xf<26583 then return lk elseif Xf>26583 then return nil else Jg,lk=Ec(function()return(dx[jy('\252\56\204;','\185V')])[Aj[1]][Aj[2]]end)if not(Jg)then Xf=Tz[-8488]or Nt(33206,-8488,68158)continue else Xf=Tz[-31219]or Nt(33604,-31219,41188)continue end Xf=Tz[29504]or Nt(30751,29504,82581)end end end else return _s((Qs)[jy('\225','\147')],(Qs)[jy('J','-')],(Qs)[jy('\130','\224')])end end return nil end local mG,Ct,X=EG(640,440),EG(480,320),EG(1280,800)local XF,Wn,ku,Kx;Wn,XF=function(Fe,bG,bh)XF[Fe]=Yl(bG,22026)-Yl(bh,23526)return XF[Fe]end,{};Kx=XF[-30814]or Wn(-30814,86064,47742)repeat if Kx<=18837 then if Kx>9378 then Ec(tk,ku);Kx=XF[9583]or Wn(9583,59967,23684)else Oq[jy('}vd','\19')]=function(re_,Vz)local Zy=_p({},Oq);Zy[jy('\164\223q\255\137\210j\228','\251\179\24\157')]=re_;Zy[jy('\241O\207K\202','\174\"')]=ga();Zy[jy('~k@}R','!\31')]={};Zy[jy('\201M\167n~\224I\144{u','\150,\196\26\23')]=nil;Zy[jy('U\239wi\182x\228k\127\166','\n\139\18\26\194')]=false local im,Zs,dw={},{},{};Zy[jy('e\\I',':')]={[jy('b\235\228\196c\250\230\223','\16\142\131\173')]=function(bf,xb,gy)local yp,Cw,qx;yp,Cw=function(kE,Gs,au)Cw[Gs]=Yl(au,14923)-Yl(kE,28895)return Cw[Gs]end,{};qx=Cw[14192]or yp(55076,14192,81211)while qx~=55443 do if qx<24437 then if qx<=138 then return else qx=Cw[-8585]or yp(60900,-8585,85893)continue end elseif qx<36435 then if not(Bi(bf)~=jy('\242\19\216\232\t\205','\129g\170'))then qx=Cw[-881]or yp(46059,-881,103463)continue else qx=Cw[29159]or yp(36491,29159,50325)continue end qx=60216 elseif qx<=36435 then im[bf]=xb;qx,dw[bf]=Cw[7868]or yp(6547,7868,65291),xb else Zs[bf]=gy if not(im[bf]==nil)then qx=Cw[13417]or yp(32061,13417,21405)continue else qx=Cw[-31774]or yp(8238,-31774,58639)continue end qx=23540 end end end,[jy('\131\175\144\55\55\159\178\150\55\"','\246\193\226RP')]=function(um)local hj,mv,fF;mv,hj={},function(sc,GG,bv)mv[bv]=Yl(sc,6634)-Yl(GG,62288)return mv[bv]end;fF=mv[4658]or hj(114552,10055,4658)while fF~=9365 do if fF<34350 then Zs[um],fF=nil,mv[29505]or hj(63761,20278,29505)continue elseif fF<=34350 then return else if not(Bi(um)~=jy('U\169\208O\179\197','&\221\162'))then fF=mv[1583]or hj(80672,13873,1583)continue else fF=mv[11234]or hj(62310,38670,11234)continue end fF=23913 end end end,[jy('\28\143\2\137\14','k\253')]=function(Ui,na)local yz,OE,Z;yz,OE=function(Qy,_y,le)OE[Qy]=Yl(_y,47307)-Yl(le,45252)return OE[Qy]end,{};Z=OE[24049]or yz(24049,32169,49870)repeat if Z<21336 then Z=OE[-397]or yz(-397,2277,5029)continue elseif Z>21336 then im[Ui],Z=na,OE[-15746]or yz(-15746,44743,41386)else if Bi(Ui)==jy('\28\135\223\6\157\202','o\243\173')then Z=OE[28122]or yz(28122,16982,16203)continue end Z=1182 end until Z==3277 end};Zy[jy('I@nK|','\15,')]=_p({},{[jy('\194g\146\243\\\158\229','\157\56\251')]=function(R,GF)return im[GF]end,[jy('$\235VYL\18\218\\YC','{\180\56<;')]=function(Ww,kc,Zp)local eF,eo,nG,Eu,Fd,oy;eo,oy=function(T,jF,Mr)oy[jF]=Yl(Mr,37991)-Yl(T,47544)return oy[jF]end,{};nG=oy[26929]or eo(56409,26929,98655)repeat if nG>=44887 then if nG>52231 then ms(jy('\b\214\211\173B\140b\196\211\197\2\128ers\237\245\193M\130^\131\181\199\2\138s,','S\131\154\225+\238?\228\149\169c\231\22H'),Th(kc));nG=oy[-13911]or eo(46244,-13911,56355)elseif nG>44887 then ms(jy('4\29G\148${\161\223\17\171R7\28h}\189\57m\153\141w\161\\\"','oH\14\216M\25\252\255W\199\51P'),kc,jy('\19',')'),Fd);nG=oy[-12660]or eo(1756,-12660,28395)else eF=Zs[kc]if eF then nG=oy[25181]or eo(63753,25181,56763)continue else nG=oy[-14728]or eo(12757,-14728,126153)continue end nG=oy[25649]or eo(36893,25649,61610)end elseif nG>2347 then nG=oy[-10684]or eo(3802,-10684,114136)continue else Eu,Fd=Ec(eF,Zp)if not(not Eu)then nG=oy[18864]or eo(17844,18864,107347)continue else nG=oy[-9972]or eo(29888,-9972,68888)continue end nG=oy[-7560]or eo(59239,-7560,3680)end until nG==29277 end,[jy("\24\148\49\154\'&\191=\157?\"",'G\203\\\255S')]=jy('\230\187\57\225\177>','\138\212Z')})if Vz[jy('k\214\187\30xO\247\180\21t','(\185\213x\17')]~=nil and not WE(Vz[jy('\201\t\226\137\150\237(\237\130\154','\138f\140\239\255')])then ms(jy(nv'idhUqXc0FmI0RYbuAaMfaYVdkkAvzivW5HbsqStTWWkWIWhhCAhbJOatcoM+Oi42A0+a+0egOG+BTMEdFYtjnKsz/fpqUEs6RWVvYklMGmb1',nv'0o0d5R5WS0J3KuiIaMRRCOg4sjJKpE61kBOIiQM+LBpiAQoEKDl2Eg=='));Zy[jy('~g\155?\189Hc\186\48\182D','!\4\244Q\219')]=jy('\151\140\195\146\156\201\135','\243\233\165')else Zy[jy('*\149\207\127Y\28\145\238pR\16','u\246\160\17?')]=Vz[jy('\t.-\0 -\15\"\v,','JACfI')]or jy('F%VC5\\V','\"@0')end Zy[jy('\187GG\96U\154\201\133B}zs\152\207\144','\228&2\20:\246\166')]=Vz[jy('\227\253\127l\206\231jg','\162\136\v\3')]==true;Zy[jy('\224nWk?\143*\196\240jOs4\128.\220','\179\v#\31V\225M\183')]=Vz[jy('\165\24\222\216\v\236$\19\181\28\198\192\0\227 \v','\246}\170\172b\130C\96')]local f_=Iv(jy('\4|!\133\50q\20\149>','W\31S\224'),{[jy('\bK+O','F*')]=Zt(),[jy('\227\236\208\220x;\223\218\211\216{\26','\177\137\163\185\ft')]=false,[jy('\t\233T\160I\198\14\53\231s\161H\198=','@\142:\207;\163I')]=true,[jy('\t\132\194\22<\199K6\165\205\4\48\208{','S\205\172rY\191\t')]=dx[jy('r\237B\238','7\131')][jy("\238d[5\160\212+\209ET\'\172\195\27",'\180-5Q\197\172i')][jy('\230\246j\217\246f\210','\181\159\b')]})local xw,Gr=ez();f_[jy('\239\253\128\218\242\134','\191\156\242')]=xw if not(not Gr)then else local Af,GE,dB;GE,Af={},function(gA,Bm,xr)GE[Bm]=Yl(xr,51962)-Yl(gA,7709)return GE[Bm]end;dB=GE[-12958]or Af(21737,-12958,39564)repeat if dB>25842 then ms(jy(nv'hAxQL+Q3X7ynzP8NVm2RNGIjjPIDAvGU0SQ1Vi/eovTKdJn3hbL/PHcW4DBw/ZTw2UMfNt81LSfe9R4D9oXgYyZNYNL01sxqndKcvvY=',nv'31kZY41VApzgmbYtPx6xWg1XrJpqZpXxvwRTJECzgrelBvyw8Ns='));dB=GE[-3506]or Af(2527,-3506,46670)elseif dB<=1410 then if not qi(f_)and fj[jy('\177\190+\178\150\163\16\169\159','\248\205y\199')](fj)and not fj[jy('f\17\239\225Z\6\213\250','/b\188\149')](fj)then dB=GE[10774]or Af(27528,10774,109767)continue end dB=25842 else dB=GE[-4199]or Af(50143,-4199,12240)continue end until dB==1896 end Zy[jy('\143cR\28g\181~v\27k','\208\16\49n\2')]=f_;Zy[jy('z\22D\18A','%{')][jy('\29\56\56','\\')](Zy[jy('z\22D\18A','%{')],f_);Zy[jy('z\228\227\185I\228\229\166V','%\144\140\214')]=KB(f_);Zy[jy('\202f6\225a?\236','\149\bY')]=Bo(f_);Zy[jy('\177<\143\56\138','\238Q')][jy('\1$$','@')](Zy[jy('\177<\143\56\138','\238Q')],function()Zy[jy('q\239e\20B\239c\v]','.\155\n{')][jy('\209\5\222\225\18\194\236','\149\96\173')]()end);Zy[jy('h\235V\239S','7\134')][jy('~[[','?')](Zy[jy('h\235V\239S','7\134')],function()Zy[jy('\178\184\136\153\191\129\148','\237\214\231')][jy('#RN\19ER\30','g7=')]()end)local me=Iv(jy('\172\214\139\201\143','\234\164'),{[jy('\230\132\0\211\139\6','\182\229r')]=f_,[jy('\254\174G\187^\205\144K\186_\203','\191\192$\211\49')]=EG(0.5,0.5),[jy('cN%QGH9V','3!V8')]=Az(0.5,0.5),[jy('\6\219/\215','U\178')]=Zi(mG[jy('A','\25')],mG[jy('\3','Z')]),[jy('p*\f\209\237\15\5\174\\/,\213\230\18\24\232','2Ko\186\138}j\219')]=Je[jy('+\172\184v\158\27\162\174s\157','i\205\219\29\249')],[jy(',O;]\172\135\223\aZ,i\160\141\233\2','n I9\201\245\140')]=0,[jy('O\25\204\166tm5\194o\16\203\178fG$\194','\fu\165\214\a)P\177')]=true,[jy('\192\fQ\255\aN\243','\150e\"')]=false});ad(10,me);bz(Je[jy('\138\3\251\172\t\251','\200l\137')],1,me);Zy[jy('\170\239\148\235\155','\245\130')]=me local Nl=Iv(jy('i\197N\218J','/\183'),{[jy('\138 o\191/i','\218A\29')]=me,[jy('\244\161\"j[\251\166\146\216\164\2nP\230\187\212','\182\192A\1<\137\201\231')]=Je[jy("\17]c$Ir\'",'B(\17')],[jy('\166\2\143\14','\245k')]=WA(1,0,0,36),[jy("\235*\156\19_\147@\192?\139\'S\153v\197",'\169E\238w:\225\19')]=0});ad(10,Nl);Iv(jy('\199,\224\51\228','\129^'),{[jy('X\22\245m\25\243','\bw\135')]=Nl,[jy("\v\249\213\177\144\27\aa\'\252\245\181\155\6\26\'",'I\152\182\218\247ih\20')]=Je[jy('G(vr<gq','\20]\4')],[jy('\244\133\137\211\208\131\149\212','\164\234\250\186')]=WA(0,0,1,-10),[jy('V\159\127\147','\5\246')]=WA(1,0,0,10),[jy('\129\201\130\221\26d\205\170\220\149\233\22n\251\175','\195\166\240\185\127\22\158')]=0})local Te=0 if Vz[jy('H!n,','\1B')]then Iv(jy('Q\173\128\232\233T\161\131\234\224','\24\192\225\143\140'),{[jy('\2\253\26\55\242\28','R\156h')]=Nl,[jy('P\162\152;\vW\136\15t\4\v\96\162\149#\28D\149\31t\3&','\18\195\251Pl%\231z\26\96_')]=1,[jy('\17\14\152\165\192\"\48\148\164\193$','P\96\251\205\175')]=EG(0,0.5),[jy('\183\249\24\234\147\255\4\237','\231\150k\131')]=WA(0,-16,0.5,0),[jy('\179.\154\"','\224G')]=Zi(70,70),[jy('\196\236\236\230\232','\141\129')]=Th(Vz[jy('Z\141|\128','\19\238')]),[jy('p\22\165jF!\189vF','#u\196\6')]=dx[jy('\224\179\208\176','\165\221')][jy('\226\133\239\f\212\178\247\16\212','\177\230\142\96')][jy('\235\196\217','\173')]});Te=28 end Iv(jy('p*\212\182h.\206\167H','$O\172\194'),{[jy('\241n>\196a8','\161\15L')]=Nl,[jy('\31\167\153\22\241\136*\200\96\232\162/\167\148\14\230\155\55\216\96\239\143',']\198\250}\150\250E\189\14\140\246')]=1,[jy('|>\213\231X8\201\224',',Q\166\142')]=WA(0,14+Te,0,0),[jy('\6\152/\148','U\241')]=WA(1,-100-Te,1,0),[jy('\25X1C','_7')]=dx[jy('%\29\21\30','\96s')][jy('\216\236\240\247','\158\131')][jy('\f\218\166\50T&\247\189\54Q','K\181\210Z5')],[jy('<\157\21\130;\145\23\147','h\248m\246')]=13,[jy('\224\56#Q\19\219\49\52Wc','\180][%P')]=Je[jy('\16_<N','D:')],[jy('\212\22\162pr!>\233\20\180iO\14&','\128s\218\4*\96R')]=dx[jy('\26\30*\29','_p')][jy('\"M9\158\16M\158\31O/\135-b\134','v(A\234H\f\242')][jy('<\226\22\243','p\135')],[jy('U\181y\164','\1\208')]=Vz[jy('\142J\173N','\192+')]or jy('B \"\156\207u\27c\162\223','\23i\2\208\166'),[jy('C8\161\148c\155b3\186\129C\140','\23]\217\224\55\233')]=dx[jy('\0\0\48\3','En')][jy('\243\227\164\52\145\130\210\232\191!\177\149','\167\134\220@\197\240')][jy('t>p$Q','5J')]})if Vz[jy('f \fC,\17^','0E~')]then Iv(jy('\223\205\223\t\199\201\197\24\231','\139\168\167}'),{[jy('W\twb\6q','\ah\5')]=Nl,[jy('\174l\206\227> \193\149\137\175{\158l\195\251)3\220\133\137\168V','\236\r\173\136YR\174\224\231\203/')]=1,[jy('\232^p\195\242\219\96|\194\243\221','\169\48\19\171\157')]=EG(1,0.5),[jy('H\140\t\144l\138\21\151','\24\227z\249')]=WA(1,-36,0.5,0),[jy('\161\5\136\t','\242l')]=Zi(80,18),[jy(' \30\b\5','fq')]=dx[jy('\25t)w','\\\26')][jy('\202\135\226\156','\140\232')][jy('\160\225h\143\239q','\231\142\28')],[jy('\195w\147\140\196{\145\157','\151\18\235\248')]=11,[jy('\n\196\255\169\236\49\205\232\175\156','^\161\135\221\175')]=Je[jy('\220e\229u\245','\145\16')],[jy('\27F\209\184\226\156\229&D\199\161\223\179\253','O#\169\204\186\221\137')]=dx[jy('JCz@','\15-')][jy(' \234Mb\18K\179\29\232[{/d\171','t\143\53\22J\n\223')][jy('\226\184\215\185\196','\176\209')],[jy('uOY^','!*')]=Th(Vz[jy('\27{\158>w\131#','M\30\236')])})end local Yu=Iv(jy(')=\201n\183\b,\197u\155','}X\177\26\245'),{[jy('\152\20\17\173\27\23','\200uc')]=Nl,[jy('\186&\205\204\188\137\24\193\205\189\143','\251H\174\164\211')]=EG(1,0.5),[jy('\223qX~\251wDy','\143\30+\23')]=WA(1,-10,0.5,0),[jy('Pyyu','\3\16')]=Zi(20,20),[jy("\175\f\a\135\235\185?\175\131\t\'\131\224\164\"\233",'\237md\236\140\203P\218')]=Je[jy('\153BD\235\204\169Rw\225\217','\202\55\54\141\173')],[jy("\'\226\15\249",'a\141')]=dx[jy('=\189\r\190','x\211')][jy('\215S\255H','\145<')][jy('\216\160\241\140\237\242\141\234\136\232','\159\207\133\228\140')],[jy('\205\133\163\201\202\137\161\216','\153\224\219\189')]=14,[jy('_\1\135\146@d\b\144\148\48','\vd\255\230\3')]=Je[jy('J\212f\197','\30\177')],[jy('\242\175\222\190','\166\202')]=jy('\144','\189'),[jy('\240d\189\149\53\25\199\197~\167\185\24\0\220\195','\177\17\201\250wl\179')]=false,[jy('\238\175\15\230\136\219\199\197\186\24\210\132\209\241\192','\172\192}\130\237\169\148')]=0});ad(4,Yu);Zy[jy(')\158\23\154\18','v\243')][jy('jOO','+')](Zy[jy(')\158\23\154\18','v\243')],Yu[jy('\r\21\200n\227\24j\255\52\21\211,\197\54v\232+','@z\189\29\134Z\31\139')][jy('\128>\217\173\52\212\183','\195Q\183')](Yu[jy('\r\21\200n\227\24j\255\52\21\211,\197\54v\232+','@z\189\29\134Z\31\139')],function()Zy[jy('\231\51\192\212\48\194','\179\\\167')](Zy,false)end))local Yr=Iv(jy('\216\52\255+\251','\158F'),{[jy('\223i\198\234f\192','\143\b\180')]=me,[jy(',\154D\24\195\233\248j\0\159d\28\200\244\229,',"n\251\'s\164\155\151\31")]=Je[jy('\224w\24\213c\t\214','\179\2j')],[jy('\235\228\136\219\207\226\148\220','\187\139\251\178')]=WA(0,0,0,36),[jy('\234\214\195\218','\185\191')]=WA(0,160,1,-36),[jy('K\127\250\24\b\0v\96j\237,\4\n@e','\t\16\136|mr%')]=0});ad(10,Yr);Iv(jy('raU~Q','4\19'),{[jy('\217*\237\236%\235','\137K\159')]=Yr,[jy('3\141\22\247|UZ\4\31\136\54\243wHGB',"q\236u\156\27\'\53q")]=Je[jy('\206\175\228\251\187\245\248','\157\218\150')],[jy("\3\229V\187\'\227J\188",'S\138%\210')]=WA(0,0,0,0),[jy("\243+\218\'",'\160B')]=WA(1,0,0,10),[jy('\148\145\15Zm[\21\191\132\24naQ#\186','\214\254}>\b)F')]=0});Iv(jy('%\251\2\228\6','c\137'),{[jy('\211\b\1\230\a\a','\131is')]=Yr,[jy('0\f\187\211N\186\148\190\28\t\155\215E\167\137\248','rm\216\184)\200\251\203')]=Je[jy('\232\255\140\221\235\157\222','\187\138\254')],[jy('\234}\138O\206{\150H','\186\18\249&')]=WA(1,-10,0,0),[jy('^?w3','\rV')]=WA(0,10,1,0),[jy('F\209\212\178\173\174\159m\196\195\134\161\164\169h','\4\190\166\214\200\220\204')]=0})local si=Iv(jy('\214\27\164\205\51\f\57\235\31\144\208>\r\53','\133x\214\162_\96P'),{[jy('\31\212\150*\219\144','O\181\228')]=Yr,[jy('\128{\161\192\24\227\181bP\216\223\176{\172\216\15\240\168rP\223\242','\194\26\194\171\127\145\218\23>\188\139')]=1,[jy('\251\30\198-\223\24\218*','\171q\181D')]=WA(0,8,0,8),[jy('\152S\177_','\203:')]=WA(1,-16,1,-64),[jy('y\144St\168I\162Tx\172',':\241=\2\201')]=WA(0,0,0,0),[jy('\252\49\224=\28\198\250\219\225\254%\250$\16\212\221\219\248\216','\189D\148Rq\167\142\178\130')]=dx[jy('\202\244\250\247','\143\154')][jy('\n\51\16\57\5\18?/\a\5\1\t.','KFdVhs')][jy('\245','\172')],[jy('\200\253n\163\143:N\128\167\207\246u\175\136\56i\146\166','\155\158\28\204\227V\f\225\213')]=2,[jy('\164\2a\246K\161\162\188c$\154\0t\252d\162\140\178c^',"\247a\19\153\'\205\224\221\17m")]=Je[jy('\201p\25\239z\25','\139\31k')],[jy('1D\144\229X\220E\26Q\135\209T\214s\31','s+\226\129=\174\22')]=0});Iv(jy('\248\141\186\143\16Y\225\165\143\137\22Y','\173\196\246\230c-'),{[jy('\169\181\247\156\186\241','\249\212\133')]=si,[jy('\242B\207f\230\220\198N\192~\203\218\218','\180+\163\n\162\181')]=dx[jy('+\17\27\18','n\127')][jy('<\213\b\214\175\55\b\217\a\206\130\49\20','z\188d\186\235^')][jy('/,|R\16*oJ','yI\14&')],[jy('M\168\145y\160\155z','\29\201\245')]=vD(0,4),[jy('\96b/s|\127\57bA','3\r]\a')]=dx[jy('\r\188=\191','H\210')][jy(',\132a\208\48\153w\193\r','\127\235\19\164')][jy('V\206\231\53\135n\224\236>\151h','\26\175\158Z\242')]});Zy[jy('d\191&\127w\162\52i',';\203G\29')]=si local k=Iv(jy('\5(\"\55&','CZ'),{[jy('0\136\243\5\135\245','\96\233\129')]=Yr,[jy('\213\251\22\14\164\233\248\221\244\218\196\229\251\27\22\179\250\229\205\244\221\233','\151\154ue\195\155\151\168\154\190\144')]=1,[jy('_\26\254\217{\28\226\222','\15u\141\176')]=WA(0,8,1,-54),[jy('A\24h\20','\18q')]=WA(1,-16,0,46),[jy('\129\134\217\249\196\220\27\170\147\206\205\200\214-\175','\195\233\171\157\161\174H')]=0})local Mi=Iv(jy('\fh\221C3\td\222A:','E\5\188$V'),{[jy('9\158N\f\145H','i\255<')]=k,[jy("\217\137\'\55j\20\171Z%\v\57\233\137*/}\a\182J%\f\20",'\155\232D\\\rf\196/Kom')]=1,[jy('\0hb\186p3Vn\187q5','A\6\1\210\31')]=EG(0,0.5),[jy('\148\243\179\31\176\245\175\24','\196\156\192v')]=WA(0,0,0.5,0),[jy('\163m\138a','\240\4')]=Zi(32,32),[jy('\23u?\127;','^\24')]=np((Rw and Rw[jy('\30\164\164\57\158\165','K\215\193')])or 0)});ad(16,Mi);Iv(jy('S\25B\4K\29X\21k','\a|:p'),{[jy('\23\149\252\"\154\250','G\244\142')]=k,[jy('j\138\159T\170\238\5\221\181\201nZ\138\146L\189\253\24\205\181\206C','(\235\252?\205\156j\168\219\173:')]=1,[jy('5\17\130\229\17\23\158\226','e~\241\140')]=WA(0,38,0,8),[jy('\141[\164W','\222\50')]=WA(1,-64,0,18),[jy('<\251\20\224','z\148')]=dx[jy('\172\254\156\253','\233\144')][jy('7\167\31\188','q\200')][jy('\a\26\130\213\132e\r\16\146\212\144e','@u\246\189\229\b')],[jy('F|\156WAp\158F','\18\25\228#')]=11,[jy('h\228\137\162\237S\237\158\164\157','<\129\241\214\174')]=Je[jy('\168\185\132\168','\252\220')],[jy('\204zj\n\165\253\n\241x|\19\152\210\18','\152\31\18~\253\188f')]=dx[jy('\f\21<\22','I{')][jy('o\205\201\254\175<\155R\207\223\231\146\19\131',';\168\177\138\247}\247')][jy('\217I\243X','\149,')],[jy('\214\140s\132\141j\247\135h\145\173}','\130\233\v\240\217\24')]=dx[jy('*\195\26\192','o\173')][jy('\236\231C\191\203j\205\236X\170\235}','\184\130;\203\159\24')][jy('Y\127]e|','\24\v')],[jy('\161\189\141\172','\245\216')]=(Rw and Rw[jy('?\164\52:\167\26\180\t+\166\30','{\205GJ\203')])or jy('m\128/D\137<','=\236N')});Iv(jy('A\130\192\\Y\134\218My','\21\231\184('),{[jy('\167\149\160\146\154\166','\247\244\210')]=k,[jy('J\127\28j\185\25$^+\241\242z\127\17r\174\n\57N+\246\223','\b\30\127\1\222kK+E\149\166')]=1,[jy('\131\163\209\208\167\165\205\215','\211\204\162\185')]=WA(0,38,0,22),[jy('\162\227\139\239','\241\138')]=WA(1,-64,0,16),[jy('YKqP','\31$')]=dx[jy('Q\15a\f','\20a')][jy('\162G\138\\','\228(')][jy(']\194\187r\204\162','\26\173\207')],[jy('t\130\242\251s\142\240\234',' \231\138\143')]=9,[jy('\164\55\234\209\29\159>\253\215m','\240R\146\165^')]=Je[jy('\151|\174l\190','\218\t')],[jy('Y\210\193l\14\164\133d\208\215u3\139\157','\r\183\185\24V\229\233')]=dx[jy('Z\192j\195','\31\174')][jy('1U\196\153&Ld\fW\210\128\27c|','e0\188\237~\r\b')][jy('\249\132\211\149','\181\225')],[jy('\220\135\242\131K\156\253\140\233\150k\139','\136\226\138\247\31\238')]=dx[jy('a&Q%','$H')][jy('\177Z\137\f\b!\144Q\146\25(6','\229?\241x\\S')][jy('\96\178d\168E','!\198')],[jy('\241@\221Q','\165%')]=jy('\204','\140')..((Rw and Rw[jy('U\150v\146','\27\247')])or jy('\189rH\240\166\96@\231','\200\1-\130'))})local gn=Iv(jy('\241|G\191\192\250dR\172\202\214','\184\17&\216\165'),{[jy('\216\191\167\237\176\161','\136\222\213')]=k,[jy('\203[\163I\v\254\171\f:\171\196\251[\174Q\28\237\182\28:\172\233','\137:\192\"l\140\196yT\207\144')]=1,[jy('\237\30\v-m\222 \a,l\216','\172phE\2')]=EG(1,0.5),[jy('\207\153_<\235\159C;','\159\246,U')]=WA(1,0,0.5,0),[jy('/\228\6\232','|\141')]=Zi(18,18),[jy('\145\215\185\221\189','\216\186')]=Nf(80428653135733),[jy("#\177\224D\'\197i\22\171\250h\n\220r\16",'b\196\148+e\176\29')]=false});Zy[jy('\192 \254$\251','\159M')][jy('~[[','?')](Zy[jy('\192 \254$\251','\159M')],gn[jy('\182\n\29\139V\6\248\5\143\n\6\201p(\228\18\144','\251eh\248\51D\141q')][jy('\249\212\132\212\222\137\206','\186\187\234')](gn[jy('\182\n\29\139V\6\248\5\143\n\6\201p(\228\18\144','\251eh\248\51D\141q')],function()RG(Zy[jy('\180\145\212U a\161\172\164\149\204M+n\165\180','\231\244\160!I\15\198\223')])end))local ne=Iv(jy('\r,*3.','K^'),{[jy('\145\228\168\164\235\174','\193\133\218')]=me,[jy('\252\187\212F\131\173D\210\159\255\51\204\187\217^\148\190Y\194\159\248\30','\190\218\183-\228\223+\167\241\155g')]=1,[jy('\179\195J\239\151\197V\232','\227\172\57\134')]=WA(0,160,0,36),[jy('\246\49\223=','\165X')]=WA(1,-160,1,-36),[jy('\243\193J\222\n\204q\216\212]\234\6\198G\221','\177\174\56\186o\190\"')]=0});Zy[jy('k)\189\181N|6\176\182NF','4Y\220\210+')]=ne local mp,x=Iv(jy('\f\249\150\190\254\a\225\131\173\244+','E\148\247\217\155'),{[jy('\135)\203\178&\205','\215H\185')]=me,[jy('\4\169\23\170\235\55\151\27\171\234\49','E\199t\194\132')]=EG(1,1),[jy('\187hZ\162\159nF\165','\235\a)\203')]=WA(1,-4,1,-4),[jy('\236\143\197\131','\191\230')]=Zi(12,12),[jy('\179\219\143\182\96\175_h\vsL\131\219\130\174w\188Bx\vta','\241\186\236\221\a\221\48\29e\23\24')]=1,[jy('M\148e\158a','\4\249')]=Nf(6031091004),[jy('\139\218\176;\177\129\216\189\51\166\241','\194\183\209\\\212')]=Je[jy('\146s\171c\187','\223\6')],[jy('\211<E\213 \f<9\244\"T\211\55= ;\227','\154Q$\178EXNX')]=0.40000000000000002,[jy('\135\185OH\232\n\135\178\163Ud\197\19\156\180',"\198\204;\'\170\127\243")]=false}),nil local function Gw()local Er,ds,ZA;Er,ZA=function(Hk,mE,Eh)ZA[Eh]=Yl(mE,19401)-Yl(Hk,917)return ZA[Eh]end,{};ds=ZA[-30186]or Er(52279,43514,-30186)repeat if ds<=11082 then if ds<=4753 then if x then ds=ZA[632]or Er(10227,1145,632)continue end ds=45582 else x[jy('\6G\135\54P\155;','B\"\244')](x);x,ds=nil,ZA[2180]or Er(36681,95523,2180)end else ds=ZA[-22817]or Er(29452,39677,-22817)continue end until ds==24731 end Zy[jy('\205\184\243\188\246','\146\213')][jy('\132\161\161','\197')](Zy[jy('\205\184\243\188\246','\146\213')],mp[jy('\96\196@\136\141k\207W\156\151',')\170\48\253\249')][jy('t=|Y7qC','7R\18')](mp[jy('\96\196@\136\141k\207W\156\151',')\170\48\253\249')],function(xu)if not(xu[jy('L\217\210\149f;i\223\195\179V%|','\25\170\183\231/U')]~=dx[jy('\222\153\238\154','\155\247')][jy('\0\149\1\231l-%\147\16\193\\\51\48','U\230d\149%C')][jy('N\227+v\176\157v\248*j\187\238','\3\140^\5\213\223')]and xu[jy('\166\227\248G\249\224\131\229\233a\201\254\150','\243\144\157\53\176\142')]~=dx[jy('\234+\218(','\175E')][jy('[\246h?B\n~\240y\25r\20k','\14\133\rM\vd')][jy('\226w\195{\222','\182\24')])then else return end if x then return end local zn,fn,Vq=xu[jy('M\4\168}i\2\180z','\29k\219\20')],me[jy("\228\53\a\169\195n\209\50\'\175\213~",'\165Wt\198\175\27')],ga();x=Vq;Vq[jy('jOO','+')](Vq,jD[jy('\249\14\237\204\215\14\201\193\210','\182\96\174\164')](function(Lv)local Tw,ev,ZD,_t,Uo,Ze;Ze,ZD={},function(kr,VA,mC)Ze[mC]=Yl(kr,37449)-Yl(VA,5481)return Ze[mC]end;_t=Ze[26502]or ZD(1995,28731,26502)repeat if _t>=56673 then if _t<=56673 then Uo=Lv[jy('CHZ3gNF4',"\19\')Z")]-zn;Tw,ev=Km(fn[jy('\186','\226')]+Uo[jy('\130','\218')],Ct[jy('&','~')],X[jy('\168','\240')]),Km(fn[jy('\149','\204')]+Uo[jy('#','z')],Ct[jy('i','0')],X[jy('C','\26')]);_t,me[jy('\150\28\191\16','\197u')]=Ze[-12353]or ZD(64334,20969,-12353),Zi(Tw,ev)continue else return end else if not(Lv[jy('\231\205\215\29\253^\194\203\198;\205@\215','\178\190\178o\180\48')]~=dx[jy('A6q5','\4X')][jy('\229U\149\202{\249\192S\132\236K\231\213','\176&\240\184\50\151')][jy('LX\141\21\210|nA\157\v\210_u','\1\55\248f\183\49')]and Lv[jy('_\153:[yez\159+}I{o','\n\234_)0\v')]~=dx[jy('\199\252\247\255','\130\146')][jy('#\129\186\215\n$\6\135\171\241::\19','v\242\223\165CJ')][jy("\27\134:\138\'",'O\233')])then _t=Ze[-31559]or ZD(67489,44526,-31559)continue else _t=Ze[8399]or ZD(88406,65315,8399)continue end _t=56673 end until _t==9351 end));Vq[jy('\159\186\186','\222')](Vq,jD[jy('\214\182}\247\188]\253','\153\216\56')](function(eu)local vi,St,Pg;Pg,St={},function(bk,Ge,Xk)Pg[Ge]=Yl(Xk,39895)-Yl(bk,54472)return Pg[Ge]end;vi=Pg[-6594]or St(40092,-6594,63480)repeat if vi<9179 then Gw();vi=Pg[-10692]or St(55220,-10692,45112)elseif vi<=9179 then if not(eu[jy('\198\229\188\207\228\144\227\227\173\233\212\142\246','\147\150\217\189\173\254')]==dx[jy('\181\134\133\133','\240\232')][jy('l\145\208Cc\159I\151\193eS\129\\','9\226\181\49*\241')][jy('D\2w\140\18\238|\25v\144\25\157','\tm\2\255w\172')]or eu[jy("\v\'\163\139j\160.!\178\173Z\190;",'^T\198\249#\206')]==dx[jy('@\156p\159','\5\242')][jy('OiaAX\159jopgh\129\127','\26\26\4\51\17\241')][jy('\202\184\235\180\246','\158\215')])then vi=Pg[-18152]or St(35391,-18152,7357)continue else vi=Pg[22556]or St(20603,22556,3642)continue end vi=10355 else vi=Pg[-29947]or St(7950,-29947,127426)continue end until vi==40527 end))end))local Yz,zq,Vx;zq,Vx=function(ks,xd,Xc)Vx[ks]=Yl(Xc,18778)-Yl(xd,35133)return Vx[ks]end,{};Yz=Vx[-17646]or zq(-17646,37193,30562)while Yz~=31786 do if Yz<=39250 then if Yz>9668 then Zy[jy('\188\143\173RUQ\136\134\188M_O','\239\234\217\6:6')](Zy,Vz[jy('w\147z\22O\153V\20Z','#\252\29q')]);Yz=Vx[11545]or zq(11545,6411,90828)else Zy[jy('\168\57\150=\147','\247T')][jy('\189\152\152','\252')](Zy[jy('\168\57\150=\147','\247T')],function()Gw()end);fw(me,Nl,Zy[jy("V#h\'m",'\tN')]);Zy[jy('n\228*\236\196]\245\14\238\218','1\144E\139\163')]=nil;Zy[jy('\21\209\161\246.\162\143\1\192\183\210&\160\132','J\165\206\145I\206\234')]=nil if not(Vz[jy('\153j\175\174\161\96\131\172\180','\205\5\200\201')])then Yz=Vx[-1308]or zq(-1308,59094,82449)continue else Yz=Vx[18463]or zq(18463,59095,82022)continue end Yz=39776 end else me[jy('&1\15=','uX')]=Zi(mG[jy('V','\14')],mG[jy('\248','\161')]);me[jy('\30\190\223\143R\204\19\147c\217D.\190\210\151E\223\14\131c\222i','\\\223\188\228\53\190|\230\r\189\16')]=0;me[jy('s\246\146L\253\141@','%\159\225')]=true;Zy[jy('c\16\51\48>_\31#<\26','0qEU}')]=function(pl,Ur)local By,wu,eq,ew,QD,Sl,Ra,Hi,st,Ud,DF,yA,jB;st,QD=function(MF,ip,Zj)QD[MF]=Yl(Zj,523)-Yl(ip,32565)return QD[MF]end,{};By=QD[-7304]or st(-7304,24762,28136)while By~=63085 do if By>30528 then if By<=40026 then if By<=39021 then if By>=34414 then if By>34414 then DF=Ud..jy('\243','\220')..eq..jy('\155\255\198\250\219','\181\149');yA,ew=Ec(Ld,DF,wu)if not(not yA)then By=QD[-6948]or st(-6948,47579,58212)continue else By=QD[1015]or st(1015,22012,16439)continue end By=6785 else wu,DF,yA=Jx(wu);By=QD[19035]or st(19035,19733,60198)end else pl[jy('\216k\179\255b\190','\150\4\199')](pl,{[jy('\141\151\173\146\188','\217\254')]=jy('f\228\183C\226\190','%\139\217'),[jy('\128\3\158\183\t\158\183','\195l\240')]=jy('\229\230\129l\160\156\14\199\254\156u\206\228\129k\191\145\2\216\230\141m\206','\171\137\161\n\201\240k\180\135\239\1'),[jy('\151I\190W\167U\163X','\211<\204\54')]=3})return false end else Ra[ew],By=Sl,QD[14514]or st(14514,40586,105159)end elseif By>=46861 then if By<=46861 then ew,Hi=wu(DF,yA);yA=ew if yA==nil then By=QD[9686]or st(9686,12458,67154)else By=QD[-28228]or st(-28228,32732,21570)end else jB=Ia(wu)if jB~=nil and jB[jy('\212\148B\255\174Y','\139\203+')]~=nil then By=QD[-25128]or st(-25128,45172,83082)continue elseif FB(wu)==jy('\145\192\135\205\128','\229\161')then By=QD[6153]or st(6153,52858,79286)continue end By=QD[16035]or st(16035,5871,74476)end else jB,wu=Ec(_n[jy('\201MI9\216\237}i\19\248','\131\30\6w\157')],_n,Ra)if not jB then By=QD[-1944]or st(-1944,12758,48506)continue end By=39021 end elseif By>21856 then if By>=28814 then if By>28814 then wu,DF,yA=jB[jy('\161\"\184\138\24\163','\254}\209')](wu);By=QD[-3868]or st(-3868,61238,83227)else ms(jy("#\215@\249Xr\173\171\14\164\19\191+\203X\231g\214^t\149\171\v\170\20\181\'\200B",'x\130\t\181\49\16\240\139m\203}\217B\172'),wu);pl[jy('\246\240\138\209\249\135','\184\159\254')](pl,{[jy('\195\198\227\195\242','\151\175')]=jy('\173D\6\136B\15','\238+h'),[jy('q\171\170F\161\170F','2\196\196')]=jy(')\231\223\50:wL\239\221\52\50w\b','l\137\188]^\18'),[jy('\213?Q[\229#LT','\145J#:')]=3})return false end elseif By>27096 then pl[jy('\134\22\182\161\31\187','\200y\194')](pl,{[jy('\176\156\144\153\129','\228\245')]=jy('\198\146\232\227\148\225','\133\253\134'),[jy('3\132\166\4\142\166\4','p\235\200')]=jy('}\224\168\130.\154\152\168\205\2\24h\248\180\a\220\210\153Z\177Q@\235\172\144n\211\152\225\196\n\1~\244\188-\143\216\203\22\249\f','4\142\222\227B\243\252\136\163cu\r\216\156r\175\183\185\54\212%'),[jy('\243m\15O\195q\18@','\183\24}.')]=3})return false else Ud=ei(pl[jy('i\172\26d\20_\168;k\31S','6\207u\nr')]);Ti(Ud);Ra={};wu,DF,yA=im if FB(wu)~=jy('S\31\49\146A\3\48\159','5j_\241')then By=QD[-11497]or st(-11497,33561,116630)continue end By=QD[20470]or st(20470,36292,109557)end elseif By>6785 then if By<=20564 then if not(not qv)then By=QD[6451]or st(6451,46949,52420)continue else By=QD[31578]or st(31578,48829,82010)continue end By=QD[29285]or st(29285,52166,47481)else Sl=qc(Hi)if Sl~=nil then By=QD[16137]or st(16137,14515,57835)continue end By=QD[16742]or st(16742,56357,88086)end elseif By>=6003 then if By<=6003 then ms(jy('%/yG\127\228\4\133\128\1\242\241\134M^\rBbb\227y\195\130\a\240\242\139\16','~z0\v\22\134Y\165\227n\156\151\239*'),ew);pl[jy('\246t\194\209}\207','\184\27\182')](pl,{[jy('a$A!P','5M')]=jy('\203C\n\238E\3','\136,d'),[jy('M<\170z6\170z','\14S\196')]=jy('\153bu\159L_\168qu\135L\27','\206\16\28\235)\127'),[jy('5\2\136\183\5\30\149\184','qw\250\214')]=3})return false else pl[jy('c\245\rD\252\0','-\154y')](pl,{[jy('\217F\249C\232','\141/')]=jy('\219\144\54\145\193Z\184\140\57\129\205Y','\152\255X\247\168='),[jy('r\15HE\5HE','1\96&')]=eq,[jy("\23*\183\48\'\54\170?",'S_\197Q')]=2})return true end else eq=Ur or jy('(\238\17-\254\27\56','L\139w')if not WE(eq)then By=QD[27965]or st(27965,43303,82219)continue end By=QD[-22464]or st(-22464,6627,53925)end end end;Zy[jy('\194NJT\151\225OMY\179','\142!+0\212')]=function(vc,dq)local iw,La,SA,kB,gk,Zm,Oz,cw,uB,zb,GC,Zk,pa,ZG,CA,vb,Pf,Gb,Ag,xh,Jp,in_,gG;pa,GC={},function(QF,Hm,DD)pa[DD]=Yl(QF,2119)-Yl(Hm,15452)return pa[DD]end;gk=pa[13143]or GC(81713,34332,13143)while gk~=6544 do if gk>32054 then if gk<=54236 then if gk<47179 then if gk<=39480 then if gk>38661 then vb,gk=hw(jy('\187\224m\144.1\232\f\203o\165;\187\144<\128\154\31\49\238\227(\220od\252L\130l\160r\242\145t\128\204\16q','\158\147M\184OA\152\96\162\n\193\27\158\244\16\160\233tX'),cw,kB,iw,Pf),pa[21855]or GC(53716,16312,21855)else Oz,in_=Zs[CA],YE(La)if not(Oz and in_~=nil)then gk=pa[15446]or GC(76944,60887,15446)continue else gk=pa[15514]or GC(47666,41518,15514)continue end gk=pa[-4978]or GC(57696,18920,-4978)end else vc[jy('\228CW\195JZ','\170,#')](vc,{[jy("\'\233\a\236\22",'s\128')]=jy('\255Ck\218Eb','\188,\5'),[jy('\"\96\f\21j\f\21','a\15b')]=jy('\186=\174\173\2\167\151s\182\173\3\171','\243S\216\204n\206'),[jy('x\144Z\225H\140G\238','<\229(\128')]=3})return false end elseif gk>51697 then vc[jy('\187\169\218\156\160\215','\245\198\174')](vc,{[jy('\203&\235#\250','\159O')]=jy('])\201x/\192','\30F\167'),[jy('_\170\rh\160\rh','\28\197c')]=jy('\29\185\141\163\3<\163\151\231_s','S\214\249\131e')..cw,[jy('*\200\159\23\26\212\130\24','n\189\237v')]=3})return false elseif gk>47179 then Gb=ei(vc[jy('\193\169\171t\139\247\173\138{\128\251','\158\202\196\26\237')]);ZG=Gb..jy('\148','\187')..cw..jy('\253O\160J\189','\211%')if ul and not(ul)(ZG)then gk=pa[28650]or GC(71471,30672,28650)continue end gk=4519 else vb=cw if Pf>0 or iw>0 then gk=pa[-7832]or GC(88752,34019,-7832)continue end gk=54703 end elseif gk<62967 then if gk>54703 then ms(jy('\209\29\171\171\209\134\134\4\250\ve\27\249\237h\144\130\217\128\251B\248\rg\24\244\176','\138H\226\231\184\228\219$\153d\v}\144'),xh)return false else vc[jy('\234\48l\205\57a','\164_\24')](vc,{[jy('j\27J\30[','>r')]=(Pf>0)and jy('\166\137?V\148\184\204\128Y\176m-\129\198&Y\137\183\204\137D\163f:\150','\229\230Q0\253\223\236\236\54\209\tH')or jy(']\211M#\161G>\208L$\172Ez','\30\188#E\200 '),[jy('\152\54\f\175<\f\175','\219Yb')]=vb,[jy('Q~\v\215ab\22\216','\21\vy\182')]=3})return Pf==0 end elseif gk>=64523 then if gk<=64523 then return false else vb=Ia(Zm)if vb~=nil and vb[jy('\rU\21&o\14','R\n|')]~=nil then gk=pa[25299]or GC(59355,61164,25299)continue elseif not(FB(Zm)==jy('P\182F\187A','$\215'))then gk=pa[19932]or GC(86093,55499,19932)continue else gk=pa[26233]or GC(50959,40753,26233)continue end gk=pa[-8254]or GC(71097,38615,-8254)end else kB+=1;gk=pa[14242]or GC(50882,26446,14242)end elseif gk<12059 then if gk>7404 then if gk>9711 then Zm,Jp,SA=Jx(Zm);gk=pa[-19089]or GC(88505,58071,-19089)else kB,iw,Pf=0,0,0;Zm,Jp,SA=gG if not(FB(Zm)~=jy('%\242DH7\238EE','C\135*+'))then gk=pa[29595]or GC(45774,31562,29595)continue else gk=pa[6502]or GC(124044,53629,6502)continue end gk=pa[-17272]or GC(46910,28762,-17272)end elseif gk>=5123 then if gk<=5123 then uB,zb=Ec(Oz,in_)if not(uB)then gk=pa[-7021]or GC(21491,28308,-7021)continue else gk=pa[-31983]or GC(71149,7151,-31983)continue end gk=pa[17066]or GC(34677,10211,17066)else Zm,Jp,SA=vb[jy('\180\252\182\159\198\173','\235\163\223')](Zm);gk=pa[-11940]or GC(51633,29407,-11940)end elseif gk<=2284 then Pf+=1;ms(jy('\f._}\252\188^o\130N \224>\28\54B\240\170w*\147\1(\233%','W{\22\49\149\222\3O\225!N\134'),CA,jy('\230','\220'),zb);gk=pa[-15210]or GC(63581,16635,-15210)else Ag,xh=Ec(fc,ZG)if not Ag then gk=pa[689]or GC(114839,59602,689)continue end gk=pa[-32168]or GC(56124,48489,-32168)end elseif gk>=26574 then if gk<29555 then ms(jy("\247\'\f-\bk\224>\141i=o[\a\140\22 \2\14m\216>\136g:eW\4\150",'\172rEaa\t\189\30\238\6S\t\50\96'),gG);vc[jy('\137}\22\174t\27','\199\18b')](vc,{[jy('\196M\228H\245','\144$')]=jy('#\136\191\6\142\182','\96\231\209'),[jy('\167z\175\144p\175\144','\228\21\193')]=jy('\148\221\134\155a!\163\146\146\128x4','\215\178\244\233\20Q'),[jy('\155\155\a\140\171\135\26\131','\223\238u\237')]=3})return false elseif gk<=29555 then CA,La=Zm(Jp,SA);SA=CA if SA==nil then gk=pa[24983]or GC(87025,40759,24983)else gk=pa[-6656]or GC(75190,43696,-6656)end else if not(not qv)then gk=pa[25869]or GC(54137,36991,25869)continue else gk=pa[-15904]or GC(74707,5077,-15904)continue end gk=12059 end elseif gk>21062 then iw+=1;gk=pa[-9649]or GC(51694,29290,-9649)elseif gk<=12059 then cw=dq or jy('\240\163\232\245\179\226\224','\148\198\142')if not WE(cw)then gk=pa[4169]or GC(51488,10093,4169)continue end gk=51697 else Zk,gG=Ec(_n[jy('\145/\160\177\192\190\31\128\155\225','\219|\239\255\132')],_n,xh)if not(not Zk or Bi(gG)~=jy('\5t\19y\20','q\21'))then gk=pa[31693]or GC(45378,44874,31693)continue else gk=pa[8909]or GC(78326,60863,8909)continue end gk=pa[-5820]or GC(71814,54926,-5820)end end end;Zy[jy('\26\184g\218M9\191r\199i%','V\209\20\174\14')]=function(An)local Zn,ur,fd,Ml,ji,ND,Ir,ar,Fj,nw,Im,Wv,fo_,ls;Fj,Ml={},function(ed,FG,kn)Fj[kn]=Yl(ed,36023)-Yl(FG,12627)return Fj[kn]end;ur=Fj[-15183]or Ml(50358,12044,-15183)while ur~=23876 do if ur>37101 then if ur>55737 then if ur>55844 then ar,fo_,Zn=ji if not(FB(ar)~=jy('\214\171\167Z\196\183\166W','\176\222\201\57'))then ur=Fj[9729]or Ml(114354,63304,9729)continue else ur=Fj[14892]or Ml(29062,4702,14892)continue end ur=Fj[26849]or Ml(116473,61239,26849)else nw=Ia(ar)if nw~=nil and nw[jy('\249wE\210M^','\166(,')]~=nil then ur=Fj[31484]or Ml(3476,19810,31484)continue elseif not(FB(ar)==jy('jR|_{','\30\51'))then ur=Fj[16250]or Ml(22109,24147,16250)continue else ur=Fj[12943]or Ml(101566,28813,12943)continue end ur=Fj[19751]or Ml(64931,13433,19751)end elseif ur>=48683 then if ur>48683 then Im=(Th(Ir))[jy('\188\163\165\161\185','\209\194')]((Th(Ir)),jy('\209\26\169R\196\148\142\208d\217\23\235\166\203\221','\249A\247}\152\201\165'))if not(Im)then ur=Fj[5744]or Ml(120022,56612,5744)continue else ur=Fj[-16516]or Ml(112801,51691,-16516)continue end ur=Fj[29185]or Ml(126111,50541,29185)else ar,fo_,Zn=Jx(ar);ur=Fj[14497]or Ml(116902,59764,14497)end elseif ur<=42257 then return{}else return{}end elseif ur<24436 then if ur>=11375 then if ur<=11375 then dx[jy('j5|8{','\30T')][jy('(\241)\234','[\158')](Wv)return Wv else Hq(Wv,Im);ur=Fj[5463]or Ml(113466,64240,5463)end elseif ur>1266 then if not qv or not cz then ur=Fj[-5926]or Ml(129326,63927,-5926)continue end ur=Fj[-8289]or Ml(113006,38335,-8289)else ar,fo_,Zn=nw[jy('\189\129\228\150\187\255','\226\222\141')](ar);ur=Fj[-23221]or Ml(28751,41053,-23221)end elseif ur>36223 then ND=ei(An[jy('\200L\a$j\254H&+a\242','\151/hJ\f')])if not(_G and not(_G)(ND))then ur=Fj[-12873]or Ml(766,8070,-12873)continue else ur=Fj[2570]or Ml(17432,4813,2570)continue end ur=Fj[-17664]or Ml(104110,35830,-17664)elseif ur>27626 then return{}elseif ur>24436 then fd,Ir=ar(fo_,Zn);Zn=fd if Zn==nil then ur=Fj[18400]or Ml(16812,37375,18400)else ur=Fj[-8008]or Ml(31917,10034,-8008)end else Wv={};ls,ji=Ec(cz,ND)if not ls or Bi(ji)~=jy('U\129C\140D','!\224')then ur=Fj[-13301]or Ml(124044,60399,-13301)continue end ur=63265 end end end;Zy[jy('\3\52ybgT\4>{azV','GQ\21\a\19\49')]=function(Mf,dl)local Ks,Zl,Lr,ou,sh,Sd,uj;Ks,Zl=function(_i,Hy,rr)Zl[Hy]=Yl(rr,36531)-Yl(_i,6775)return Zl[Hy]end,{};uj=Zl[7806]or Ks(45297,7806,112206)while uj~=20530 do if uj<=28370 then if uj>=17134 then if uj>24428 then return false elseif uj>17134 then Mf[jy('a\129\135\167bF\139\159\137vV','2\228\243\230\23')](Mf,nil);uj=Zl[15668]or Ks(36068,15668,22322)else Mf[jy('\23\242\187\48\251\182','Y\157\207')](Mf,{[jy('\240\219\208\222\193','\164\178')]=jy('L\"\146\206\221\26jk(\144\205\192\24.','\15M\252\168\180}J'),[jy('\170\129u\157\139u\157','\233\238\27')]=dl,[jy('\209\29\142\51\225\1\147<','\149h\252R')]=2});uj=Zl[-9033]or Ks(30007,-9033,62912)end elseif uj>=7802 then if uj>7802 then if not(not WE(dl))then uj=Zl[-22214]or Ks(55210,-22214,75705)continue else uj=Zl[8855]or Ks(38346,8855,66469)continue end uj=Zl[24308]or Ks(20580,24308,109555)else return false end else return ou end elseif uj>56109 then if uj<=64280 then Lr=Mf[jy('\129r\240R\135\178x\232|\147\162','\198\23\132\19\242')](Mf)if Lr==dl then uj=Zl[22960]or Ks(1967,22960,62455)continue end uj=17134 else return false end elseif uj>=50106 then if uj>50106 then sh=ei(Mf[jy(' \t\181\17I\22\r\148\30B\26','\127j\218\127/')]);Sd=sh..jy('\186','\149')..dl..jy('VC\vF\22','x)')if ul and not(ul)(Sd)then uj=Zl[17610]or Ks(10631,17610,11377)continue end uj=Zl[-29231]or Ks(26196,-29231,110958)else ou=Ec(bH,Sd)if ou then uj=Zl[147]or Ks(60869,147,97401)continue end uj=3123 end else if not(not qv or not bH)then uj=Zl[-5124]or Ks(42554,-5124,27699)continue else uj=Zl[-12568]or Ks(50306,-12568,29660)continue end uj=Zl[21696]or Ks(10851,21696,55540)end end end;Zy[jy('\161\0\25\210\\:U\183\0\f\214]\2N\128','\243ej\183(n:')]=function(He)local yF,Qr,cC,jC,ZE,ot,Ts,q,lw,do_,by,BF;yF,ZE=function(xk,qo,lD)ZE[xk]=Yl(qo,28720)-Yl(lD,5648)return ZE[xk]end,{};ot=ZE[23014]or yF(23014,58477,14845)while ot~=9359 do if ot>25712 then if ot<=56314 then if ot>=48400 then if ot<=48400 then by,lw,Qr=q[jy("\186\29>\145\'%",'\229BW')](by);ot=ZE[5900]or yF(5900,44534,34567)else do_=Zs[jC]if do_ then ot=ZE[25847]or yF(25847,45234,5026)continue end ot=ZE[-5622]or yF(-5622,46653,28494)end else Ts,BF=Ec(do_,cC)if not Ts then ot=ZE[10757]or yF(10757,91083,59136)continue end ot=ZE[-25004]or yF(-25004,83699,64516)end else q=Ia(by)if q~=nil and q[jy('\139\240 \160\202;','\212\175I')]~=nil then ot=ZE[-10687]or yF(-10687,125728,51216)continue elseif FB(by)==jy('LAZL]','8 ')then ot=ZE[26904]or yF(26904,45824,25303)continue end ot=ZE[-21556]or yF(-21556,46109,24942)end elseif ot<=19631 then if ot>=15409 then if ot>15409 then jC,cC=by(lw,Qr);Qr=jC if Qr==nil then ot=15409 else ot=56314 end else He[jy('\174\19\137\137\26\132','\224|\253')](He,{[jy('\128\193\160\196\177','\212\168')]=jy('5\152zj\188\5%mQ\143yx\189\6#{\21','q\253\28\v\201iQ\30'),[jy('t\a\223\127D\27\194p','0r\173\30')]=2});ot=ZE[-27438]or yF(-27438,37845,43334)continue end else ms(jy('\189\192\247\30\199\201d$\180\243\163\254\146\181\205\55\218\223\\v\230\240\191\233','\230\149\190R\174\171\57\4\198\150\208\155'),jC,jy('\138','\176'),BF);ot=ZE[25275]or yF(25275,57974,21383)end elseif ot>20073 then by,lw,Qr=dw if not(FB(by)~=jy('\191\155\156\\\173\135\157Q','\217\238\242?'))then ot=ZE[-31788]or yF(-31788,82437,62358)continue else ot=ZE[24256]or yF(24256,70475,25300)continue end ot=ZE[639]or yF(639,16305,5314)else by,lw,Qr=Jx(by);ot=ZE[26909]or yF(26909,90287,54752)end end end;Zy[jy('x\143\161\252[K\133\185\210O[','?\234\213\189.')]=function(Vf)local yt,Pi,pc,kw,pD,UG;yt,pD=function(gi,Fb,Wr)pD[gi]=Yl(Wr,42392)-Yl(Fb,52089)return pD[gi]end,{};UG=pD[-26310]or yt(-26310,41668,128801)while UG~=35374 do if UG>=32262 then if UG>52068 then if UG>55615 then if not qv then UG=pD[-23114]or yt(-23114,20461,18349)continue end UG=pD[2038]or yt(2038,226,100839)else return nil end elseif UG>41822 then return nil elseif UG>32262 then return nil else pc,kw=Ec(fc,Pi)if not(not pc or Bi(kw)~=jy('\136\254\19\146\228\6','\251\138a'))then UG=pD[11402]or yt(11402,23386,27597)continue else UG=pD[2161]or yt(2161,31271,77573)continue end UG=15922 end elseif UG>23969 then Pi=Kr()if ul and not(ul)(Pi)then UG=pD[-21643]or yt(-21643,57251,7584)continue end UG=pD[22347]or yt(22347,60001,14982)elseif UG>=15922 then if UG<=15922 then kw=(kw)[jy('\205\25\223\b','\170j')]((kw),jy('\18\142\28\217','7\253'),'')if not WE(kw)then UG=pD[14999]or yt(14999,15112,73293)continue end UG=pD[2442]or yt(2442,21599,28819)else return nil end else return kw end end end;Zy[jy('\191J\192#\251\152@\216\r\239\136','\236/\180b\142')]=function(TD,tl)local Or,gc,Jq,Pk,u_,Ys;gc,Pk=function(lg,aw,hC)Pk[hC]=Yl(aw,19905)-Yl(lg,19192)return Pk[hC]end,{};u_=Pk[-16448]or gc(32177,43807,-16448)repeat if u_>=50972 then if u_<=56769 then if u_>=55479 then if u_<=55479 then Jq=Th((dx[jy('\253\159\247\155','\154\254')])[jy('\209\nN\226\3f\229','\129f/')]or 0);Ti(jy('\197\176\220\144\242','\144\249')..jy('\132','\171')..Jq);Ys=Kr()if tl==nil then u_=Pk[-26449]or gc(18218,15080,-26449)continue end u_=50972 else return false end else if not(not WE(tl))then u_=Pk[-30059]or gc(40839,77995,-30059)continue else u_=Pk[-19365]or gc(57948,119830,-19365)continue end u_=Pk[692]or gc(12451,94087,692)end elseif u_>59491 then return false else Ec(bH,Ys);u_=Pk[26924]or gc(43827,88984,26924)end elseif u_>=42987 then if u_<=42987 then Or=Ec(Ld,Ys,tl)return Or==true else if not qv then u_=Pk[25165]or gc(35429,119711,25165)continue end u_=Pk[4789]or gc(57950,117916,4789)end elseif u_>13454 then if not(ul and(ul)(Ys)and bH)then u_=Pk[-27861]or gc(46648,97423,-27861)continue else u_=Pk[15777]or gc(52193,74941,15777)continue end u_=Pk[6864]or gc(51109,35882,6864)else return true end until u_==36333 end;Zy[jy(',\3uk*f\20\3x\96\nw','\96l\20\15k\19')]=function(ol)local Jf,Rx,Bs,UA;Bs,Rx={},function(Wa,Kh,bm)Bs[Kh]=Yl(bm,45523)-Yl(Wa,33815)return Bs[Kh]end;Jf=Bs[20164]or Rx(12839,20164,129537)repeat if Jf<=30679 then if Jf<=26198 then return UA else return nil end else UA=ol[jy('\212\248\128\132\146\231\242\152\170\134\247','\147\157\244\197\231')](ol)if UA and ol[jy('\222n\132\222\155\253o\131\211\191','\146\1\229\186\216')](ol,UA)then Jf=Bs[12071]or Rx(52990,12071,236)continue end Jf=30679 end until Jf==56788 end;Zy[jy('u;U!','<U')]=function(nB)local hg,Rg,ue;Rg,ue=function(Fy,wo,Hh)ue[Hh]=Yl(wo,56229)-Yl(Fy,48433)return ue[Hh]end,{};hg=ue[-13683]or Rg(62336,651,-13683)repeat if hg<21426 then hg=ue[9811]or Rg(50052,20401,9811)continue elseif hg>21426 then if not(nB[jy(')\232O\221\156\251\130\23\237u\199\186\249\132\2','v\137:\169\243\151\237')])then hg=ue[-29806]or Rg(52778,31772,-29806)continue else hg=ue[27298]or Rg(41869,43467,27298)continue end hg=13470 else nB[jy('\209!\247l(e\233!\250g\bt','\157N\150\bi\16')](nB);hg=ue[6245]or Rg(47123,57957,6245)end until hg==5471 end;Zy[jy('\236C \220T<\209','\168&S')]=function(vn)local kG,lx,qu,Qa,mD,zD,er,Hn,Qx,HC,ac,xl;kG,xl=function(gf,ce,zt)xl[gf]=Yl(zt,52187)-Yl(ce,47408)return xl[gf]end,{};lx=xl[19216]or kG(19216,20915,100954)while lx~=17190 do if lx>41035 then if lx>58632 then if lx<64574 then Qx,Qa=qu(Hn,HC);HC=Qx if HC==nil then lx=xl[13247]or kG(13247,48899,8416)else lx=xl[7801]or kG(7801,18026,126656)end elseif lx>64574 then im={};Zs={};dw={};vn[jy('\26)$-!','ED')][jy('\252.\a\204\57\27\193','\184Kt')](vn[jy('\26)$-!','ED')])if vn[jy('\146\130\5_\191\143\30D','\205\238l=')]and not vn[jy('fC#\155KN8\128','9/J\249')][jy('\2\231\200\6}/\236\212\16m',']\131\173u\t')]then lx=xl[-28268]or kG(-28268,39826,11500)continue end lx=xl[-9343]or kG(-9343,64728,47415)else zD=Ia(qu)if zD~=nil and zD[jy(':\192\232\17\250\243','e\159\129')]~=nil then lx=xl[-13715]or kG(-13715,816,99182)continue elseif not(FB(qu)==jy('\21\130\3\143\4','a\227'))then lx=xl[25325]or kG(25325,48369,12890)continue else lx=xl[-25953]or kG(-25953,18924,87024)continue end lx=xl[19086]or kG(19086,33586,124441)end elseif lx<50325 then if lx>42831 then return else qu,Hn,HC=Jx(qu);lx=xl[31815]or kG(31815,43655,117932)end elseif lx<51760 then zD=VD(vn[jy("i\'\177\254D*\170\229",'6K\216\156')][jy('\173\247\170\152\150\239\180\133','\242\128\195\246')],vn)if zD then lx=xl[-1995]or kG(-1995,18227,120237)continue end lx=xl[23192]or kG(23192,6130,4125)elseif lx<=51760 then vn[jy('\143)x\n\15\162\"d\28\31','\208M\29y{')]=true;ac=vn[jy('3\143\r\153\31','l\251')];vn[jy('j\152T\142F','5\236')]={};qu,Hn,HC=ac if not(FB(qu)~=jy('}\146)\215o\142(\218','\27\231G\180'))then lx=xl[-10084]or kG(-10084,26360,71763)continue else lx=xl[-30546]or kG(-30546,7944,92589)continue end lx=xl[27009]or kG(27009,65211,127120)else if not(vn[jy('\180,\207\192\228\152\188\160=\217\228\236\154\183','\235X\160\167\131\244\217')])then lx=xl[-19112]or kG(-19112,37312,126572)continue else lx=xl[-3452]or kG(-3452,51927,4830)continue end lx=xl[-29313]or kG(-29313,41985,119331)end elseif lx<22782 then if lx>9665 then lx=xl[29878]or kG(29878,52611,31746)continue elseif lx<=8307 then if lx<=5736 then ms(jy('c$o\193<\143\146$r+\228d\241\148s\20_\173\49\132\188gi*\237f\254\133\2','8q&\141U\237\207\4\6D\131\3\157\241'),qu);lx=xl[-13793]or kG(-13793,61234,15766)else Wg(vn[jy('\132Z\96\204\169W{\215','\219\54\t\174')][jy('\148\137\"\180\175\145<\169','\203\254K\218')],zD);lx=xl[12020]or kG(12020,29579,15460)end else mD,er=Ec(Qa[jy('\139S\154\187D\134\182','\207\54\233')],Qa)if not(not mD)then lx=xl[-10899]or kG(-10899,1516,97095)continue else lx=xl[-8006]or kG(-8006,49188,116338)continue end lx=xl[2061]or kG(2061,16247,111068)end elseif lx<36533 then if lx<=22782 then if vn[jy('\200\30(-B\229\21\52;R','\151zM^6')]then lx=xl[-16850]or kG(-16850,61288,116829)continue end lx=51760 else zD,qu=Ec(vn[jy('\222\239h\188\\\134o\202\254~\152T\132d','\129\155\a\219;\234\n')])if not(not zD)then lx=xl[-31336]or kG(-31336,51308,121468)continue else lx=xl[-1957]or kG(-1957,29230,10845)continue end lx=41035 end elseif lx<=38037 then if lx>36533 then ms(jy('\18\193\153\180\56\24\204e7\177+\180\180\157\"\14\227*:\234','I\148\208\248Qz\145EC\208'),er);lx=xl[-1361]or kG(-1361,22620,73463)else qu,Hn,HC=zD[jy('\252B\198\215x\221','\163\29\175')](qu);lx=xl[15549]or kG(15549,49616,108411)end else lx,vn[jy('\251\237\198G\228R\213\239\252\208c\236P\222','\164\153\169 \131>\176')]=xl[-31668]or kG(-31668,8850,86962),nil end end end return Zy end end end;Oq[jy("\160\48\217@\151\'\232@\129",'\227B\188!')]=function(Xo,v)local Ej,N,vr,Wq;Wq,N={},function(tF,ec,zE)Wq[zE]=Yl(ec,25885)-Yl(tF,54484)return Wq[zE]end;Ej=Wq[22813]or N(33776,34296,22813)while Ej~=20441 do if Ej>=38487 then if Ej>39404 then Ej,v=Wq[-29243]or N(60788,43754,-29243),{[jy('\244\254\215\250','\186\159')]=v}elseif Ej<=38487 then vr=Xi[jy('xsa','\22')](Xo,v or{});Hq(Xo[jy('\168\5\150\19\132','\247q')],vr)if not vr[jy('pi\15Ke\3A','/\1f')]and not Xo[jy('\236*\156\214H\197.\171\195C','\179K\255\162!')]then Ej=Wq[-10120]or N(41105,92972,-10120)continue end Ej=Wq[-15382]or N(23040,55555,-15382)else Xo[jy('\166\184A\\\150\169yX\151','\245\221-9')](Xo,vr);Ej=Wq[32657]or N(46655,62760,32657)end elseif Ej>11594 then if Bi(v)==jy('$^\159>D\138','W*\237')then Ej=Wq[20406]or N(21712,68399,20406)continue end Ej=Wq[-21867]or N(9197,125069,-21867)else return vr end end end;Oq[jy('F\175\252bv\190\196fw','\21\202\144\a')]=function(hf,qD)local ge,Ug,fp;fp,Ug={},function(vg,bF,su)fp[su]=Yl(vg,30460)-Yl(bF,64455)return fp[su]end;ge=fp[-5079]or Ug(40635,51080,-5079)while ge~=27610 do if ge>27920 then if ge>44024 then return else if hf[jy("v\216\164\135,_\220\147\146\'",')\185\199\243E')]==qD then ge=fp[-21552]or Ug(74656,44116,-21552)continue end ge=fp[-9799]or Ug(53136,24893,-9799)end elseif ge<25062 then if hf[jy('\127\218 {\235V\222\23n\224',' \187C\15\130')]then ge=fp[17186]or Ug(40080,34459,17186)continue end ge=25062 elseif ge>25062 then hf[jy('>\171\247\161\250\23\175\192\180\241','a\202\148\213\147')][jy('\173\255\197\158\25\128\236\197\137\b','\233\154\164\253m')](hf[jy('>\171\247\161\250\23\175\192\180\241','a\202\148\213\147')]);ge=fp[-32236]or Ug(63151,58794,-32236)else hf[jy('\179\222\159\251\129\154\218\168\238\138','\236\191\252\143\232')]=qD;qD[jy('\2\173\22N5\175\22B',"C\206b\'")](qD);ge=fp[-16646]or Ug(45195,41306,-16646)continue end end end;Oq[jy('D\22yw\21{','\16y\30')]=function(qF,JE)local jw,rG,sb;rG,sb={},function(eg,rc,xn)rG[rc]=Yl(xn,53077)-Yl(eg,31294)return rG[rc]end;jw=rG[10740]or sb(19192,10740,4689)repeat if jw<=34920 then if jw<=17974 then JE,jw=not qF[jy('\154p\164t\171','\197\29')][jy('\129\172\"\190\167=\178','\215\197Q')],rG[-16236]or sb(54024,-16236,130763)else jw,qF[jy('\156}\162y\173','\195\16')][jy('\29r\206\"y\209.','K\27\189')]=rG[-1870]or sb(34869,-1870,107055),JE continue end else if JE==nil then jw=rG[-26379]or sb(52794,-26379,13679)continue end jw=rG[9144]or sb(55084,9144,129583)end until jw==31599 end;Oq[jy('Y\170e\181','\n\194')]=function(cm)cm[jy('\"s\239\17p\237','v\28\136')](cm,true)end;Oq[jy('6\166\26\170','~\207')]=function(cg)cg[jy('\220\162\53\239\161\55','\136\205R')](cg,false)end;Oq[jy('f\28\233$\\\6\221!J','/o\191M')]=function(Uu)return Uu[jy('l+R/]','3F')]and Uu[jy('\145\247\175\243\160','\206\154')][jy('4\142\196\v\133\219\a','b\231\183')]==true end;Oq[jy('+I@\172&\208\31@Q\179,\206','x,4\248I\183')]=function(FE,qy)local rj,xj,y;y,rj={},function(wa,wi,di)y[wa]=Yl(wi,31340)-Yl(di,3487)return y[wa]end;xj=y[27130]or rj(27130,54421,21287)repeat if xj>20545 then if xj<=49056 then FE[jy('2\240\236\136\205.l&\225\250\172\197,g','m\132\131\239\170B\t')]();FE[jy('\31\17}\141A:X\v\0k\169I8S','@e\18\234&V=')],xj=nil,y[19269]or rj(19269,43837,51474)else FE[jy(' \163\129\237\48@94\178\151\201\56B2','\127\215\238\138W,\\')],xj=jD[jy('\23\128\199=\137\228\54','X\238\133')](function(Mj,Of)local Jo,NG,vq;vq,NG={},function(XG,Bt,Ry)vq[Bt]=Yl(Ry,23982)-Yl(XG,56852)return vq[Bt]end;Jo=vq[-12464]or NG(14885,-12464,86079)repeat if Jo>=56118 then if Jo>=62216 then if Jo<=62216 then FE[jy('\155\16\191\168\19\189','\207\127\216')](FE);Jo=vq[16381]or NG(31565,16381,115944)else Jo=vq[29345]or NG(27598,29345,122380)continue end else return end elseif Jo<=10592 then if Of then Jo=vq[-4122]or NG(65506,-4122,41090)continue end Jo=32118 else if Mj[jy('\225\129\141\31\250#\196\135\156\57\202=\209','\180\242\232m\179M')]==dx[jy('\161R\145Q','\228<')][jy('~.\3\5J\217[(\18#z\199N','+]fw\3\183')][jy('\26\161\188\198>\165\183\192','Q\196\197\164')]and Mj[jy('\25*\161\17 \188\55','RO\216')]==qy then Jo=vq[-3209]or NG(27834,-3209,129048)continue end Jo=vq[764]or NG(60692,764,97091)end until Jo==52680 end),y[3275]or rj(3275,33793,50337)end elseif xj>=13615 then if xj<=13615 then xj=y[-11794]or rj(-11794,50769,48820)continue else if FE[jy('=\187\178\253jfX)\170\164\217bdS','b\207\221\154\r\n=')]then xj=y[-4764]or rj(-4764,91390,21357)continue end xj=3268 end else FE[jy('+\155j\236\215\24\138N\238\201','t\239\5\139\176')]=qy if qy then xj=y[8690]or rj(8690,84552,22904)continue end xj=13615 end until xj==2322 end;Oq[jy('\15E\167zi\186/L\182ec\164','H \211.\6\221')]=function(Ap)return Ap[jy('\190\237{<4\141\252_>*','\225\153\20[S')]end;Oq[jy('*^\5\230\56LR\244>\30H2\212\49TD\252\51\18','y;q\181]8&\157P')]=function(Ib,km)Ib[jy('L\136\15\143s\237\188\t\\\140\23\151x\226\184\17','\31\237{\251\26\131\219z')]=km end;Oq[jy('E\196Ab\205L','\v\171\53')]=function(Gx,PF)Gx[jy('\216V-\243Q$\254','\135\56B')][jy('\20S7N','D&')](PF)end;mj[jy('\145\154\136','\255')]=function()local j;j=_p({},mj);j[jy('D\170\131\206\127\178\157\211','\27\221\234\160')]={};j[jy('\182\150\136\146\141','\233\251')]=ga();j[jy(':\232\137\5\161\23\227\149\19\177','e\140\236v\213')]=false return j end;mj[jy('\210\139\131\246\128\f\198\144\136\243\155\30','\145\249\230\151\244i')]=function(uo,Wc)local Jd,dc,vC,kp;vC,kp={},function(ae,_q,pm)vC[pm]=Yl(ae,55132)-Yl(_q,65457)return vC[pm]end;dc=vC[24101]or kp(1190,33374,24101)repeat if dc<47613 then if uo[jy('\0\138t\135\245-\129h\145\229','_\238\17\244\129')]then dc=vC[17426]or kp(3194,56984,17426)continue end dc=56199 elseif dc<=47613 then dx[jy('\145h\134u\134','\244\26')](jy('\"afe\167\212\177.\226\248\235aAw\195;\240\173\204\190\203Gjf\23P@^\238\217\130.\229\252\246{\\l\154=\230\232\193\163\204\21|}\0','y4/)\206\182\236\14\129\153\133\15.\3\227X\130\200\173\202\174g\29\15'),2);dc=vC[-6127]or kp(127790,46938,-6127)else Jd=Oq[jy('\235\224\242','\133')](uo,Wc or{});Hq(uo[jy('\144+\158\133\171\51\128\152','\207\\\247\235')],Jd)return Jd end until dc==7605 end;mj[jy('\136\233\168\243','\193\135')]=function(ty)local Al,Yh,Y,yC,O,aA,Jl,Ev,op,Tj,WD;yC,WD={},function(xq,Jm,Dm)yC[Jm]=Yl(Dm,59903)-Yl(xq,51638)return yC[Jm]end;O=yC[-20050]or WD(58337,-20050,129305)repeat if O<=38322 then if O<=19726 then if O>=5727 then if O>5727 then Ev,Tj=Jl(op,Al);Al=Ev if Al==nil then O=yC[6202]or WD(21261,6202,102125)else O=5727 end else Yh,Y=Ec(Tj[jy('\137\238\169\244','\192\128')],Tj)if not(not Yh)then O=yC[-19671]or WD(19450,-19671,9893)continue else O=yC[-6266]or WD(21868,-6266,17054)continue end O=yC[12191]or WD(28489,12191,7666)end else ms(jy('\206\251\4\241\184\6\22\127\127a\251\202\"\202\241\r%6|2','\149\174M\189\209dK_\b\b'),Y);O=yC[4224]or WD(1404,4224,127015)end elseif O<=36138 then Jl,op,Al=aA[jy('\137\185\165\162\131\190','\214\230\204')](Jl);O=yC[11938]or WD(27831,11938,7152)else aA=Ia(Jl)if aA~=nil and aA[jy('\29\221M6\231V','B\130$')]~=nil then O=yC[-25320]or WD(49997,-25320,29146)continue elseif FB(Jl)==jy('\143\173\153\160\158','\251\204')then O=yC[-9386]or WD(49068,-9386,113028)continue end O=yC[2217]or WD(33604,2217,29183)end elseif O<=55905 then if O<=52311 then O=yC[12090]or WD(50579,12090,4795)continue else Jl,op,Al=Jx(Jl);O=yC[-30704]or WD(29211,-30704,123204)end else Jl,op,Al=ty[jy('j\135\137\234Q\159\151\247','5\240\224\132')]if not(FB(Jl)~=jy('\193\52\14\141\211(\15\128','\167A\96\238'))then O=yC[12969]or WD(44980,12969,23279)continue else O=yC[15913]or WD(22491,15913,122336)continue end O=yC[24349]or WD(56777,24349,34930)end until O==61215 end;mj[jy("\152\48\247\168\'\235\165",'\220U\132')]=function(rC)local mA,zy,pi,fz,eA,ef,Up,BD,P,sg,_f,ci;Up,ci={},function(fl,Aw,CD)Up[Aw]=Yl(fl,4268)-Yl(CD,4449)return Up[Aw]end;BD=Up[1522]or ci(49404,1522,37532)repeat if BD<=35421 then if BD<32328 then if BD<=10311 then if BD>2465 then if FB(P)==jy('\136k\158f\153','\252\n')then BD=Up[7912]or ci(89023,7912,53719)continue end BD=Up[4080]or ci(88663,4080,39441)else P,sg,ef=mA[jy('\127\161\16T\155\v',' \254y')](P);BD=Up[-14127]or ci(111763,-14127,62933)end else if not(rC[jy('F\220\236\187\129k\215\240\173\145','\25\184\137\200\245')])then BD=Up[1179]or ci(102128,1179,47722)continue else BD=Up[-11351]or ci(95542,-11351,63027)continue end BD=62289 end elseif BD<=33970 then if BD<=32328 then return else mA=Ia(P)if not(mA~=nil and mA[jy('\207\218/\228\224\52','\144\133F')]~=nil)then BD=Up[21688]or ci(35911,21688,26053)continue else BD=Up[20854]or ci(55665,20854,53597)continue end BD=Up[15045]or ci(112179,15045,63093)end else P,sg,ef=Jx(P);BD=Up[28230]or ci(52981,28230,4015)end elseif BD<=44182 then if BD<42837 then rC[jy('\195\135\253\131\248','\156\234')][jy('\221\2\219\237\21\199\224','\153g\168')](rC[jy('\195\135\253\131\248','\156\234')]);BD=Up[-8842]or ci(90180,-8842,51582)continue elseif BD>42837 then eA,pi=Ec(_f[jy(',#\200\28\52\212\17','hF\187')],_f)if not eA then BD=Up[-11817]or ci(91770,-11817,57056)continue end BD=Up[8082]or ci(65390,8082,8534)else ms(jy('\208[>\4l\221gIB\219\25\239a\0ha\218I\29G\221\14\177','\139\14wH\5\191:i5\178w'),pi);BD=Up[-23296]or ci(90130,-23296,41042)end elseif BD<=49035 then zy,_f=P(sg,ef);ef=zy if ef==nil then BD=40732 else BD=Up[-29761]or ci(104277,-29761,51714)end else rC[jy('\176]X\30\26\157VD\b\n','\239\57=mn')]=true;fz=rC[jy('\156\127r\16\167gl\r','\195\b\27~')];rC[jy('\5:&\140>\"\56\145','ZMO\226')]={};P,sg,ef=fz if FB(P)~=jy('\n\255\15\1\24\227\14\f','l\138ab')then BD=Up[-9335]or ci(59604,-9335,25255)continue end BD=Up[29718]or ci(70259,29718,21045)end until BD==39113 end;ku=_p({[jy(' +9','N')]=mj[jy('\199\204\222','\169')],[jy('\216\206\233\203\233','\140\166')]=Je,[jy('\19\25\226\54\21\255+','E|\144')]=jy('-\f)\f)','\25\"')},{[jy('W\197C\96*i\238Og2m','\b\154.\5^')]=jy('\\\232\241[\226\246','0\135\146'),[jy('\152m\28D\180\174\\\22D\187','\199\50r!\195')]=function()dx[jy('\26~\rc\r','\127\f')](jy('\25\203c\149\fPq\24\29\239\203q\14\252\247Zj#\252F\188E[_\24\n\242\218zQ\231\234\22g','B\158*\217e2,8x\151\187\30|\136\132z\30'),2)end})if not(tk)then Kx=XF[12026]or Wn(12026,86800,2977)continue else Kx=XF[672]or Wn(672,64626,15109)continue end Kx=XF[-12521]or Wn(-12521,81373,60642)end else return ku end until Kx==11079
+
+
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local HttpService = game:GetService("HttpService")
+local CoreGui = game:GetService("CoreGui")
+
+local LocalPlayer = Players.LocalPlayer
+
+local DEBUG = false
+
+local _rawget = rawget
+local _type = type
+local _typeof = typeof
+local _pcall = pcall
+local _tostring = tostring
+local _setmetatable = setmetatable
+
+local Color3_new = Color3.new
+local Color3_fromRGB = Color3.fromRGB
+local Color3_fromHSV = Color3.fromHSV
+local Color3_toHSV = Color3.toHSV
+local UDim_new = UDim.new
+local UDim2_new = UDim2.new
+local UDim2_fromOff = UDim2.fromOffset
+local UDim2_fromScale = UDim2.fromScale
+local Vector2_new = Vector2.new
+local math_clamp = math.clamp
+local math_floor = math.floor
+local math_max = math.max
+local math_min = math.min
+local math_huge = math.huge
+local table_insert = table.insert
+local table_remove = table.remove
+local table_find = table.find
+local table_concat = table.concat
+local table_create = table.create
+local table_clone = (table).clone
+local table_freeze = (table).freeze
+local string_char = string.char
+local string_format = string.format
+local task_delay = task.delay
+local task_defer = task.defer
+local Instance_new = Instance.new
+
+local function DBG_warn(...)
+	if not DEBUG then return end
+	warn(...)
+end
+
+local writefile_fn
+local readfile_fn
+local isfile_fn
+local isfolder_fn
+local makefolder_fn
+local listfiles_fn
+local delfile_fn
+local gethui_fn
+local protect_resolved
+
+do
+	local _getfenv = getfenv
+	local _env = _G
+	_pcall(function() _env = _getfenv(0) end)
+	if _env == _G then
+		_pcall(function() _env = _getfenv(1) end)
+	end
+
+	local function fetch(name)
+		local v
+		_pcall(function() v = _rawget(_env, name) end)
+		if _type(v) == "function" then return v end
+		v = nil
+		_pcall(function() v = _rawget(_G, name) end)
+		if _type(v) == "function" then return v end
+		v = nil
+		_pcall(function() v = (_env)[name] end)
+		if _type(v) == "function" then return v end
+		v = nil
+		_pcall(function() v = (_G)[name] end)
+		if _type(v) == "function" then return v end
+		return nil
+	end
+	local function fetchTable(name)
+		local v
+		_pcall(function() v = _rawget(_env, name) end)
+		if _type(v) == "table" then return v end
+		v = nil
+		_pcall(function() v = _rawget(_G, name) end)
+		if _type(v) == "table" then return v end
+		v = nil
+		_pcall(function() v = (_env)[name] end)
+		if _type(v) == "table" then return v end
+		v = nil
+		_pcall(function() v = (_G)[name] end)
+		if _type(v) == "table" then return v end
+		return nil
+	end
+	local function fetchField(tbl, field)
+		if _type(tbl) ~= "table" then return nil end
+		local v
+		_pcall(function() v = _rawget(tbl, field) end)
+		if _type(v) == "function" then return v end
+		v = nil
+		_pcall(function() v = (tbl)[field] end)
+		if _type(v) == "function" then return v end
+		return nil
+	end
+
+	local N_writefile = string_char(119,114,105,116,101,102,105,108,101)
+	local N_readfile = string_char(114,101,97,100,102,105,108,101)
+	local N_isfile = string_char(105,115,102,105,108,101)
+	local N_isfolder = string_char(105,115,102,111,108,100,101,114)
+	local N_makefolder = string_char(109,97,107,101,102,111,108,100,101,114)
+	local N_listfiles = string_char(108,105,115,116,102,105,108,101,115)
+	local N_delfile = string_char(100,101,108,102,105,108,101)
+	local N_gethui = string_char(103,101,116,104,117,105)
+	local N_protectgui1 = string_char(112,114,111,116,101,99,116,95,103,117,105)
+	local N_protectgui2 = string_char(112,114,111,116,101,99,116,103,117,105)
+	local N_syn = string_char(115,121,110)
+	local N_fluxus = string_char(102,108,117,120,117,115)
+	local N_fstbl = string_char(102,105,108,101,115,121,115,116,101,109)
+
+	writefile_fn = fetch(N_writefile)
+	readfile_fn = fetch(N_readfile)
+	isfile_fn = fetch(N_isfile)
+	isfolder_fn = fetch(N_isfolder)
+	makefolder_fn = fetch(N_makefolder)
+	listfiles_fn = fetch(N_listfiles)
+	delfile_fn = fetch(N_delfile)
+	gethui_fn = fetch(N_gethui)
+	local fsTbl = fetchTable(N_fstbl)
+	if fsTbl then
+		if not writefile_fn then writefile_fn = fetchField(fsTbl, N_writefile) end
+		if not readfile_fn then readfile_fn = fetchField(fsTbl, N_readfile) end
+		if not isfile_fn then isfile_fn = fetchField(fsTbl, N_isfile) end
+		if not isfolder_fn then isfolder_fn = fetchField(fsTbl, N_isfolder) end
+		if not makefolder_fn then makefolder_fn = fetchField(fsTbl, N_makefolder) end
+		if not listfiles_fn then listfiles_fn = fetchField(fsTbl, N_listfiles) end
+		if not delfile_fn then delfile_fn = fetchField(fsTbl, N_delfile) end
+	end
+
+	local protectCandidates = {}
+	local pgGlobal = fetch(N_protectgui1) or fetch(N_protectgui2)
+	if pgGlobal then table_insert(protectCandidates, pgGlobal) end
+	local synTbl = fetchTable(N_syn)
+	if synTbl then
+		local f = fetchField(synTbl, N_protectgui1)
+		if f then table_insert(protectCandidates, f) end
+	end
+	local fluxTbl = fetchTable(N_fluxus)
+	if fluxTbl then
+		local f = fetchField(fluxTbl, N_protectgui1)
+		if f then table_insert(protectCandidates, f) end
+	end
+
+	if #protectCandidates > 0 then
+		protect_resolved = function(gui)
+			for i = 1, #protectCandidates do
+				local ok = _pcall(protectCandidates[i], gui)
+				if ok then
+					if not gui.Parent then return false end
+					local visible = false
+					local probed = false
+					_pcall(function()
+						probed = true
+						for _, c in CoreGui:GetChildren() do
+							if c == gui then visible = true; break end
+						end
+					end)
+					if probed and not visible then return true end
+				end
+			end
+			return false
+		end
+	end
+end
+
+local hasFS = writefile_fn ~= nil and readfile_fn ~= nil
+
+local function getGuiParent()
+	if gethui_fn then
+		local ok, hui = _pcall(gethui_fn)
+		if ok and _typeof(hui) == "Instance" then return hui, true end
+	end
+	if RunService:IsRunning() and not RunService:IsStudio() then
+		local pg = LocalPlayer and LocalPlayer:FindFirstChildOfClass("PlayerGui")
+		if pg then return pg, false end
+	end
+	return CoreGui, false
+end
+
+local function protectGui(gui)
+	if protect_resolved then return protect_resolved(gui) end
+	return false
+end
+
+local NAME_POOL = {
+	"", "", "",
+	"Frame", "Container", "Manager", "Panel", "View",
+	"GuiContainer", "ContentProvider", "RenderTarget",
+	"InputContainer", "ScrollHost", "TextureService",
+	"ContentManager", "ViewModel", "OverlayHost",
+}
+local _nameRng = Random.new()
+local function pickRandomGuiName()
+	return NAME_POOL[_nameRng:NextInteger(1, #NAME_POOL)]
+end
+
+
+
+local Maid = {}
+Maid.__index = Maid
+Maid.__metatable = "locked"
+
+local function disposeTask(t)
+	if _type(t) == "function" then
+		local ok, err = _pcall(t)
+		if not ok then DBG_warn("[Shenanigans] Maid fn:", err) end
+	elseif _typeof(t) == "RBXScriptConnection" then
+		(t):Disconnect()
+	elseif _typeof(t) == "Instance" then
+		(t):Destroy()
+	elseif _type(t) == "table" then
+		if t.Destroy then
+			local ok, err = _pcall(t.Destroy, t)
+			if not ok then DBG_warn("[Shenanigans] Maid Destroy:", err) end
+		elseif t.Disconnect then
+			local ok, err = _pcall(t.Disconnect, t)
+			if not ok then DBG_warn("[Shenanigans] Maid Disconnect:", err) end
+		end
+	end
+end
+
+local function newMaid()
+	return _setmetatable({ _tasks = {}, _destroyed = false }, Maid)
+end
+
+function Maid:Add(task)
+	if self._destroyed then
+		disposeTask(task)
+		return task
+	end
+	table_insert(self._tasks, task)
+	return task
+end
+
+function Maid:Remove(task)
+	local idx = table_find(self._tasks, task)
+	if idx then table_remove(self._tasks, idx) end
+end
+
+function Maid:Clean()
+	local tasks = self._tasks
+	self._tasks = {}
+	for i = #tasks, 1, -1 do
+		disposeTask(tasks[i])
+	end
+end
+
+function Maid:Destroy()
+	if self._destroyed then return end
+	self._destroyed = true
+	self:Clean()
+end
+
+local function make(class, props)
+	local inst = Instance_new(class)
+	local parent = props.Parent
+	props.Parent = nil
+	for k, v in props do
+		inst[k] = v
+	end
+	if parent then inst.Parent = parent end
+	return inst
+end
+
+local function corner(radius, parent)
+	local c = Instance_new("UICorner")
+	c.CornerRadius = UDim_new(0, radius)
+	c.Parent = parent
+	return c
+end
+
+local function stroke(color, thickness, parent)
+	local s = Instance_new("UIStroke")
+	s.Color = color
+	s.Thickness = thickness or 1
+	s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	s.Parent = parent
+	return s
+end
+
+local function padding(t, b, l, r, parent)
+	local p = Instance_new("UIPadding")
+	p.PaddingTop = UDim_new(0, t)
+	p.PaddingBottom = UDim_new(0, b)
+	p.PaddingLeft = UDim_new(0, l)
+	p.PaddingRight = UDim_new(0, r)
+	p.Parent = parent
+	return p
+end
+
+local function safeCall(fn, ...)
+	if _type(fn) ~= "function" then return end
+	local args = table.pack(...)
+	local res = table.pack(_pcall(fn, table.unpack(args, 1, args.n)))
+	if not res[1] then
+		DBG_warn("[Shenanigans] user callback error:", res[2])
+		return
+	end
+	return table.unpack(res, 2, res.n)
+end
+
+local function isFiniteNumber(x)
+	return _type(x) == "number" and x == x and x ~= math_huge and x ~= -math_huge
+end
+
+local function rbxAsset(id)
+	return "rbxassetid://" .. _tostring(id)
+end
+
+local function rbxThumb(userId)
+	return "rbxthumb://type=AvatarHeadShot&id=" .. _tostring(userId) .. "&w=48&h=48"
+end
+
+
+local Theme = {
+	Background = Color3_fromRGB(18, 18, 20),
+	Surface = Color3_fromRGB(24, 24, 27),
+	SurfaceAlt = Color3_fromRGB(30, 30, 34),
+	SurfaceHover = Color3_fromRGB(38, 38, 42),
+	Border = Color3_fromRGB(45, 45, 50),
+	Text = Color3_fromRGB(230, 230, 232),
+	SubText = Color3_fromRGB(150, 150, 155),
+	Muted = Color3_fromRGB(95, 95, 100),
+	Accent = Color3_fromRGB(83, 145, 255),
+	AccentDim = Color3_fromRGB(58, 102, 179),
+	Danger = Color3_fromRGB(220, 90, 90),
+	Success = Color3_fromRGB(120, 200, 130),
+}
+if table_freeze then _pcall(table_freeze, Theme) end
+
+local function isValidConfigName(n)
+	return _type(n) == "string" and #n > 0 and #n <= 64 and not (n):match("[^%w_%-]")
+end
+
+
+local InputRouter
+do
+
+	local SLOT_WARN = 256
+	local SLOT_HARD_CAP = 4096
+
+	local function newChannel()
+		return { list = {}, ver = 0, dispatchedVer = -1, snap = nil, warned = false }
+	end
+
+	local began = newChannel()
+	local changed = newChannel()
+	local ended = newChannel()
+
+	local function dispatch(ch, label, input, gp)
+		local list = ch.list
+		local n = #list
+		if n == 0 then
+			ch.snap = nil
+			ch.dispatchedVer = ch.ver
+			return
+		end
+		local snap = ch.snap
+		if snap == nil or ch.dispatchedVer ~= ch.ver then
+			snap = table_create(n)
+			for i = 1, n do snap[i] = list[i] end
+			ch.snap = snap
+			ch.dispatchedVer = ch.ver
+		end
+		local sn = #snap
+		for i = 1, sn do
+			local s = snap[i]
+			if s then
+				local ok, err = _pcall(s.fn, input, gp)
+				if not ok then DBG_warn("[Shenanigans] InputRouter cb:", err) end
+			end
+		end
+	end
+
+	local conn1 = UserInputService.InputBegan:Connect(function(input, gp)
+		dispatch(began, "began", input, gp)
+	end)
+	local conn2 = UserInputService.InputChanged:Connect(function(input, gp)
+		dispatch(changed, "changed", input, gp)
+	end)
+	local conn3 = UserInputService.InputEnded:Connect(function(input, gp)
+		dispatch(ended, "ended", input, gp)
+	end)
+
+	local function connect(ch, label, fn)
+		if #ch.list >= SLOT_HARD_CAP then
+			DBG_warn("[Shenanigans] InputRouter '" .. label .. "' hit hard cap; refusing")
+			return function() end
+		end
+		local slot = { fn = fn }
+		table_insert(ch.list, slot)
+		ch.ver += 1
+		if #ch.list > SLOT_WARN and not ch.warned then
+			ch.warned = true
+			DBG_warn(string_format("[Shenanigans] InputRouter '%s' has %d slots; potential leak", label, #ch.list))
+		end
+		return function()
+			local idx = table_find(ch.list, slot)
+			if idx then
+				table_remove(ch.list, idx)
+				ch.ver += 1
+			end
+		end
+	end
+
+	InputRouter = {
+		OnBegan = function(fn) return connect(began, "began", fn) end,
+		OnChanged = function(fn) return connect(changed, "changed", fn) end,
+		OnEnded = function(fn) return connect(ended, "ended", fn) end,
+		_destroy = function()
+			conn1:Disconnect(); conn2:Disconnect(); conn3:Disconnect()
+			began.list = {}; began.snap = nil
+			changed.list = {}; changed.snap = nil
+			ended.list = {}; ended.snap = nil
+		end,
+	}
+end
+
+local function makeDraggable(target, handle, maid)
+	local dragMaid = nil
+	local startPos = nil
+	local dragStart = nil
+
+	local function endDrag()
+		if dragMaid then
+			dragMaid:Destroy()
+			dragMaid = nil
+		end
+	end
+
+	maid:Add(handle.InputBegan:Connect(function(input)
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
+		if dragMaid then return end
+		dragStart = input.Position
+		startPos = target.Position
+		local dm = newMaid()
+		dragMaid = dm
+		dm:Add(InputRouter.OnChanged(function(input2)
+			if input2.UserInputType ~= Enum.UserInputType.MouseMovement and input2.UserInputType ~= Enum.UserInputType.Touch then return end
+			local ds = dragStart
+			local sp = startPos
+			local d = input2.Position - ds
+			target.Position = UDim2_new(sp.X.Scale, sp.X.Offset + d.X, sp.Y.Scale, sp.Y.Offset + d.Y)
+		end))
+		dm:Add(InputRouter.OnEnded(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseButton1 or input2.UserInputType == Enum.UserInputType.Touch then
+				endDrag()
+			end
+		end))
+	end))
+	maid:Add(function() endDrag() end)
+end
+
+
+local function createTooltipSystem(parent)
+	local tipFrame = make("Frame", {
+		Parent = parent,
+		BackgroundColor3 = Theme.Surface,
+		BorderSizePixel = 0,
+		Visible = false,
+		Size = UDim2_fromOff(0, 0),
+		AutomaticSize = Enum.AutomaticSize.XY,
+		ZIndex = 999,
+	})
+	corner(4, tipFrame)
+	stroke(Theme.Border, 1, tipFrame)
+	padding(4, 4, 8, 8, tipFrame)
+	local tipLabel = make("TextLabel", {
+		Parent = tipFrame,
+		BackgroundTransparency = 1,
+		Size = UDim2_fromOff(0, 0),
+		AutomaticSize = Enum.AutomaticSize.XY,
+		Font = Enum.Font.Gotham, TextSize = 11, TextColor3 = Theme.Text,
+		Text = "", ZIndex = 1000,
+	})
+
+	local current = nil
+	local moveUnbind = InputRouter.OnChanged(function(input)
+		if not tipFrame.Visible then return end
+		if input.UserInputType ~= Enum.UserInputType.MouseMovement then return end
+		tipFrame.Position = UDim2_fromOff(input.Position.X + 14, input.Position.Y + 18)
+	end)
+
+	local function attach(host, text, maid)
+		if not text or text == "" then return end
+		maid:Add(host.MouseEnter:Connect(function()
+			current = host
+			tipLabel.Text = text
+			tipFrame.Visible = true
+		end))
+		maid:Add(host.MouseLeave:Connect(function()
+			if current == host then
+				current = nil
+				tipFrame.Visible = false
+			end
+		end))
+	end
+
+	local destroyed = false
+	local function destroy()
+		if destroyed then return end
+		destroyed = true
+		moveUnbind()
+		if tipFrame.Parent then tipFrame:Destroy() end
+	end
+	return { Attach = attach, Destroy = destroy }
+end
+
+
+local MAX_VISIBLE_NOTIFICATIONS = 6
+
+local function createNotificationSystem(parent)
+	local container = make("Frame", {
+		Parent = parent,
+		AnchorPoint = Vector2_new(1, 1),
+		Position = UDim2_new(1, -16, 1, -16),
+		Size = UDim2_fromOff(280, 0),
+		BackgroundTransparency = 1,
+		AutomaticSize = Enum.AutomaticSize.Y,
+		ZIndex = 800,
+	})
+	make("UIListLayout", {
+		Parent = container,
+		FillDirection = Enum.FillDirection.Vertical,
+		HorizontalAlignment = Enum.HorizontalAlignment.Right,
+		VerticalAlignment = Enum.VerticalAlignment.Bottom,
+		Padding = UDim_new(0, 8),
+		SortOrder = Enum.SortOrder.LayoutOrder,
+	})
+	local cards = {}
+	local generation = 0
+	local destroyed = false
+
+	local function variantColor(variant)
+		if variant == "Success" then return Theme.Success
+		elseif variant == "Danger" then return Theme.Danger
+		elseif variant == "Warning" then return Theme.Danger
+		end
+		return Theme.AccentDim
+	end
+
+	local function push(opts)
+		if destroyed then return end
+		while #cards >= MAX_VISIBLE_NOTIFICATIONS do
+			local oldest = cards[1]
+			table_remove(cards, 1)
+			if oldest and oldest.Parent then oldest:Destroy() end
+		end
+		local duration = opts.Duration or 3
+		if not isFiniteNumber(duration) or duration <= 0 then duration = 3 end
+		local title = opts.Title or "Notification"
+		local content = opts.Content or ""
+		local card = make("Frame", {
+			Parent = container,
+			BackgroundColor3 = Theme.Surface,
+			Size = UDim2_new(1, 0, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			BorderSizePixel = 0,
+			ZIndex = 800,
+		})
+		corner(6, card)
+		local cardStroke = stroke(variantColor(opts.Variant), 1, card)
+		cardStroke.Transparency = 0.55
+		make("TextLabel", {
+			Parent = card,
+			BackgroundTransparency = 1,
+			Position = UDim2_new(0, 12, 0, 8),
+			Size = UDim2_new(1, -24, 0, 16),
+			Font = Enum.Font.GothamMedium, TextSize = 13,
+			TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+			Text = title, ZIndex = 801,
+		})
+		make("TextLabel", {
+			Parent = card,
+			BackgroundTransparency = 1,
+			Position = UDim2_new(0, 12, 0, 28),
+			Size = UDim2_new(1, -24, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Font = Enum.Font.Gotham, TextSize = 12,
+			TextColor3 = Theme.SubText, TextXAlignment = Enum.TextXAlignment.Left,
+			Text = content, TextWrapped = true, ZIndex = 801,
+		})
+		make("UIPadding", { Parent = card, PaddingBottom = UDim_new(0, 10) })
+		table_insert(cards, card)
+
+		local myGen = generation
+		task_delay(duration, function()
+			if destroyed or myGen ~= generation then return end
+			if not card.Parent then
+				local idx = table_find(cards, card)
+				if idx then table_remove(cards, idx) end
+				return
+			end
+			local idx = table_find(cards, card)
+			if idx then table_remove(cards, idx) end
+			card:Destroy()
+		end)
+	end
+
+	local function destroy()
+		if destroyed then return end
+		destroyed = true
+		generation += 1
+		for _, c in cards do
+			if c.Parent then c:Destroy() end
+		end
+		cards = {}
+		if container.Parent then container:Destroy() end
+	end
+	return { Push = push, Destroy = destroy }
+end
+
+local Components = {}
+
+local Section = {} ; Section.__index = Section ; Section.__metatable = "locked"
+local Tab = {} ; Tab.__index = Tab ; Tab.__metatable = "locked"
+local Window = {} ; Window.__index = Window ; Window.__metatable = "locked"
+local UILibrary = {} ; UILibrary.__index = UILibrary ; UILibrary.__metatable = "locked"
+local Component = {} ; Component.__index = Component ; Component.__metatable = "locked"
+
+function Component:Destroy()
+	if self._destroyed then return end
+	self._destroyed = true
+	if self._flag then
+		local w = self._section and self._section._window
+		if w and w._fs then w._fs.unregister(self._flag) end
+	end
+	if self._maid then self._maid:Destroy() end
+end
+
+function Component:SetVisible(v)
+	if self.instance then self.instance.Visible = v end
+end
+
+function Section.new(tab, opts)
+	local self = _setmetatable({}, Section)
+	self._tab = tab
+	self._window = tab._window
+	self._maid = newMaid()
+	self._visible = true
+	self._destroyed = false
+
+	local collapsible = opts.Collapsible ~= false
+	local open = opts.DefaultOpen ~= false
+	self._collapsible = collapsible
+	self._open = open
+
+	local frame = make("Frame", {
+		BackgroundColor3 = Theme.Surface,
+		Size = UDim2_new(1, 0, 0, 0),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		BorderSizePixel = 0,
+	})
+	self._frame = frame
+	frame.Parent = tab:_acquireSectionParent(self)
+	corner(6, frame)
+	local sStroke = stroke(Theme.AccentDim, 1, frame)
+	sStroke.Transparency = 0.55
+	self._maid:Add(frame)
+
+	local titleClass = collapsible and "TextButton" or "TextLabel"
+	local titleProps = {
+		Parent = frame,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 12, 0, 10),
+		Size = UDim2_new(1, -24, 0, 16),
+		Font = Enum.Font.GothamMedium, TextSize = 13,
+		TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+		Text = opts.Name or "Section",
+	}
+	if collapsible then titleProps.AutoButtonColor = false end
+	local title = make(titleClass, titleProps)
+
+	local chevron = nil
+	if collapsible then
+		chevron = make("TextLabel", {
+			Parent = frame,
+			BackgroundTransparency = 1,
+			AnchorPoint = Vector2_new(1, 0.5),
+			Position = UDim2_new(1, -12, 0, 18),
+			Size = UDim2_new(0, 16, 0, 16),
+			Font = Enum.Font.GothamBold, TextSize = 16,
+			TextColor3 = Theme.SubText,
+			TextXAlignment = Enum.TextXAlignment.Center,
+			TextYAlignment = Enum.TextYAlignment.Center,
+			Text = open and "-" or "+",
+		})
+	end
+
+	local content = make("Frame", {
+		Parent = frame,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 8, 0, 32),
+		Size = UDim2_new(1, -16, 0, 0),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Visible = open,
+	})
+	make("UIPadding", { Parent = frame, PaddingBottom = UDim_new(0, 10) })
+	make("UIListLayout", {
+		Parent = content,
+		FillDirection = Enum.FillDirection.Vertical,
+		SortOrder = Enum.SortOrder.LayoutOrder,
+		Padding = UDim_new(0, 6),
+	})
+	self._content = content
+	self._chevron = chevron
+	self._components = {}
+
+	if collapsible then
+		self._maid:Add(title.MouseButton1Click:Connect(function()
+			self:SetOpen(not self._open)
+		end))
+	end
+	return self
+end
+
+function Section:SetOpen(v)
+	if not self._collapsible then return end
+	if self._open == v then return end
+	self._open = v
+	self._content.Visible = v
+	if self._chevron then self._chevron.Text = v and "-" or "+" end
+
+	local f = self._frame
+	if f then
+		f.AutomaticSize = Enum.AutomaticSize.None
+		f.AutomaticSize = Enum.AutomaticSize.Y
+	end
+	local list = self._content and self._content:FindFirstChildOfClass("UIListLayout")
+	if list then local _ = list.AbsoluteContentSize end
+end
+function Section:IsOpen() return self._open == true end
+function Section:_addComponent(c) table_insert(self._components, c) end
+function Section:SetVisible(v)
+	self._visible = v
+	if self._frame then self._frame.Visible = v end
+end
+
+function Section:Destroy()
+	if self._destroyed then return end
+	self._destroyed = true
+	for _, c in self._components do
+		if _type(c) == "table" and (c).Destroy then
+			local ok, err = _pcall((c).Destroy, c)
+			if not ok then DBG_warn("[Shenanigans] component destroy:", err) end
+		end
+	end
+	self._components = {}
+	if self._tab and not self._tab._destroyed and self._tab._unregisterSection then
+		self._tab:_unregisterSection(self)
+	end
+	self._maid:Destroy()
+end
+
+local HOVER_NORMAL = Theme.SurfaceAlt
+local HOVER_BRIGHT = Theme.SurfaceHover
+
+local function makeRow(parent, height)
+	local row = make("Frame", {
+		Parent = parent,
+		BackgroundColor3 = HOVER_NORMAL,
+		Size = UDim2_new(1, 0, 0, height or 32),
+		BorderSizePixel = 0,
+		ClipsDescendants = true,
+	})
+	corner(6, row)
+	local s = stroke(Theme.Accent, 1, row)
+	s.Transparency = 1
+	return row, s
+end
+
+local function hoverRow(row, host, maid)
+	maid:Add(host.MouseEnter:Connect(function()
+		row.BackgroundColor3 = HOVER_BRIGHT
+	end))
+	maid:Add(host.MouseLeave:Connect(function()
+		row.BackgroundColor3 = HOVER_NORMAL
+	end))
+end
+
+local function rowLabel(parent, text)
+	return make("TextLabel", {
+		Parent = parent,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 10, 0, 0),
+		Size = UDim2_new(1, -20, 1, 0),
+		Font = Enum.Font.GothamMedium, TextSize = 12,
+		TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+		Text = text,
+	})
+end
+
+function Components.Label(section, opts)
+	local maid = newMaid()
+	local lbl = make("TextLabel", {
+		Parent = section._content,
+		BackgroundTransparency = 1,
+		Size = UDim2_new(1, 0, 0, 0),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Font = Enum.Font.Gotham, TextSize = 12,
+		TextColor3 = Theme.SubText,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextWrapped = true,
+		Text = _tostring(opts.Text or ""),
+	})
+	maid:Add(lbl)
+	local api = _setmetatable({
+		instance = lbl, _maid = maid, _section = section, _destroyed = false,
+		Set = function(_, t) lbl.Text = _tostring(t or "") end,
+		Get = function() return lbl.Text end,
+	}, Component)
+	section:_addComponent(api)
+	return api
+end
+
+function Components.Button(section, opts)
+	local maid = newMaid()
+	local row = makeRow(section._content, 32)
+	row.Parent = section._content
+	maid:Add(row)
+	local btn = make("TextButton", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Size = UDim2_new(1, 0, 1, 0),
+		AutoButtonColor = false,
+		Font = Enum.Font.GothamMedium, TextSize = 12,
+		TextColor3 = Theme.Text,
+		Text = opts.Name or "Button",
+	})
+	hoverRow(row, btn, maid)
+	maid:Add(btn.MouseButton1Click:Connect(function()
+		safeCall(opts.Callback)
+	end))
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section, _destroyed = false,
+		Set = function() end, Get = function() return nil end,
+	}, Component)
+	section:_addComponent(api)
+	return api
+end
+
+function Components.Separator(section, opts)
+	opts = opts or {}
+	local thickness = (opts and opts.Thickness) or 1
+	local maid = newMaid()
+	local total = thickness + 8
+	local container = make("Frame", {
+		Parent = section._content,
+		BackgroundTransparency = 1,
+		Size = UDim2_new(1, 0, 0, total),
+		BorderSizePixel = 0,
+	})
+	maid:Add(container)
+	local line = make("Frame", {
+		Parent = container,
+		AnchorPoint = Vector2_new(0.5, 0.5),
+		Position = UDim2_new(0.5, 0, 0.5, 0),
+		Size = UDim2_new(1, -8, 0, thickness),
+		BackgroundColor3 = Theme.Border,
+		BorderSizePixel = 0,
+	})
+	if opts and opts.Label then
+		line.Visible = false
+		make("TextLabel", {
+			Parent = container,
+			BackgroundTransparency = 1,
+			Size = UDim2_new(1, 0, 1, 0),
+			Font = Enum.Font.Gotham, TextSize = 11,
+			TextColor3 = Theme.Muted,
+			TextXAlignment = Enum.TextXAlignment.Left,
+			Text = " " .. _tostring(opts.Label),
+		})
+	end
+	local api = _setmetatable({
+		instance = container, _maid = maid, _section = section, _destroyed = false,
+		Set = function() end, Get = function() return nil end,
+	}, Component)
+	section:_addComponent(api)
+	return api
+end
+
+local function isMouseButtonInput(v)
+	if _typeof(v) ~= "EnumItem" then return false end
+	local uv = v
+	return uv.EnumType == Enum.UserInputType and (uv == Enum.UserInputType.MouseButton1 or uv == Enum.UserInputType.MouseButton2 or uv == Enum.UserInputType.MouseButton3)
+end
+
+local function isValidKeybindValue(v)
+	if _typeof(v) ~= "EnumItem" then return false end
+	return (v).EnumType == Enum.KeyCode or isMouseButtonInput(v)
+end
+
+local function isKeybindUnset(v)
+	return _typeof(v) == "EnumItem" and (v).EnumType == Enum.KeyCode and (v) == Enum.KeyCode.Unknown
+end
+
+local function keybindDisplayText(v)
+	return isKeybindUnset(v) and "..." or (v).Name
+end
+
+local function matchesKeybind(input, v)
+	if not isValidKeybindValue(v) or isKeybindUnset(v) then return false end
+	if isMouseButtonInput(v) then
+		return input.UserInputType == (v)
+	end
+	return input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == (v)
+end
+
+function Components.Toggle(
+	section,
+	opts
+)
+	local maid = newMaid()
+	local fs = section._window._fs
+	local state = opts.Default == true
+	local hasKb = opts.Keybind == true
+
+	local row = makeRow(section._content, 32)
+	row.Parent = section._content
+	maid:Add(row)
+
+	local btn = make("TextButton", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Size = UDim2_new(1, 0, 1, 0),
+		Text = "", AutoButtonColor = false,
+	})
+
+	local lbl = rowLabel(row, opts.Name or "Toggle")
+	if hasKb then lbl.Size = UDim2_new(1, -108, 1, 0) end
+
+	local kbBtn = nil
+	local kbKey = isValidKeybindValue(opts.DefaultKey) and opts.DefaultKey or Enum.KeyCode.Unknown
+	local kbListening = false
+	local kbLastSetTime = 0
+
+	if hasKb then
+		kbBtn = make("TextButton", {
+			Parent = row,
+			AnchorPoint = Vector2_new(1, 0.5),
+			Position = UDim2_new(1, -54, 0.5, 0),
+			Size = UDim2_fromOff(36, 20),
+			BackgroundColor3 = Theme.Surface,
+			BorderSizePixel = 0,
+			AutoButtonColor = false,
+			Font = Enum.Font.Gotham, TextSize = 10,
+			TextColor3 = Theme.Text,
+			TextTruncate = Enum.TextTruncate.AtEnd,
+			Text = "...",
+		})
+		corner(4, kbBtn)
+	end
+
+	local track = make("Frame", {
+		Parent = row,
+		AnchorPoint = Vector2_new(1, 0.5),
+		Position = UDim2_new(1, -10, 0.5, 0),
+		Size = UDim2_fromOff(34, 18),
+		BackgroundColor3 = Theme.Border, BorderSizePixel = 0,
+	})
+	corner(9, track)
+	local knob = make("Frame", {
+		Parent = track,
+		AnchorPoint = Vector2_new(0, 0.5),
+		Position = UDim2_new(0, 2, 0.5, 0),
+		Size = UDim2_fromOff(14, 14),
+		BackgroundColor3 = Theme.Text, BorderSizePixel = 0,
+	})
+	corner(7, knob)
+
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section,
+		_flag = opts.Flag, _destroyed = false,
+	}, Component)
+
+	local function render(fire)
+		if state then
+			track.BackgroundColor3 = Theme.Accent
+			knob.Position = UDim2_new(1, -16, 0.5, 0)
+		else
+			track.BackgroundColor3 = Theme.Border
+			knob.Position = UDim2_new(0, 2, 0.5, 0)
+		end
+		if opts.Flag and fs then fs.write(opts.Flag, state) end
+		if fire ~= false then safeCall(opts.Callback, state) end
+	end
+
+	function api:Set(v) state = v == true; render() end
+	function api:Get() return state end
+
+	maid:Add(btn.MouseButton1Click:Connect(function()
+		state = not state
+		render()
+	end))
+	hoverRow(row, row, maid)
+
+	local function updateKbText()
+		if kbBtn then
+			kbBtn.Text = keybindDisplayText(kbKey)
+		end
+	end
+
+	local keyFlag = (hasKb and opts.Flag) and (opts.Flag .. "Key") or nil
+
+	if hasKb and kbBtn then
+		maid:Add(kbBtn.MouseButton1Click:Connect(function()
+			if (os.clock() - kbLastSetTime) < 0.15 then return end
+			kbListening = true
+			kbBtn.Text = "..."
+		end))
+		maid:Add(InputRouter.OnBegan(function(input, gp)
+			if gp then return end
+			if kbListening then
+				local newKey
+				if input.UserInputType == Enum.UserInputType.Keyboard then
+					newKey = input.KeyCode
+				elseif isMouseButtonInput(input.UserInputType) then
+					newKey = input.UserInputType
+				end
+				if newKey then
+					kbKey = newKey
+					kbListening = false
+					kbLastSetTime = os.clock()
+					updateKbText()
+					if keyFlag and fs then fs.write(keyFlag, kbKey) end
+				end
+				return
+			end
+			if matchesKeybind(input, kbKey) then
+				state = not state
+				render()
+				local w = section and section._window
+				if w and w.Notify then
+					_pcall(w.Notify, w, {
+						Title = opts.Name or "Toggle",
+						Content = (state and "ON" or "OFF") .. " ["..kbKey.Name.."]" ,
+						Duration = 1.5,
+					})
+				end
+			end
+		end))
+	end
+
+	function api:GetKey() return kbKey end
+	function api:SetKey(v)
+		if isValidKeybindValue(v) then
+			kbKey = v
+			updateKbText()
+			if keyFlag and fs then fs.write(keyFlag, kbKey) end
+		end
+	end
+
+	if opts.Flag and fs then
+		fs.register(opts.Flag, state, function(v) api:Set(v) end)
+	end
+	if keyFlag and fs then
+		fs.register(keyFlag, kbKey, function(v) api:SetKey(v) end)
+	end
+	render(false)
+	updateKbText()
+
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+
+	section:_addComponent(api)
+	return api
+end
+
+function Components.Slider(
+	section,
+	opts
+)
+	local maid = newMaid()
+	local fs = section._window._fs
+	local minV = (isFiniteNumber(opts.Min) and (opts.Min)) or 0
+	local maxV = (isFiniteNumber(opts.Max) and (opts.Max)) or 100
+	if maxV <= minV then maxV = minV + 1 end
+	local span = maxV - minV
+	local inc = (isFiniteNumber(opts.Increment) and (opts.Increment)) or 1
+	if inc < 0 then inc = 0 end
+	local val = (isFiniteNumber(opts.Default) and (opts.Default)) or minV
+	local suffix = opts.Suffix or ""
+
+	local row = makeRow(section._content, 44)
+	row.Parent = section._content
+	maid:Add(row)
+	hoverRow(row, row, maid)
+
+	make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 10, 0, 6),
+		Size = UDim2_new(1, -20, 0, 16),
+		Font = Enum.Font.GothamMedium, TextSize = 12,
+		TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+		Text = opts.Name or "Slider",
+	})
+
+	local valueLbl = make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 10, 0, 6),
+		Size = UDim2_new(1, -20, 0, 16),
+		Font = Enum.Font.Gotham, TextSize = 12,
+		TextColor3 = Theme.SubText, TextXAlignment = Enum.TextXAlignment.Right,
+		Text = "",
+	})
+
+	local bar = make("Frame", {
+		Parent = row,
+		Position = UDim2_new(0, 10, 1, -14),
+		Size = UDim2_new(1, -20, 0, 6),
+		BackgroundColor3 = Theme.Border, BorderSizePixel = 0,
+	})
+	corner(3, bar)
+	local fill = make("Frame", {
+		Parent = bar,
+		BackgroundColor3 = Theme.Accent,
+		Size = UDim2_new(0, 0, 1, 0),
+		BorderSizePixel = 0,
+	})
+	corner(3, fill)
+
+	local function snap(x)
+		if not isFiniteNumber(x) then return minV end
+		local raw = x
+		if inc > 0 then
+			raw = math_floor((raw - minV) / inc + 0.5) * inc + minV
+		end
+		return math_clamp(raw, minV, maxV)
+	end
+
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section,
+		_flag = opts.Flag, _destroyed = false,
+	}, Component)
+
+	local function render(fire)
+		val = snap(val)
+		local t = (val - minV) / span
+		fill.Size = UDim2_new(t, 0, 1, 0)
+		local text = (inc < 1) and string_format("%.2f", val) or _tostring(math_floor(val + 0.5))
+		valueLbl.Text = text .. suffix
+		if opts.Flag and fs then fs.write(opts.Flag, val) end
+		if fire ~= false then safeCall(opts.Callback, val) end
+	end
+
+	function api:Set(v)
+		if isFiniteNumber(v) then val = v; render() end
+	end
+	function api:Get() return val end
+
+	local dragMaid = nil
+	local barX, barW = 0, 1
+	local function setFromX(x)
+		local t = math_clamp((x - barX) / barW, 0, 1)
+		val = minV + t * span
+		render()
+	end
+	local function endDrag()
+		if dragMaid then
+			dragMaid:Destroy()
+			dragMaid = nil
+		end
+	end
+	maid:Add(bar.InputBegan:Connect(function(input, gp)
+		if gp then return end
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
+		if dragMaid then return end
+		barX = bar.AbsolutePosition.X
+		barW = math_max(1, bar.AbsoluteSize.X)
+		setFromX(input.Position.X)
+		local dm = newMaid()
+		dragMaid = dm
+		dm:Add(InputRouter.OnChanged(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseMovement or input2.UserInputType == Enum.UserInputType.Touch then
+				setFromX(input2.Position.X)
+			end
+		end))
+		dm:Add(InputRouter.OnEnded(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseButton1 or input2.UserInputType == Enum.UserInputType.Touch then
+				endDrag()
+			end
+		end))
+	end))
+	maid:Add(function() endDrag() end)
+
+	if opts.Flag and fs then
+		fs.register(opts.Flag, val, function(v) api:Set(v) end)
+	end
+	render(false)
+
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+
+	section:_addComponent(api)
+	return api
+end
+
+function Components.Keybind(
+	section,
+	opts
+)
+	local maid = newMaid()
+	local fs = section._window._fs
+	local key = isValidKeybindValue(opts.Default) and opts.Default or Enum.KeyCode.Unknown
+	local listening = false
+	local lastSetTime = 0
+
+	local row = makeRow(section._content, 32)
+	row.Parent = section._content
+	maid:Add(row)
+	hoverRow(row, row, maid)
+	rowLabel(row, opts.Name or "Keybind")
+
+	local btn = make("TextButton", {
+		Parent = row,
+		AnchorPoint = Vector2_new(1, 0.5),
+		Position = UDim2_new(1, -10, 0.5, 0),
+		Size = UDim2_fromOff(54, 22),
+		BackgroundColor3 = Theme.Surface, BorderSizePixel = 0,
+		AutoButtonColor = false,
+		Font = Enum.Font.Gotham, TextSize = 11, TextColor3 = Theme.Text,
+		TextTruncate = Enum.TextTruncate.AtEnd, Text = "",
+	})
+	corner(4, btn)
+
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section,
+		_flag = opts.Flag, _destroyed = false,
+	}, Component)
+
+	local function render()
+		btn.Text = keybindDisplayText(key)
+		if opts.Flag and fs then fs.write(opts.Flag, key) end
+	end
+	function api:Set(v)
+		if isValidKeybindValue(v) then key = v; render() end
+	end
+	function api:Get() return key end
+
+	maid:Add(btn.MouseButton1Click:Connect(function()
+		if (os.clock() - lastSetTime) < 0.15 then return end
+		listening = true
+		btn.Text = "..."
+	end))
+	maid:Add(InputRouter.OnBegan(function(input, gp)
+		if gp then return end
+		if listening then
+			local newKey
+			if input.UserInputType == Enum.UserInputType.Keyboard then
+				newKey = input.KeyCode
+			elseif isMouseButtonInput(input.UserInputType) then
+				newKey = input.UserInputType
+			end
+			if newKey then
+				key = newKey
+				listening = false
+				lastSetTime = os.clock()
+				render()
+				safeCall(opts.Callback, key, "set")
+			end
+			return
+		end
+		if matchesKeybind(input, key) then
+			safeCall(opts.Callback, key, "pressed")
+		end
+	end))
+
+	if opts.Flag and fs then
+		fs.register(opts.Flag, key, function(v) api:Set(v) end)
+	end
+	render()
+
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+
+	section:_addComponent(api)
+	return api
+end
+
+function Components.Textbox(
+	section,
+	opts
+)
+	local maid = newMaid()
+	local fs = section._window._fs
+	local row = makeRow(section._content, 56)
+	row.Parent = section._content
+	maid:Add(row)
+	hoverRow(row, row, maid)
+
+	make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 10, 0, 6),
+		Size = UDim2_new(1, -20, 0, 16),
+		Font = Enum.Font.GothamMedium, TextSize = 12,
+		TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+		Text = opts.Name or "Textbox",
+	})
+
+	local input = make("TextBox", {
+		Parent = row,
+		Position = UDim2_new(0, 10, 0, 26),
+		Size = UDim2_new(1, -20, 0, 22),
+		BackgroundColor3 = Theme.Surface, BorderSizePixel = 0,
+		Font = Enum.Font.Gotham, TextSize = 12, TextColor3 = Theme.Text,
+		PlaceholderText = opts.Placeholder or "", PlaceholderColor3 = Theme.Muted,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		ClearTextOnFocus = false, Text = opts.Default or "",
+	})
+	corner(4, input)
+	padding(0, 0, 8, 8, input)
+
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section,
+		_flag = opts.Flag, _destroyed = false,
+	}, Component)
+	function api:Set(v) input.Text = _tostring(v or "") end
+	function api:Get() return input.Text end
+
+	if opts.Numeric then
+		maid:Add(input:GetPropertyChangedSignal("Text"):Connect(function()
+			local s = input.Text
+			local filtered = (s):gsub("[^%-0-9%.]", "")
+			if filtered ~= s then input.Text = filtered end
+		end))
+	end
+
+	maid:Add(input.FocusLost:Connect(function(enter)
+		local text = input.Text
+		if opts.Flag and fs then fs.write(opts.Flag, text) end
+		safeCall(opts.Callback, text, enter)
+	end))
+
+	if opts.Flag and fs then
+		fs.register(opts.Flag, input.Text, function(v) api:Set(v) end)
+	end
+
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+
+	section:_addComponent(api)
+	return api
+end
+
+local function buildDropdown(section, opts, multi)
+	local maid = newMaid()
+	local fs = section._window._fs
+	local options = {}
+	if _type(opts.Options) == "table" then
+		for _, v in opts.Options do
+			if _type(v) == "string" then table_insert(options, v) end
+		end
+	end
+
+	local selected
+	if multi then
+		selected = {}
+		if _type(opts.Default) == "table" then
+			for _, val in opts.Default do
+				if _type(val) == "string" then selected[val] = true end
+			end
+		end
+	else
+		selected = (_type(opts.Default) == "string") and opts.Default or nil
+		if selected ~= nil and not table_find(options, selected) then
+			selected = nil
+		end
+	end
+
+	local row = makeRow(section._content, 32)
+	row.Parent = section._content
+	maid:Add(row)
+
+	local lbl = make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 10, 0, 0),
+		Size = UDim2_new(0.5, -10, 0, 32),
+		Font = Enum.Font.GothamMedium, TextSize = 12,
+		TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+		Text = opts.Name or "Dropdown",
+	})
+
+	local valueLbl = make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		AnchorPoint = Vector2_new(1, 0),
+		Position = UDim2_new(1, -28, 0, 0),
+		Size = UDim2_new(0.5, -20, 0, 32),
+		Font = Enum.Font.Gotham, TextSize = 12,
+		TextColor3 = Theme.SubText, TextXAlignment = Enum.TextXAlignment.Right,
+		TextTruncate = Enum.TextTruncate.AtEnd, Text = "",
+	})
+
+	local arrow = make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		AnchorPoint = Vector2_new(1, 0.5),
+		Position = UDim2_new(1, -10, 0, 16),
+		Size = UDim2_fromOff(14, 14),
+		Font = Enum.Font.GothamBold, TextSize = 14,
+		TextColor3 = Theme.SubText, Text = "+",
+	})
+
+	local listHolder = make("Frame", {
+		Parent = row,
+		BackgroundColor3 = Theme.Background,
+		Position = UDim2_new(0, 6, 0, 32),
+		Size = UDim2_new(1, -12, 0, 0),
+		BorderSizePixel = 0,
+		ClipsDescendants = true,
+	})
+	corner(6, listHolder)
+	stroke(Theme.Border, 1, listHolder)
+
+	local list = make("ScrollingFrame", {
+		Parent = listHolder,
+		BackgroundTransparency = 1,
+		Position = UDim2_fromOff(0, 0),
+		Size = UDim2_new(1, 0, 1, 0),
+		ScrollBarThickness = 2,
+		ScrollBarImageColor3 = Theme.Border,
+		BorderSizePixel = 0,
+		CanvasSize = UDim2_new(0, 0, 0, 0),
+		AutomaticCanvasSize = Enum.AutomaticSize.Y,
+	})
+	make("UIListLayout", {
+		Parent = list,
+		SortOrder = Enum.SortOrder.LayoutOrder,
+		Padding = UDim_new(0, 2),
+	})
+
+	local clickArea = make("TextButton", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Size = UDim2_new(1, 0, 0, 32),
+		Text = "", AutoButtonColor = false,
+	})
+
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+
+	local open = false
+	local rendered = {}
+
+	local function selectedArray()
+		local arr = {}
+		for _, v in options do
+			if (selected)[v] then table_insert(arr, v) end
+		end
+		return arr
+	end
+
+	local function updateValueLabel()
+		if multi then
+			local arr = selectedArray()
+			if #arr == 0 then
+				valueLbl.Text = "None"
+			elseif #arr <= 2 then
+				valueLbl.Text = table_concat(arr, ", ")
+			else
+				valueLbl.Text = arr[1] .. ", +" .. (#arr - 1)
+			end
+		else
+			valueLbl.Text = selected and _tostring(selected) or "None"
+		end
+	end
+
+	local function isSelected(optName)
+		if multi then return (selected)[optName] == true end
+		return selected == optName
+	end
+
+	local function applyDotStyle(optName)
+		local r = rendered[optName]
+		if not r then return end
+		r.dot.BackgroundColor3 = isSelected(optName) and Theme.Accent or Theme.Border
+	end
+
+	local function listHeight()
+		if #options == 0 then return 0 end
+		return math_min(#options * 26 - 2, 160)
+	end
+
+	local function closeList()
+		open = false
+		row.Size = UDim2_new(1, 0, 0, 32)
+		arrow.Text = "+"
+		listHolder.Size = UDim2_new(1, -12, 0, 0)
+	end
+
+	local function createItem(optName, order)
+		local imaid = newMaid()
+		local item = make("TextButton", {
+			Parent = list,
+			LayoutOrder = order,
+			Size = UDim2_new(1, 0, 0, 24),
+			BackgroundColor3 = HOVER_BRIGHT,
+			BackgroundTransparency = 1,
+			BorderSizePixel = 0,
+			Font = Enum.Font.Gotham, TextSize = 12,
+			TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+			Text = " " .. _tostring(optName),
+			AutoButtonColor = false,
+		})
+		imaid:Add(item)
+
+		local dot = make("Frame", {
+			Parent = item,
+			AnchorPoint = Vector2_new(1, 0.5),
+			Position = UDim2_new(1, -8, 0.5, 0),
+			Size = UDim2_fromOff(6, 6),
+			BackgroundColor3 = Theme.Border, BorderSizePixel = 0,
+		})
+		corner(3, dot)
+
+		imaid:Add(item.MouseEnter:Connect(function()
+			item.BackgroundTransparency = 0
+		end))
+		imaid:Add(item.MouseLeave:Connect(function()
+			item.BackgroundTransparency = 1
+		end))
+
+		imaid:Add(item.MouseButton1Click:Connect(function()
+			if multi then
+				local sel = selected
+				sel[optName] = (not sel[optName]) or nil
+				if opts.Flag and fs then fs.write(opts.Flag, selectedArray()) end
+				updateValueLabel()
+				applyDotStyle(optName)
+				safeCall(opts.Callback, selectedArray())
+			else
+				selected = optName
+				if opts.Flag and fs then fs.write(opts.Flag, selected) end
+				updateValueLabel()
+				for n in rendered do applyDotStyle(n) end
+				safeCall(opts.Callback, selected)
+				closeList()
+			end
+		end))
+
+		rendered[optName] = { item = item, dot = dot, maid = imaid }
+	end
+
+	local function rebuild()
+		local newSet = {}
+		for i, opt in options do newSet[opt] = i end
+
+		for name, entry in rendered do
+			if not newSet[name] then
+				entry.maid:Destroy()
+				rendered[name] = nil
+			end
+		end
+
+		for i, optName in options do
+			local entry = rendered[optName]
+			if entry then
+				if entry.item.LayoutOrder ~= i then
+					entry.item.LayoutOrder = i
+				end
+			else
+				local ok, err = _pcall(createItem, optName, i)
+				if not ok then
+					DBG_warn("[Shenanigans] dropdown item create failed:", err)
+					local stray = rendered[optName]
+					if stray then stray.maid:Destroy(); rendered[optName] = nil end
+				end
+			end
+		end
+
+		for n in rendered do applyDotStyle(n) end
+	end
+
+	local function setOptions(newOpts)
+		options = {}
+		if _type(newOpts) == "table" then
+			for _, v in newOpts do
+				if _type(v) == "string" then table_insert(options, v) end
+			end
+		end
+		if multi then
+			for k in selected do
+				if not table_find(options, k) then (selected)[k] = nil end
+			end
+		else
+			if selected and not table_find(options, selected) then
+				selected = nil
+			end
+		end
+		rebuild()
+		updateValueLabel()
+		if open then
+			local h = listHeight()
+			row.Size = UDim2_new(1, 0, 0, 32 + h + 6)
+			listHolder.Size = UDim2_new(1, -12, 0, h)
+		end
+	end
+
+	setOptions(options)
+	hoverRow(row, clickArea, maid)
+
+	maid:Add(clickArea.MouseButton1Click:Connect(function()
+		open = not open
+		if open then
+			local h = listHeight()
+			row.Size = UDim2_new(1, 0, 0, 32 + h + 6)
+			listHolder.Size = UDim2_new(1, -12, 0, h)
+			arrow.Text = "-"
+		else
+			closeList()
+		end
+	end))
+
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section,
+		_flag = opts.Flag, _destroyed = false,
+	}, Component)
+	function api:Set(v)
+		if multi then
+			selected = {}
+			if _type(v) == "table" then
+				for _, val in v do
+					if _type(val) == "string" then (selected)[val] = true end
+				end
+			end
+		else
+			selected = (_type(v) == "string") and v or nil
+			if selected ~= nil and not table_find(options, selected) then
+				selected = nil
+			end
+		end
+		for n in rendered do applyDotStyle(n) end
+		updateValueLabel()
+	end
+	function api:Get()
+		if multi then return selectedArray() end
+		return selected
+	end
+	api.SetOptions = function(_, newOpts) setOptions(newOpts) end
+
+	if opts.Flag and fs then
+		local initial = multi and selectedArray() or selected
+		fs.register(opts.Flag, initial, function(v) api:Set(v) end)
+	end
+
+	maid:Add(function()
+		for _, r in rendered do r.maid:Destroy() end
+		rendered = {}
+	end)
+
+	section:_addComponent(api)
+	return api
+end
+
+function Components.Dropdown(section, opts) return buildDropdown(section, opts, false) end
+function Components.MultiDropdown(section, opts) return buildDropdown(section, opts, true) end
+
+function Components.ColorPicker(
+	section,
+	opts
+)
+	local maid = newMaid()
+	local fs = section._window._fs
+	local dual = opts.Dual == true
+
+	local colorA
+	local colorB
+	if dual then
+		if _type(opts.Default) == "table" then
+			local arr = opts.Default
+			colorA = (_typeof(arr[1]) == "Color3") and arr[1] or Color3_fromRGB(255, 255, 255)
+			colorB = (_typeof(arr[2]) == "Color3") and arr[2] or Color3_fromRGB(255, 255, 255)
+		else
+			local c = (_typeof(opts.Default) == "Color3") and (opts.Default) or Color3_fromRGB(255, 255, 255)
+			colorA = c; colorB = c
+		end
+	else
+		colorA = (_typeof(opts.Default) == "Color3") and (opts.Default) or Color3_fromRGB(255, 255, 255)
+		colorB = colorA
+	end
+
+	local activeSwatch = "A"
+	local h, s, v = Color3_toHSV(colorA)
+
+	local row = makeRow(section._content, 32)
+	row.Parent = section._content
+	maid:Add(row)
+	hoverRow(row, row, maid)
+
+	make("TextLabel", {
+		Parent = row,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 10, 0, 0),
+		Size = dual and UDim2_new(1, -90, 0, 32) or UDim2_new(1, -50, 0, 32),
+		Font = Enum.Font.GothamMedium, TextSize = 12,
+		TextColor3 = Theme.Text, TextXAlignment = Enum.TextXAlignment.Left,
+		Text = opts.Name or "Color",
+	})
+
+	local swatchA = make("TextButton", {
+		Parent = row,
+		AnchorPoint = Vector2_new(1, 0),
+		Position = dual and UDim2_new(1, -42, 0, 7) or UDim2_new(1, -10, 0, 7),
+		Size = UDim2_fromOff(28, 18),
+		BackgroundColor3 = colorA, Text = "",
+		AutoButtonColor = false, BorderSizePixel = 0,
+	})
+	corner(4, swatchA)
+
+	local swatchB = nil
+	if dual then
+		swatchB = make("TextButton", {
+			Parent = row,
+			AnchorPoint = Vector2_new(1, 0),
+			Position = UDim2_new(1, -10, 0, 7),
+			Size = UDim2_fromOff(28, 18),
+			BackgroundColor3 = colorB, Text = "",
+			AutoButtonColor = false, BorderSizePixel = 0,
+		})
+		corner(4, swatchB)
+	end
+
+	local function pickSwatch(which)
+		activeSwatch = which
+		local target = (which == "A") and colorA or colorB
+		h, s, v = Color3_toHSV(target)
+	end
+	pickSwatch("A")
+
+	if section._window._tooltips then
+		section._window._tooltips.Attach(row, opts.Tooltip, maid)
+	end
+
+	local panel = make("Frame", {
+		Parent = row,
+		Position = UDim2_new(0, 8, 0, 36),
+		Size = UDim2_new(1, -16, 0, 110),
+		BackgroundColor3 = Theme.Background, BorderSizePixel = 0,
+		Visible = false,
+	})
+	corner(6, panel)
+	stroke(Theme.Border, 1, panel)
+
+	local sv = make("Frame", {
+		Parent = panel,
+		Position = UDim2_new(0, 6, 0, 6),
+		Size = UDim2_new(1, -12, 1, -28),
+		BackgroundColor3 = Color3_fromRGB(255, 0, 0), BorderSizePixel = 0,
+	})
+	corner(4, sv)
+	local satFrame = make("Frame", {
+		Parent = sv,
+		BackgroundColor3 = Color3_fromRGB(255, 255, 255),
+		Size = UDim2_new(1, 0, 1, 0), BorderSizePixel = 0,
+	})
+	make("UIGradient", {
+		Parent = satFrame,
+		Transparency = NumberSequence.new({
+			NumberSequenceKeypoint.new(0, 0),
+			NumberSequenceKeypoint.new(1, 1),
+		}),
+	})
+	local valFrame = make("Frame", {
+		Parent = sv,
+		BackgroundColor3 = Color3_fromRGB(0, 0, 0),
+		Size = UDim2_new(1, 0, 1, 0), BorderSizePixel = 0,
+	})
+	make("UIGradient", {
+		Parent = valFrame, Rotation = 90,
+		Transparency = NumberSequence.new({
+			NumberSequenceKeypoint.new(0, 1),
+			NumberSequenceKeypoint.new(1, 0),
+		}),
+	})
+	corner(4, valFrame)
+
+	local svDot = make("Frame", {
+		Parent = sv,
+		Size = UDim2_fromOff(8, 8),
+		AnchorPoint = Vector2_new(0.5, 0.5),
+		Position = UDim2_new(1, 0, 0, 0),
+		BackgroundColor3 = Color3_fromRGB(255, 255, 255),
+		BorderSizePixel = 0, ZIndex = 5,
+	})
+	corner(4, svDot)
+	stroke(Color3_fromRGB(0, 0, 0), 1, svDot)
+
+	local hue = make("Frame", {
+		Parent = panel,
+		AnchorPoint = Vector2_new(0, 1),
+		Position = UDim2_new(0, 6, 1, -6),
+		Size = UDim2_new(1, -12, 0, 12),
+		BorderSizePixel = 0,
+		BackgroundColor3 = Color3_fromRGB(255, 255, 255),
+	})
+	corner(4, hue)
+	make("UIGradient", {
+		Parent = hue,
+		Color = ColorSequence.new({
+			ColorSequenceKeypoint.new(0.00, Color3_fromRGB(255, 0, 0)),
+			ColorSequenceKeypoint.new(0.17, Color3_fromRGB(255, 255, 0)),
+			ColorSequenceKeypoint.new(0.33, Color3_fromRGB(0, 255, 0)),
+			ColorSequenceKeypoint.new(0.50, Color3_fromRGB(0, 255, 255)),
+			ColorSequenceKeypoint.new(0.67, Color3_fromRGB(0, 0, 255)),
+			ColorSequenceKeypoint.new(0.83, Color3_fromRGB(255, 0, 255)),
+			ColorSequenceKeypoint.new(1.00, Color3_fromRGB(255, 0, 0)),
+		}),
+	})
+	local hueDot = make("Frame", {
+		Parent = hue,
+		Size = UDim2_new(0, 3, 1, 4),
+		AnchorPoint = Vector2_new(0.5, 0.5),
+		Position = UDim2_new(0, 0, 0.5, 0),
+		BackgroundColor3 = Color3_fromRGB(255, 255, 255),
+		BorderSizePixel = 0, ZIndex = 5,
+	})
+	corner(2, hueDot)
+	stroke(Color3_fromRGB(0, 0, 0), 1, hueDot)
+
+	local api = _setmetatable({
+		instance = row, _maid = maid, _section = section,
+		_flag = opts.Flag, _destroyed = false,
+	}, Component)
+
+	local function writeFlag()
+		if not (opts.Flag and fs) then return end
+		if dual then
+			fs.write(opts.Flag, { colorA, colorB })
+		else
+			fs.write(opts.Flag, colorA)
+		end
+	end
+
+	local function apply(fire)
+		local c = Color3_fromHSV(h, s, v)
+		if activeSwatch == "A" then
+			colorA = c
+			swatchA.BackgroundColor3 = colorA
+		else
+			colorB = c
+			if swatchB then swatchB.BackgroundColor3 = colorB end
+		end
+		sv.BackgroundColor3 = Color3_fromHSV(h, 1, 1)
+		svDot.Position = UDim2_new(s, 0, 1 - v, 0)
+		hueDot.Position = UDim2_new(h, 0, 0.5, 0)
+		writeFlag()
+		if fire ~= false then
+			if dual then safeCall(opts.Callback, colorA, colorB)
+			else safeCall(opts.Callback, colorA) end
+		end
+	end
+
+	function api:Set(c)
+		if dual and _type(c) == "table" then
+			local arr = c
+			if _typeof(arr[1]) == "Color3" then
+				colorA = arr[1]
+				swatchA.BackgroundColor3 = colorA
+			end
+			if _typeof(arr[2]) == "Color3" and swatchB then
+				colorB = arr[2]
+				swatchB.BackgroundColor3 = colorB
+			end
+			pickSwatch(activeSwatch)
+			writeFlag()
+		elseif _typeof(c) == "Color3" then
+			h, s, v = Color3_toHSV(c)
+			apply()
+		end
+	end
+	function api:Get()
+		if dual then return { colorA, colorB } end
+		return colorA
+	end
+
+	apply(false)
+	row.Size = UDim2_new(1, 0, 0, 32)
+	panel.Visible = false
+
+	local function openPanel()
+		panel.Visible = true
+		row.Size = UDim2_new(1, 0, 0, 152)
+	end
+	local function closePanel()
+		panel.Visible = false
+		row.Size = UDim2_new(1, 0, 0, 32)
+	end
+
+	maid:Add(swatchA.MouseButton1Click:Connect(function()
+		if activeSwatch == "A" then
+			if panel.Visible then closePanel() else openPanel() end
+		else
+			pickSwatch("A")
+			openPanel()
+			apply(false)
+		end
+	end))
+	if swatchB then
+		maid:Add(swatchB.MouseButton1Click:Connect(function()
+			if activeSwatch == "B" then
+				if panel.Visible then closePanel() else openPanel() end
+			else
+				pickSwatch("B")
+				openPanel()
+				apply(false)
+			end
+		end))
+	end
+
+	local svDragMaid = nil
+	local hueDragMaid = nil
+	local svX, svY, svW, svH = 0, 0, 1, 1
+	local hueX, hueW = 0, 1
+
+	local function updateSV(px)
+		s = math_clamp((px.X - svX) / svW, 0, 1)
+		v = 1 - math_clamp((px.Y - svY) / svH, 0, 1)
+		apply()
+	end
+	local function updateHue(x)
+		h = math_clamp((x - hueX) / hueW, 0, 1)
+		apply()
+	end
+	local function endSv()
+		if svDragMaid then svDragMaid:Destroy(); svDragMaid = nil end
+	end
+	local function endHue()
+		if hueDragMaid then hueDragMaid:Destroy(); hueDragMaid = nil end
+	end
+
+	maid:Add(sv.InputBegan:Connect(function(input, gp)
+		if gp then return end
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
+		if svDragMaid then return end
+		svX, svY = sv.AbsolutePosition.X, sv.AbsolutePosition.Y
+		svW = math_max(1, sv.AbsoluteSize.X)
+		svH = math_max(1, sv.AbsoluteSize.Y)
+		updateSV(Vector2_new(input.Position.X, input.Position.Y))
+		local dm = newMaid()
+		svDragMaid = dm
+		dm:Add(InputRouter.OnChanged(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseMovement or input2.UserInputType == Enum.UserInputType.Touch then
+				updateSV(Vector2_new(input2.Position.X, input2.Position.Y))
+			end
+		end))
+		dm:Add(InputRouter.OnEnded(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseButton1 or input2.UserInputType == Enum.UserInputType.Touch then
+				endSv()
+			end
+		end))
+	end))
+	maid:Add(function() endSv() end)
+
+	maid:Add(hue.InputBegan:Connect(function(input, gp)
+		if gp then return end
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
+		if hueDragMaid then return end
+		hueX = hue.AbsolutePosition.X
+		hueW = math_max(1, hue.AbsoluteSize.X)
+		updateHue(input.Position.X)
+		local dm = newMaid()
+		hueDragMaid = dm
+		dm:Add(InputRouter.OnChanged(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseMovement or input2.UserInputType == Enum.UserInputType.Touch then
+				updateHue(input2.Position.X)
+			end
+		end))
+		dm:Add(InputRouter.OnEnded(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseButton1 or input2.UserInputType == Enum.UserInputType.Touch then
+				endHue()
+			end
+		end))
+	end))
+	maid:Add(function() endHue() end)
+
+	if opts.Flag and fs then
+		local initial = dual and { colorA, colorB } or colorA
+		fs.register(opts.Flag, initial, function(v2) api:Set(v2) end)
+	end
+
+	section:_addComponent(api)
+	return api
+end
+
+function Section:AddLabel(opts) return Components.Label(self, opts or {}) end
+function Section:AddButton(opts) return Components.Button(self, opts or {}) end
+function Section:AddToggle(opts) return Components.Toggle(self, opts or {}) end
+function Section:AddSlider(opts) return Components.Slider(self, opts or {}) end
+function Section:AddDropdown(opts) return Components.Dropdown(self, opts or {}) end
+function Section:AddMultiDropdown(opts) return Components.MultiDropdown(self, opts or {}) end
+function Section:AddKeybind(opts) return Components.Keybind(self, opts or {}) end
+function Section:AddTextbox(opts) return Components.Textbox(self, opts or {}) end
+function Section:AddColorPicker(opts) return Components.ColorPicker(self, opts or {}) end
+function Section:AddSeparator(opts) return Components.Separator(self, opts) end
+
+local SECTION_COLUMN_GAP = 8
+local TAB_TWO_COLUMN_MIN_WIDTH = 480
+local TAB_THREE_COLUMN_MIN_WIDTH = 720
+
+local function columnOffsetPx(numCols)
+	return math_floor((numCols - 1) * SECTION_COLUMN_GAP / numCols)
+end
+
+function Tab.new(window, opts)
+	local self = _setmetatable({}, Tab)
+	self._window = window
+	self._name = opts.Name or "Tab"
+	self._icon = opts.Icon
+	self._hidden = opts.Hidden == true
+	self._maid = newMaid()
+	self._sections = {}
+	self._layoutMode = "wide"
+	self._content = nil
+	self._active = false
+	self._destroyed = false
+
+	if not self._hidden then
+		local btn = make("TextButton", {
+			Parent = window._tabList,
+			BackgroundColor3 = Theme.Surface,
+			BackgroundTransparency = 1,
+			Size = UDim2_new(1, 0, 0, 32),
+			AutoButtonColor = false, Text = "",
+		})
+		corner(6, btn)
+		self._maid:Add(btn)
+
+		local indicator = make("Frame", {
+			Parent = btn,
+			BackgroundColor3 = Theme.Accent,
+			Size = UDim2_fromOff(3, 16),
+			Position = UDim2_new(0, 0, 0.5, -8),
+			BorderSizePixel = 0, BackgroundTransparency = 1,
+		})
+		corner(2, indicator)
+
+		local lbl = make("TextLabel", {
+			Parent = btn,
+			BackgroundTransparency = 1,
+			Position = UDim2_new(0, self._icon and 32 or 12, 0, 0),
+			Size = UDim2_new(1, self._icon and -36 or -16, 1, 0),
+			Font = Enum.Font.GothamMedium, TextSize = 12,
+			TextColor3 = Theme.SubText,
+			TextXAlignment = Enum.TextXAlignment.Left,
+			Text = self._name,
+		})
+
+		if self._icon then
+			make("ImageLabel", {
+				Parent = btn,
+				BackgroundTransparency = 1,
+				Position = UDim2_new(0, 10, 0.5, -8),
+				Size = UDim2_fromOff(16, 16),
+				Image = self._icon,
+				ImageColor3 = Theme.SubText,
+			})
+		end
+
+		self._maid:Add(btn.MouseButton1Click:Connect(function()
+			window:SelectTab(self)
+		end))
+
+		self._btn = btn
+		self._lbl = lbl
+		self._indicator = indicator
+	end
+	return self
+end
+
+function Tab:_getContent()
+	if self._content then return self._content end
+	local content = make("ScrollingFrame", {
+		Parent = self._window._pageHolder,
+		BackgroundTransparency = 1, BorderSizePixel = 0,
+		Size = UDim2_new(1, 0, 1, 0),
+		ScrollBarThickness = 3, ScrollBarImageColor3 = Theme.Border,
+		CanvasSize = UDim2_new(0, 0, 0, 0),
+		AutomaticCanvasSize = Enum.AutomaticSize.Y,
+		Visible = false,
+	})
+
+	local columns = make("Frame", {
+		Parent = content,
+		BackgroundTransparency = 1,
+		Size = UDim2_new(1, 0, 0, 0),
+		AutomaticSize = Enum.AutomaticSize.Y,
+	})
+	padding(8, 8, 8, 8 + 3, columns)
+	make("UIListLayout", {
+		Parent = columns,
+		FillDirection = Enum.FillDirection.Horizontal,
+		SortOrder = Enum.SortOrder.LayoutOrder,
+		Padding = UDim_new(0, SECTION_COLUMN_GAP),
+		HorizontalAlignment = Enum.HorizontalAlignment.Left,
+		VerticalAlignment = Enum.VerticalAlignment.Top,
+	})
+
+	local initialOffset = columnOffsetPx(2)
+	local function makeColumn(order)
+		local col = make("Frame", {
+			Parent = columns,
+			BackgroundTransparency = 1,
+			Size = UDim2_new(0.5, -initialOffset, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			LayoutOrder = order,
+		})
+		make("UIListLayout", {
+			Parent = col,
+			FillDirection = Enum.FillDirection.Vertical,
+			SortOrder = Enum.SortOrder.LayoutOrder,
+			Padding = UDim_new(0, 8),
+		})
+		return col
+	end
+	local colA = makeColumn(1)
+	local colB = makeColumn(2)
+	local colC = makeColumn(3)
+
+	self._content = content
+	self._columns = columns
+	self._colA = colA
+	self._colB = colB
+	self._colC = colC
+	self._maid:Add(content)
+
+	self._maid:Add(columns:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+		self:_evaluateLayoutMode()
+	end))
+	self:_evaluateLayoutMode()
+	return content
+end
+
+local function columnsForMode(mode)
+	if mode == "wide" then return 3
+	elseif mode == "mid" then return 2 end
+	return 1
+end
+
+function Tab:_columnByIndex(idx)
+	if idx == 2 then return self._colB end
+	if idx == 3 then return self._colC end
+	return self._colA
+end
+
+function Tab:_distributeSections()
+	local n = columnsForMode(self._layoutMode)
+	for i, sec in self._sections do
+		local fr = sec and (sec)._frame
+		if fr and fr.Parent ~= nil then
+			local target = ((i - 1) % n) + 1
+			fr.Parent = self:_columnByIndex(target)
+			fr.LayoutOrder = i
+		end
+	end
+end
+
+function Tab:_applyLayoutMode(mode)
+	self._layoutMode = mode
+	local n = columnsForMode(mode)
+	if n == 3 then
+		local off = columnOffsetPx(3)
+		self._colA.Size = UDim2_new(1/3, -off, 0, 0)
+		self._colB.Size = UDim2_new(1/3, -off, 0, 0)
+		self._colC.Size = UDim2_new(1/3, -off, 0, 0)
+		self._colB.Visible = true
+		self._colC.Visible = true
+	elseif n == 2 then
+		local off = columnOffsetPx(2)
+		self._colA.Size = UDim2_new(0.5, -off, 0, 0)
+		self._colB.Size = UDim2_new(0.5, -off, 0, 0)
+		self._colB.Visible = true
+		self._colC.Visible = false
+	else
+		self._colA.Size = UDim2_new(1, 0, 0, 0)
+		self._colB.Visible = false
+		self._colC.Visible = false
+	end
+	self:_distributeSections()
+end
+
+function Tab:_evaluateLayoutMode()
+	if not self._columns or not self._colA or not self._colB or not self._colC then return end
+	local w = self._columns.AbsoluteSize.X
+	local newMode
+	if w >= TAB_THREE_COLUMN_MIN_WIDTH then newMode = "wide"
+	elseif w >= TAB_TWO_COLUMN_MIN_WIDTH then newMode = "mid"
+	else newMode = "narrow" end
+	if newMode ~= self._layoutMode then
+		self:_applyLayoutMode(newMode)
+	end
+end
+
+function Tab:_acquireSectionParent(section)
+	self:_getContent()
+	local i = #self._sections + 1
+	if section and (section)._frame then
+		(section)._frame.LayoutOrder = i
+	end
+	local n = columnsForMode(self._layoutMode)
+	local target = ((i - 1) % n) + 1
+	return self:_columnByIndex(target)
+end
+
+function Tab:_unregisterSection(section)
+	local idx = table_find(self._sections, section)
+	if idx then
+		table_remove(self._sections, idx)
+		self:_distributeSections()
+	end
+end
+
+function Tab:Activate()
+	self:_getContent().Visible = true
+	self._active = true
+	if self._lbl then
+		self._lbl.TextColor3 = Theme.Text
+		self._btn.BackgroundColor3 = Theme.SurfaceHover
+		self._btn.BackgroundTransparency = 0
+		self._indicator.BackgroundTransparency = 0
+	end
+end
+
+function Tab:Deactivate()
+	if self._content then self._content.Visible = false end
+	self._active = false
+	if self._lbl then
+		self._lbl.TextColor3 = Theme.SubText
+		self._btn.BackgroundTransparency = 1
+		self._indicator.BackgroundTransparency = 1
+	end
+end
+
+function Tab:CreateSection(opts)
+	if _type(opts) == "string" then opts = { Name = opts } end
+	local sec = Section.new(self, opts or {})
+	table_insert(self._sections, sec)
+	return sec
+end
+
+function Tab:SetVisible(v)
+	if self._btn then self._btn.Visible = v end
+end
+
+function Tab:Destroy()
+	if self._destroyed then return end
+	self._destroyed = true
+	local sections = self._sections
+	self._sections = {}
+	for _, s in sections do
+		local ok, err = _pcall(s.Destroy, s)
+		if not ok then DBG_warn("[Shenanigans] section destroy:", err) end
+	end
+	self._maid:Destroy()
+	if self._window and not self._window._destroyed and self._window._activeTab == self then
+		self._window._activeTab = nil
+	end
+end
+
+local CONFIG_ROOT = "UILib"
+local AUTOLOAD_FILE = "_autoload.txt"
+
+local function configFolderPath(configName)
+	local placeId = _tostring((game).PlaceId or 0)
+	local sub = configName or "default"
+	return CONFIG_ROOT .. "/" .. placeId .. "/" .. sub
+end
+
+local function autoloadPath()
+	local placeId = _tostring((game).PlaceId or 0)
+	return CONFIG_ROOT .. "/" .. placeId .. "/" .. AUTOLOAD_FILE
+end
+
+local function ensureFolder(path)
+	if not hasFS then return end
+	local parts = {}
+	for s in (path):gmatch("[^/]+") do
+		table_insert(parts, s)
+	end
+	local acc = ""
+	for _, p in parts do
+		acc = (acc == "") and p or (acc .. "/" .. p)
+		if isfolder_fn and not (isfolder_fn)(acc) then
+			if makefolder_fn then
+				_pcall(makefolder_fn, acc)
+			end
+		end
+	end
+end
+
+local serializeFlag, deserializeFlag
+
+function serializeFlag(v)
+	local tv = _typeof(v)
+	if tv == "Color3" then
+		return { __type = "Color3", r = (v).R, g = (v).G, b = (v).B }
+	elseif tv == "EnumItem" then
+		local ei = v
+		local enumName = (_tostring(ei.EnumType)):gsub("^Enum%.", "")
+		return { __type = "EnumItem", value = enumName .. "." .. ei.Name }
+	elseif tv == "table" then
+		local arr = v
+		local n = #arr
+		local primOnly = true
+		for i = 1, n do
+			local t = _type(arr[i])
+			if t ~= "string" and t ~= "number" and t ~= "boolean" then
+				primOnly = false
+				break
+			end
+		end
+		if primOnly then
+			local items = table_create(n)
+			for i = 1, n do items[i] = arr[i] end
+			return { __type = "List", items = items }
+		else
+			local items = table_create(n)
+			for i = 1, n do
+				items[i] = serializeFlag(arr[i])
+			end
+			return { __type = "Array", items = items, n = n }
+		end
+	elseif tv == "number" then
+		if not isFiniteNumber(v) then return nil end
+		return v
+	elseif tv == "boolean" or tv == "string" then
+		return v
+	end
+	return nil
+end
+
+local function deserializeColor3(rv, gv, bv)
+	if not (isFiniteNumber(rv) and isFiniteNumber(gv) and isFiniteNumber(bv)) then
+		return nil
+	end
+	return Color3_new(
+		math_clamp(rv, 0, 1),
+		math_clamp(gv, 0, 1),
+		math_clamp(bv, 0, 1)
+	)
+end
+
+function deserializeFlag(v)
+	local t = _type(v)
+	if t == "number" then
+		if not isFiniteNumber(v) then return nil end
+		return v
+	end
+	if t == "boolean" or t == "string" then return v end
+	if t == "table" then
+		local tag = (v).__type
+		if tag == "Color3" then
+			return deserializeColor3((v).r, (v).g, (v).b)
+		elseif tag == "EnumItem" and _type((v).value) == "string" then
+			local parts = {}
+			for s in ((v).value):gmatch("[^%.]+") do
+				table_insert(parts, s)
+			end
+			if #parts == 2 then
+				local ok, ec = _pcall(function()
+					return (Enum)[parts[1]][parts[2]]
+				end)
+				if ok then return ec end
+			end
+			return nil
+		elseif tag == "List" and _type((v).items) == "table" then
+			local out = {}
+			for _, item in (v).items do
+				local ti = _type(item)
+				local keep =
+					ti == "string" or ti == "boolean" or (ti == "number" and isFiniteNumber(item))
+				if keep then table_insert(out, item) end
+			end
+			return out
+		elseif tag == "Array" and _type((v).items) == "table" then
+			local items = (v).items
+			local n = (v).n or #items
+			local out = table_create(n)
+			for i = 1, n do
+				out[i] = deserializeFlag(items[i])
+			end
+			return out
+		end
+	end
+	return nil
+end
+
+local DEFAULT_SIZE = Vector2_new(640, 440)
+local MIN_SIZE = Vector2_new(480, 320)
+local MAX_SIZE = Vector2_new(1280, 800)
+
+function Window.new(
+	library,
+	opts
+)
+	local self = _setmetatable({}, Window)
+	self._library = library
+	self._maid = newMaid()
+	self._tabs = {}
+	self._activeTab = nil
+	self._destroyed = false
+
+	local fs_values = {}
+	local fs_setters = {}
+	local fs_defaults = {}
+
+	self._fs = {
+		register = function(key, default, setter)
+			if _type(key) ~= "string" then return end
+			fs_setters[key] = setter
+			if fs_values[key] == nil then
+				fs_values[key] = default
+				fs_defaults[key] = default
+			end
+		end,
+		unregister = function(key)
+			if _type(key) ~= "string" then return end
+			fs_setters[key] = nil
+		end,
+		write = function(key, value)
+			if _type(key) == "string" then
+				fs_values[key] = value
+			end
+		end,
+	}
+
+	self.Flags = _setmetatable({}, {
+		__index = function(_, k) return fs_values[k] end,
+		__newindex = function(_, k, v)
+			local setter = fs_setters[k]
+			if setter then
+				local ok, err = _pcall(setter, v)
+				if not ok then DBG_warn("[Shenanigans] Flags setter for", k, ":", err) end
+			else
+				DBG_warn("[Shenanigans] Flags: no flag named", _tostring(k))
+			end
+		end,
+		__metatable = "locked",
+	})
+
+	if opts.ConfigName ~= nil and not isValidConfigName(opts.ConfigName) then
+		DBG_warn("[Shenanigans] ConfigName rejected (must be 1-64 of letters/digits/_/-); using 'default'")
+		self._configName = "default"
+	else
+		self._configName = opts.ConfigName or "default"
+	end
+	self._autoloadOnInit = opts.Autoload == true
+	self.SettingsCallback = opts.SettingsCallback
+
+	local screenGui = make("ScreenGui", {
+		Name = pickRandomGuiName(),
+		ResetOnSpawn = false,
+		IgnoreGuiInset = true,
+		ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+	})
+	local guiParent, alreadyHidden = getGuiParent()
+	screenGui.Parent = guiParent
+	if not alreadyHidden then
+		if not protectGui(screenGui) and RunService:IsRunning() and not RunService:IsStudio() then
+			DBG_warn("[Shenanigans] GUI is not hidden from CoreGui enumeration (no protect_gui available)")
+		end
+	end
+	self._screenGui = screenGui
+	self._maid:Add(screenGui)
+
+	self._tooltips = createTooltipSystem(screenGui)
+	self._notify = createNotificationSystem(screenGui)
+	self._maid:Add(function() self._tooltips.Destroy() end)
+	self._maid:Add(function() self._notify.Destroy() end)
+
+	local main = make("Frame", {
+		Parent = screenGui,
+		AnchorPoint = Vector2_new(0.5, 0.5),
+		Position = UDim2_fromScale(0.5, 0.5),
+		Size = UDim2_fromOff(DEFAULT_SIZE.X, DEFAULT_SIZE.Y),
+		BackgroundColor3 = Theme.Background, BorderSizePixel = 0,
+		ClipsDescendants = true, Visible = false,
+	})
+	corner(10, main)
+	stroke(Theme.Border, 1, main)
+	self._main = main
+
+	local titleBar = make("Frame", {
+		Parent = main,
+		BackgroundColor3 = Theme.Surface,
+		Size = UDim2_new(1, 0, 0, 36),
+		BorderSizePixel = 0,
+	})
+	corner(10, titleBar)
+	make("Frame", {
+		Parent = titleBar,
+		BackgroundColor3 = Theme.Surface,
+		Position = UDim2_new(0, 0, 1, -10),
+		Size = UDim2_new(1, 0, 0, 10),
+		BorderSizePixel = 0,
+	})
+
+	local ICON_OVERHANG = 16
+	local ICON_TEXT_GAP = 28
+	local iconOffset = 0
+	if opts.Icon then
+		make("ImageLabel", {
+			Parent = titleBar,
+			BackgroundTransparency = 1,
+			AnchorPoint = Vector2_new(0, 0.5),
+			Position = UDim2_new(0, -ICON_OVERHANG, 0.5, 0),
+			Size = UDim2_fromOff(70, 70),
+			Image = _tostring(opts.Icon),
+			ScaleType = Enum.ScaleType.Fit,
+		})
+		iconOffset = ICON_TEXT_GAP
+	end
+
+	make("TextLabel", {
+		Parent = titleBar,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 14 + iconOffset, 0, 0),
+		Size = UDim2_new(1, -100 - iconOffset, 1, 0),
+		Font = Enum.Font.GothamBold, TextSize = 13,
+		TextColor3 = Theme.Text,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		Text = opts.Name or "UI Library",
+		TextTruncate = Enum.TextTruncate.AtEnd,
+	})
+
+	if opts.Version then
+		make("TextLabel", {
+			Parent = titleBar,
+			BackgroundTransparency = 1,
+			AnchorPoint = Vector2_new(1, 0.5),
+			Position = UDim2_new(1, -36, 0.5, 0),
+			Size = UDim2_fromOff(80, 18),
+			Font = Enum.Font.Gotham, TextSize = 11,
+			TextColor3 = Theme.Muted,
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Text = _tostring(opts.Version),
+		})
+	end
+
+	local minBtn = make("TextButton", {
+		Parent = titleBar,
+		AnchorPoint = Vector2_new(1, 0.5),
+		Position = UDim2_new(1, -10, 0.5, 0),
+		Size = UDim2_fromOff(20, 20),
+		BackgroundColor3 = Theme.SurfaceAlt,
+		Font = Enum.Font.GothamBold, TextSize = 14,
+		TextColor3 = Theme.Text, Text = "-",
+		AutoButtonColor = false, BorderSizePixel = 0,
+	})
+	corner(4, minBtn)
+	self._maid:Add(minBtn.MouseButton1Click:Connect(function()
+		self:Toggle(false)
+	end))
+
+	local sidebar = make("Frame", {
+		Parent = main,
+		BackgroundColor3 = Theme.Surface,
+		Position = UDim2_new(0, 0, 0, 36),
+		Size = UDim2_new(0, 160, 1, -36),
+		BorderSizePixel = 0,
+	})
+	corner(10, sidebar)
+	make("Frame", {
+		Parent = sidebar,
+		BackgroundColor3 = Theme.Surface,
+		Position = UDim2_new(0, 0, 0, 0),
+		Size = UDim2_new(1, 0, 0, 10),
+		BorderSizePixel = 0,
+	})
+	make("Frame", {
+		Parent = sidebar,
+		BackgroundColor3 = Theme.Surface,
+		Position = UDim2_new(1, -10, 0, 0),
+		Size = UDim2_new(0, 10, 1, 0),
+		BorderSizePixel = 0,
+	})
+
+	local tabList = make("ScrollingFrame", {
+		Parent = sidebar,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 8, 0, 8),
+		Size = UDim2_new(1, -16, 1, -64),
+		CanvasSize = UDim2_new(0, 0, 0, 0),
+		AutomaticCanvasSize = Enum.AutomaticSize.Y,
+		ScrollBarThickness = 2,
+		ScrollBarImageColor3 = Theme.Border,
+		BorderSizePixel = 0,
+	})
+	make("UIListLayout", {
+		Parent = tabList,
+		FillDirection = Enum.FillDirection.Vertical,
+		Padding = UDim_new(0, 4),
+		SortOrder = Enum.SortOrder.LayoutOrder,
+	})
+	self._tabList = tabList
+
+	local userPanel = make("Frame", {
+		Parent = sidebar,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 8, 1, -54),
+		Size = UDim2_new(1, -16, 0, 46),
+		BorderSizePixel = 0,
+	})
+
+	local avatar = make("ImageLabel", {
+		Parent = userPanel,
+		BackgroundTransparency = 1,
+		AnchorPoint = Vector2_new(0, 0.5),
+		Position = UDim2_new(0, 0, 0.5, 0),
+		Size = UDim2_fromOff(32, 32),
+		Image = rbxThumb((LocalPlayer and LocalPlayer.UserId) or 0),
+	})
+	corner(16, avatar)
+
+	make("TextLabel", {
+		Parent = userPanel,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 38, 0, 8),
+		Size = UDim2_new(1, -64, 0, 18),
+		Font = Enum.Font.GothamMedium, TextSize = 11,
+		TextColor3 = Theme.Text,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTruncate = Enum.TextTruncate.AtEnd,
+		Text = (LocalPlayer and LocalPlayer.DisplayName) or "Player",
+	})
+	make("TextLabel", {
+		Parent = userPanel,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 38, 0, 22),
+		Size = UDim2_new(1, -64, 0, 16),
+		Font = Enum.Font.Gotham, TextSize = 9,
+		TextColor3 = Theme.Muted,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTruncate = Enum.TextTruncate.AtEnd,
+		Text = "@" .. ((LocalPlayer and LocalPlayer.Name) or "username"),
+	})
+
+	local settingsBtn = make("ImageButton", {
+		Parent = userPanel,
+		BackgroundTransparency = 1,
+		AnchorPoint = Vector2_new(1, 0.5),
+		Position = UDim2_new(1, 0, 0.5, 0),
+		Size = UDim2_fromOff(18, 18),
+		Image = rbxAsset(80428653135733),
+		AutoButtonColor = false,
+	})
+	self._maid:Add(settingsBtn.MouseButton1Click:Connect(function()
+		safeCall(self.SettingsCallback)
+	end))
+
+	local pageHolder = make("Frame", {
+		Parent = main,
+		BackgroundTransparency = 1,
+		Position = UDim2_new(0, 160, 0, 36),
+		Size = UDim2_new(1, -160, 1, -36),
+		BorderSizePixel = 0,
+	})
+	self._pageHolder = pageHolder
+
+	local grip = make("ImageButton", {
+		Parent = main,
+		AnchorPoint = Vector2_new(1, 1),
+		Position = UDim2_new(1, -4, 1, -4),
+		Size = UDim2_fromOff(12, 12),
+		BackgroundTransparency = 1,
+		Image = rbxAsset(6031091004),
+		ImageColor3 = Theme.Muted,
+		ImageTransparency = 0.4,
+		AutoButtonColor = false,
+	})
+
+	local resizeMaid = nil
+	local function endResize()
+		if resizeMaid then resizeMaid:Destroy(); resizeMaid = nil end
+	end
+	self._maid:Add(grip.InputBegan:Connect(function(input)
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
+		if resizeMaid then return end
+		local startMouse = input.Position
+		local startSize = main.AbsoluteSize
+		local rm = newMaid()
+		resizeMaid = rm
+		rm:Add(InputRouter.OnChanged(function(input2)
+			if input2.UserInputType ~= Enum.UserInputType.MouseMovement and input2.UserInputType ~= Enum.UserInputType.Touch then return end
+			local d = input2.Position - startMouse
+			local nw = math_clamp(startSize.X + d.X, MIN_SIZE.X, MAX_SIZE.X)
+			local nh = math_clamp(startSize.Y + d.Y, MIN_SIZE.Y, MAX_SIZE.Y)
+			main.Size = UDim2_fromOff(nw, nh)
+		end))
+		rm:Add(InputRouter.OnEnded(function(input2)
+			if input2.UserInputType == Enum.UserInputType.MouseButton1 or input2.UserInputType == Enum.UserInputType.Touch then
+				endResize()
+			end
+		end))
+	end))
+	self._maid:Add(function() endResize() end)
+
+	makeDraggable(main, titleBar, self._maid)
+
+	self._toggleKey = nil
+	self._toggleKeyConn = nil
+
+	if opts.ToggleKey then
+		self:SetToggleKey(opts.ToggleKey)
+	end
+
+	main.Size = UDim2_fromOff(DEFAULT_SIZE.X, DEFAULT_SIZE.Y)
+	main.BackgroundTransparency = 0
+	main.Visible = true
+
+	function self:SaveConfig(name)
+		if not hasFS then
+			self:Notify({ Title = "Config", Content = "No filesystem available", Duration = 3 })
+			return false
+		end
+		local n = name or "default"
+		if not isValidConfigName(n) then
+			self:Notify({ Title = "Config", Content = "Invalid name (use letters, digits, _ or -)", Duration = 3 })
+			return false
+		end
+		local folder = configFolderPath(self._configName)
+		ensureFolder(folder)
+		local data = {}
+		for k, v in fs_values do
+			local s = serializeFlag(v)
+			if s ~= nil then data[k] = s end
+		end
+		local ok, json = _pcall(HttpService.JSONEncode, HttpService, data)
+		if not ok then
+			DBG_warn("[Shenanigans] config encode failed:", json)
+			self:Notify({ Title = "Config", Content = "Encode failed", Duration = 3 })
+			return false
+		end
+		local path = folder .. "/" .. n .. ".json"
+		local ok2, err = _pcall(writefile_fn, path, json)
+		if not ok2 then
+			DBG_warn("[Shenanigans] config write failed:", err)
+			self:Notify({ Title = "Config", Content = "Write failed", Duration = 3 })
+			return false
+		end
+		self:Notify({ Title = "Config saved", Content = n, Duration = 2 })
+		return true
+	end
+
+	function self:LoadConfig(name)
+		if not hasFS then return false end
+		local n = name or "default"
+		if not isValidConfigName(n) then
+			self:Notify({ Title = "Config", Content = "Invalid name", Duration = 3 })
+			return false
+		end
+		local folder = configFolderPath(self._configName)
+		local path = folder .. "/" .. n .. ".json"
+		if isfile_fn and not (isfile_fn)(path) then
+			self:Notify({ Title = "Config", Content = "Not found: " .. n, Duration = 3 })
+			return false
+		end
+		local ok, raw = _pcall(readfile_fn, path)
+		if not ok then
+			DBG_warn("[Shenanigans] config read failed:", raw)
+			return false
+		end
+		local ok2, data = _pcall(HttpService.JSONDecode, HttpService, raw)
+		if not ok2 or _type(data) ~= "table" then
+			DBG_warn("[Shenanigans] config decode failed:", data)
+			self:Notify({ Title = "Config", Content = "Corrupt file", Duration = 3 })
+			return false
+		end
+		local applied, skipped, failed = 0, 0, 0
+		for k, v in data do
+			local setter = fs_setters[k]
+			local val = deserializeFlag(v)
+			if setter and val ~= nil then
+				local s_ok, s_err = _pcall(setter, val)
+				if s_ok then
+					applied += 1
+				else
+					failed += 1
+					DBG_warn("[Shenanigans] config setter for", k, ":", s_err)
+				end
+			else
+				skipped += 1
+			end
+		end
+		local content = n
+		if failed > 0 or skipped > 0 then
+			content = string_format("%s (applied %d, skipped %d, failed %d)", n, applied, skipped, failed)
+		end
+		self:Notify({
+			Title = (failed > 0) and "Config loaded with errors" or "Config loaded",
+			Content = content, Duration = 3,
+		})
+		return failed == 0
+	end
+
+	function self:ListConfigs()
+		if not hasFS or not listfiles_fn then return {} end
+		local folder = configFolderPath(self._configName)
+		if isfolder_fn and not (isfolder_fn)(folder) then return {} end
+		local out = {}
+		local ok, list = _pcall(listfiles_fn, folder)
+		if not ok or _type(list) ~= "table" then return {} end
+		for _, f in list do
+			local nm = (_tostring(f)):match("([^/\\]+)%.json$")
+			if nm then table_insert(out, nm) end
+		end
+		table.sort(out)
+		return out
+	end
+
+	function self:DeleteConfig(name)
+		if not hasFS or not delfile_fn then return false end
+		if not isValidConfigName(name) then return false end
+		local folder = configFolderPath(self._configName)
+		local path = folder .. "/" .. name .. ".json"
+		if isfile_fn and not (isfile_fn)(path) then return false end
+		local ok = _pcall(delfile_fn, path)
+		if ok then
+			local cur = self:GetAutoload()
+			if cur == name then self:SetAutoload(nil) end
+			self:Notify({ Title = "Config deleted", Content = name, Duration = 2 })
+		end
+		return ok
+	end
+
+	function self:ResetToDefaults()
+		for k, def in fs_defaults do
+			local setter = fs_setters[k]
+			if setter then
+				local ok, err = _pcall(setter, def)
+				if not ok then DBG_warn("[Shenanigans] reset setter for", k, ":", err) end
+			end
+		end
+		self:Notify({ Title = "Defaults restored", Duration = 2 })
+	end
+
+	function self:GetAutoload()
+		if not hasFS then return nil end
+		local path = autoloadPath()
+		if isfile_fn and not (isfile_fn)(path) then return nil end
+		local ok, raw = _pcall(readfile_fn, path)
+		if not ok or _type(raw) ~= "string" then return nil end
+		raw = (raw):gsub("%s+$", "")
+		if not isValidConfigName(raw) then return nil end
+		return raw
+	end
+
+	function self:SetAutoload(name)
+		if not hasFS then return false end
+		local placeId = _tostring((game).PlaceId or 0)
+		ensureFolder(CONFIG_ROOT .. "/" .. placeId)
+		local path = autoloadPath()
+		if name == nil then
+			if isfile_fn and (isfile_fn)(path) and delfile_fn then
+				_pcall(delfile_fn, path)
+			end
+			return true
+		end
+		if not isValidConfigName(name) then return false end
+		local ok = _pcall(writefile_fn, path, name)
+		return ok == true
+	end
+
+	function self:LoadAutoload()
+		local n = self:GetAutoload()
+		if n and self:LoadConfig(n) then return n end
+		return nil
+	end
+
+	function self:Init()
+		if self._autoloadOnInit then self:LoadAutoload() end
+	end
+
+	function self:Destroy()
+		if self._destroyed then return end
+		self._destroyed = true
+		local tabs = self._tabs
+		self._tabs = {}
+		for _, t in tabs do
+			local ok, err = _pcall(t.Destroy, t)
+			if not ok then DBG_warn("[Shenanigans] tab destroy:", err) end
+		end
+		if self._toggleKeyConn then
+			local ok, err = _pcall(self._toggleKeyConn)
+			if not ok then DBG_warn("[Shenanigans] toggleKey disconnect:", err) end
+			self._toggleKeyConn = nil
+		end
+		fs_values = {}
+		fs_setters = {}
+		fs_defaults = {}
+		self._maid:Destroy()
+		if self._library and not self._library._destroyed then
+			local idx = table_find(self._library._windows, self)
+			if idx then table_remove(self._library._windows, idx) end
+		end
+	end
+
+	return self
+end
+
+function Window:CreateTab(opts)
+	if _type(opts) == "string" then opts = { Name = opts } end
+	local t = Tab.new(self, opts or {})
+	table_insert(self._tabs, t)
+	if not t._hidden and not self._activeTab then
+		self:SelectTab(t)
+	end
+	return t
+end
+
+function Window:SelectTab(t)
+	if self._activeTab == t then return end
+	if self._activeTab then self._activeTab:Deactivate() end
+	self._activeTab = t
+	t:Activate()
+end
+
+function Window:Toggle(state)
+	if state == nil then
+		state = not self._main.Visible
+	end
+	self._main.Visible = state
+end
+
+function Window:Show() self:Toggle(true) end
+function Window:Hide() self:Toggle(false) end
+function Window:IsVisible()
+	return self._main and self._main.Visible == true
+end
+
+function Window:SetToggleKey(key)
+	if self._toggleKeyConn then
+		self._toggleKeyConn()
+		self._toggleKeyConn = nil
+	end
+	self._toggleKey = key
+	if key then
+		self._toggleKeyConn = InputRouter.OnBegan(function(input, gp)
+			if gp then return end
+			if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == key then
+				self:Toggle()
+			end
+		end)
+	end
+end
+
+function Window:GetToggleKey()
+	return self._toggleKey
+end
+
+function Window:SetSettingsCallback(fn)
+	self.SettingsCallback = fn
+end
+
+function Window:Notify(opts)
+	self._notify.Push(opts)
+end
+
+function UILibrary.new()
+	local self = _setmetatable({}, UILibrary)
+	self._windows = {}
+	self._maid = newMaid()
+	self._destroyed = false
+	return self
+end
+
+function UILibrary:CreateWindow(opts)
+	if self._destroyed then
+		error("[Shenanigans] cannot create window on destroyed library", 2)
+	end
+	local w = Window.new(self, opts or {})
+	table_insert(self._windows, w)
+	return w
+end
+
+function UILibrary:Init()
+	for _, w in self._windows do
+		local ok, err = _pcall(w.Init, w)
+		if not ok then DBG_warn("[Shenanigans] window init:", err) end
+	end
+end
+
+function UILibrary:Destroy()
+	if self._destroyed then return end
+	self._destroyed = true
+	local windows = self._windows
+	self._windows = {}
+	for _, w in windows do
+		local ok, err = _pcall(w.Destroy, w)
+		if not ok then DBG_warn("[Shenanigans] window destroy:", err) end
+	end
+	self._maid:Destroy()
+end
+
+local exports = _setmetatable({
+	new = UILibrary.new,
+	Theme = Theme,
+	Version = "4.0.0",
+}, {
+	__metatable = "locked",
+	__newindex = function() error("[Shenanigans] exports table is read-only", 2) end,
+})
+
+if table_freeze then _pcall(table_freeze, exports) end
+
+return exports
