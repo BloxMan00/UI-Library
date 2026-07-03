@@ -1,5 +1,3 @@
-
-
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -2039,6 +2037,7 @@ function Tab.new(window, opts)
 	self._content = nil
 	self._active = false
 	self._destroyed = false
+	self._rebalanceScheduled = false
 
 	if not self._hidden then
 		local btn = make("TextButton", {
@@ -2168,16 +2167,56 @@ function Tab:_columnByIndex(idx)
 	return self._colA
 end
 
+function Tab:_measuredHeight(sec)
+	local fr = sec and (sec)._frame
+	if fr then
+		local h = fr.AbsoluteSize.Y
+		if h and h > 1 then return h end
+	end
+	local comps = sec and (sec)._components
+	local count = comps and #comps or 0
+	return 44 + count * 34
+end
+
 function Tab:_distributeSections()
 	local n = columnsForMode(self._layoutMode)
+	if n <= 1 then
+		for i, sec in self._sections do
+			local fr = sec and (sec)._frame
+			if fr and fr.Parent ~= nil then
+				if fr.Parent ~= self._colA then fr.Parent = self._colA end
+				fr.LayoutOrder = i
+			end
+		end
+		return
+	end
+
+	local heights = {}
+	for c = 1, n do heights[c] = 0 end
 	for i, sec in self._sections do
 		local fr = sec and (sec)._frame
 		if fr and fr.Parent ~= nil then
-			local target = ((i - 1) % n) + 1
-			fr.Parent = self:_columnByIndex(target)
+			local best = 1
+			for c = 2, n do
+				if heights[c] < heights[best] then best = c end
+			end
+			local col = self:_columnByIndex(best)
+			if fr.Parent ~= col then fr.Parent = col end
 			fr.LayoutOrder = i
+			heights[best] = heights[best] + self:_measuredHeight(sec) + SECTION_COLUMN_GAP
 		end
 	end
+end
+
+function Tab:_scheduleRebalance()
+	if self._rebalanceScheduled then return end
+	self._rebalanceScheduled = true
+	task_defer(function()
+		_pcall(function() RunService.Heartbeat:Wait() end)
+		self._rebalanceScheduled = false
+		if self._destroyed then return end
+		self:_distributeSections()
+	end)
 end
 
 function Tab:_applyLayoutMode(mode)
@@ -2202,6 +2241,7 @@ function Tab:_applyLayoutMode(mode)
 		self._colC.Visible = false
 	end
 	self:_distributeSections()
+	self:_scheduleRebalance()
 end
 
 function Tab:_evaluateLayoutMode()
@@ -2244,6 +2284,7 @@ function Tab:Activate()
 		self._btn.BackgroundTransparency = 0
 		self._indicator.BackgroundTransparency = 0
 	end
+	self:_scheduleRebalance()
 end
 
 function Tab:Deactivate()
@@ -2260,6 +2301,7 @@ function Tab:CreateSection(opts)
 	if _type(opts) == "string" then opts = { Name = opts } end
 	local sec = Section.new(self, opts or {})
 	table_insert(self._sections, sec)
+	self:_scheduleRebalance()
 	return sec
 end
 
