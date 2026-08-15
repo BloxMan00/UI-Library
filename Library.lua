@@ -2838,6 +2838,9 @@ function Window.new(
 			return false
 		end
 		local applied, skipped, failed = 0, 0, 0
+		-- Diagnostic: DBG_warn is gated behind DEBUG=false, so load problems were previously
+		-- invisible. Report the actual key NAMES, split by cause, on a plain warn().
+		local noSetter, badValue, errored = {}, {}, {}
 		for k, v in data do
 			local setter = fs_setters[k]
 			local val = deserializeFlag(v)
@@ -2847,12 +2850,27 @@ function Window.new(
 					applied += 1
 				else
 					failed += 1
-					DBG_warn("[Shenanigans] config setter for", k, ":", s_err)
+					table_insert(errored, _tostring(k) .. " (" .. _tostring(s_err) .. ")")
 				end
 			else
 				skipped += 1
+				if not setter then
+					table_insert(noSetter, _tostring(k))
+				else
+					table_insert(badValue, _tostring(k))
+				end
 			end
 		end
+		if #noSetter > 0 then
+			warn("[Shenanigans] load: NO SETTER for " .. #noSetter .. " flag(s): " .. table.concat(noSetter, ", "))
+		end
+		if #badValue > 0 then
+			warn("[Shenanigans] load: UNREADABLE VALUE for " .. #badValue .. " flag(s): " .. table.concat(badValue, ", "))
+		end
+		if #errored > 0 then
+			warn("[Shenanigans] load: SETTER ERROR on " .. #errored .. " flag(s): " .. table.concat(errored, " | "))
+		end
+		warn("[Shenanigans] load summary: applied " .. applied .. ", skipped " .. skipped .. ", failed " .. failed)
 		local content = n
 		if failed > 0 or skipped > 0 then
 			content = string_format("%s (applied %d, skipped %d, failed %d)", n, applied, skipped, failed)
