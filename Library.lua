@@ -2324,13 +2324,14 @@ function Tab:Destroy()
 	end
 end
 
-local CONFIG_ROOT = "UILib"
+local CONFIG_ROOT = "Shenanigans"
 local AUTOLOAD_FILE = "_autoload.txt"
 
-local function configFolderPath(configName)
+-- Shenanigans/<PlaceId>/  -- configs and _autoload.txt sit directly in the game-id folder.
+-- configName is accepted for call-site compatibility but deliberately NOT used as a subfolder.
+local function configFolderPath(_configName)
 	local placeId = _tostring((game).PlaceId or 0)
-	local sub = configName or "default"
-	return CONFIG_ROOT .. "/" .. placeId .. "/" .. sub
+	return CONFIG_ROOT .. "/" .. placeId
 end
 
 local function autoloadPath()
@@ -2475,10 +2476,13 @@ function Window.new(
 		register = function(key, default, setter)
 			if _type(key) ~= "string" then return end
 			fs_setters[key] = setter
-			if fs_values[key] == nil then
-				fs_values[key] = default
-				fs_defaults[key] = default
-			end
+			-- fs_defaults MUST be recorded independently of fs_values. Every component calls
+			-- render() during construction, and render() does fs.write(opts.Flag, state) -- so by
+			-- the time fs.register runs at the END of the constructor, fs_values[key] is already
+			-- set and the old combined guard never fired. fs_defaults stayed EMPTY for every
+			-- element, which made ResetToDefaults iterate nothing and silently do nothing.
+			if fs_defaults[key] == nil then fs_defaults[key] = default end
+			if fs_values[key] == nil then fs_values[key] = default end
 		end,
 		unregister = function(key)
 			if _type(key) ~= "string" then return end
